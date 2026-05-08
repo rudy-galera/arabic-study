@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafaf7" media="(prefers-color-scheme: light)">
+<title>Países e Profissões · بُلدان ومِهَن</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* People-specific layout: country/profession + masculine + feminine columns */
+  .people-list { list-style: none; padding: 0; margin: 0; }
+  .people-list li {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid #2a2d36;
+    align-items: start;
+  }
+  .people-list li:last-child { border-bottom: none; }
+  .people-list .col { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+  .people-list .col-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: #6b6f7e; font-weight: 600; }
+  .people-list .pt { color: #d1d5db; font-size: 14px; font-weight: 500; }
+  .people-list .ar { font-family: "Geeza Pro", "Noto Naskh Arabic", serif; font-size: 20px; direction: rtl; color: #fff; line-height: 1.4; }
+  .people-list .arabizi { font-style: italic; color: #9ca3af; font-size: 13px; }
+  .people-list .header-row { background: #232634; padding: 8px 6px; border-radius: 8px; margin-bottom: 6px; border-bottom: none; }
+  .people-list .header-row .col-title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: #f4a261; font-weight: 700; text-align: center; }
+
+  @media (max-width: 520px) {
+    .people-list li { grid-template-columns: 1fr; gap: 6px; padding: 14px 0; }
+    .people-list .col { padding-left: 8px; border-left: 2px solid #2a2d36; }
+    .people-list .col:first-child { border-left-color: #f4a261; }
+    .people-list .header-row { display: none; }
+  }
+
+  @media (prefers-color-scheme: light) {
+    .people-list li { border-bottom-color: #e5e3dc; }
+    .people-list .pt { color: #1f2230; }
+    .people-list .ar { color: #1f2230; }
+    .people-list .header-row { background: #f5f3eb; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="head-row">
+    <a href="index.html" class="head-back">← Início</a>
+    <h1 class="head-title">Países e Profissões</h1>
+    <span></span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="hero-tag">Cartão de referência</div>
+    <h1>Países, nacionalidades e profissões</h1>
+    <div class="ar">بُلدان وجِنسيات ومِهَن</div>
+    <div class="arabizi">Boldan we gensiyat we mehan</div>
+    <div class="intro">
+      Como dizer <em>de onde você é</em> e <em>o que você faz</em>.
+      Toda nacionalidade e profissão tem forma masculina e feminina.
+      <br><br>
+      <strong>Padrão:</strong> <span class="ar" style="font-size:18px;">أنا + نَسبة</span> · <em>Ana + nacionalidade</em> · "Eu sou brasileiro" → <span class="ar" style="font-size:18px;">أنا برازيلي</span> · <em>ana barazily</em>.
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <input type="search" id="search" class="search-input" placeholder="Buscar… (brasil, médico, mohandes, masry)">
+  </div>
+
+  <div class="tabs" id="catTabs"></div>
+
+  <div id="peopleList"></div>
+
+</div>
+
+<script>
+  // ───────────────────────────────────────────────────────────────────
+  // PESSOAS — países, nacionalidades, profissões
+  // Fonte: Apostila nível básico (Árabe Com Merna), pp. 5–10
+  // ───────────────────────────────────────────────────────────────────
+
+  // Países: cada item tem o nome do país + nacionalidade m + nacionalidade f
+  const COUNTRIES = {
+    "arabes": {
+      label: "Países árabes",
+      icon: "🕌",
+      items: [
+        {pt:"Egito",            arPais:"مَصر",        aziPais:"Masr",          arM:"مَصري",       aziM:"masry",      arF:"مَصرية",       aziF:"masreya"},
+        {pt:"Sudão",            arPais:"السودان",    aziPais:"el-Sodan",      arM:"سوداني",      aziM:"sudany",     arF:"سودانية",     aziF:"sudaneya"},
+        {pt:"Argélia",          arPais:"الجَزائِر",    aziPais:"el-Gaza2er",    arM:"جَزائِري",     aziM:"gaza2ery",   arF:"جَزائِرية",     aziF:"gaza2erya"},
+        {pt:"Marrocos",         arPais:"المَغرب",    aziPais:"el-Ma8reb",     arM:"مَغرَبي",      aziM:"ma8reby",    arF:"مَغرَبية",      aziF:"ma8rebeya"},
+        {pt:"Líbano",           arPais:"لُبنان",      aziPais:"Lobnan",        arM:"لُبناني",      aziM:"lobnany",    arF:"لُبنانية",      aziF:"lobnaneya"},
+        {pt:"Síria",            arPais:"سوريا",      aziPais:"Sorya",         arM:"سوري",        aziM:"sury",       arF:"سورية",        aziF:"sureya"},
+        {pt:"Iraque",           arPais:"العِراق",     aziPais:"el-3era2",      arM:"عِراقي",       aziM:"3era2y",     arF:"عِراقية",       aziF:"3era2eya"},
+        {pt:"Líbia",            arPais:"ليبيا",       aziPais:"Lebya",         arM:"ليبي",        aziM:"liby",       arF:"ليبية",        aziF:"libeya"},
+        {pt:"Palestina",        arPais:"فِلِسطين",     aziPais:"Felestin",      arM:"فِلِسطيني",     aziM:"felestiny",  arF:"فِلِسطينية",    aziF:"felestineya"},
+        {pt:"Israel",           arPais:"إسرائيل",     aziPais:"Isra2il",       arM:"إسرائيلي",    aziM:"isra2ily",   arF:"إسرائيلية",   aziF:"isra2ileya"},
+        {pt:"Jordânia",         arPais:"الأُردُن",     aziPais:"el-Ordon",      arM:"أُردُني",       aziM:"ordony",     arF:"أُردُنية",      aziF:"ordoneya"},
+        {pt:"Arábia Saudita",   arPais:"السُعودية",  aziPais:"el-So3odeya",   arM:"سُعودي",      aziM:"so3udy",     arF:"سُعودية",     aziF:"so3udeya"},
+        {pt:"Emirados Árabes",  arPais:"الإمارات",   aziPais:"el-Emarat",     arM:"إماراتي",     aziM:"emaraty",    arF:"إماراتية",    aziF:"emarateya"},
+        {pt:"Catar",            arPais:"قَطَر",        aziPais:"Qatar",         arM:"قَطَري",       aziM:"qatary",     arF:"قَطَرية",       aziF:"qatareya"},
+        {pt:"Kuwait",           arPais:"الكُوَيت",     aziPais:"el-Kowait",     arM:"كُوَيتي",      aziM:"kowety",     arF:"كُوَيتية",      aziF:"koweteya"},
+      ]
+    },
+
+    "americas": {
+      label: "Américas",
+      icon: "🌎",
+      items: [
+        {pt:"Brasil",           arPais:"البَرازيل",   aziPais:"el-Barazil",    arM:"بَرازيلي",     aziM:"barazily",   arF:"بَرازيلية",    aziF:"barazileya"},
+        {pt:"Argentina",        arPais:"الأَرجَنتين",  aziPais:"el-Arjantin",   arM:"أَرجَنتيني",    aziM:"arjantiny",  arF:"أَرجَنتينية",   aziF:"arjanteneya"},
+        {pt:"Colômbia",         arPais:"كولومبيا",   aziPais:"Colombya",      arM:"كولومبي",    aziM:"colomby",    arF:"كولومبية",    aziF:"colombeya"},
+        {pt:"Chile",            arPais:"تشيلي",       aziPais:"Chile",         arM:"تشيلي",       aziM:"chily",      arF:"تشيلية",      aziF:"chileya"},
+        {pt:"Estados Unidos",   arPais:"أَمريكا",      aziPais:"Amrika",        arM:"أَمريكي",      aziM:"amriky",     arF:"أَمريكية",     aziF:"amrikeya"},
+        {pt:"Canadá",           arPais:"كَنَدا",        aziPais:"Canada",        arM:"كَنَدي",        aziM:"canady",     arF:"كَنَدية",       aziF:"canadeya"},
+        {pt:"México",           arPais:"المَكسيك",   aziPais:"el-Maksik",     arM:"مَكسيكي",     aziM:"maksiky",    arF:"مَكسيكية",    aziF:"maksikeya"},
+      ]
+    },
+
+    "europa": {
+      label: "Europa",
+      icon: "🇪🇺",
+      items: [
+        {pt:"Portugal",         arPais:"البُرتُغال",    aziPais:"el-Borto8al",   arM:"بُرتُغالي",     aziM:"borto8aly",  arF:"بُرتُغالية",    aziF:"borto8aleya"},
+        {pt:"Itália",           arPais:"إيطاليا",     aziPais:"Italya",        arM:"إيطالي",      aziM:"italy",      arF:"إيطالية",     aziF:"italeya"},
+        {pt:"França",           arPais:"فَرَنسا",      aziPais:"Faransa",       arM:"فَرَنساوي",    aziM:"faransauy",  arF:"فَرَنساوية",   aziF:"faransaueya"},
+        {pt:"Espanha",          arPais:"إسبانيا",     aziPais:"Asbanya",       arM:"إسباني",      aziM:"asbany",     arF:"إسبانية",     aziF:"asbaneya"},
+        {pt:"Inglaterra",       arPais:"إنجِلتِرا",     aziPais:"Engeltera",     arM:"إنجِليزي",     aziM:"engelizy",   arF:"إنجِليزية",    aziF:"engelizeya"},
+        {pt:"Alemanha",         arPais:"أَلمانيا",      aziPais:"Almanya",       arM:"أَلماني",      aziM:"almany",     arF:"أَلمانية",     aziF:"almaneya"},
+        {pt:"Polônia",          arPais:"بولَندا",      aziPais:"Bolanda",       arM:"بولَندي",     aziM:"bolandy",    arF:"بولَندية",    aziF:"bolandeya"},
+        {pt:"Rússia",           arPais:"روسيا",      aziPais:"Rossya",        arM:"روسي",        aziM:"russy",      arF:"روسية",       aziF:"rosseya"},
+      ]
+    },
+
+    "asia": {
+      label: "Ásia",
+      icon: "🌏",
+      items: [
+        {pt:"Turquia",          arPais:"تُركيا",       aziPais:"Torkeya",       arM:"تُركي",        aziM:"torky",      arF:"تُركية",       aziF:"torkeya"},
+        {pt:"Irã",              arPais:"إيران",       aziPais:"Iran",          arM:"إيراني",      aziM:"irany",      arF:"إيرانية",     aziF:"iraneya"},
+        {pt:"Índia",            arPais:"الهِند",      aziPais:"el-Hend",       arM:"هِندي",        aziM:"hendy",      arF:"هِندية",       aziF:"hendeya"},
+        {pt:"China",            arPais:"الصين",      aziPais:"el-Sin",        arM:"صيني",        aziM:"siny",       arF:"صينية",       aziF:"sineya"},
+        {pt:"Japão",            arPais:"اليابان",    aziPais:"el-Yaban",      arM:"ياباني",      aziM:"yabany",     arF:"يابانية",     aziF:"yabaneya"},
+        {pt:"Coreia",           arPais:"كوريا",      aziPais:"Korya",         arM:"كوري",        aziM:"kory",       arF:"كورية",       aziF:"koreya"},
+      ]
+    },
+  };
+
+  // Profissões: nome em PT + forma masculina + forma feminina
+  const PROFESSIONS = {
+    "profissoes": {
+      label: "Profissões",
+      icon: "💼",
+      items: [
+        {pt:"Estudante",         arM:"طالِب",         aziM:"taleb",       arF:"طالِبة",         aziF:"taleba"},
+        {pt:"Professor(a)",      arM:"مُدَرِس",        aziM:"modares",     arF:"مُدَرِسة",        aziF:"modaressa"},
+        {pt:"Médico(a)",         arM:"دُكتور",         aziM:"doctor",      arF:"دُكتورة",        aziF:"doctora"},
+        {pt:"Enfermeiro(a)",     arM:"مُمَرِض",         aziM:"momared",     arF:"مُمَرِضة",        aziF:"momareda"},
+        {pt:"Engenheiro(a)",     arM:"مُهَندِس",        aziM:"mohandes",    arF:"مُهَندِسة",       aziF:"mohandessa"},
+        {pt:"Advogado(a)",       arM:"مُحامي",        aziM:"mo7amy",      arF:"مُحامية",        aziF:"mo7ameya"},
+        {pt:"Jornalista",        arM:"صَحَفي",         aziM:"sa7afy",      arF:"صَحَفية",         aziF:"sa7afeya"},
+        {pt:"Gerente",           arM:"مُدير",          aziM:"modir",       arF:"مُديرة",          aziF:"modira"},
+        {pt:"Escritor(a)",       arM:"كاتِب",          aziM:"kateb",       arF:"كاتِبة",          aziF:"kateba"},
+        {pt:"Pintor(a)",         arM:"رَسّام",         aziM:"rassam",      arF:"رَسّامة",         aziF:"rassama"},
+        {pt:"Cozinheiro(a)",     arM:"طَبّاخ",         aziM:"taba5",       arF:"طَبّاخة",         aziF:"taba5a"},
+        {pt:"Farmacêutico(a)",   arM:"صَيدَلي",        aziM:"saydaly",     arF:"صَيدَلانية",      aziF:"saydalaneya"},
+        {pt:"Contador(a)",       arM:"مُحاسِب",        aziM:"mo7asseb",    arF:"مُحاسبة",         aziF:"mo7asba"},
+        {pt:"Secretário(a)",     arM:"سِكِرتير",        aziM:"sekerter",    arF:"سِكِرتيرة",        aziF:"sekertera"},
+        {pt:"Garçom / Garçonete",arM:"جَرسون",        aziM:"garson",      arF:"جَرسونة",         aziF:"garsona"},
+        {pt:"Vendedor(a)",       arM:"بَيّاع",          aziM:"baya3",       arF:"بَيّاعة",          aziF:"baya3a"},
+        {pt:"Dona de casa",      arM:"—",              aziM:"—",            arF:"سِت بيت",        aziF:"set bet"},
+      ]
+    }
+  };
+
+  // ───────────────────────────────────────────────────────────────────
+  // RENDER
+  // ───────────────────────────────────────────────────────────────────
+
+  const tabsEl = document.getElementById('catTabs');
+  const listEl = document.getElementById('peopleList');
+  const countryCats = Object.keys(COUNTRIES);
+
+  // Build tabs: Todos · Países (4 sub-cats) · Profissões
+  let tabsHtml = `<button class="tab active" data-cat="todos">Todos</button>`;
+  countryCats.forEach(c => {
+    tabsHtml += `<button class="tab" data-cat="country:${c}">${COUNTRIES[c].icon} ${COUNTRIES[c].label}</button>`;
+  });
+  tabsHtml += `<button class="tab" data-cat="profissoes">${PROFESSIONS.profissoes.icon} ${PROFESSIONS.profissoes.label}</button>`;
+  tabsEl.innerHTML = tabsHtml;
+
+  function renderCountryCat(k) {
+    const cat = COUNTRIES[k];
+    const items = cat.items.map(it => `
+      <li data-search="${(it.pt + ' ' + it.arPais + ' ' + it.aziPais + ' ' + it.arM + ' ' + it.aziM + ' ' + it.arF + ' ' + it.aziF).toLowerCase()}">
+        <div class="col">
+          <span class="col-label">País</span>
+          <span class="pt">${it.pt}</span>
+          <span class="ar">${it.arPais}</span>
+          <span class="arabizi">${it.aziPais}</span>
+        </div>
+        <div class="col">
+          <span class="col-label">Eu sou… (m)</span>
+          <span class="ar">${it.arM}</span>
+          <span class="arabizi">${it.aziM}</span>
+        </div>
+        <div class="col">
+          <span class="col-label">Eu sou… (f)</span>
+          <span class="ar">${it.arF}</span>
+          <span class="arabizi">${it.aziF}</span>
+        </div>
+      </li>
+    `).join('');
+    return `
+      <section data-cat="country:${k}">
+        <h2><span class="num">${cat.icon}</span>${cat.label} <span style="color:#9ca3af; font-size:13px; font-weight:400; margin-left:6px;">${cat.items.length}</span></h2>
+        <ul class="people-list">
+          <li class="header-row">
+            <div class="col-title">País</div>
+            <div class="col-title">Masculino</div>
+            <div class="col-title">Feminino</div>
+          </li>
+          ${items}
+        </ul>
+      </section>
+    `;
+  }
+
+  function renderProfessions() {
+    const cat = PROFESSIONS.profissoes;
+    const items = cat.items.map(it => `
+      <li data-search="${(it.pt + ' ' + it.arM + ' ' + it.aziM + ' ' + it.arF + ' ' + it.aziF).toLowerCase()}">
+        <div class="col">
+          <span class="col-label">Profissão</span>
+          <span class="pt">${it.pt}</span>
+        </div>
+        <div class="col">
+          <span class="col-label">Masculino</span>
+          <span class="ar">${it.arM}</span>
+          <span class="arabizi">${it.aziM}</span>
+        </div>
+        <div class="col">
+          <span class="col-label">Feminino</span>
+          <span class="ar">${it.arF}</span>
+          <span class="arabizi">${it.aziF}</span>
+        </div>
+      </li>
+    `).join('');
+    return `
+      <section data-cat="profissoes">
+        <h2><span class="num">${cat.icon}</span>${cat.label} <span style="color:#9ca3af; font-size:13px; font-weight:400; margin-left:6px;">${cat.items.length}</span></h2>
+        <ul class="people-list">
+          <li class="header-row">
+            <div class="col-title">Profissão</div>
+            <div class="col-title">Masculino</div>
+            <div class="col-title">Feminino</div>
+          </li>
+          ${items}
+        </ul>
+      </section>
+    `;
+  }
+
+  function render(catKey) {
+    if (catKey === 'todos') {
+      listEl.innerHTML = countryCats.map(k => renderCountryCat(k)).join('') + renderProfessions();
+    } else if (catKey === 'profissoes') {
+      listEl.innerHTML = renderProfessions();
+    } else if (catKey.startsWith('country:')) {
+      listEl.innerHTML = renderCountryCat(catKey.replace('country:', ''));
+    }
+  }
+
+  render('todos');
+
+  // Tab switching
+  tabsEl.addEventListener('click', (e) => {
+    const t = e.target.closest('.tab');
+    if (!t) return;
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    render(t.dataset.cat);
+    document.getElementById('search').value = '';
+  });
+
+  // Search
+  document.getElementById('search').addEventListener('input', (e) => {
+    const q = e.target.value.trim().toLowerCase();
+    if (!q) {
+      const active = document.querySelector('.tab.active').dataset.cat;
+      render(active);
+      return;
+    }
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    document.querySelector('.tab[data-cat="todos"]').classList.add('active');
+    render('todos');
+    document.querySelectorAll('.people-list li:not(.header-row)').forEach(li => {
+      const txt = li.dataset.search || '';
+      li.style.display = txt.includes(q) ? '' : 'none';
+    });
+    document.querySelectorAll('section[data-cat]').forEach(sec => {
+      const visible = Array.from(sec.querySelectorAll('.people-list li:not(.header-row)')).some(li => li.style.display !== 'none');
+      sec.style.display = visible ? '' : 'none';
+    });
+  });
+</script>
+
+</body>
+</html>

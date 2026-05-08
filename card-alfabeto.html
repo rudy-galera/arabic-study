@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafaf7" media="(prefers-color-scheme: light)">
+<title>Alfabeto · Números · Dias · Meses</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="head-row">
+    <a href="index.html" class="head-back">← Início</a>
+    <h1 class="head-title">Alfabeto · Números · Dias</h1>
+    <span></span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="hero-tag">Cartão de referência</div>
+    <h1>Alfabeto, números, dias e meses</h1>
+    <div class="ar">الحُروف والأرقام والأيام والشُهور</div>
+    <div class="arabizi">El-7uruf wel-ar2am wel-ayam wel-shohor</div>
+    <div class="intro">
+      Toque em qualquer cartão para esconder o português e testar sua memória.
+      Toque novamente para revelar. Use a busca abaixo para filtrar.
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <input type="search" id="search" class="search-input" placeholder="Buscar… (alif, ba, dois, segunda, janeiro)">
+    <button class="tab" id="hideAllBtn" onclick="toggleHideAll()">Esconder PT</button>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-cat="alfabeto">Alfabeto</button>
+    <button class="tab" data-cat="numeros-1-20">Números 1–20</button>
+    <button class="tab" data-cat="numeros-dezenas">20–100</button>
+    <button class="tab" data-cat="dias">Dias</button>
+    <button class="tab" data-cat="meses">Meses</button>
+    <button class="tab" data-cat="todos">Todos</button>
+  </div>
+
+  <section id="alfabeto" class="cat">
+    <h2><span class="num">١</span>28 letras do alfabeto</h2>
+    <p style="color:#9ca3af; font-size:14px; margin: 0 0 14px;">No árabe egípcio, alguns sons da escrita clássica mudam: <strong>ث</strong> vira <em>s</em>, <strong>ج</strong> vira <em>g</em> de gato, <strong>ذ</strong> vira <em>z</em>, <strong>ق</strong> vira hamza (2).</p>
+    <div class="grid-cards" id="alfabetoGrid"></div>
+  </section>
+
+  <section id="numeros-1-20" class="cat" style="display:none;">
+    <h2><span class="num">٢</span>Números de 1 a 20</h2>
+    <div class="grid-cards" id="numeros120Grid"></div>
+  </section>
+
+  <section id="numeros-dezenas" class="cat" style="display:none;">
+    <h2><span class="num">٣</span>Dezenas e centena (20 → 100)</h2>
+    <div class="grid-cards" id="numerosDezGrid"></div>
+  </section>
+
+  <section id="dias" class="cat" style="display:none;">
+    <h2><span class="num">٤</span>Dias da semana</h2>
+    <p style="color:#9ca3af; font-size:14px; margin: 0 0 14px;">A semana árabe começa no <strong>sábado</strong>. <em>Youm</em> = dia.</p>
+    <div class="grid-cards" id="diasGrid"></div>
+  </section>
+
+  <section id="meses" class="cat" style="display:none;">
+    <h2><span class="num">٥</span>Meses do ano</h2>
+    <p style="color:#9ca3af; font-size:14px; margin: 0 0 14px;">No Egito, os nomes dos meses são adaptados do calendário ocidental.</p>
+    <div class="grid-cards" id="mesesGrid"></div>
+  </section>
+
+</div>
+
+<script>
+  // ───────────────────────────────────────────────────────────────────
+  // DATA
+  // ───────────────────────────────────────────────────────────────────
+
+  const ALFABETO = [
+    {ar:"ا", arabizi:"a / 2", pt:"alif", desc:"a longo / hamza"},
+    {ar:"ب", arabizi:"b", pt:"baa", desc:"b de bola"},
+    {ar:"ت", arabizi:"t", pt:"taa", desc:"t de tatu"},
+    {ar:"ث", arabizi:"s", pt:"saa", desc:"s no egípcio (th no clássico)"},
+    {ar:"ج", arabizi:"g", pt:"gim", desc:"g de gato (no Egito)"},
+    {ar:"ح", arabizi:"7", pt:"7aa", desc:"h gutural forte"},
+    {ar:"خ", arabizi:"5 / kh", pt:"5aa", desc:"j espanhol / rr forte"},
+    {ar:"د", arabizi:"d", pt:"dal", desc:"d de dado"},
+    {ar:"ذ", arabizi:"z", pt:"zal", desc:"z no egípcio (dh no clássico)"},
+    {ar:"ر", arabizi:"r", pt:"raa", desc:"r vibrante (rr de carro)"},
+    {ar:"ز", arabizi:"z", pt:"zay", desc:"z de zebra"},
+    {ar:"س", arabizi:"s", pt:"sin", desc:"s de sapo"},
+    {ar:"ش", arabizi:"sh", pt:"shin", desc:"x de xícara"},
+    {ar:"ص", arabizi:"S", pt:"sad", desc:"s enfático (mais grosso)"},
+    {ar:"ض", arabizi:"D", pt:"dad", desc:"d enfático"},
+    {ar:"ط", arabizi:"T", pt:"taa enfático", desc:"t enfático"},
+    {ar:"ظ", arabizi:"Z", pt:"zaa enfático", desc:"z enfático"},
+    {ar:"ع", arabizi:"3", pt:"3ayn", desc:"som gutural característico"},
+    {ar:"غ", arabizi:"8 / gh", pt:"8ayn", desc:"r francês / g espanhol"},
+    {ar:"ف", arabizi:"f", pt:"faa", desc:"f de faca"},
+    {ar:"ق", arabizi:"2 / q", pt:"qaf", desc:"hamza no egípcio"},
+    {ar:"ك", arabizi:"k", pt:"kaf", desc:"k de kilo"},
+    {ar:"ل", arabizi:"l", pt:"lam", desc:"l de lua"},
+    {ar:"م", arabizi:"m", pt:"mim", desc:"m de mão"},
+    {ar:"ن", arabizi:"n", pt:"nun", desc:"n de não"},
+    {ar:"ه", arabizi:"h", pt:"haa", desc:"h aspirado leve"},
+    {ar:"و", arabizi:"w / u", pt:"waw", desc:"w / u longo"},
+    {ar:"ي", arabizi:"y / i", pt:"yaa", desc:"y / i longo"},
+  ];
+
+  const NUMEROS_1_20 = [
+    {ar:"صِفر", arabizi:"sefr", pt:"zero", num:"٠ / 0"},
+    {ar:"واحِد", arabizi:"wa7ed", pt:"um", num:"١ / 1"},
+    {ar:"اِتنين", arabizi:"etnein", pt:"dois", num:"٢ / 2"},
+    {ar:"تَلاتة", arabizi:"talata", pt:"três", num:"٣ / 3"},
+    {ar:"أَربَعة", arabizi:"arba3a", pt:"quatro", num:"٤ / 4"},
+    {ar:"خَمسة", arabizi:"5amsa", pt:"cinco", num:"٥ / 5"},
+    {ar:"سِتّة", arabizi:"setta", pt:"seis", num:"٦ / 6"},
+    {ar:"سَبعة", arabizi:"sab3a", pt:"sete", num:"٧ / 7"},
+    {ar:"تَمانية", arabizi:"tamanya", pt:"oito", num:"٨ / 8"},
+    {ar:"تِسعة", arabizi:"tes3a", pt:"nove", num:"٩ / 9"},
+    {ar:"عَشَرة", arabizi:"3ashara", pt:"dez", num:"١٠ / 10"},
+    {ar:"حِداشَر", arabizi:"7edashar", pt:"onze", num:"١١ / 11"},
+    {ar:"اتناشَر", arabizi:"etnashar", pt:"doze", num:"١٢ / 12"},
+    {ar:"تَلَتاشَر", arabizi:"talattashar", pt:"treze", num:"١٣ / 13"},
+    {ar:"أربَعتاشَر", arabizi:"arba3tashar", pt:"quatorze", num:"١٤ / 14"},
+    {ar:"خَمَستاشَر", arabizi:"5amastashar", pt:"quinze", num:"١٥ / 15"},
+    {ar:"سِتاشَر", arabizi:"settashar", pt:"dezesseis", num:"١٦ / 16"},
+    {ar:"سَبَعتاشَر", arabizi:"saba3tashar", pt:"dezessete", num:"١٧ / 17"},
+    {ar:"تَمَنتاشَر", arabizi:"tamantashar", pt:"dezoito", num:"١٨ / 18"},
+    {ar:"تِسَعتاشَر", arabizi:"tesa3tashar", pt:"dezenove", num:"١٩ / 19"},
+    {ar:"عِشرين", arabizi:"3eshrin", pt:"vinte", num:"٢٠ / 20"},
+  ];
+
+  const NUMEROS_DEZ = [
+    {ar:"عِشرين", arabizi:"3eshrin", pt:"vinte", num:"٢٠ / 20"},
+    {ar:"تَلاتين", arabizi:"talatin", pt:"trinta", num:"٣٠ / 30"},
+    {ar:"أَربَعين", arabizi:"arba3in", pt:"quarenta", num:"٤٠ / 40"},
+    {ar:"خَمسين", arabizi:"5amsin", pt:"cinquenta", num:"٥٠ / 50"},
+    {ar:"سِتّين", arabizi:"settin", pt:"sessenta", num:"٦٠ / 60"},
+    {ar:"سَبعين", arabizi:"sab3in", pt:"setenta", num:"٧٠ / 70"},
+    {ar:"تَمانين", arabizi:"tamanin", pt:"oitenta", num:"٨٠ / 80"},
+    {ar:"تِسعين", arabizi:"tes3in", pt:"noventa", num:"٩٠ / 90"},
+    {ar:"مية", arabizi:"meya", pt:"cem", num:"١٠٠ / 100"},
+    {ar:"وَاحِد وعِشرين", arabizi:"wa7ed we 3eshrin", pt:"vinte e um", num:"٢١ / 21 (padrão: número + we + dezena)"},
+    {ar:"اِتنين وتَلاتين", arabizi:"etnein we talatin", pt:"trinta e dois", num:"٣٢ / 32"},
+    {ar:"خَمسة وأَربَعين", arabizi:"5amsa we arba3in", pt:"quarenta e cinco", num:"٤٥ / 45"},
+  ];
+
+  const DIAS = [
+    {ar:"يوم السَبت", arabizi:"youm el-sabt", pt:"sábado", desc:"primeiro dia da semana árabe"},
+    {ar:"يوم الحَد", arabizi:"youm el-7ad", pt:"domingo", desc:""},
+    {ar:"يوم الاتنين", arabizi:"youm el-etnein", pt:"segunda-feira", desc:""},
+    {ar:"يوم التَلات", arabizi:"youm el-talat", pt:"terça-feira", desc:""},
+    {ar:"يوم الأَربَع", arabizi:"youm el-arba3", pt:"quarta-feira", desc:"aula 16h Dubai"},
+    {ar:"يوم الخَميس", arabizi:"youm el-5amis", pt:"quinta-feira", desc:""},
+    {ar:"يوم الجُمعة", arabizi:"youm el-gom3a", pt:"sexta-feira", desc:"aula 14h Dubai"},
+    {ar:"النَهاردة", arabizi:"enaharda", pt:"hoje", desc:""},
+    {ar:"بُكرة", arabizi:"bokra", pt:"amanhã", desc:""},
+    {ar:"اِمبارِح", arabizi:"embare7", pt:"ontem", desc:""},
+    {ar:"الويك اند", arabizi:"el-week-end", pt:"o fim de semana", desc:""},
+    {ar:"كُل يوم", arabizi:"kol youm", pt:"todo dia", desc:""},
+  ];
+
+  const MESES = [
+    {ar:"يَنايِر", arabizi:"yanayer", pt:"Janeiro", num:"١"},
+    {ar:"فِبرايِر", arabizi:"febrayer", pt:"Fevereiro", num:"٢"},
+    {ar:"مارِس", arabizi:"mares", pt:"Março", num:"٣"},
+    {ar:"أبريل", arabizi:"abril", pt:"Abril", num:"٤"},
+    {ar:"مايو", arabizi:"mayo", pt:"Maio", num:"٥"},
+    {ar:"يونيو", arabizi:"yonyo", pt:"Junho", num:"٦"},
+    {ar:"يوليو", arabizi:"yolyo", pt:"Julho", num:"٧"},
+    {ar:"أغُسطُس", arabizi:"a8ostos", pt:"Agosto", num:"٨"},
+    {ar:"سِبتَمبَر", arabizi:"sebtamber", pt:"Setembro", num:"٩"},
+    {ar:"أُكتوبَر", arabizi:"oktobar", pt:"Outubro", num:"١٠"},
+    {ar:"نوفَمبَر", arabizi:"novamber", pt:"Novembro", num:"١١"},
+    {ar:"ديسَمبَر", arabizi:"desamber", pt:"Dezembro", num:"١٢"},
+  ];
+
+  // ───────────────────────────────────────────────────────────────────
+  // RENDER
+  // ───────────────────────────────────────────────────────────────────
+
+  function renderGrid(containerId, items) {
+    const grid = document.getElementById(containerId);
+    grid.innerHTML = items.map(it => `
+      <div class="flip-card" onclick="this.classList.toggle('hidden-pt')">
+        <div class="ar">${it.ar}</div>
+        <div class="arabizi">${it.arabizi}</div>
+        <div class="pt">${it.pt}</div>
+        ${it.desc ? `<div class="desc">${it.desc}</div>` : (it.num ? `<div class="desc">${it.num}</div>` : '')}
+      </div>
+    `).join('');
+  }
+
+  renderGrid('alfabetoGrid', ALFABETO);
+  renderGrid('numeros120Grid', NUMEROS_1_20);
+  renderGrid('numerosDezGrid', NUMEROS_DEZ);
+  renderGrid('diasGrid', DIAS);
+  renderGrid('mesesGrid', MESES);
+
+  // Tabs
+  const tabs = document.querySelectorAll('.tab[data-cat]');
+  const cats = document.querySelectorAll('.cat');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    const cat = t.dataset.cat;
+    cats.forEach(c => c.style.display = (cat === 'todos' || c.id === cat) ? '' : 'none');
+    document.getElementById('search').value = '';
+    document.querySelectorAll('.flip-card').forEach(c => c.style.display = '');
+  }));
+
+  // Search
+  document.getElementById('search').addEventListener('input', (e) => {
+    const q = e.target.value.trim().toLowerCase();
+    if (!q) {
+      document.querySelectorAll('.flip-card').forEach(c => c.style.display = '');
+      // restore current tab
+      return;
+    }
+    // searching shows everything that matches across all categories
+    cats.forEach(c => c.style.display = '');
+    tabs.forEach(x => x.classList.remove('active'));
+    document.querySelector('.tab[data-cat="todos"]').classList.add('active');
+
+    document.querySelectorAll('.flip-card').forEach(card => {
+      const txt = card.textContent.toLowerCase();
+      card.style.display = txt.includes(q) ? '' : 'none';
+    });
+  });
+
+  // Hide all PT toggle
+  let hidden = false;
+  function toggleHideAll() {
+    hidden = !hidden;
+    document.querySelectorAll('.flip-card').forEach(c => c.classList.toggle('hidden-pt', hidden));
+    document.getElementById('hideAllBtn').textContent = hidden ? 'Mostrar PT' : 'Esconder PT';
+  }
+</script>
+
+</body>
+</html>

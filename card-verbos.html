@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafaf7" media="(prefers-color-scheme: light)">
+<title>Tabela de verbos · الأَفعال</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="head-row">
+    <a href="index.html" class="head-back">← Início</a>
+    <h1 class="head-title">Verbos · الأَفعال</h1>
+    <span></span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="hero-tag">Cartão de referência</div>
+    <h1>Tabela de verbos</h1>
+    <div class="ar">الأَفعال</div>
+    <div class="arabizi">El-af3al</div>
+    <div class="intro">
+      Cada verbo abre numa tabela de <em>5 colunas</em>: Você (f), Você (m), Ela, Ele, Eu — exatamente como no caderno da professora.
+      Os verbos estão na ordem do livro: primeiro os de rotina diária (Aula-50), depois os novos da Apostila a partir da página 88.
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <input type="search" id="search" class="search-input" placeholder="Buscar verbo… (jogar, comer, la3ab, akal)">
+    <button class="tab" id="expandAllBtn" onclick="expandAll()">Abrir todos</button>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-grupo="todos">Todos</button>
+    <button class="tab" data-grupo="rotina">Rotina diária</button>
+    <button class="tab" data-grupo="livro-pg88">Livro pg 88+</button>
+    <button class="tab" data-grupo="auxiliares">Auxiliares</button>
+  </div>
+
+  <div id="verbList"></div>
+
+</div>
+
+<script>
+  // ───────────────────────────────────────────────────────────────────
+  // VERBOS — todos com conjugação no tempo presente (bi-imperfeito)
+  // Ordem: Você-f, Você-m, Ela, Ele, Eu (mesmo da Aula-50)
+  // ───────────────────────────────────────────────────────────────────
+
+  const VERBOS = [
+    // ═══ Auxiliares e expressões com verbo ═══
+    {grupo:"auxiliares", pt:"querer", ar:"عايِز", arabizi:"3aeiz",
+      table:[
+        {p:"Você (f)", ar:"انتي عايزة", arabizi:"Enty 3aeiza"},
+        {p:"Você (m)", ar:"انتَ عايِز", arabizi:"Enta 3aeiz"},
+        {p:"Ela", ar:"هِيَ عايزة", arabizi:"Heya 3aeiza"},
+        {p:"Ele", ar:"هُوَ عايِز", arabizi:"Howa 3aeiz"},
+        {p:"Eu", ar:"أنا عايِز / عايزة", arabizi:"Ana 3aeiz / 3aeiza"},
+      ],
+      nota:"Adjetivo verbal — concorda em gênero. Eu (m): 3aeiz; Eu (f): 3aeiza."},
+    {grupo:"auxiliares", pt:"precisar", ar:"مِحتاج", arabizi:"mei7tag",
+      table:[
+        {p:"Você (f)", ar:"انتي مِحتاجة", arabizi:"Enty mei7taga"},
+        {p:"Você (m)", ar:"انتَ مِحتاج", arabizi:"Enta mei7tag"},
+        {p:"Ela", ar:"هِيَ مِحتاجة", arabizi:"Heya mei7taga"},
+        {p:"Ele", ar:"هُوَ مِحتاج", arabizi:"Howa mei7tag"},
+        {p:"Eu", ar:"أنا مِحتاج / مِحتاجة", arabizi:"Ana mei7tag / mei7taga"},
+      ],
+      nota:"Também adjetivo verbal — concorda em gênero."},
+    {grupo:"auxiliares", pt:"ter que / dever", ar:"لازِم", arabizi:"lazem",
+      table:[
+        {p:"Você (f)", ar:"انتي لازِم", arabizi:"Enty lazem"},
+        {p:"Você (m)", ar:"انتَ لازِم", arabizi:"Enta lazem"},
+        {p:"Ela", ar:"هِيَ لازِم", arabizi:"Heya lazem"},
+        {p:"Ele", ar:"هُوَ لازِم", arabizi:"Howa lazem"},
+        {p:"Eu", ar:"أنا لازِم", arabizi:"Ana lazem"},
+      ],
+      nota:"Invariável — não muda com o gênero. Sempre lazem + verbo no infinitivo."},
+    {grupo:"auxiliares", pt:"gostar (de)", ar:"بِيحِب", arabizi:"bei7eb",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتحِبي", arabizi:"Enty bet7eby"},
+        {p:"Você (m)", ar:"انتَ بِتحِب", arabizi:"Enta bet7eb"},
+        {p:"Ela", ar:"هِيَ بِتحِب", arabizi:"Heya bet7eb"},
+        {p:"Ele", ar:"هُوَ بِيحِب", arabizi:"Howa bei7eb"},
+        {p:"Eu", ar:"أنا بَحِب", arabizi:"Ana ba7eb"},
+      ],
+      nota:"Geralmente seguido de outro verbo: bei7eb yel3ab = ele gosta de jogar."},
+
+    // ═══ Verbos de rotina diária (Aula-50) ═══
+    {grupo:"rotina", pt:"preparar", ar:"جَهِز", arabizi:"gahez",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتجَهِزي", arabizi:"Enty betgahezy"},
+        {p:"Você (m)", ar:"انتَ بِتجَهِز", arabizi:"Enta betgahez"},
+        {p:"Ela", ar:"هِيَ بِتجَهِز", arabizi:"Heya betgahez"},
+        {p:"Ele", ar:"هُوَ بيجَهِز", arabizi:"Howa beigahez"},
+        {p:"Eu", ar:"أنا بَجَهِز", arabizi:"Ana bagahez"},
+      ]},
+    {grupo:"rotina", pt:"começar", ar:"اِبدأ", arabizi:"ebda2",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتِبدأي", arabizi:"Enty betebda2y"},
+        {p:"Você (m)", ar:"انتَ بِتِبدأ", arabizi:"Enta betebda2"},
+        {p:"Ela", ar:"هِيَ بِتِبدأ", arabizi:"Heya betebda2"},
+        {p:"Ele", ar:"هُوَ بِيبدأ", arabizi:"Howa beibda2"},
+        {p:"Eu", ar:"أنا بَبدأ", arabizi:"Ana babda2"},
+      ]},
+    {grupo:"rotina", pt:"terminar / acabar", ar:"خَلَص", arabizi:"5alas",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتخَلَصي", arabizi:"Enty bet5alasy"},
+        {p:"Você (m)", ar:"انتَ بِتخَلَص", arabizi:"Enta bet5alas"},
+        {p:"Ela", ar:"هِيَ بِتخَلَص", arabizi:"Heya bet5alas"},
+        {p:"Ele", ar:"هُوَ بيخَلَص", arabizi:"Howa bei5alas"},
+        {p:"Eu", ar:"أنا بَخَلَص", arabizi:"Ana ba5alas"},
+      ]},
+    {grupo:"rotina", pt:"descansar", ar:"رَيَح", arabizi:"raya7",
+      table:[
+        {p:"Você (f)", ar:"انتي بِترَيَحي", arabizi:"Enty betraya7y"},
+        {p:"Você (m)", ar:"انتَ بِترَيَح", arabizi:"Enta betraya7"},
+        {p:"Ela", ar:"هِيَ بِترَيَح", arabizi:"Heya betraya7"},
+        {p:"Ele", ar:"هُوَ بيرَيَح", arabizi:"Howa beiraya7"},
+        {p:"Eu", ar:"أنا بَريَح", arabizi:"Ana baraya7"},
+      ]},
+    {grupo:"rotina", pt:"ficar / permanecer / sentar-se", ar:"قَعَد", arabizi:"a3ad",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتُقعُدي", arabizi:"Enty beto3ody"},
+        {p:"Você (m)", ar:"انتَ بِتُقعُد", arabizi:"Enta beto3od"},
+        {p:"Ela", ar:"هِيَ بِتُقعُد", arabizi:"Heya beto3od"},
+        {p:"Ele", ar:"هُوَ بيقُعد", arabizi:"Howa beio3od"},
+        {p:"Eu", ar:"أنا بَقعُد", arabizi:"Ana ba3od"},
+      ]},
+    {grupo:"rotina", pt:"voltar (de algum lugar)", ar:"رِجِع", arabizi:"rege3",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتِرجَعي", arabizi:"Enty beterga3y"},
+        {p:"Você (m)", ar:"انتَ بِتِرجَع", arabizi:"Enta beterga3"},
+        {p:"Ela", ar:"هِيَ بِتِرجَع", arabizi:"Heya beterga3"},
+        {p:"Ele", ar:"هُوَ بيرجَع", arabizi:"Howa beirga3"},
+        {p:"Eu", ar:"أنا بَرجَع", arabizi:"Ana barga3"},
+      ]},
+    {grupo:"rotina", pt:"voltar para casa", ar:"رَوَح", arabizi:"raua7",
+      table:[
+        {p:"Você (f)", ar:"انتي بِترَوَحي", arabizi:"Enty betraua7y"},
+        {p:"Você (m)", ar:"انتَ بِترَوَح", arabizi:"Enta betraua7"},
+        {p:"Ela", ar:"هِيَ بِترَوَح", arabizi:"Heya betraua7"},
+        {p:"Ele", ar:"هُوَ بيرَوَح", arabizi:"Howa beiraua7"},
+        {p:"Eu", ar:"أنا بَرَوَح", arabizi:"Ana baraua7"},
+      ]},
+    {grupo:"rotina", pt:"chegar", ar:"وِصِل", arabizi:"wesel",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتِوصَلي", arabizi:"Enty beteussaly"},
+        {p:"Você (m)", ar:"انتَ بِتوصَل", arabizi:"Enta beteussal"},
+        {p:"Ela", ar:"هِيَ بِتِوصَل", arabizi:"Heya beteussal"},
+        {p:"Ele", ar:"هُوَ بيوصَل", arabizi:"Howa beieussal"},
+        {p:"Eu", ar:"أنا بَوصَل", arabizi:"Ana baussal"},
+      ]},
+    {grupo:"rotina", pt:"viajar", ar:"سافِر", arabizi:"safer",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتسافري", arabizi:"Enty betsafery"},
+        {p:"Você (m)", ar:"انتَ بِتسافِر", arabizi:"Enta betsafer"},
+        {p:"Ela", ar:"هِيَ بِتسافِر", arabizi:"Heya betsafer"},
+        {p:"Ele", ar:"هُوَ بيسافِر", arabizi:"Howa beisafer"},
+        {p:"Eu", ar:"أنا بِسافِر", arabizi:"Ana basafer"},
+      ]},
+    {grupo:"rotina", pt:"comer", ar:"أَكَل", arabizi:"akal",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتاكلي", arabizi:"Enty betakly"},
+        {p:"Você (m)", ar:"انتَ بِتاكُل", arabizi:"Enta betakol"},
+        {p:"Ela", ar:"هِيَ بِتاكُل", arabizi:"Heya betakol"},
+        {p:"Ele", ar:"هُوَ بياكُل", arabizi:"Howa biakol"},
+        {p:"Eu", ar:"أنا باكُل", arabizi:"Ana bakol"},
+      ],
+      nota:"Verbo irregular — vem de raiz com hamza (أ)."},
+    {grupo:"rotina", pt:"tomar / pegar / tirar", ar:"خَد", arabizi:"5ad",
+      table:[
+        {p:"Você (f)", ar:"انتي بتاخدي", arabizi:"Enty beta5dy"},
+        {p:"Você (m)", ar:"انتَ بِتاخُد", arabizi:"Enta beta5od"},
+        {p:"Ela", ar:"هِيَ بِتاخُد", arabizi:"Heya beta5od"},
+        {p:"Ele", ar:"هُوَ بياخُد", arabizi:"Howa bia5od"},
+        {p:"Eu", ar:"أنا باخُد", arabizi:"Ana ba5od"},
+      ]},
+    {grupo:"rotina", pt:"acordar", ar:"صَحى", arabizi:"se7y",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتِصحي", arabizi:"Enty bets7y"},
+        {p:"Você (m)", ar:"انتَ بِتِصحى", arabizi:"Enta bets7a"},
+        {p:"Ela", ar:"هِيَ بِتِصحى", arabizi:"Heya bets7a"},
+        {p:"Ele", ar:"هُوَ بيصحى", arabizi:"Howa beis7a"},
+        {p:"Eu", ar:"أنا بَصحى", arabizi:"Ana bas7a"},
+      ]},
+    {grupo:"rotina", pt:"ir", ar:"راح", arabizi:"ra7",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتروحي", arabizi:"Enty betru7y"},
+        {p:"Você (m)", ar:"انتَ بِتروح", arabizi:"Enta betru7"},
+        {p:"Ela", ar:"هِيَ بِتروح", arabizi:"Heya betru7"},
+        {p:"Ele", ar:"هُوَ بيروح", arabizi:"Howa beiru7"},
+        {p:"Eu", ar:"أنا بَروح", arabizi:"Ana baru7"},
+      ]},
+    {grupo:"rotina", pt:"sair", ar:"خَرَج", arabizi:"5arag",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتُخرُجي", arabizi:"Enty beto5rogy"},
+        {p:"Você (m)", ar:"انتَ بِتُخرُج", arabizi:"Enta beto5rog"},
+        {p:"Ela", ar:"هِيَ بِتُخرُج", arabizi:"Heya beto5rog"},
+        {p:"Ele", ar:"هُوَ بيُخرُج", arabizi:"Howa beio5rog"},
+        {p:"Eu", ar:"أنا بَخرُج", arabizi:"Ana ba5rog"},
+      ]},
+    {grupo:"rotina", pt:"trabalhar", ar:"اِشتَغَل", arabizi:"eshta8al",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتِشتَغَلي", arabizi:"Enty beteshta8aly"},
+        {p:"Você (m)", ar:"انتَ بِتِشتَغَل", arabizi:"Enta beteshta8al"},
+        {p:"Ela", ar:"هِيَ بِتِشتَغَل", arabizi:"Heya beteshta8al"},
+        {p:"Ele", ar:"هُوَ بيشتَغَل", arabizi:"Howa beishta8al"},
+        {p:"Eu", ar:"أنا بَشتَغَل", arabizi:"Ana bashta8al"},
+      ]},
+    {grupo:"rotina", pt:"estudar", ar:"ذاكِر", arabizi:"zaker",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتذاكري", arabizi:"Enty betzakery"},
+        {p:"Você (m)", ar:"انتَ بِتذاكِر", arabizi:"Enta betzaker"},
+        {p:"Ela", ar:"هِيَ بِتذاكِر", arabizi:"Heya betzaker"},
+        {p:"Ele", ar:"هُوَ بيذاكِر", arabizi:"Howa beizaker"},
+        {p:"Eu", ar:"أنا بَذاكِر", arabizi:"Ana bazaker"},
+      ]},
+    {grupo:"rotina", pt:"comprar", ar:"اِشتَرى", arabizi:"eshtara",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتِشتِري", arabizi:"Enty beteshtery"},
+        {p:"Você (m)", ar:"انتَ بِتِشتِري", arabizi:"Enta beteshtery"},
+        {p:"Ela", ar:"هِيَ بِتِشتِري", arabizi:"Heya beteshtery"},
+        {p:"Ele", ar:"هُوَ بيشتِري", arabizi:"Howa beishtery"},
+        {p:"Eu", ar:"أنا بَشتِري", arabizi:"Ana bashtery"},
+      ]},
+    {grupo:"rotina", pt:"visitar", ar:"زار", arabizi:"zar",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتزوري", arabizi:"Enty betzury"},
+        {p:"Você (m)", ar:"انتَ بِتزور", arabizi:"Enta betzur"},
+        {p:"Ela", ar:"هِيَ بِتزور", arabizi:"Heya betzur"},
+        {p:"Ele", ar:"هُوَ بيزور", arabizi:"Howa beizur"},
+        {p:"Eu", ar:"أنا بَزور", arabizi:"Ana bazur"},
+      ]},
+    {grupo:"rotina", pt:"almoçar", ar:"اِتغَدى", arabizi:"et8ada",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتِتغَدي", arabizi:"Enty betet8ady"},
+        {p:"Você (m)", ar:"انتَ بِتِتغَدى", arabizi:"Enta betet8ada"},
+        {p:"Ela", ar:"هِيَ بِتِتغَدى", arabizi:"Heya betet8ada"},
+        {p:"Ele", ar:"هُوَ بِيِتغَدى", arabizi:"Howa beiet8ada"},
+        {p:"Eu", ar:"أنا بَتغَدى", arabizi:"Ana bat8ada"},
+      ]},
+    {grupo:"rotina", pt:"jantar", ar:"اِتعَشى", arabizi:"et3asha",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتِتعَشي", arabizi:"Enty betet3ashy"},
+        {p:"Você (m)", ar:"انتَ بِتِتعَشى", arabizi:"Enta betet3asha"},
+        {p:"Ela", ar:"هِيَ بِتِتعَشى", arabizi:"Heya betet3asha"},
+        {p:"Ele", ar:"هُوَ بِيِتعَشى", arabizi:"Howa beiet3asha"},
+        {p:"Eu", ar:"أنا بَتعَشى", arabizi:"Ana bat3asha"},
+      ]},
+    {grupo:"rotina", pt:"beber", ar:"شِرِب", arabizi:"shereb",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتِشرَبي", arabizi:"Enty beteshraby"},
+        {p:"Você (m)", ar:"انتَ بِتِشرَب", arabizi:"Enta beteshrab"},
+        {p:"Ela", ar:"هِيَ بِتِشرَب", arabizi:"Heya beteshrab"},
+        {p:"Ele", ar:"هُوَ بيشرَب", arabizi:"Howa beishrab"},
+        {p:"Eu", ar:"أنا بَشرَب", arabizi:"Ana bashrab"},
+      ]},
+    {grupo:"rotina", pt:"assistir / ver", ar:"اِتفَرَج (على)", arabizi:"etfarag (3ala)",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتتفَرجي", arabizi:"Enty betetfaragy"},
+        {p:"Você (m)", ar:"انتَ بِتتفَرَج", arabizi:"Enta betetfarag"},
+        {p:"Ela", ar:"هِيَ بِتتفَرَج", arabizi:"Heya betetfarag"},
+        {p:"Ele", ar:"هُوَ بيتفَرَج", arabizi:"Howa beitfarag"},
+        {p:"Eu", ar:"أنا بَتفَرَج", arabizi:"Ana batfarag"},
+      ],
+      nota:"Sempre seguido de 3ala: betetfarag 3ala el-tv = você assiste TV."},
+
+    // ═══ Verbos novos a partir da Apostila pg 88 ═══
+    {grupo:"livro-pg88", pt:"saber", ar:"عِرِف", arabizi:"3eref",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتِعرَفي", arabizi:"Enty bet3rafy"},
+        {p:"Você (m)", ar:"انتَ بِتِعرَف", arabizi:"Enta bet3raf"},
+        {p:"Ela", ar:"هِيَ بِتِعرَف", arabizi:"Heya bet3raf"},
+        {p:"Ele", ar:"هُوَ بيِعرَف", arabizi:"Howa bei3raf"},
+        {p:"Eu", ar:"أنا بَعرَف", arabizi:"Ana ba3raf"},
+      ],
+      nota:"Páginas 88-89 da Apostila."},
+    {grupo:"livro-pg88", pt:"nadar", ar:"عام", arabizi:"3am",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتِعومي", arabizi:"Enty bet3umy"},
+        {p:"Você (m)", ar:"انتَ بِتِعوم", arabizi:"Enta bet3um"},
+        {p:"Ela", ar:"هِيَ بِتِعوم", arabizi:"Heya bet3um"},
+        {p:"Ele", ar:"هُوَ بيِعوم", arabizi:"Howa bei3um"},
+        {p:"Eu", ar:"أنا بَعوم", arabizi:"Ana ba3um"},
+      ]},
+    {grupo:"livro-pg88", pt:"correr", ar:"جِري", arabizi:"gery",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتِجري", arabizi:"Enty betgry"},
+        {p:"Você (m)", ar:"انتَ بِتِجري", arabizi:"Enta betgry"},
+        {p:"Ela", ar:"هِيَ بِتِجري", arabizi:"Heya betgry"},
+        {p:"Ele", ar:"هُوَ بيجري", arabizi:"Howa beigry"},
+        {p:"Eu", ar:"أنا بَجري", arabizi:"Ana bagry"},
+      ]},
+    {grupo:"livro-pg88", pt:"jogar / brincar", ar:"لَعَب", arabizi:"la3ab",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتلعَبي", arabizi:"Enty betl3aby"},
+        {p:"Você (m)", ar:"انتَ بِتلعَب", arabizi:"Enta betl3ab"},
+        {p:"Ela", ar:"هِيَ بِتلعَب", arabizi:"Heya betl3ab"},
+        {p:"Ele", ar:"هُوَ بيلعَب", arabizi:"Howa beil3ab"},
+        {p:"Eu", ar:"أنا بَلعَب", arabizi:"Ana bal3ab"},
+      ],
+      nota:"Verbo atual da semana — começou na aula com a professora."},
+    {grupo:"livro-pg88", pt:"dançar", ar:"رَقَص", arabizi:"ra2as",
+      table:[
+        {p:"Você (f)", ar:"انتي بِترقُصي", arabizi:"Enty betr2osy"},
+        {p:"Você (m)", ar:"انتَ بِترقُص", arabizi:"Enta betr2os"},
+        {p:"Ela", ar:"هِيَ بِترقُص", arabizi:"Heya betr2os"},
+        {p:"Ele", ar:"هُوَ بيرقُص", arabizi:"Howa beir2os"},
+        {p:"Eu", ar:"أنا بَرقُص", arabizi:"Ana bar2os"},
+      ],
+      nota:"Página 90 da Apostila."},
+    {grupo:"livro-pg88", pt:"cantar", ar:"غَنّى", arabizi:"8anny",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتغَني", arabizi:"Enty bet8any"},
+        {p:"Você (m)", ar:"انتَ بِتغَني", arabizi:"Enta bet8any"},
+        {p:"Ela", ar:"هِيَ بِتغَني", arabizi:"Heya bet8any"},
+        {p:"Ele", ar:"هُوَ بيغَني", arabizi:"Howa bei8any"},
+        {p:"Eu", ar:"أنا بَغَني", arabizi:"Ana ba8any"},
+      ]},
+    {grupo:"livro-pg88", pt:"escutar / ouvir", ar:"سِمِع", arabizi:"sma3",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتِسمَعي", arabizi:"Enty betsma3y"},
+        {p:"Você (m)", ar:"انتَ بِتِسمَع", arabizi:"Enta betsma3"},
+        {p:"Ela", ar:"هِيَ بِتِسمَع", arabizi:"Heya betsma3"},
+        {p:"Ele", ar:"هُوَ بيسمَع", arabizi:"Howa beisma3"},
+        {p:"Eu", ar:"أنا بَسمَع", arabizi:"Ana basma3"},
+      ]},
+    {grupo:"livro-pg88", pt:"dirigir", ar:"ساق", arabizi:"sa2",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتسوقي", arabizi:"Enty betsu2y"},
+        {p:"Você (m)", ar:"انتَ بِتسوق", arabizi:"Enta betsu2"},
+        {p:"Ela", ar:"هِيَ بِتسوق", arabizi:"Heya betsu2"},
+        {p:"Ele", ar:"هُوَ بيسوق", arabizi:"Howa beisu2"},
+        {p:"Eu", ar:"أنا بَسوق", arabizi:"Ana basu2"},
+      ]},
+    {grupo:"livro-pg88", pt:"caminhar / andar", ar:"مِشي", arabizi:"meshy",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتِمشي", arabizi:"Enty betmshy"},
+        {p:"Você (m)", ar:"انتَ بِتِمشي", arabizi:"Enta betmshy"},
+        {p:"Ela", ar:"هِيَ بِتِمشي", arabizi:"Heya betmshy"},
+        {p:"Ele", ar:"هُوَ بيمشي", arabizi:"Howa beimshy"},
+        {p:"Eu", ar:"أنا بَمشي", arabizi:"Ana bamshy"},
+      ]},
+    {grupo:"livro-pg88", pt:"mandar / enviar", ar:"بَعَت", arabizi:"ba3at",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتِبعَتي", arabizi:"Enty beteb3aty"},
+        {p:"Você (m)", ar:"انتَ بِتِبعَت", arabizi:"Enta beteb3at"},
+        {p:"Ela", ar:"هِيَ بِتِبعَت", arabizi:"Heya beteb3at"},
+        {p:"Ele", ar:"هُوَ بيبعَت", arabizi:"Howa beib3at"},
+        {p:"Eu", ar:"أنا بَبعَت", arabizi:"Ana bab3at"},
+      ],
+      nota:"Página 92 da Apostila."},
+    {grupo:"livro-pg88", pt:"escrever", ar:"كَتَب", arabizi:"katab",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتِكتِبي", arabizi:"Enty betkteby"},
+        {p:"Você (m)", ar:"انتَ بِتِكتِب", arabizi:"Enta betkteb"},
+        {p:"Ela", ar:"هِيَ بِتِكتِب", arabizi:"Heya betkteb"},
+        {p:"Ele", ar:"هُوَ بيكتِب", arabizi:"Howa beikteb"},
+        {p:"Eu", ar:"أنا بَكتِب", arabizi:"Ana bakteb"},
+      ]},
+    {grupo:"livro-pg88", pt:"ler", ar:"قَرى", arabizi:"2ara",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتِقري", arabizi:"Enty bet2ry"},
+        {p:"Você (m)", ar:"انتَ بِتِقرا", arabizi:"Enta bet2ra"},
+        {p:"Ela", ar:"هِيَ بِتِقرا", arabizi:"Heya bet2ra"},
+        {p:"Ele", ar:"هُوَ بيقرا", arabizi:"Howa bei2ra"},
+        {p:"Eu", ar:"أنا بَقرا", arabizi:"Ana ba2ra"},
+      ]},
+    {grupo:"livro-pg88", pt:"aprender", ar:"اِتعَلِم", arabizi:"et3alem",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتِتعَلِمي", arabizi:"Enty betet3alemy"},
+        {p:"Você (m)", ar:"انتَ بِتِتعَلِم", arabizi:"Enta betet3alem"},
+        {p:"Ela", ar:"هِيَ بِتِتعَلِم", arabizi:"Heya betet3alem"},
+        {p:"Ele", ar:"هُوَ بيتعَلِم", arabizi:"Howa beit3alem"},
+        {p:"Eu", ar:"أنا بَتعَلِم", arabizi:"Ana bat3alem"},
+      ]},
+    {grupo:"livro-pg88", pt:"falar", ar:"اِتكَلِم", arabizi:"etkalem",
+      table:[
+        {p:"Você (f)", ar:"انتي بِتِتكَلِمي", arabizi:"Enty betetkalemy"},
+        {p:"Você (m)", ar:"انتَ بِتِتكَلِم", arabizi:"Enta betetkalem"},
+        {p:"Ela", ar:"هِيَ بِتِتكَلِم", arabizi:"Heya betetkalem"},
+        {p:"Ele", ar:"هُوَ بيتكَلِم", arabizi:"Howa beitkalem"},
+        {p:"Eu", ar:"أنا بَتكَلِم", arabizi:"Ana batkalem"},
+      ]},
+  ];
+
+  // ───────────────────────────────────────────────────────────────────
+  // RENDER
+  // ───────────────────────────────────────────────────────────────────
+
+  function renderVerbs(filter) {
+    const list = document.getElementById('verbList');
+    const items = (filter === 'todos' || !filter) ? VERBOS : VERBOS.filter(v => v.grupo === filter);
+    list.innerHTML = items.map((v, i) => `
+      <div class="verb-card" data-grupo="${v.grupo}" data-search="${(v.pt + ' ' + v.ar + ' ' + v.arabizi).toLowerCase()}">
+        <div class="verb-card-head" onclick="this.parentElement.classList.toggle('open')">
+          <span class="ar">${v.ar}</span>
+          <span class="pt">${v.pt}</span>
+          <span class="arabizi">${v.arabizi}</span>
+        </div>
+        <div class="verb-card-body">
+          <table class="verb-table" style="margin-top:14px;">
+            <thead>
+              <tr><th>Você (f)</th><th>Você (m)</th><th>Ela</th><th>Ele</th><th>Eu</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                ${v.table.map(r => `<td><span class="ar">${r.ar}</span><span class="arabizi">${r.arabizi}</span></td>`).join('')}
+              </tr>
+            </tbody>
+          </table>
+          ${v.nota ? `<p style="color:#9ca3af; font-size:13px; margin: 10px 0 0; font-style: italic;">${v.nota}</p>` : ''}
+        </div>
+      </div>
+    `).join('');
+  }
+
+  renderVerbs('todos');
+
+  // Tabs
+  const tabs = document.querySelectorAll('.tab[data-grupo]');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    renderVerbs(t.dataset.grupo);
+    document.getElementById('search').value = '';
+  }));
+
+  // Search
+  document.getElementById('search').addEventListener('input', (e) => {
+    const q = e.target.value.trim().toLowerCase();
+    if (!q) {
+      const active = document.querySelector('.tab.active').dataset.grupo;
+      renderVerbs(active);
+      return;
+    }
+    document.querySelectorAll('.verb-card').forEach(card => {
+      const txt = card.dataset.search;
+      card.style.display = txt.includes(q) ? '' : 'none';
+    });
+  });
+
+  // Expand all
+  let expanded = false;
+  function expandAll() {
+    expanded = !expanded;
+    document.querySelectorAll('.verb-card').forEach(c => c.classList.toggle('open', expanded));
+    document.getElementById('expandAllBtn').textContent = expanded ? 'Fechar todos' : 'Abrir todos';
+  }
+</script>
+
+</body>
+</html>

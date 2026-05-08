@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafaf7" media="(prefers-color-scheme: light)">
+<title>Vocabulário · المُفرَدات</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="head-row">
+    <a href="index.html" class="head-back">← Início</a>
+    <h1 class="head-title">Vocabulário</h1>
+    <span></span>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="hero-tag">Cartão de referência</div>
+    <h1>Vocabulário por categoria</h1>
+    <div class="ar">المُفرَدات</div>
+    <div class="arabizi">El-mufradat</div>
+    <div class="intro">
+      Todas as palavras importantes do livro e das aulas, agrupadas por tema.
+      Use a busca para achar uma palavra específica, ou navegue pelas abas.
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <input type="search" id="search" class="search-input" placeholder="Buscar palavra… (mãe, ma3a, almoço, ezay)">
+  </div>
+
+  <div class="tabs" id="catTabs"></div>
+
+  <div id="vocList"></div>
+
+</div>
+
+<script>
+  // ───────────────────────────────────────────────────────────────────
+  // VOCABULÁRIO — categorizado
+  // ───────────────────────────────────────────────────────────────────
+
+  const VOC = {
+    "saudacoes": {
+      label: "Saudações e cortesia",
+      icon: "👋",
+      items: [
+        {pt:"olá / oi", ar:"سَلام", arabizi:"salam"},
+        {pt:"bom dia", ar:"صَباح الخير", arabizi:"saba7 el-5er"},
+        {pt:"resposta a bom dia", ar:"صَباح النور", arabizi:"saba7 el-nur"},
+        {pt:"boa tarde / boa noite", ar:"مَساء الخير", arabizi:"masaa el-5er"},
+        {pt:"resposta a boa tarde", ar:"مَساء النور", arabizi:"masaa el-nur"},
+        {pt:"como vai? (m)", ar:"اِزَيَك؟", arabizi:"ezayak?"},
+        {pt:"como vai? (f)", ar:"اِزَيِك؟", arabizi:"ezayek?"},
+        {pt:"tudo bem", ar:"كُلُه تَمام", arabizi:"kolo tamam"},
+        {pt:"bem", ar:"كُوَيِس", arabizi:"kouayes"},
+        {pt:"bem (f)", ar:"كُوَيِسة", arabizi:"kouayesa"},
+        {pt:"obrigado", ar:"شُكرًا", arabizi:"shukran"},
+        {pt:"de nada", ar:"العَفو", arabizi:"el-3afw"},
+        {pt:"por favor", ar:"مِن فَضلَك", arabizi:"men fadlak"},
+        {pt:"desculpe / sem problema", ar:"مَعلِش", arabizi:"ma3lesh"},
+        {pt:"sim", ar:"أيوة / آه", arabizi:"aywa / ah"},
+        {pt:"não", ar:"لا / لأ", arabizi:"la / la2"},
+        {pt:"tchau", ar:"مَعَ السَلامة", arabizi:"ma3a el-salama"},
+        {pt:"boa viagem", ar:"رِحلة سَعيدة", arabizi:"re7la sa3ida"},
+        {pt:"aqui está", ar:"اِتفَضَل", arabizi:"etfadal"},
+      ]
+    },
+
+    "perguntas": {
+      label: "Palavras de pergunta",
+      icon: "❓",
+      items: [
+        {pt:"o que / qual", ar:"إيه", arabizi:"eh"},
+        {pt:"qual (entre opções)", ar:"أَنهي", arabizi:"anhy"},
+        {pt:"quem", ar:"مين", arabizi:"min"},
+        {pt:"onde / cadê", ar:"فين", arabizi:"fein"},
+        {pt:"de onde", ar:"مِنين", arabizi:"menein"},
+        {pt:"quando", ar:"اِمتى", arabizi:"emta"},
+        {pt:"a que horas", ar:"الساعة كام", arabizi:"el-sa3a kam"},
+        {pt:"por que", ar:"ليه", arabizi:"leh"},
+        {pt:"porque", ar:"عَشان", arabizi:"3ashan"},
+        {pt:"como", ar:"اِزاي", arabizi:"ezay"},
+        {pt:"quanto custa", ar:"بِكام", arabizi:"bekam"},
+        {pt:"quantas vezes", ar:"كام مَرّة", arabizi:"kam marra"},
+        {pt:"com qual frequência", ar:"كُل قَد ايه", arabizi:"kol 2ad eh"},
+        {pt:"quanto / quantos", ar:"كام", arabizi:"kam"},
+      ]
+    },
+
+    "preposicoes": {
+      label: "Preposições e conectores",
+      icon: "🔗",
+      items: [
+        {pt:"em / no / na", ar:"في", arabizi:"fe"},
+        {pt:"com (alguém)", ar:"مَعَ", arabizi:"ma3a"},
+        {pt:"comigo", ar:"مَعايا", arabizi:"ma3aya"},
+        {pt:"com você (m) / (f)", ar:"مَعاك / مَعاكي", arabizi:"ma3ak / ma3aky"},
+        {pt:"com ela / com ele", ar:"مَعاها / مَعاه", arabizi:"ma3aha / ma3ah"},
+        {pt:"com eles / conosco", ar:"مَعاهُم / مَعانا", arabizi:"ma3ahom / ma3ana"},
+        {pt:"em (na casa de) / com", ar:"عَند", arabizi:"3and"},
+        {pt:"de / desde", ar:"مِن", arabizi:"men"},
+        {pt:"para", ar:"لـ / إلى", arabizi:"le / ela"},
+        {pt:"perto de / ao lado de", ar:"جَنب", arabizi:"ganb"},
+        {pt:"depois de", ar:"بَعد", arabizi:"ba3d"},
+        {pt:"antes de", ar:"قَبل", arabizi:"2abl"},
+        {pt:"sobre / em cima de / a respeito de", ar:"عَلى", arabizi:"3ala"},
+        {pt:"por (preço)", ar:"بِـ", arabizi:"be"},
+        {pt:"e", ar:"و", arabizi:"we"},
+        {pt:"mas", ar:"بَس", arabizi:"bas"},
+        {pt:"ou (entre opções)", ar:"أو", arabizi:"au"},
+        {pt:"ou (em pergunta)", ar:"وَلّا", arabizi:"walla"},
+        {pt:"nem", ar:"وَلا", arabizi:"wala"},
+        {pt:"depois (em seguida)", ar:"بَعدين", arabizi:"ba3dein"},
+        {pt:"agora", ar:"دِلوَقتي", arabizi:"delua2ty"},
+        {pt:"aqui", ar:"هِنا", arabizi:"hena"},
+        {pt:"lá", ar:"هِناك", arabizi:"henak"},
+        {pt:"fora (de casa)", ar:"بَرّة", arabizi:"barra"},
+        {pt:"junto / com o outro", ar:"مَعَ بَعض", arabizi:"ma3a ba3d"},
+        {pt:"sozinho", ar:"لِوَحدُه", arabizi:"lewa7du"},
+        {pt:"também", ar:"كَمان", arabizi:"kaman"},
+      ]
+    },
+
+    "familia": {
+      label: "Família",
+      icon: "👨‍👩‍👧",
+      items: [
+        {pt:"família", ar:"عيلة", arabizi:"3ela"},
+        {pt:"minha família", ar:"عيلتي", arabizi:"3elty"},
+        {pt:"pai", ar:"أب / بابا", arabizi:"ab / baba"},
+        {pt:"mãe", ar:"أم / ماما", arabizi:"om / mama"},
+        {pt:"filho", ar:"اِبن / وَلَد", arabizi:"ebn / walad"},
+        {pt:"filha", ar:"بِنت", arabizi:"bent"},
+        {pt:"meus filhos / crianças", ar:"أولادي", arabizi:"aulady"},
+        {pt:"irmão", ar:"أَخ", arabizi:"a5"},
+        {pt:"irmã", ar:"أُخت", arabizi:"o5t"},
+        {pt:"avô", ar:"جِدو", arabizi:"gedo"},
+        {pt:"avó", ar:"تيتة", arabizi:"teta"},
+        {pt:"marido", ar:"جوز", arabizi:"goz"},
+        {pt:"meu marido", ar:"جوزي", arabizi:"guzy"},
+        {pt:"esposa", ar:"مَرة", arabizi:"mara"},
+        {pt:"minha esposa", ar:"مِراتي", arabizi:"meraty"},
+        {pt:"sua esposa (dele)", ar:"مِراتُه", arabizi:"merato"},
+        {pt:"sua esposa (de você-m)", ar:"مِراتَك", arabizi:"meratak"},
+        {pt:"tio (paterno) / tia", ar:"عَم / عَمة", arabizi:"3am / 3ama"},
+        {pt:"tio (materno) / tia", ar:"خال / خالة", arabizi:"5al / 5ala"},
+        {pt:"primo / prima", ar:"اِبن عَم / بِنت عَم", arabizi:"ebn 3am / bent 3am"},
+        {pt:"amigo / amiga", ar:"صاحِب / صاحبة", arabizi:"sa7eb / sa7ba"},
+        {pt:"meu amigo", ar:"صاحبي", arabizi:"sa7by"},
+        {pt:"meus amigos", ar:"أصحابي", arabizi:"as7aby"},
+        {pt:"colega de trabalho", ar:"زَميل", arabizi:"zamil"},
+        {pt:"meus colegas", ar:"زُمَلائي", arabizi:"zomalay"},
+      ]
+    },
+
+    "comida": {
+      label: "Comida e bebida",
+      icon: "🍽️",
+      items: [
+        {pt:"comida", ar:"أكل", arabizi:"akl"},
+        {pt:"comida saudável", ar:"أكل صِحي", arabizi:"akl se7y"},
+        {pt:"café da manhã", ar:"فِطار", arabizi:"fetar"},
+        {pt:"almoço", ar:"غَدا", arabizi:"8ada"},
+        {pt:"jantar", ar:"عَشا", arabizi:"3asha"},
+        {pt:"frango", ar:"فِراخ / دَجاج", arabizi:"fera5 / dagag"},
+        {pt:"carne", ar:"لَحمة", arabizi:"la7ma"},
+        {pt:"carne de porco", ar:"لَحمة خَنزير", arabizi:"la7met 5anzir"},
+        {pt:"peixe", ar:"سَمَك", arabizi:"samak"},
+        {pt:"arroz", ar:"رُز", arabizi:"roz"},
+        {pt:"salada", ar:"سَلَطة", arabizi:"salata"},
+        {pt:"pão", ar:"عيش", arabizi:"3eish"},
+        {pt:"queijo", ar:"جِبنة", arabizi:"gebna"},
+        {pt:"ovo / ovos", ar:"بيضة / بيض", arabizi:"beda / bed"},
+        {pt:"fruta", ar:"فاكهة", arabizi:"fak-ha"},
+        {pt:"verduras / legumes", ar:"خُضار", arabizi:"5odar"},
+        {pt:"água", ar:"مَيّة", arabizi:"mayya"},
+        {pt:"café", ar:"قَهوة", arabizi:"2ahwa"},
+        {pt:"chá", ar:"شاي", arabizi:"shay"},
+        {pt:"leite", ar:"لَبَن", arabizi:"laban"},
+        {pt:"suco", ar:"عَصير", arabizi:"3asir"},
+        {pt:"refrigerante", ar:"حاجة سَقعة", arabizi:"7aga sa23a"},
+        {pt:"açúcar", ar:"سُكَر", arabizi:"sokar"},
+        {pt:"sal", ar:"مِلح", arabizi:"mel7"},
+      ]
+    },
+
+    "lugares": {
+      label: "Lugares",
+      icon: "📍",
+      items: [
+        {pt:"casa", ar:"بيت", arabizi:"beit"},
+        {pt:"em casa", ar:"في البيت", arabizi:"fe el-beit"},
+        {pt:"apartamento", ar:"شَقة", arabizi:"sha2a"},
+        {pt:"escritório", ar:"مَكتَب", arabizi:"maktab"},
+        {pt:"empresa", ar:"شِركة", arabizi:"sherka"},
+        {pt:"trabalho", ar:"شُغل", arabizi:"sho8l"},
+        {pt:"escola", ar:"مَدرَسة", arabizi:"madrasa"},
+        {pt:"universidade", ar:"جامِعة", arabizi:"gam3a"},
+        {pt:"banco", ar:"بَنك", arabizi:"bank"},
+        {pt:"hospital", ar:"مُستَشفى", arabizi:"mostashfa"},
+        {pt:"farmácia", ar:"صَيدَلية", arabizi:"saidaleya"},
+        {pt:"restaurante", ar:"مَطعَم", arabizi:"mat3am"},
+        {pt:"café (lugar)", ar:"قَهوة", arabizi:"2ahwa"},
+        {pt:"loja", ar:"مَحَل", arabizi:"ma7al"},
+        {pt:"loja de roupas", ar:"مَحَل هِدوم", arabizi:"ma7al hedum"},
+        {pt:"shopping / mall", ar:"المول", arabizi:"el-mull"},
+        {pt:"supermercado", ar:"السوبَرماركِت", arabizi:"el-supermarket"},
+        {pt:"barbeiro", ar:"حَلاق", arabizi:"7ala2"},
+        {pt:"academia / clube", ar:"نادي", arabizi:"nady"},
+        {pt:"academia (gym)", ar:"جيم", arabizi:"gym"},
+        {pt:"praia / mar", ar:"بَحر", arabizi:"ba7r"},
+        {pt:"aeroporto", ar:"المَطار", arabizi:"el-matar"},
+        {pt:"rua", ar:"شارِع", arabizi:"share3"},
+        {pt:"cidade", ar:"مَدينة", arabizi:"madina"},
+        {pt:"país", ar:"بَلَد", arabizi:"balad"},
+        {pt:"varanda", ar:"بَلَكونة", arabizi:"balacona"},
+        {pt:"andar", ar:"دور", arabizi:"dor"},
+        {pt:"quarto", ar:"أوضة", arabizi:"oda"},
+      ]
+    },
+
+    "transporte": {
+      label: "Transporte",
+      icon: "🚗",
+      items: [
+        {pt:"carro", ar:"عَرَبية", arabizi:"3arabeya"},
+        {pt:"de carro", ar:"بالعَرَبية", arabizi:"bel-3arabeya"},
+        {pt:"metrô", ar:"المِترو", arabizi:"el-metro"},
+        {pt:"de metrô", ar:"بالمِترو", arabizi:"bel-metro"},
+        {pt:"ônibus", ar:"أوتوبيس", arabizi:"otobis"},
+        {pt:"táxi", ar:"تاكسي", arabizi:"taksy"},
+        {pt:"motocicleta", ar:"موتوسيكل", arabizi:"motosekl"},
+        {pt:"bicicleta", ar:"عَجَلة", arabizi:"3agala"},
+        {pt:"avião", ar:"طَيّارة", arabizi:"tayara"},
+        {pt:"trem", ar:"قَطر", arabizi:"2atr"},
+        {pt:"a pé", ar:"على رِجلي", arabizi:"3ala regly"},
+      ]
+    },
+
+    "tempo": {
+      label: "Tempo (horas, partes do dia)",
+      icon: "🕐",
+      items: [
+        {pt:"hora / relógio", ar:"ساعة", arabizi:"sa3a"},
+        {pt:"a que horas", ar:"الساعة كام", arabizi:"el-sa3a kam"},
+        {pt:"às 8 horas", ar:"الساعة تَمانية", arabizi:"el-sa3a tamanya"},
+        {pt:"manhã", ar:"الصُبح", arabizi:"el-sob7"},
+        {pt:"de manhã / cedo", ar:"بَدري", arabizi:"badry"},
+        {pt:"meio-dia", ar:"الضُهر", arabizi:"el-dohr"},
+        {pt:"à tarde", ar:"العَصر / بَعد الضُهر", arabizi:"el-3asr / ba3d el-dohr"},
+        {pt:"à noite", ar:"بِليل", arabizi:"beilel"},
+        {pt:"hoje", ar:"النَهاردة", arabizi:"enaharda"},
+        {pt:"amanhã", ar:"بُكرة", arabizi:"bokra"},
+        {pt:"ontem", ar:"اِمبارِح", arabizi:"embare7"},
+        {pt:"depois de amanhã", ar:"بَعد بُكرة", arabizi:"ba3d bokra"},
+        {pt:"semana", ar:"أُسبوع", arabizi:"osbu3"},
+        {pt:"esta semana", ar:"الأُسبوع ده", arabizi:"el-osbu3 da"},
+        {pt:"mês", ar:"شَهر", arabizi:"shahr"},
+        {pt:"ano", ar:"سَنة", arabizi:"sana"},
+        {pt:"feriado", ar:"أجازة", arabizi:"agaza"},
+        {pt:"sempre", ar:"دائِمًا", arabizi:"daiman"},
+        {pt:"às vezes", ar:"ساعات", arabizi:"sa3at"},
+        {pt:"outras vezes", ar:"وساعات", arabizi:"we sa3at"},
+        {pt:"nunca", ar:"أبَدًا", arabizi:"abadan"},
+        {pt:"agora", ar:"دِلوَقتي", arabizi:"delua2ty"},
+        {pt:"mais ou menos", ar:"حَوالي", arabizi:"7awaly"},
+        {pt:"antes das 10h", ar:"قَبل الساعة عَشَرة", arabizi:"2abl el-sa3a 3ashara"},
+      ]
+    },
+
+    "sentimentos": {
+      label: "Sentimentos e estados",
+      icon: "😊",
+      items: [
+        {pt:"cansado (m)", ar:"تَعبان", arabizi:"ta3ban"},
+        {pt:"cansada (f)", ar:"تَعبانة", arabizi:"ta3bana"},
+        {pt:"feliz (m / f)", ar:"مَبسوط / مَبسوطة", arabizi:"mabsut / mabsuta"},
+        {pt:"triste", ar:"حَزين", arabizi:"7azin"},
+        {pt:"chateado / entediado", ar:"زَهقان", arabizi:"zah2an"},
+        {pt:"com fome (m / f)", ar:"جَعان / جَعانة", arabizi:"ga3an / ga3ana"},
+        {pt:"com sede (m / f)", ar:"عَطشان / عَطشانة", arabizi:"3atshan / 3atshana"},
+        {pt:"ocupado (m / f)", ar:"مَشغول / مَشغولة", arabizi:"mash8ul / mash8ula"},
+        {pt:"livre", ar:"فاضي", arabizi:"fady"},
+        {pt:"tempo livre", ar:"وَقت فاضي", arabizi:"wa2t fady"},
+        {pt:"doente", ar:"عَيان", arabizi:"3ayan"},
+        {pt:"com dor de cabeça", ar:"عَندي صُداع", arabizi:"3andy soda3"},
+        {pt:"atrasado", ar:"مِتأخَر", arabizi:"met2a5ar"},
+        {pt:"adiantado / cedo", ar:"بَدري", arabizi:"badry"},
+        {pt:"frio", ar:"بَردان", arabizi:"bardan"},
+        {pt:"quente / com calor", ar:"حَرّان", arabizi:"7arran"},
+        {pt:"nervoso / bravo", ar:"عَصبي", arabizi:"3asaby"},
+        {pt:"com pressa", ar:"مِستَعجِل", arabizi:"mest3agel"},
+      ]
+    },
+
+    "adjetivos": {
+      label: "Adjetivos comuns",
+      icon: "📏",
+      items: [
+        {pt:"grande", ar:"كِبير", arabizi:"kebir"},
+        {pt:"pequeno", ar:"صُغَيَر", arabizi:"so8ayar"},
+        {pt:"novo / nova", ar:"جِديد / جِديدة", arabizi:"gedid / gedida"},
+        {pt:"velho / antigo", ar:"قَديم", arabizi:"2adim"},
+        {pt:"caro", ar:"غالي", arabizi:"8aly"},
+        {pt:"barato", ar:"رِخيص", arabizi:"re5is"},
+        {pt:"bonito", ar:"جَميل / حِلو", arabizi:"gamil / 7elw"},
+        {pt:"feio", ar:"وِحِش", arabizi:"we7esh"},
+        {pt:"bom", ar:"كُوَيِس", arabizi:"kouayes"},
+        {pt:"ruim / mau", ar:"وِحِش", arabizi:"we7esh"},
+        {pt:"limpo", ar:"نِضيف", arabizi:"nedif"},
+        {pt:"sujo", ar:"وِسِخ", arabizi:"wesi5"},
+        {pt:"longe", ar:"بِعيد", arabizi:"be3id"},
+        {pt:"perto", ar:"قُرَيَب", arabizi:"2orayeb"},
+        {pt:"cheio", ar:"مَليان", arabizi:"malyan"},
+        {pt:"vazio", ar:"فاضي", arabizi:"fady"},
+        {pt:"fácil", ar:"سَهل", arabizi:"sahl"},
+        {pt:"difícil", ar:"صَعب", arabizi:"sa3b"},
+        {pt:"importante", ar:"مُهِم", arabizi:"mohem"},
+      ]
+    },
+
+    "intensidade": {
+      label: "Advérbios de intensidade",
+      icon: "📈",
+      items: [
+        {pt:"muito (após adjetivo/verbo)", ar:"أوي", arabizi:"awi"},
+        {pt:"muito / bastante", ar:"كِتير", arabizi:"ketir"},
+        {pt:"um pouco", ar:"شُوَيّة", arabizi:"shouaya"},
+        {pt:"pouco / poucos (poucas coisas)", ar:"شُوَيّة حاجات", arabizi:"shouayet 7agat"},
+        {pt:"demais / mais", ar:"أكتَر", arabizi:"aktar"},
+        {pt:"menos", ar:"أَقَل", arabizi:"a2al"},
+        {pt:"bem (adv.)", ar:"كُوَيِس", arabizi:"kouayes"},
+        {pt:"muito bem", ar:"كُوَيِس أوي", arabizi:"kouayes awi"},
+        {pt:"rápido", ar:"بِسُرعة", arabizi:"beisor3a"},
+        {pt:"devagar", ar:"بِبَطَه", arabizi:"bebata"},
+        {pt:"só / apenas", ar:"بَس", arabizi:"bas"},
+        {pt:"talvez", ar:"يِمكِن", arabizi:"yemken"},
+        {pt:"de verdade / realmente", ar:"بِجَد", arabizi:"begad"},
+      ]
+    },
+
+    "pronomes": {
+      label: "Pronomes pessoais e possessivos",
+      icon: "👥",
+      items: [
+        {pt:"eu", ar:"أنا", arabizi:"ana"},
+        {pt:"você (m)", ar:"اِنتَ", arabizi:"enta"},
+        {pt:"você (f)", ar:"اِنتي", arabizi:"enty"},
+        {pt:"ele", ar:"هُوَ", arabizi:"howa"},
+        {pt:"ela", ar:"هِيَ", arabizi:"heya"},
+        {pt:"nós", ar:"اِحنا", arabizi:"e7na"},
+        {pt:"vocês", ar:"اِنتو", arabizi:"entu"},
+        {pt:"eles / elas", ar:"هُمَ", arabizi:"homa"},
+        {pt:"meu / minha (sufixo)", ar:"ـي", arabizi:"-y / -ya"},
+        {pt:"seu / sua (m, sufixo)", ar:"ـَك", arabizi:"-ak"},
+        {pt:"seu / sua (f, sufixo)", ar:"ـِك", arabizi:"-ek"},
+        {pt:"dele (sufixo)", ar:"ـُه", arabizi:"-o / -u"},
+        {pt:"dela (sufixo)", ar:"ـها", arabizi:"-ha"},
+        {pt:"nosso (sufixo)", ar:"ـنا", arabizi:"-na"},
+        {pt:"deles (sufixo)", ar:"ـهُم", arabizi:"-hom"},
+        {pt:"este / esta (m)", ar:"ده", arabizi:"da"},
+        {pt:"esta (f)", ar:"دي", arabizi:"di"},
+        {pt:"esses / essas", ar:"دول", arabizi:"dol"},
+      ]
+    },
+
+    "compras": {
+      label: "Compras e dinheiro",
+      icon: "💰",
+      items: [
+        {pt:"quanto custa", ar:"بِكام", arabizi:"bekam"},
+        {pt:"a conta", ar:"الحِساب", arabizi:"el-7essab"},
+        {pt:"caro", ar:"غالي", arabizi:"8aly"},
+        {pt:"barato", ar:"رِخيص", arabizi:"re5is"},
+        {pt:"libra egípcia", ar:"جِنيه", arabizi:"gneh"},
+        {pt:"troco", ar:"باقي", arabizi:"ba2y"},
+        {pt:"vou pegar / vou levar", ar:"هاخُد", arabizi:"ha5od"},
+        {pt:"online", ar:"أونلاين", arabizi:"online"},
+        {pt:"camisa", ar:"قَميص", arabizi:"2amis"},
+        {pt:"blusa / camiseta", ar:"بلوزة / تيشرت", arabizi:"blousa / tshirt"},
+        {pt:"calça", ar:"بَنطَلون", arabizi:"bantalon"},
+        {pt:"calça jeans", ar:"بَنطَلون جينز", arabizi:"bantalon jeans"},
+        {pt:"sapato", ar:"جَزمة", arabizi:"gazma"},
+        {pt:"bolsa", ar:"شَنطة", arabizi:"shanta"},
+        {pt:"carteira", ar:"مَحفَظة", arabizi:"ma7faza"},
+        {pt:"lenço (de cabeça)", ar:"طَرحة", arabizi:"tar7a"},
+        {pt:"roupa", ar:"هِدوم", arabizi:"hedum"},
+        {pt:"minha roupa", ar:"هِدومي", arabizi:"hedumy"},
+      ]
+    },
+
+    "outros": {
+      label: "Outros",
+      icon: "✨",
+      items: [
+        {pt:"coisa", ar:"حاجة", arabizi:"7aga"},
+        {pt:"coisas", ar:"حاجات", arabizi:"7agat"},
+        {pt:"alguma coisa", ar:"حاجة", arabizi:"7aga"},
+        {pt:"algumas coisas", ar:"شُوَيّة حاجات", arabizi:"shouayet 7agat"},
+        {pt:"qualquer coisa", ar:"أي حاجة", arabizi:"ay 7aga"},
+        {pt:"alguém / ninguém", ar:"حُد", arabizi:"7ad"},
+        {pt:"todos / cada", ar:"كُل", arabizi:"kol"},
+        {pt:"vez", ar:"مَرّة", arabizi:"marra"},
+        {pt:"outra vez", ar:"مَرّة تانية", arabizi:"marra tanya"},
+        {pt:"prova", ar:"اِمتِحان", arabizi:"emte7an"},
+        {pt:"aula", ar:"حِصة", arabizi:"7essa"},
+        {pt:"livro", ar:"كِتاب", arabizi:"ketab"},
+        {pt:"foto / fotos", ar:"صورة / صُوَر", arabizi:"sura / suar"},
+        {pt:"festa", ar:"حَفلة", arabizi:"7afla"},
+        {pt:"viagem", ar:"سَفَر", arabizi:"safar"},
+        {pt:"música / canção", ar:"أُغنية", arabizi:"o8neya"},
+        {pt:"músicas / canções", ar:"أَغاني", arabizi:"a8any"},
+        {pt:"filme", ar:"فيلم", arabizi:"film"},
+        {pt:"meu filme favorito", ar:"فيلمي المُفَضَل", arabizi:"filmy el-mufadal"},
+        {pt:"dica / pista", ar:"عَروسة", arabizi:"3arusa"},
+        {pt:"esporte", ar:"رياضة", arabizi:"reyada"},
+        {pt:"futebol", ar:"كُرة قَدَم", arabizi:"koret kadam"},
+        {pt:"basquete", ar:"باسكِت", arabizi:"basket"},
+        {pt:"tênis (esporte)", ar:"تنس", arabizi:"tenis"},
+        {pt:"piano", ar:"بيانو", arabizi:"piano"},
+        {pt:"violão / guitarra", ar:"جيتار", arabizi:"guitar"},
+        {pt:"violino", ar:"كَمَنجة", arabizi:"kamanga"},
+        {pt:"computador", ar:"كُمبيوتَر", arabizi:"computer"},
+        {pt:"celular", ar:"موبايل", arabizi:"mobile"},
+        {pt:"laptop / notebook", ar:"لابتوب", arabizi:"laptop"},
+        {pt:"tablet", ar:"تابلت", arabizi:"tablet"},
+        {pt:"remédio", ar:"دوا", arabizi:"daua"},
+        {pt:"idiomas", ar:"لُغات", arabizi:"lo8at"},
+        {pt:"árabe", ar:"عَرَبي", arabizi:"3arabi"},
+        {pt:"inglês", ar:"اِنجليزي", arabizi:"engelizy"},
+        {pt:"português", ar:"بُرتُغالي", arabizi:"borto8aly"},
+      ]
+    },
+  };
+
+  // ───────────────────────────────────────────────────────────────────
+  // RENDER
+  // ───────────────────────────────────────────────────────────────────
+
+  const tabsEl = document.getElementById('catTabs');
+  const listEl = document.getElementById('vocList');
+  const cats = Object.keys(VOC);
+
+  // Build tabs
+  let tabsHtml = `<button class="tab active" data-cat="todos">Todas</button>`;
+  cats.forEach(c => {
+    tabsHtml += `<button class="tab" data-cat="${c}">${VOC[c].icon} ${VOC[c].label}</button>`;
+  });
+  tabsEl.innerHTML = tabsHtml;
+
+  function renderCat(catKey) {
+    if (catKey === 'todos') {
+      listEl.innerHTML = cats.map(k => renderSingleCat(k)).join('');
+    } else {
+      listEl.innerHTML = renderSingleCat(catKey);
+    }
+  }
+
+  function renderSingleCat(k) {
+    const cat = VOC[k];
+    const items = cat.items.map(it => `
+      <li data-search="${(it.pt + ' ' + it.ar + ' ' + it.arabizi).toLowerCase()}">
+        <span class="pt">${it.pt}</span>
+        <span class="ar">${it.ar}</span>
+        <span class="arabizi">${it.arabizi}</span>
+      </li>
+    `).join('');
+    return `
+      <section data-cat="${k}">
+        <h2><span class="num">${cat.icon}</span>${cat.label} <span style="color:#9ca3af; font-size:13px; font-weight:400; margin-left:6px;">${cat.items.length}</span></h2>
+        <ul class="word-list">${items}</ul>
+      </section>
+    `;
+  }
+
+  renderCat('todos');
+
+  // Tab switching
+  tabsEl.addEventListener('click', (e) => {
+    const t = e.target.closest('.tab');
+    if (!t) return;
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    renderCat(t.dataset.cat);
+    document.getElementById('search').value = '';
+  });
+
+  // Search
+  document.getElementById('search').addEventListener('input', (e) => {
+    const q = e.target.value.trim().toLowerCase();
+    if (!q) {
+      const active = document.querySelector('.tab.active').dataset.cat;
+      renderCat(active);
+      return;
+    }
+    // Show all categories, filter items
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    document.querySelector('.tab[data-cat="todos"]').classList.add('active');
+    renderCat('todos');
+    document.querySelectorAll('.word-list li').forEach(li => {
+      const txt = li.dataset.search;
+      li.style.display = txt.includes(q) ? '' : 'none';
+    });
+    // Hide empty sections
+    document.querySelectorAll('section[data-cat]').forEach(sec => {
+      const visible = Array.from(sec.querySelectorAll('.word-list li')).some(li => li.style.display !== 'none');
+      sec.style.display = visible ? '' : 'none';
+    });
+  });
+</script>
+
+</body>
+</html>

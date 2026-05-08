@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafaf7" media="(prefers-color-scheme: light)">
+<title>عَرَبي · Estudo de Árabe</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="head-row">
+    <h1 class="head-title">عَرَبي مَصري · Árabe Egípcio</h1>
+    <div class="streak" id="streak">·</div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="hero-tag" id="todayTag">Hoje</div>
+    <h1 id="todayPt">—</h1>
+    <div class="ar" id="todayAr">—</div>
+    <div class="arabizi" id="todayArabizi">—</div>
+    <div class="intro">
+      Sua rotina diária de árabe egípcio. <em>10 a 20 minutos por dia</em>, 5 a 7 vezes por semana.
+      Aulas com a professora <strong>quarta às 16h</strong> e <strong>sexta às 14h</strong> (Dubai).
+    </div>
+  </div>
+
+  <a class="hub-card primary" id="todayCard" href="#">
+    <span class="icon">📖</span>
+    <h3>Abrir aula de hoje</h3>
+    <div class="ar">حِصة النَهاردة</div>
+    <div class="desc" id="todayDesc">Carregando…</div>
+  </a>
+
+  <h2 style="margin: 28px 0 4px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; color: #9ca3af; font-weight: 600;">Cartões de referência</h2>
+
+  <div class="hub-grid">
+
+    <a class="hub-card" href="card-alfabeto.html">
+      <span class="icon">ا ب ت</span>
+      <h3>Alfabeto, números, dias, meses</h3>
+      <div class="ar">الحُروف والأرقام والأيام</div>
+      <div class="desc">28 letras &middot; números 0–100 &middot; dias da semana &middot; meses do ano</div>
+    </a>
+
+    <a class="hub-card" href="card-verbos.html">
+      <span class="icon">⚡</span>
+      <h3>Tabela de verbos</h3>
+      <div class="ar">الأَفعال</div>
+      <div class="desc">Todos os verbos do livro com conjugação 5-pessoa (Você-f, Você-m, Ela, Ele, Eu)</div>
+    </a>
+
+    <a class="hub-card" href="card-vocabulario.html">
+      <span class="icon">📚</span>
+      <h3>Vocabulário por categoria</h3>
+      <div class="ar">المُفرَدات</div>
+      <div class="desc">Saudações &middot; família &middot; comida &middot; lugares &middot; sentimentos &middot; preposições &middot; perguntas</div>
+    </a>
+
+    <a class="hub-card" href="card-pessoas.html">
+      <span class="icon">🌍</span>
+      <h3>Países e profissões</h3>
+      <div class="ar">بُلدان ومِهَن</div>
+      <div class="desc">Nacionalidades (m/f) por região &middot; profissões com forma masculina e feminina</div>
+    </a>
+
+  </div>
+
+  <h2 style="margin: 28px 0 8px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; color: #9ca3af; font-weight: 600;">Esta semana</h2>
+
+  <div class="hub-grid" id="weekGrid"></div>
+
+</div>
+
+<script>
+  // ───────────────────────────────────────────────────────────────────
+  // Today's date logic
+  // ───────────────────────────────────────────────────────────────────
+  const PT_WEEKDAYS = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
+  const AR_WEEKDAYS = ["يوم الحَد", "يوم الاتنين", "يوم التَلات", "يوم الأَربَع", "يوم الخَميس", "يوم الجُمعة", "يوم السَبت"];
+  const ARABIZI_WEEKDAYS = ["youm el-7ad", "youm el-etnein", "youm el-talat", "youm el-arba3", "youm el-5amis", "youm el-gom3a", "youm el-sabt"];
+  const PT_MONTHS = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
+
+  function pad(n) { return String(n).padStart(2,'0'); }
+  function isoDate(d) { return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`; }
+
+  const today = new Date();
+  const todayIso = isoDate(today);
+  const dow = today.getDay();
+  document.getElementById('todayTag').textContent = `${PT_WEEKDAYS[dow]} · ${pad(today.getDate())}/${pad(today.getMonth()+1)}/${today.getFullYear()}`;
+  document.getElementById('todayPt').textContent = `${PT_MONTHS[today.getMonth()]} ${today.getDate()}`;
+  document.getElementById('todayAr').textContent = AR_WEEKDAYS[dow];
+  document.getElementById('todayArabizi').textContent = ARABIZI_WEEKDAYS[dow];
+
+  // Today's lesson card
+  const isClassDay = (dow === 3 || dow === 5);  // Wed or Fri
+  const todayCard = document.getElementById('todayCard');
+  todayCard.href = `${todayIso}.html`;
+  document.getElementById('todayDesc').textContent = isClassDay
+    ? "Dia de aula — revisão de ~10 minutos antes da professora"
+    : "Lição completa de ~15 minutos: verbo, leitura, escrita, tradução, preposições";
+
+  // ───────────────────────────────────────────────────────────────────
+  // Week grid (current week — Mon to Sun) with done indicators
+  // ───────────────────────────────────────────────────────────────────
+  function startOfWeek(d) {
+    const x = new Date(d);
+    const day = x.getDay();
+    const diff = day === 0 ? -6 : 1 - day;  // Monday = start
+    x.setDate(x.getDate() + diff);
+    return x;
+  }
+
+  const weekStart = startOfWeek(today);
+  const grid = document.getElementById('weekGrid');
+  const labels = ["Seg","Ter","Qua","Qui","Sex","Sáb","Dom"];
+
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(weekStart);
+    d.setDate(weekStart.getDate() + i);
+    const iso = isoDate(d);
+    const isToday = iso === todayIso;
+    const isPast = d < today && !isToday;
+    const isClass = d.getDay() === 3 || d.getDay() === 5;
+    const done = localStorage.getItem(`arabicStudy.done.${iso}`) === '1';
+
+    const card = document.createElement('a');
+    card.className = 'hub-card';
+    card.href = `${iso}.html`;
+    card.style.padding = '14px';
+    if (isToday) card.style.borderColor = '#f4a261';
+    card.innerHTML = `
+      <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+        <strong style="color:${isToday ? '#f4a261' : '#fff'};">${labels[i]} ${pad(d.getDate())}/${pad(d.getMonth()+1)}</strong>
+        <span style="font-size:13px;">${done ? '✓' : (isClass ? '👩‍🏫' : '·')}</span>
+      </div>
+      <div class="desc" style="margin-top:6px;">${isClass ? 'Dia de aula · revisão' : 'Lição completa'}</div>
+    `;
+    grid.appendChild(card);
+  }
+
+  // ───────────────────────────────────────────────────────────────────
+  // Streak
+  // ───────────────────────────────────────────────────────────────────
+  const streak = parseInt(localStorage.getItem('arabicStudy.streak') || '0', 10);
+  document.getElementById('streak').textContent = streak > 0 ? `🔥 ${streak} ${streak === 1 ? 'dia' : 'dias'}` : '·';
+</script>
+
+</body>
+</html>

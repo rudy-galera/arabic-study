@@ -1,0 +1,246 @@
+/* Shared styles — Egyptian Arabic Daily Study */
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+  background: #0f1115; color: #f3f4f6; margin: 0; padding: 0;
+  line-height: 1.55; font-size: 17px; padding-bottom: 100px;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 18px 16px 40px; }
+a { color: #f4a261; }
+
+/* Header */
+header {
+  position: sticky; top: 0; background: rgba(15,17,21,0.92);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid #2a2d36; padding: 14px 16px; z-index: 50;
+}
+.head-row { display: flex; justify-content: space-between; align-items: center; max-width: 720px; margin: 0 auto; gap: 12px; }
+.head-title { font-size: 16px; font-weight: 700; color: #fff; margin: 0; }
+.head-back { font-size: 14px; color: #f4a261; text-decoration: none; padding: 8px 12px; border-radius: 8px; background: rgba(244,162,97,0.1); }
+.date-pill { font-size: 12px; color: #f4a261; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+.weekday { font-size: 13px; color: #9ca3af; }
+.streak { font-size: 13px; color: #65b08a; font-weight: 600; }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #1a1d28 0%, #232634 100%);
+  border: 1px solid #2a2d36; border-radius: 14px; padding: 22px 20px;
+  margin: 18px 0 24px;
+}
+.hero-tag { font-size: 12px; color: #f4a261; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; }
+.hero h1 { margin: 6px 0 4px; font-size: 26px; font-weight: 700; color: #fff; }
+.hero .ar { font-family: "Geeza Pro", "Noto Naskh Arabic", "Amiri", serif; font-size: 32px; line-height: 1.4; direction: rtl; color: #fff; margin: 4px 0; }
+.hero .arabizi { font-style: italic; color: #9ca3af; font-size: 16px; }
+.hero .pt-sub { color: #d1d5db; margin-top: 8px; font-size: 15px; }
+.hero .intro { margin-top: 14px; padding-top: 14px; border-top: 1px solid #2a2d36; color: #d1d5db; font-size: 15px; line-height: 1.6; }
+.hero .intro em { color: #f4a261; font-style: normal; font-weight: 500; }
+
+/* Sections */
+section {
+  background: #161821; border: 1px solid #2a2d36; border-radius: 14px;
+  padding: 18px; margin-bottom: 16px;
+}
+section h2 { margin: 0 0 14px; font-size: 18px; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 8px; }
+section h2 .num { background: #f4a261; color: #1a1d28; width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; flex-shrink: 0; }
+
+/* Hub cards */
+.hub-grid { display: grid; gap: 14px; margin-top: 18px; }
+.hub-card {
+  display: block; background: #161821; border: 1px solid #2a2d36;
+  border-radius: 14px; padding: 18px; text-decoration: none; color: inherit;
+  transition: transform 0.15s, border-color 0.15s;
+}
+.hub-card:active { transform: scale(0.98); }
+.hub-card.primary { border-color: #f4a261; background: linear-gradient(135deg, #1f2230 0%, #2a1f1a 100%); }
+.hub-card .icon { font-size: 28px; margin-bottom: 6px; display: block; }
+.hub-card h3 { margin: 0 0 4px; font-size: 17px; font-weight: 700; color: #fff; }
+.hub-card .ar { font-family: "Geeza Pro", "Noto Naskh Arabic", serif; direction: rtl; font-size: 18px; color: #f4a261; margin: 4px 0; }
+.hub-card .desc { color: #9ca3af; font-size: 13px; line-height: 1.5; }
+
+/* Verb table */
+.verb-table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 14px; }
+.verb-table th { background: #232634; padding: 10px 6px; text-align: center; color: #f4a261; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; border: 1px solid #2a2d36; }
+.verb-table td { padding: 12px 6px; border: 1px solid #2a2d36; text-align: center; vertical-align: top; }
+.verb-table .ar { font-family: "Geeza Pro", "Noto Naskh Arabic", "Amiri", serif; font-size: 19px; direction: rtl; color: #fff; line-height: 1.5; }
+.verb-table .arabizi { font-style: italic; color: #9ca3af; font-size: 12px; margin-top: 4px; display: block; }
+
+/* Read paragraphs */
+.para-block { margin: 12px 0; }
+.para-pt { color: #d1d5db; margin-bottom: 10px; font-size: 15px; }
+.para-ar { font-family: "Geeza Pro", "Noto Naskh Arabic", "Amiri", serif; font-size: 22px; line-height: 1.9; direction: rtl; color: #fff; margin: 8px 0; padding: 14px; background: #0f1115; border-right: 3px solid #f4a261; border-radius: 6px; }
+.para-arabizi { font-style: italic; color: #9ca3af; font-size: 14px; line-height: 1.6; }
+
+/* Helpers chips */
+.helpers { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.chip { background: #1f2230; border: 1px solid #2a2d36; border-radius: 18px; padding: 8px 12px; font-size: 13px; color: #d1d5db; display: inline-flex; align-items: center; gap: 6px; }
+.chip .ar { font-family: "Geeza Pro", "Noto Naskh Arabic", serif; direction: rtl; color: #f4a261; font-size: 16px; }
+.chip .arabizi { font-style: italic; color: #9ca3af; font-size: 12px; }
+
+/* Translation list */
+.tx-list { list-style: none; padding: 0; margin: 0; counter-reset: tx; }
+.tx-list li { counter-increment: tx; background: #0f1115; border: 1px solid #2a2d36; border-radius: 10px; padding: 14px; margin-bottom: 10px; position: relative; }
+.tx-list li::before { content: counter(tx); position: absolute; top: 14px; left: 14px; background: #f4a261; color: #1a1d28; width: 22px; height: 22px; border-radius: 50%; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.tx-list .pt { padding-left: 36px; color: #d1d5db; margin-bottom: 8px; }
+.tx-list .reveal { background: transparent; border: none; color: #f4a261; font-size: 13px; cursor: pointer; padding: 4px 0; font-family: inherit; }
+.tx-list .answer { display: none; padding-top: 8px; border-top: 1px dashed #2a2d36; margin-top: 8px; }
+.tx-list .answer.show { display: block; }
+.tx-list .answer .ar { font-family: "Geeza Pro", "Noto Naskh Arabic", serif; font-size: 19px; direction: rtl; color: #fff; line-height: 1.6; }
+.tx-list .answer .arabizi { font-style: italic; color: #9ca3af; font-size: 13px; margin-top: 4px; }
+
+/* Prepositions */
+.prep-list { list-style: none; padding: 0; margin: 0; }
+.prep-list li { background: #0f1115; border: 1px solid #2a2d36; border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; }
+.prep-list .head { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+.prep-list .pt-label { color: #d1d5db; font-weight: 600; font-size: 14px; }
+.prep-list .ar { font-family: "Geeza Pro", "Noto Naskh Arabic", serif; font-size: 19px; direction: rtl; color: #f4a261; }
+.prep-list .arabizi { font-style: italic; color: #9ca3af; font-size: 13px; }
+.prep-list .example { color: #d1d5db; font-size: 14px; line-height: 1.6; padding-top: 6px; border-top: 1px dashed #2a2d36; }
+
+/* Q/A list */
+.qa-list { list-style: none; padding: 0; margin: 0; }
+.qa-list li { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px dashed #2a2d36; align-items: baseline; flex-wrap: wrap; }
+.qa-list li:last-child { border-bottom: none; }
+.qa-list .pt { color: #d1d5db; flex: 1 1 35%; min-width: 130px; font-size: 14px; }
+.qa-list .ar { font-family: "Geeza Pro", "Noto Naskh Arabic", serif; font-size: 20px; direction: rtl; color: #fff; flex: 1 1 30%; }
+.qa-list .arabizi { font-style: italic; color: #9ca3af; font-size: 13px; flex: 1 1 30%; }
+
+/* Self-check */
+.self-check { list-style: none; padding: 0; margin: 0; }
+.self-check li { background: #0f1115; border-left: 3px solid #65b08a; border-radius: 0 8px 8px 0; padding: 10px 14px; margin-bottom: 8px; color: #d1d5db; font-size: 14px; line-height: 1.6; }
+.self-check li em { color: #f4a261; font-style: normal; font-weight: 500; }
+
+/* Memory section (long-term) */
+.memory { background: linear-gradient(135deg, #1a1d28 0%, #1d1f1a 100%); border: 1px solid #65b08a40; }
+.memory h2 .num { background: #65b08a; color: #0f1115; }
+.memory-tag { color: #65b08a; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; margin-bottom: 8px; }
+
+/* Verb recap card (class review) */
+.recap-grid { display: grid; gap: 12px; }
+.recap-card { background: #0f1115; border: 1px solid #2a2d36; border-radius: 10px; padding: 14px; }
+.recap-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px dashed #2a2d36; }
+.recap-head .ar { font-family: "Geeza Pro", "Noto Naskh Arabic", serif; font-size: 22px; direction: rtl; color: #f4a261; }
+.recap-head .pt { color: #d1d5db; font-size: 14px; }
+.recap-head .arabizi { font-style: italic; color: #9ca3af; font-size: 13px; }
+.recap-rows { display: grid; gap: 6px; font-size: 14px; }
+.recap-rows .row { display: flex; gap: 10px; align-items: baseline; }
+.recap-rows .pron { color: #9ca3af; min-width: 36px; font-size: 12px; text-transform: uppercase; }
+.recap-rows .ar { font-family: "Geeza Pro", "Noto Naskh Arabic", serif; direction: rtl; color: #fff; font-size: 17px; flex: 1; }
+.recap-rows .arabizi { font-style: italic; color: #9ca3af; font-size: 12px; }
+
+/* Done button */
+.done-zone { margin: 24px 0 12px; text-align: center; }
+.done-btn { background: #65b08a; color: #0f1115; border: none; padding: 16px 28px; border-radius: 12px; font-size: 16px; font-weight: 700; cursor: pointer; width: 100%; max-width: 320px; font-family: inherit; transition: background 0.15s; }
+.done-btn:hover { background: #7ac4a0; }
+.done-btn.completed { background: #2a2d36; color: #65b08a; }
+.done-btn.completed::before { content: "✓ "; }
+
+/* Bottom nav */
+.day-nav {
+  position: fixed; bottom: 0; left: 0; right: 0; background: rgba(15,17,21,0.95);
+  backdrop-filter: blur(12px); border-top: 1px solid #2a2d36; padding: 10px 16px;
+  display: flex; justify-content: space-between; gap: 8px; z-index: 100;
+}
+.day-nav a { flex: 1; text-align: center; padding: 12px 8px; background: #1f2230; color: #f3f4f6; text-decoration: none; border-radius: 8px; font-size: 13px; font-weight: 500; }
+.day-nav a.disabled { opacity: 0.35; pointer-events: none; }
+.day-nav a.today { background: #f4a261; color: #1a1d28; font-weight: 700; }
+
+/* Search/filter (cards) */
+.toolbar { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+.search-input {
+  flex: 1; min-width: 180px; background: #161821; border: 1px solid #2a2d36;
+  color: #f3f4f6; padding: 12px 14px; border-radius: 10px; font-size: 15px;
+  font-family: inherit;
+}
+.search-input::placeholder { color: #6b6f7e; }
+.search-input:focus { outline: none; border-color: #f4a261; }
+
+.tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+.tab { background: #1f2230; border: 1px solid #2a2d36; color: #d1d5db; padding: 8px 14px; border-radius: 18px; font-size: 13px; cursor: pointer; font-family: inherit; }
+.tab.active { background: #f4a261; color: #1a1d28; border-color: #f4a261; font-weight: 600; }
+
+/* Letter / number / day grid (alphabet card) */
+.grid-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+.flip-card {
+  background: #161821; border: 1px solid #2a2d36; border-radius: 12px;
+  padding: 14px 10px; text-align: center; cursor: pointer; min-height: 110px;
+  display: flex; flex-direction: column; justify-content: center; gap: 4px;
+  transition: transform 0.15s, border-color 0.15s;
+}
+.flip-card:active { transform: scale(0.97); }
+.flip-card.hidden-pt .pt { visibility: hidden; }
+.flip-card .ar { font-family: "Geeza Pro", "Noto Naskh Arabic", serif; font-size: 32px; direction: rtl; color: #fff; line-height: 1.2; }
+.flip-card .arabizi { font-style: italic; color: #f4a261; font-size: 13px; font-weight: 600; }
+.flip-card .pt { color: #d1d5db; font-size: 13px; }
+.flip-card .desc { color: #9ca3af; font-size: 11px; }
+
+/* Word list (vocabulary card) */
+.word-list { list-style: none; padding: 0; margin: 0; }
+.word-list li { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid #2a2d36; align-items: baseline; flex-wrap: wrap; }
+.word-list li:last-child { border-bottom: none; }
+.word-list .pt { color: #d1d5db; flex: 1 1 35%; min-width: 130px; font-size: 15px; }
+.word-list .ar { font-family: "Geeza Pro", "Noto Naskh Arabic", serif; font-size: 22px; direction: rtl; color: #fff; flex: 1 1 30%; min-width: 100px; }
+.word-list .arabizi { font-style: italic; color: #9ca3af; font-size: 14px; flex: 1 1 30%; min-width: 110px; }
+
+/* Verb-card list (verbs reference) */
+.verb-card { background: #161821; border: 1px solid #2a2d36; border-radius: 12px; margin-bottom: 12px; overflow: hidden; }
+.verb-card-head {
+  padding: 14px 16px; display: flex; align-items: baseline; justify-content: space-between;
+  gap: 10px; cursor: pointer; user-select: none; flex-wrap: wrap;
+}
+.verb-card-head .ar { font-family: "Geeza Pro", "Noto Naskh Arabic", serif; font-size: 24px; direction: rtl; color: #f4a261; }
+.verb-card-head .pt { color: #fff; font-weight: 600; font-size: 16px; }
+.verb-card-head .arabizi { font-style: italic; color: #9ca3af; font-size: 13px; }
+.verb-card-head::after { content: "▼"; color: #9ca3af; font-size: 12px; transition: transform 0.2s; margin-left: auto; }
+.verb-card.open .verb-card-head::after { transform: rotate(180deg); }
+.verb-card-body { display: none; padding: 0 16px 16px; border-top: 1px dashed #2a2d36; }
+.verb-card.open .verb-card-body { display: block; }
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  body { background: #fafaf7; color: #1f2230; }
+  header { background: rgba(250,250,247,0.92); border-bottom-color: #e5e3dc; }
+  .head-title { color: #1f2230; }
+  .hero { background: linear-gradient(135deg, #fff 0%, #f5f3eb 100%); border-color: #e5e3dc; }
+  .hero h1, .hero .ar { color: #1f2230; }
+  .hero .pt-sub, .hero .intro { color: #4b4f5e; }
+  .hero .intro { border-top-color: #e5e3dc; }
+  section { background: #fff; border-color: #e5e3dc; }
+  section h2 { color: #1f2230; }
+  .verb-table th { background: #f5f3eb; border-color: #e5e3dc; color: #c1440e; }
+  .verb-table td { border-color: #e5e3dc; }
+  .verb-table .ar { color: #1f2230; }
+  .verb-table .arabizi, .arabizi { color: #6b6f7e; }
+  .para-pt { color: #4b4f5e; }
+  .para-ar { background: #f5f3eb; color: #1f2230; border-right-color: #c1440e; }
+  .para-arabizi { color: #6b6f7e; }
+  .chip { background: #f5f3eb; border-color: #e5e3dc; color: #4b4f5e; }
+  .chip .ar { color: #c1440e; }
+  .tx-list li, .prep-list li, .self-check li, .recap-card, .hub-card, .word-list li, .verb-card, .flip-card { background: #fff; border-color: #e5e3dc; }
+  .word-list li { background: transparent; border-bottom-color: #e5e3dc; }
+  .tx-list li::before { background: #c1440e; color: #fff; }
+  .tx-list .pt, .prep-list .pt-label, .qa-list .pt, .self-check li, .recap-head .pt, .word-list .pt, .verb-card-head .pt { color: #1f2230; }
+  .word-list .ar, .recap-rows .ar, .verb-table .ar, .tx-list .answer .ar, .qa-list .ar { color: #1f2230; }
+  .tx-list .reveal { color: #c1440e; }
+  .prep-list .ar, .recap-head .ar, .verb-card-head .ar { color: #c1440e; }
+  .day-nav { background: rgba(250,250,247,0.95); border-top-color: #e5e3dc; }
+  .day-nav a { background: #f5f3eb; color: #1f2230; }
+  .day-nav a.today { background: #c1440e; color: #fff; }
+  .done-btn { background: #2c7a4b; color: #fff; }
+  .done-btn.completed { background: #e5e3dc; color: #2c7a4b; }
+  .hero .intro em, .self-check li em { color: #c1440e; }
+  .date-pill, .hub-card .ar { color: #c1440e; }
+  .hub-card.primary { border-color: #c1440e; background: linear-gradient(135deg, #fff 0%, #fff5e9 100%); }
+  .weekday { color: #6b6f7e; }
+  .search-input { background: #fff; border-color: #e5e3dc; color: #1f2230; }
+  .search-input:focus { border-color: #c1440e; }
+  .tab { background: #f5f3eb; border-color: #e5e3dc; color: #1f2230; }
+  .tab.active { background: #c1440e; color: #fff; border-color: #c1440e; }
+  .flip-card .ar { color: #1f2230; }
+  .flip-card .arabizi { color: #c1440e; }
+  .flip-card .pt { color: #4b4f5e; }
+  .head-back { color: #c1440e; background: rgba(193,68,14,0.1); }
+  .memory { background: linear-gradient(135deg, #fff 0%, #f0f5ee 100%); border-color: #2c7a4b40; }
+  .memory h2 .num { background: #2c7a4b; color: #fff; }
+  .memory-tag { color: #2c7a4b; }
+}
