@@ -73,7 +73,7 @@
 
   </div>
 
-  <h2 style="margin: 28px 0 8px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; color: #9ca3af; font-weight: 600;">Esta semana</h2>
+  <h2 style="margin: 28px 0 8px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; color: #9ca3af; font-weight: 600;">Próximos 7 dias</h2>
 
   <div class="hub-grid" id="weekGrid"></div>
 
@@ -108,43 +108,56 @@
     : "Lição completa de ~15 minutos: verbo, leitura, escrita, tradução, preposições";
 
   // ───────────────────────────────────────────────────────────────────
-  // Week grid (current week — Mon to Sun) with done indicators
+  // Rolling 7-day window — today + next 6 days
+  // Gracefully degrades: missing files render as disabled cards
   // ───────────────────────────────────────────────────────────────────
-  function startOfWeek(d) {
-    const x = new Date(d);
-    const day = x.getDay();
-    const diff = day === 0 ? -6 : 1 - day;  // Monday = start
-    x.setDate(x.getDate() + diff);
-    return x;
-  }
-
-  const weekStart = startOfWeek(today);
+  const SHORT_LABELS = ["Dom","Seg","Ter","Qua","Qui","Sex","Sáb"];
   const grid = document.getElementById('weekGrid');
-  const labels = ["Seg","Ter","Qua","Qui","Sex","Sáb","Dom"];
+  const cards = [];
 
   for (let i = 0; i < 7; i++) {
-    const d = new Date(weekStart);
-    d.setDate(weekStart.getDate() + i);
+    const d = new Date(today);
+    d.setDate(today.getDate() + i);
     const iso = isoDate(d);
     const isToday = iso === todayIso;
-    const isPast = d < today && !isToday;
     const isClass = d.getDay() === 3 || d.getDay() === 5;
     const done = localStorage.getItem(`arabicStudy.done.${iso}`) === '1';
+    const label = SHORT_LABELS[d.getDay()];
 
     const card = document.createElement('a');
     card.className = 'hub-card';
     card.href = `${iso}.html`;
+    card.dataset.iso = iso;
     card.style.padding = '14px';
     if (isToday) card.style.borderColor = '#f4a261';
     card.innerHTML = `
       <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
-        <strong style="color:${isToday ? '#f4a261' : '#fff'};">${labels[i]} ${pad(d.getDate())}/${pad(d.getMonth()+1)}</strong>
-        <span style="font-size:13px;">${done ? '✓' : (isClass ? '👩‍🏫' : '·')}</span>
+        <strong style="color:${isToday ? '#f4a261' : '#fff'};">${label} ${pad(d.getDate())}/${pad(d.getMonth()+1)}</strong>
+        <span class="card-status" style="font-size:13px;">${done ? '✓' : (isClass ? '👩‍🏫' : '·')}</span>
       </div>
       <div class="desc" style="margin-top:6px;">${isClass ? 'Dia de aula · revisão' : 'Lição completa'}</div>
     `;
     grid.appendChild(card);
+    cards.push(card);
   }
+
+  // Probe each link with HEAD; if it 404s, disable the card so it never errors out
+  cards.forEach(card => {
+    fetch(card.href, { method: 'HEAD' })
+      .then(r => {
+        if (!r.ok) {
+          card.removeAttribute('href');
+          card.style.opacity = '0.45';
+          card.style.cursor = 'default';
+          card.style.pointerEvents = 'none';
+          const desc = card.querySelector('.desc');
+          if (desc) desc.textContent = 'Sem lição · em breve';
+          const status = card.querySelector('.card-status');
+          if (status) status.textContent = '—';
+        }
+      })
+      .catch(() => { /* offline — keep link enabled, file may be cached */ });
+  });
 
   // ───────────────────────────────────────────────────────────────────
   // Streak
