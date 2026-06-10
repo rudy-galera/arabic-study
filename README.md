@@ -12,6 +12,7 @@ Sem inglês.
 - **`card-pessoas.html`** — países e nacionalidades (m/f) por região + profissões com forma masculina e feminina.
 - **`YYYY-MM-DD.html`** — uma aula por dia. Lições completas (~15 min) em dias normais; revisões curtas (~10 min) nos dias de aula (qua e sex).
 - **`styles.css`** — estilo compartilhado.
+- **`apple-touch-icon.png` / `icon-192.png` / `icon-512.png` / `manifest.json`** — ícone de app para a tela de início do iPhone (e Android via PWA manifest).
 
 ## Como usar no iPhone (GitHub Pages)
 

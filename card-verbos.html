@@ -28,7 +28,7 @@
     <div class="ar">الأَفعال</div>
     <div class="arabizi">El-af3al</div>
     <div class="intro">
-      Cada verbo abre numa tabela de <em>5 colunas</em>: Você (f), Você (m), Ela, Ele, Eu — exatamente como no caderno da professora.
+      Cada verbo abre numa tabela de <em>6 colunas</em>: Você (f), Você (m), Ela, Ele, Eu e — novidade da Aula 61 — <strong>Nós</strong> (احنا بِنـ).
       Os verbos estão na ordem do livro: primeiro os de rotina diária (Aula-50), depois os novos da Apostila a partir da página 88.
     </div>
   </div>
@@ -65,7 +65,8 @@
         {p:"Ele", ar:"هُوَ عايِز", arabizi:"Howa 3aeiz"},
         {p:"Eu", ar:"أنا عايِز / عايزة", arabizi:"Ana 3aeiz / 3aeiza"},
       ],
-      nota:"Adjetivo verbal — concorda em gênero. Eu (m): 3aeiz; Eu (f): 3aeiza."},
+      nos:{ar:"احنا عايزين", arabizi:"E7na 3aizin"},
+      nota:"Adjetivo verbal — concorda em gênero. Eu (m): 3aeiz; Eu (f): 3aeiza. Nós: plural em -in (Aula 61)."},
     {grupo:"auxiliares", pt:"precisar", ar:"مِحتاج", arabizi:"mei7tag",
       table:[
         {p:"Você (f)", ar:"انتي مِحتاجة", arabizi:"Enty mei7taga"},
@@ -74,7 +75,8 @@
         {p:"Ele", ar:"هُوَ مِحتاج", arabizi:"Howa mei7tag"},
         {p:"Eu", ar:"أنا مِحتاج / مِحتاجة", arabizi:"Ana mei7tag / mei7taga"},
       ],
-      nota:"Também adjetivo verbal — concorda em gênero."},
+      nos:{ar:"احنا مِحتاجين", arabizi:"E7na me7tagin"},
+      nota:"Também adjetivo verbal — concorda em gênero. Nós: me7tagin (Aula 61)."},
     {grupo:"auxiliares", pt:"ter que / dever", ar:"لازِم", arabizi:"lazem",
       table:[
         {p:"Você (f)", ar:"انتي لازِم", arabizi:"Enty lazem"},
@@ -83,7 +85,8 @@
         {p:"Ele", ar:"هُوَ لازِم", arabizi:"Howa lazem"},
         {p:"Eu", ar:"أنا لازِم", arabizi:"Ana lazem"},
       ],
-      nota:"Invariável — não muda com o gênero. Sempre lazem + verbo no infinitivo."},
+      nos:{ar:"احنا لازِم", arabizi:"E7na lazem"},
+      nota:"Invariável — não muda com gênero nem número. Sempre lazem + verbo no infinitivo."},
     {grupo:"auxiliares", pt:"gostar (de)", ar:"بِيحِب", arabizi:"bei7eb",
       table:[
         {p:"Você (f)", ar:"انتي بِتحِبي", arabizi:"Enty bet7eby"},
@@ -223,7 +226,8 @@
         {p:"Ela", ar:"هِيَ بِتذاكِر", arabizi:"Heya betzaker"},
         {p:"Ele", ar:"هُوَ بيذاكِر", arabizi:"Howa beizaker"},
         {p:"Eu", ar:"أنا بَذاكِر", arabizi:"Ana bazaker"},
-      ]},
+      ],
+      nota:"Revisado na Aula 61 com a forma nós: احنا بِنذاكِر (e7na benzaker)."},
     {grupo:"rotina", pt:"comprar", ar:"اِشتَرى", arabizi:"eshtara",
       table:[
         {p:"Você (f)", ar:"انتي بِتِشتِري", arabizi:"Enty beteshtery"},
@@ -342,7 +346,7 @@
         {p:"Ele", ar:"هُوَ بيسوق", arabizi:"Howa beisu2"},
         {p:"Eu", ar:"أنا بَسوق", arabizi:"Ana basu2"},
       ],
-      nota:"Aula 56. Negativo: mesh ba3raf assu2 = não sei dirigir."},
+      nota:"Aula 56. Negativo: mesh ba3raf assu2 = não sei dirigir. Revisado na Aula 61 com nós: احنا بِنسوق (e7na bensu2)."},
     {grupo:"livro-pg88", pt:"cozinhar", ar:"طَبَخ", arabizi:"tabakh",
       table:[
         {p:"Você (f)", ar:"انتي بِتطبُخي", arabizi:"Enty bettbo5y"},
@@ -425,10 +429,23 @@
   // RENDER
   // ───────────────────────────────────────────────────────────────────
 
+  // Forma "nós" (Aula 61): derivada da forma Você (m) trocando o prefixo
+  // bet- por ben- (انتَ بِتـ → احنا بِنـ). Auxiliares têm override em v.nos.
+  function nosForm(v) {
+    if (v.nos) return v.nos;
+    const m = v.table[1]; // Você (m)
+    return {
+      ar: m.ar.replace(/^انتَ بِت/, 'احنا بِن'),
+      arabizi: m.arabizi.replace(/^Enta bet/, 'E7na ben'),
+    };
+  }
+
   function renderVerbs(filter) {
     const list = document.getElementById('verbList');
     const items = (filter === 'todos' || !filter) ? VERBOS : VERBOS.filter(v => v.grupo === filter);
-    list.innerHTML = items.map((v, i) => `
+    list.innerHTML = items.map((v, i) => {
+      const nos = nosForm(v);
+      return `
       <div class="verb-card" data-grupo="${v.grupo}" data-search="${(v.pt + ' ' + v.ar + ' ' + v.arabizi).toLowerCase()}">
         <div class="verb-card-head" onclick="this.parentElement.classList.toggle('open')">
           <span class="ar">${v.ar}</span>
@@ -438,18 +455,19 @@
         <div class="verb-card-body">
           <table class="verb-table" style="margin-top:14px;">
             <thead>
-              <tr><th>Você (f)</th><th>Você (m)</th><th>Ela</th><th>Ele</th><th>Eu</th></tr>
+              <tr><th>Você (f)</th><th>Você (m)</th><th>Ela</th><th>Ele</th><th>Eu</th><th>Nós</th></tr>
             </thead>
             <tbody>
               <tr>
                 ${v.table.map(r => `<td><span class="ar">${r.ar}</span><span class="arabizi">${r.arabizi}</span></td>`).join('')}
+                <td><span class="ar">${nos.ar}</span><span class="arabizi">${nos.arabizi}</span></td>
               </tr>
             </tbody>
           </table>
           ${v.nota ? `<p style="color:#9ca3af; font-size:13px; margin: 10px 0 0; font-style: italic;">${v.nota}</p>` : ''}
         </div>
       </div>
-    `).join('');
+    `;}).join('');
   }
 
   renderVerbs('todos');
