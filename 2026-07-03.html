@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafaf7" media="(prefers-color-scheme: light)">
+<title>Árabe · 2026-07-03 · Sexta-feira</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="head-row">
+    <a href="index.html" class="head-back">← Início</a>
+    <div style="text-align:center;">
+      <div class="date-pill">2026-07-03</div>
+      <div class="weekday">Sexta-feira</div>
+    </div>
+    <div class="streak" id="streak">·</div>
+  </div>
+</header>
+<div class="wrap">
+  <div class="hero">
+    <div class="hero-tag">Revisão rápida · em viagem ✈️</div>
+    <h1>Flash Bali — 10 minutos</h1>
+    <div class="ar">بالي — مُراجَعة سَريعة</div>
+    <div class="arabizi">Bali — moraga3a sari3a</div>
+    <div class="intro">Sexta de revisão rápida. 3 seções, ~10 minutos. Mantenha a sequência — cada dia conta!</div>
+  </div>
+
+<section>
+  <h2><span class="num">1</span>Flash — Bali em árabe</h2>
+  <ul class="qa-list">
+    <li><span class="pt">praia</span><span class="ar">شاطئ</span><span class="arabizi">shate2</span></li>
+    <li><span class="pt">mar</span><span class="ar">بَحر</span><span class="arabizi">ba7r</span></li>
+    <li><span class="pt">vamos nadar</span><span class="ar">هَنسبَح</span><span class="arabizi">hansba7</span></li>
+    <li><span class="pt">vamos descansar</span><span class="ar">هَنرَيَح</span><span class="arabizi">hanraya7</span></li>
+    <li><span class="pt">estamos muito felizes</span><span class="ar">احنا مَبسوطين أوي</span><span class="arabizi">E7na mabsoutin awy</span></li>
+    <li><span class="pt">juntos</span><span class="ar">مَعَ بَعض</span><span class="arabizi">ma3a ba3d</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="num">2</span>3 frases — você em Bali hoje</h2>
+  <ol class="tx-list">
+    <li>
+      <div class="pt">Hoje eu e a Marcela vamos nadar no mar de manhã.</div>
+      <button class="reveal" onclick="this.nextElementSibling.classList.toggle('show'); this.textContent = this.nextElementSibling.classList.contains('show') ? 'Ocultar resposta' : 'Mostrar resposta';">Mostrar resposta</button>
+      <div class="answer"><div class="ar">النَهاردة أنا ومارسيلا هَنسبَح في البَحر الصُبح.</div><div class="arabizi">Enaharda ana we Marcela hansba7 fe el-ba7r el-sob7.</div></div>
+    </li>
+    <li>
+      <div class="pt">Bali é muito bonita — gosto muito da praia!</div>
+      <button class="reveal" onclick="this.nextElementSibling.classList.toggle('show'); this.textContent = this.nextElementSibling.classList.contains('show') ? 'Ocultar resposta' : 'Mostrar resposta';">Mostrar resposta</button>
+      <div class="answer"><div class="ar">بالي حِلوة أوي — بَحِب الشاطئ أوي!</div><div class="arabizi">Bali 7elwa awy — ba7eb el-shate2 awy!</div></div>
+    </li>
+    <li>
+      <div class="pt">Depois vamos descansar juntos e comer fora.</div>
+      <button class="reveal" onclick="this.nextElementSibling.classList.toggle('show'); this.textContent = this.nextElementSibling.classList.contains('show') ? 'Ocultar resposta' : 'Mostrar resposta';">Mostrar resposta</button>
+      <div class="answer"><div class="ar">بَعدين هَنرَيَح مَعَ بَعض وهَناكُل بَرّة.</div><div class="arabizi">Ba3dein hanraya7 ma3a ba3d we hanakol barra.</div></div>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h2><span class="num">3</span>Verbos no futuro — revisão dos 4 verbos novos</h2>
+  <ul class="qa-list">
+    <li><span class="pt">vou fazer</span><span class="ar">هَعمِل</span><span class="arabizi">ha3mel</span></li>
+    <li><span class="pt">vou tomar café da manhã</span><span class="ar">هَفطَر</span><span class="arabizi">hafotr</span></li>
+    <li><span class="pt">vou torcer pelo Brasil</span><span class="ar">هَشَجَّع البرازيل</span><span class="arabizi">hashagg3 el-Brazil</span></li>
+    <li><span class="pt">vamos nadar</span><span class="ar">هَنسبَح</span><span class="arabizi">hansba7</span></li>
+    <li><span class="pt">vamos visitar</span><span class="ar">هَنزور</span><span class="arabizi">hanzur</span></li>
+  </ul>
+</section>
+
+  <div class="done-zone">
+    <button class="done-btn" id="doneBtn" onclick="markDone()">Concluir aula de hoje</button>
+  </div>
+</div>
+<nav class="day-nav">
+  <a href="2026-07-02.html">← Anterior</a>
+  <a href="index.html" class="today">Início</a>
+  <a href="2026-07-04.html">Próximo →</a>
+</nav>
+<script>
+  const KEY_DONE = 'arabicStudy.done.2026-07-03';
+  const KEY_STREAK = 'arabicStudy.streak';
+  const KEY_LASTDONE = 'arabicStudy.lastDone';
+  function refreshDone() {
+    const done = localStorage.getItem(KEY_DONE) === '1';
+    const btn = document.getElementById('doneBtn');
+    if (done) { btn.classList.add('completed'); btn.textContent = 'Concluído hoje'; }
+    else { btn.classList.remove('completed'); btn.textContent = 'Concluir aula de hoje'; }
+    refreshStreak();
+  }
+  function markDone() {
+    const isDone = localStorage.getItem(KEY_DONE) === '1';
+    if (isDone) { localStorage.removeItem(KEY_DONE); }
+    else {
+      localStorage.setItem(KEY_DONE, '1');
+      const today = '2026-07-03';
+      const lastDone = localStorage.getItem(KEY_LASTDONE);
+      let streak = parseInt(localStorage.getItem(KEY_STREAK) || '0', 10);
+      if (lastDone !== today) {
+        const yesterday = (() => { const t = new Date(today); t.setDate(t.getDate() - 1); return t.toISOString().slice(0,10); })();
+        streak = (lastDone === yesterday) ? streak + 1 : 1;
+        localStorage.setItem(KEY_STREAK, String(streak));
+        localStorage.setItem(KEY_LASTDONE, today);
+      }
+    }
+    refreshDone();
+  }
+  function refreshStreak() {
+    const streak = parseInt(localStorage.getItem(KEY_STREAK) || '0', 10);
+    const el = document.getElementById('streak');
+    el.textContent = streak > 0 ? '🔥 ' + streak + ' ' + (streak === 1 ? 'dia' : 'dias') : '·';
+  }
+  refreshDone();
+</script>
+</body>
+</html>
