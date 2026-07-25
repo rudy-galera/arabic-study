@@ -28,7 +28,8 @@
     <div class="ar">الأَفعال</div>
     <div class="arabizi">El-af3al</div>
     <div class="intro">
-      Cada verbo abre numa tabela de <em>6 colunas</em>: Você (f), Você (m), Ela, Ele, Eu e — novidade da Aula 61 — <strong>Nós</strong> (احنا بِنـ).
+      Cada verbo abre em duas tabelas: <em>Singular</em> (Você f, Você m, Ela, Ele, Eu) e — novidade das Aulas 69-71 — <em>Plural</em> com as três formas:
+      <strong>Nós</strong> (احنا بِنـ / E7na), <strong>Vocês</strong> (انتوا بِتـ...وا / Entu) e <strong>Eles/Elas</strong> (هُما بيـ...وا / Homa).
       Os verbos estão na ordem do livro: primeiro os de rotina diária (Aula-50), depois os novos da Apostila a partir da página 88.
     </div>
   </div>
@@ -66,7 +67,9 @@
         {p:"Eu", ar:"أنا عايِز / عايزة", arabizi:"Ana 3aeiz / 3aeiza"},
       ],
       nos:{ar:"احنا عايزين", arabizi:"E7na 3aizin"},
-      nota:"Adjetivo verbal — concorda em gênero. Eu (m): 3aeiz; Eu (f): 3aeiza. Nós: plural em -in (Aula 61)."},
+      entu:{ar:"انتوا عايزين", arabizi:"Entu 3aizin"},
+      homa:{ar:"هُما عايزين", arabizi:"Homa 3aizin"},
+      nota:"Adjetivo verbal — concorda em gênero. Eu (m): 3aeiz; Eu (f): 3aeiza. Plurais (Nós/Vocês/Eles) são todos عايزين 3aizin (Aula 70)."},
     {grupo:"auxiliares", pt:"precisar", ar:"مِحتاج", arabizi:"mei7tag",
       table:[
         {p:"Você (f)", ar:"انتي مِحتاجة", arabizi:"Enty mei7taga"},
@@ -76,7 +79,9 @@
         {p:"Eu", ar:"أنا مِحتاج / مِحتاجة", arabizi:"Ana mei7tag / mei7taga"},
       ],
       nos:{ar:"احنا مِحتاجين", arabizi:"E7na me7tagin"},
-      nota:"Também adjetivo verbal — concorda em gênero. Nós: me7tagin (Aula 61)."},
+      entu:{ar:"انتوا مِحتاجين", arabizi:"Entu me7tagin"},
+      homa:{ar:"هُما مِحتاجين", arabizi:"Homa me7tagin"},
+      nota:"Também adjetivo verbal — concorda em gênero. Plurais (Nós/Vocês/Eles) são todos مِحتاجين me7tagin (Aula 70)."},
     {grupo:"auxiliares", pt:"ter que / dever", ar:"لازِم", arabizi:"lazem",
       table:[
         {p:"Você (f)", ar:"انتي لازِم", arabizi:"Enty lazem"},
@@ -86,7 +91,9 @@
         {p:"Eu", ar:"أنا لازِم", arabizi:"Ana lazem"},
       ],
       nos:{ar:"احنا لازِم", arabizi:"E7na lazem"},
-      nota:"Invariável — não muda com gênero nem número. Sempre lazem + verbo no infinitivo."},
+      entu:{ar:"انتوا لازِم", arabizi:"Entu lazem"},
+      homa:{ar:"هُما لازِم", arabizi:"Homa lazem"},
+      nota:"Invariável — não muda com gênero nem número. Sempre lazem + verbo no infinitivo (Nós/Vocês/Eles também = lazem)."},
     {grupo:"auxiliares", pt:"gostar (de)", ar:"بِيحِب", arabizi:"bei7eb",
       table:[
         {p:"Você (f)", ar:"انتي بِتحِبي", arabizi:"Enty bet7eby"},
@@ -609,8 +616,11 @@
   // RENDER
   // ───────────────────────────────────────────────────────────────────
 
-  // Forma "nós" (Aula 61): derivada da forma Você (m) trocando o prefixo
-  // bet- por ben- (انتَ بِتـ → احنا بِنـ). Auxiliares têm override em v.nos.
+  // Plurais (Aulas 69-71). Regras validadas contra as tabelas das aulas:
+  //   Nós   (احنا بِنـ)      ← Você (m): بِت → بِن   (Enta bet → E7na ben)
+  //   Vocês (انتوا بِتـ...وا) ← Você (f): انتي→انتوا, ـي final → ـوا   (Enty→Entu, y→u)
+  //   Eles  (هُما بيـ...وا)   ← Ele:      هُوَ→هُما, +ـوا (ـي/ـى final → ـوا) (Howa→Homa, +u)
+  // Auxiliares adjetivais (querer/precisar/ter que) têm override em v.nos/v.entu/v.homa.
   function nosForm(v) {
     if (v.nos) return v.nos;
     const m = v.table[1]; // Você (m)
@@ -619,12 +629,33 @@
       arabizi: m.arabizi.replace(/^Enta bet/, 'E7na ben'),
     };
   }
+  function entuForm(v) {
+    if (v.entu) return v.entu;
+    const f = v.table[0]; // Você (f) = enti (já carrega o ajuste do radical)
+    return {
+      ar: f.ar.replace(/^انتي/, 'انتوا').replace(/ي$/, 'وا'),
+      arabizi: f.arabizi.replace(/^Enty/, 'Entu').replace(/y$/, 'u'),
+    };
+  }
+  function homaForm(v) {
+    if (v.homa) return v.homa;
+    const e = v.table[3]; // Ele = howa
+    let ar = e.ar.replace(/^هُوَ/, 'هُما');
+    // verbos defetivos terminam em ـى/ـا/ـي → o final vira ـوا; senão acrescenta ـوا
+    ar = /[اىي]$/.test(ar) ? ar.replace(/[اىي]$/, 'وا') : ar + 'وا';
+    let arz = e.arabizi.replace(/^Howa/, 'Homa');
+    // arabizi terminado em -y ou -a (defetivos) → -u; senão acrescenta -u
+    arz = /[ya]$/.test(arz) ? arz.replace(/[ya]$/, 'u') : arz + 'u';
+    return { ar, arabizi: arz };
+  }
+
+  const _cell = o => `<td><span class="ar">${o.ar}</span><span class="arabizi">${o.arabizi}</span></td>`;
 
   function renderVerbs(filter) {
     const list = document.getElementById('verbList');
     const items = (filter === 'todos' || !filter) ? VERBOS : VERBOS.filter(v => v.grupo === filter);
-    list.innerHTML = items.map((v, i) => {
-      const nos = nosForm(v);
+    list.innerHTML = items.map((v) => {
+      const nos = nosForm(v), entu = entuForm(v), homa = homaForm(v);
       return `
       <div class="verb-card" data-grupo="${v.grupo}" data-search="${(v.pt + ' ' + v.ar + ' ' + v.arabizi).toLowerCase()}">
         <div class="verb-card-head" onclick="this.parentElement.classList.toggle('open')">
@@ -633,15 +664,22 @@
           <span class="arabizi">${v.arabizi}</span>
         </div>
         <div class="verb-card-body">
-          <table class="verb-table" style="margin-top:14px;">
+          <div class="conj-label">Singular</div>
+          <table class="verb-table">
             <thead>
-              <tr><th>Você (f)</th><th>Você (m)</th><th>Ela</th><th>Ele</th><th>Eu</th><th>Nós</th></tr>
+              <tr><th>Você (f)</th><th>Você (m)</th><th>Ela</th><th>Ele</th><th>Eu</th></tr>
             </thead>
             <tbody>
-              <tr>
-                ${v.table.map(r => `<td><span class="ar">${r.ar}</span><span class="arabizi">${r.arabizi}</span></td>`).join('')}
-                <td><span class="ar">${nos.ar}</span><span class="arabizi">${nos.arabizi}</span></td>
-              </tr>
+              <tr>${v.table.map(_cell).join('')}</tr>
+            </tbody>
+          </table>
+          <div class="conj-label plural">Plural<span class="conj-badge">Aulas 69-71</span></div>
+          <table class="verb-table plural">
+            <thead>
+              <tr><th>Nós · احنا</th><th>Vocês · انتوا</th><th>Eles/Elas · هُما</th></tr>
+            </thead>
+            <tbody>
+              <tr>${[nos, entu, homa].map(_cell).join('')}</tr>
             </tbody>
           </table>
           ${v.nota ? `<p style="color:#9ca3af; font-size:13px; margin: 10px 0 0; font-style: italic;">${v.nota}</p>` : ''}

@@ -64,6 +64,11 @@ section h2 .num { background: #f4a261; color: #1a1d28; width: 26px; height: 26px
 .verb-table td { padding: 12px 6px; border: 1px solid #2a2d36; text-align: center; vertical-align: top; }
 .verb-table .ar { font-family: "Geeza Pro", "Noto Naskh Arabic", "Amiri", serif; font-size: 19px; direction: rtl; color: #fff; line-height: 1.5; }
 .verb-table .arabizi { font-style: italic; color: #9ca3af; font-size: 12px; margin-top: 4px; display: block; }
+.verb-table.plural th { background: #1c2a2a; color: #4fd1c5; }
+.verb-table.plural td { border-color: #234; }
+.conj-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: #6b7280; font-weight: 700; margin: 16px 0 4px; }
+.conj-label.plural { color: #4fd1c5; }
+.conj-label .conj-badge { background: #1c2a2a; color: #4fd1c5; font-size: 9px; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; vertical-align: middle; }
 
 /* Read paragraphs */
 .para-block { margin: 12px 0; }
@@ -208,6 +213,10 @@ section h2 .num { background: #f4a261; color: #1a1d28; width: 26px; height: 26px
   section { background: #fff; border-color: #e5e3dc; }
   section h2 { color: #1f2230; }
   .verb-table th { background: #f5f3eb; border-color: #e5e3dc; color: #c1440e; }
+  .verb-table.plural th { background: #e6f4f1; color: #0f766e; }
+  .conj-label { color: #8a8f9c; }
+  .conj-label.plural { color: #0f766e; }
+  .conj-label .conj-badge { background: #e6f4f1; color: #0f766e; }
   .verb-table td { border-color: #e5e3dc; }
   .verb-table .ar { color: #1f2230; }
   .verb-table .arabizi, .arabizi { color: #6b6f7e; }
