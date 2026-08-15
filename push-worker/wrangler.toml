@@ -1,0 +1,16 @@
+name = "arabic-push"
+main = "worker.js"
+compatibility_date = "2026-08-01"
+
+# Crons em UTC → Dubai = UTC+4
+# 08:00 UTC = 12:00 Dubai · 14:00 UTC = 18:00 Dubai · 17:30 UTC = 21:30 Dubai
+[triggers]
+crons = ["0 8 * * *", "0 14 * * *", "30 17 * * *"]
+
+[[kv_namespaces]]
+binding = "SUBS"
+id = "COLE_AQUI_O_ID_DO_KV"   # criado com: wrangler kv namespace create SUBS
+
+[vars]
+VAPID_PUBLIC_KEY = "BJG0Zt7bllZiM3nwXhiiRIYnnedHVaRnXqrNBD-AGl3thJ3GIrmpOmWEWhavmdPihJlDW5LOb5bsDuPbbMntNfU"
+VAPID_SUBJECT = "mailto:rgalera@gmail.com"

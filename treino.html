@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafaf7" media="(prefers-color-scheme: light)">
+<title>Treino · عَرَبي</title>
+<link rel="apple-touch-icon" sizes="180x180" href="app-icon-180.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="head-row">
+    <a href="index.html" class="head-back">← Início</a>
+    <div style="text-align:center;">
+      <div class="date-pill" id="hdDate">Treino</div>
+      <div class="weekday" id="hdType"></div>
+    </div>
+    <div class="streak" id="hdStreak">·</div>
+  </div>
+</header>
+
+<div class="wrap" id="app"></div>
+
+<script src="bank.js"></script>
+<script src="engine.js"></script>
+<script>
+// ─────────────────────────────────────────────────────────────────────
+// Treino Diário — player da sessão
+// Fases: cards MCQ (com refila dos errados) → escrita → leitura → fim
+// ─────────────────────────────────────────────────────────────────────
+const params = new URLSearchParams(location.search);
+const recoverDate = params.get('recover'); // treino de recuperação de um dia perdido
+const session = buildSession(todayIso(), recoverDate ? 'recover' : null);
+
+const app = document.getElementById('app');
+document.getElementById('hdDate').textContent = recoverDate ? ('Recuperando ' + recoverDate) : session.date;
+document.getElementById('hdType').textContent = session.label;
+refreshHeadStreak();
+
+function refreshHeadStreak(){
+  const s = currentStreak();
+  document.getElementById('hdStreak').textContent = s > 0 ? `🔥 ${s}` : '·';
+}
+
+const state = {
+  queue: session.cards.slice(),
+  requeued: new Set(),
+  idx: 0,
+  firstTryCorrect: 0,
+  answeredFirstTry: 0,
+  totalFirst: session.cards.length,
+  phase: 'cards',       // cards → escrita → leitura → end
+  escritaIdx: 0,
+  leituraIdx: 0,
+  extras: { escritaOk: 0, leituraOk: 0 }
+};
+
+const CAT_LABEL = {
+  numeros:'Números', dias:'Dias & tempo', profissoes:'Profissões', verbos:'Verbos',
+  vocab:'Vocabulário', familia:'Família', perguntas:'Perguntas', possessivos:'Possessivos'
+};
+
+const alreadyDone = !recoverDate && historyGet()[session.date];
+
+function render(){
+  if (state.phase === 'cards') return renderCard();
+  if (state.phase === 'escrita') return renderEscrita();
+  if (state.phase === 'leitura') return renderLeitura();
+  return renderEnd();
+}
+
+function progressPct(){
+  const total = state.totalFirst + session.escrita.length + session.leitura.length;
+  let done = state.answeredFirstTry;
+  if (state.phase === 'escrita') done = state.totalFirst + state.escritaIdx;
+  if (state.phase === 'leitura') done = state.totalFirst + session.escrita.length + state.leituraIdx;
+  if (state.phase === 'end') done = total;
+  return Math.round(100 * done / Math.max(1, total));
+}
+
+function shell(inner){
+  app.innerHTML = `
+    <div class="q-progress"><div class="bar" style="width:${progressPct()}%"></div></div>
+    ${inner}`;
+}
+
+// ── fase 1: cards ──
+function renderCard(){
+  if (state.idx >= state.queue.length) {
+    state.phase = session.escrita.length ? 'escrita' : (session.leitura.length ? 'leitura' : 'end');
+    if (state.phase === 'end') finish();
+    return render();
+  }
+  const q = state.queue[state.idx];
+  const isRequeue = state.requeued.has(state.idx);
+  shell(`
+    <div class="q-card">
+      <div class="q-cat">${CAT_LABEL[q.cat] || q.cat}${isRequeue ? ' · de novo 💪' : ''} · ${state.idx + 1}/${state.queue.length}</div>
+      ${q.promptHtml}
+      <div class="q-opts" id="opts">
+        ${q.options.map((o,i) => `<button class="q-opt" data-i="${i}">${o}</button>`).join('')}
+      </div>
+      <div id="fb"></div>
+    </div>`);
+  document.querySelectorAll('.q-opt').forEach(btn => {
+    btn.addEventListener('click', () => answer(q, btn, isRequeue));
+  });
+}
+
+function answer(q, btn, isRequeue){
+  const chosen = q.options[parseInt(btn.dataset.i, 10)];
+  const correct = chosen === q.correct;
+  document.querySelectorAll('.q-opt').forEach(b => {
+    b.disabled = true;
+    const val = q.options[parseInt(b.dataset.i, 10)];
+    if (val === q.correct) b.classList.add('correct');
+    else if (b === btn && !correct) b.classList.add('wrong');
+  });
+  // SRS: só a primeira tentativa do dia conta
+  if (!isRequeue) {
+    srsAnswer(q.itemId, correct);
+    state.answeredFirstTry++;
+    if (correct) state.firstTryCorrect++;
+    if (!correct) {
+      state.queue.push(q);                       // refila no fim da sessão
+      state.requeued.add(state.queue.length - 1);
+    }
+  } else if (!correct) {
+    state.queue.push(q);                         // continua até acertar (máx. natural)
+    state.requeued.add(state.queue.length - 1);
+  }
+  const fb = document.getElementById('fb');
+  fb.innerHTML = `
+    <div class="q-feedback ${correct ? 'ok' : 'bad'}">
+      <div class="verdict">${correct ? sample(['Aywa! ✅','Mabsut! 😎','Kolo tamam! ✅','Isso! 🎯']) : 'Quase — a resposta certa:'}</div>
+      ${q.answerHtml}
+    </div>
+    <button class="q-next" id="next">${correct ? 'Próxima →' : 'Entendi, próxima →'}</button>`;
+  document.getElementById('next').addEventListener('click', () => { state.idx++; render(); });
+  document.getElementById('next').focus();
+}
+
+function sample(arr){ return arr[Math.floor(Math.random() * arr.length)]; }
+
+// ── fase 2: escrita ──
+function renderEscrita(){
+  if (state.escritaIdx >= session.escrita.length) {
+    state.phase = session.leitura.length ? 'leitura' : 'end';
+    if (state.phase === 'end') finish();
+    return render();
+  }
+  const e = session.escrita[state.escritaIdx];
+  shell(`
+    <div class="q-card">
+      <div class="q-cat">Escrita · frase do dia ✍️</div>
+      <div class="q-big" style="font-size:22px;">${e.pt}</div>
+      <div class="q-ask">Escreva em árabe (ou arabizi) — depois confira.</div>
+      <textarea class="q-write" id="wr" dir="auto" placeholder="اكتب هنا · escreva aqui…"></textarea>
+      <button class="q-next" id="revealW">Conferir resposta</button>
+      <div id="fbW"></div>
+    </div>`);
+  document.getElementById('revealW').addEventListener('click', () => {
+    document.getElementById('fbW').innerHTML = `
+      <div class="q-feedback ok" style="margin-top:14px;">
+        <div class="verdict">Resposta da aula (${e.src}):</div>
+        <div class="ans-ar">${e.ar}</div>
+        <div class="ans-az">${e.arabizi}</div>
+      </div>
+      <div class="q-self">
+        <button class="yes" id="selfYes">Acertei ✓</button>
+        <button class="no" id="selfNo">Errei ✗</button>
+      </div>`;
+    document.getElementById('revealW').style.display = 'none';
+    document.getElementById('selfYes').addEventListener('click', () => { state.extras.escritaOk++; state.escritaIdx++; render(); });
+    document.getElementById('selfNo').addEventListener('click', () => { state.escritaIdx++; render(); });
+  });
+}
+
+// ── fase 3: leitura ──
+function renderLeitura(){
+  if (state.leituraIdx >= session.leitura.length) {
+    state.phase = 'end';
+    finish();
+    return render();
+  }
+  const l = session.leitura[state.leituraIdx];
+  shell(`
+    <div class="q-card">
+      <div class="q-cat">Leitura em voz alta 📖 · ${l.title}</div>
+      <div class="reading-block">
+        ${l.items.map(s => `<div class="para-ar">${s.ar}</div>`).join('')}
+      </div>
+      <button class="q-next" id="revealL">Conferir arabizi + tradução</button>
+      <div id="fbL"></div>
+    </div>`);
+  document.getElementById('revealL').addEventListener('click', () => {
+    document.getElementById('fbL').innerHTML = `
+      <div class="q-feedback ok" style="margin-top:14px;">
+        ${l.items.map(s => `
+          <div style="margin-bottom:12px;">
+            <div class="ans-az">${s.arabizi}</div>
+            <div class="ans-pt">${s.pt}</div>
+          </div>`).join('')}
+        <div class="ans-pt" style="margin-top:4px;">Fonte: lição ${l.src}</div>
+      </div>
+      <div class="q-self">
+        <button class="yes" id="selfYesL">Li bem ✓</button>
+        <button class="no" id="selfNoL">Preciso praticar</button>
+      </div>`;
+    document.getElementById('revealL').style.display = 'none';
+    document.getElementById('selfYesL').addEventListener('click', () => { state.extras.leituraOk++; state.leituraIdx++; render(); });
+    document.getElementById('selfNoL').addEventListener('click', () => { state.leituraIdx++; render(); });
+  });
+}
+
+// ── fim ──
+let endInfo = null;
+function finish(){
+  if (endInfo) return;
+  endInfo = completeSession(session, state.firstTryCorrect, state.totalFirst, recoverDate);
+  refreshHeadStreak();
+}
+
+function renderEnd(){
+  const pct = Math.round(100 * state.firstTryCorrect / Math.max(1, state.totalFirst));
+  const m = endInfo && endInfo.milestone;
+  const next = endInfo && endInfo.next;
+  const streak = endInfo ? endInfo.streak : currentStreak();
+  shell(`
+    <div class="end-screen">
+      <div class="flame">${recoverDate ? '🧊→🔥' : '🔥'}</div>
+      <h1>${recoverDate ? 'Dia recuperado!' : streak + (streak === 1 ? ' dia' : ' dias') + ' de chama'}</h1>
+      <div class="score">${state.firstTryCorrect}/${state.totalFirst} de primeira (${pct}%)${session.escrita.length ? ' · escrita ' + state.extras.escritaOk + '/' + session.escrita.length : ''}${session.leitura.length ? ' · leitura ok' : ''}</div>
+      ${m ? `
+        <div class="milestone-pop">
+          <div class="emoji">${m.emoji}</div>
+          <div class="m-name">${m.name}</div>
+          <div class="m-sub">Marco de ${m.d} dias desbloqueado!</div>
+        </div>` : ''}
+      ${next ? `
+        <div class="next-milestone" style="text-align:left;">
+          <div class="nm-row"><span>Próximo marco: <b>${next.emoji} ${next.name}</b></span><span>${streak}/${next.d}</span></div>
+          <div class="nm-bar"><div class="fill" style="width:${Math.min(100, Math.round(100 * streak / next.d))}%"></div></div>
+        </div>` : ''}
+      <a href="index.html" class="q-next" style="display:block; text-decoration:none; text-align:center; margin-top:20px;">Voltar ao início</a>
+    </div>`);
+}
+
+// já concluído hoje?
+if (alreadyDone && !recoverDate) {
+  const h = historyGet()[session.date];
+  app.innerHTML = `
+    <div class="end-screen">
+      <div class="flame">✅</div>
+      <h1>Treino de hoje concluído</h1>
+      <div class="score">${h.score !== undefined ? h.score + '/' + h.total + ' de primeira' : 'Feito!'} · streak 🔥 ${currentStreak()}</div>
+      <button class="q-next" id="again" style="max-width:320px;">Treinar de novo (bônus)</button>
+      <a href="index.html" style="display:block; margin-top:16px;">← Voltar ao início</a>
+    </div>`;
+  document.getElementById('again').addEventListener('click', () => { render(); });
+} else {
+  render();
+}
+</script>
+</body>
+</html>
