@@ -6,7 +6,7 @@
 
 // ── Config de push (preenchido no deploy do worker — ver push-worker/README.md) ──
 const PUSH_CONFIG = {
-  workerUrl: '',            // ex.: 'https://arabic-push.SEU-SUBDOMINIO.workers.dev'
+  workerUrl: 'https://arabic-push.rgalera.workers.dev',
   vapidPublicKey: 'BJG0Zt7bllZiM3nwXhiiRIYnnedHVaRnXqrNBD-AGl3thJ3GIrmpOmWEWhavmdPihJlDW5LOb5bsDuPbbMntNfU'
 };
 

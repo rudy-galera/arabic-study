@@ -9,7 +9,7 @@ crons = ["0 8 * * *", "0 14 * * *", "30 17 * * *"]
 
 [[kv_namespaces]]
 binding = "SUBS"
-id = "COLE_AQUI_O_ID_DO_KV"   # criado com: wrangler kv namespace create SUBS
+id = "bd73893046194dacb86429e4c56727f7"   # criado com: wrangler kv namespace create SUBS
 
 [vars]
 VAPID_PUBLIC_KEY = "BJG0Zt7bllZiM3nwXhiiRIYnnedHVaRnXqrNBD-AGl3thJ3GIrmpOmWEWhavmdPihJlDW5LOb5bsDuPbbMntNfU"

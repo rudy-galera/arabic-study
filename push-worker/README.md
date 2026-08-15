@@ -17,8 +17,7 @@ wrangler kv namespace create SUBS
 
 # 2. guardar a chave privada VAPID como secret (cole a linha inteira)
 wrangler secret put VAPID_PRIVATE_JWK
-#    quando pedir o valor, cole EXATAMENTE isto (uma linha):
-#    {"kty":"EC","x":"kbRm3tuWVmIzefBeGKJEhied50dVpGdeqs0EP4AaXe0","y":"hJ3GIrmpOmWEWhavmdPihJlDW5LOb5bsDuPbbMntNfU","crv":"P-256","d":"g23YgJYLByB_AUhBJ6oV87Ws-WDtpFnBf9D0B9QJcnI"}
+#    (a chave privada foi entregue em privado; peça ao Claude se precisar de novo)
 
 # 3. publicar
 wrangler deploy
@@ -47,4 +46,4 @@ Pronto. Testes rápidos:
 - O push vai **sem payload**; quem escolhe a frase engraçada é o `sw.js` no
   seu iPhone (lista local de 24 frases).
 - Chave pública VAPID já está no `wrangler.toml` e no `engine.js` (par gerado
-  em 2026-08-15; a privada só existe como secret no Cloudflare).
+  em 2026-08-15; a privada só existe como secret no Cloudflare — nunca commitá-la neste repo público).
