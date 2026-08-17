@@ -82,14 +82,28 @@ function srsAnswer(itemId, correct){
   lsSet(LS.srs, srs);
 }
 
+// PRNG determinístico de 32 bits (Math.imul evita o overflow de precisão do JS
+// que fazia o shuffle degenerar e a resposta certa cair sempre na última opção)
+function hash32(str){
+  let h = 0;
+  for (const c of str) h = (Math.imul(h, 31) + c.charCodeAt(0)) >>> 0;
+  return h;
+}
+function mulberry32(seed){
+  return function(){
+    seed = (seed + 0x6D2B79F5) | 0;
+    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
 // embaralhar determinístico por data (mesma sessão se recarregar a página)
 function seededShuffle(arr, seedStr){
-  let seed = 0;
-  for (const c of seedStr) seed = (seed * 31 + c.charCodeAt(0)) >>> 0;
+  const rng = mulberry32(hash32(seedStr));
   const a = arr.slice();
   for (let i = a.length - 1; i > 0; i--) {
-    seed = (seed * 1103515245 + 12345) >>> 0;
-    const j = seed % (i + 1);
+    const j = Math.floor(rng() * (i + 1));
     [a[i], a[j]] = [a[j], a[i]];
   }
   return a;
@@ -148,10 +162,7 @@ const PERSONS8 = ['Eu','Você (m)','Você (f)','Ele','Ela','Nós','Vocês','Eles
 const POSS_PT = { 'Eu':'meu/minha', 'Ele':'dele', 'Ela':'dela', 'Você (m)':'seu (de você, m)', 'Você (f)':'seu (de você, f)', 'Nós':'nosso/nossa', 'Vocês':'de vocês', 'Eles':'deles/delas' };
 
 function rand(seedStr, n){
-  let seed = 0;
-  for (const c of seedStr) seed = (seed * 31 + c.charCodeAt(0)) >>> 0;
-  seed = (seed * 1103515245 + 12345) >>> 0;
-  return seed % n;
+  return Math.floor(mulberry32(hash32(seedStr))() * n);
 }
 
 function sampleDistractors(pool, correctLabel, n, keyFn, seed){
