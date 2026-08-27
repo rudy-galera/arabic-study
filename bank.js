@@ -6,8 +6,8 @@
 // Atualizado pelo skill /arabic-class-update.
 // ─────────────────────────────────────────────────────────────────────
 const BANK = {
- "version": "2026-08-15",
- "baseadoEm": "Aulas até 76 (2026-08-14) · Apostila nível básico · cards do site",
+ "version": "2026-08-27",
+ "baseadoEm": "Aulas até 79 (2026-08-26) · Apostila nível básico · cards do site",
  "numeros": [
   {
    "id": "num-sefr",
@@ -4833,9 +4833,9 @@ const BANK = {
    "id": "voc-sentimentos-mest3agel",
    "cat": "sentimentos",
    "catLabel": "Sentimentos",
-   "pt": "com pressa",
-   "ar": "مِستَعجِل",
-   "arabizi": "mest3agel"
+   "pt": "com pressa (m / f)",
+   "ar": "مِستَعجِل / مِستَعجِلة",
+   "arabizi": "mest3agel / mest3agela"
   },
   {
    "id": "voc-sentimentos-messada3-messada3a",
@@ -5081,7 +5081,7 @@ const BANK = {
    "id": "voc-preposicoes-momken",
    "cat": "preposicoes",
    "catLabel": "Preposições",
-   "pt": "pode / posso? (pedido)",
+   "pt": "pode / posso? (pedido) · talvez",
    "ar": "مُمكِن",
    "arabizi": "momken"
   },
@@ -5324,6 +5324,118 @@ const BANK = {
    "pt": "de … até … (dias)",
    "ar": "مِن … لِـ …",
    "arabizi": "men … le …"
+  },
+  {
+   "id": "voc-preposicoes-mesh",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "não (nome, adjetivo, عايز/محتاج, futuro)",
+   "ar": "مِش",
+   "arabizi": "mesh"
+  },
+  {
+   "id": "voc-preposicoes-ma-sh",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "não … (verbo no presente, passado ou imperativo)",
+   "ar": "ما…ـش",
+   "arabizi": "ma…sh"
+  },
+  {
+   "id": "voc-preposicoes-3ashan-ma-sh",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "para não … (finalidade)",
+   "ar": "عَشان ما…ـش",
+   "arabizi": "3ashan ma…sh"
+  },
+  {
+   "id": "voc-preposicoes-keda",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "assim / isso",
+   "ar": "كِدة",
+   "arabizi": "keda"
+  },
+  {
+   "id": "voc-preposicoes-zay",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "como / igual a (comparação)",
+   "ar": "زي",
+   "arabizi": "zay"
+  },
+  {
+   "id": "voc-preposicoes-sa3at",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "às vezes",
+   "ar": "ساعات",
+   "arabizi": "sa3at"
+  },
+  {
+   "id": "voc-preposicoes-da-di",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "esse (vem depois do substantivo)",
+   "ar": "ده",
+   "arabizi": "da"
+  },
+  {
+   "id": "voc-preposicoes-wala-wala",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "nem … nem …",
+   "ar": "ولا … ولا …",
+   "arabizi": "wala … wala …"
+  },
+  {
+   "id": "voc-comida-akl-gahez",
+   "cat": "comida",
+   "catLabel": "Comida e bebida",
+   "pt": "comida pronta",
+   "ar": "أكل جاهِز",
+   "arabizi": "akl gahez"
+  },
+  {
+   "id": "voc-lugares-ma7ata",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "estação",
+   "ar": "مَحَطة",
+   "arabizi": "ma7ata"
+  },
+  {
+   "id": "voc-lugares-fakahany",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "quitanda / fruteiro (o quitandeiro)",
+   "ar": "الفَكَهاني",
+   "arabizi": "elfakahany"
+  },
+  {
+   "id": "voc-lugares-eskendereya",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "Alexandria",
+   "ar": "اسكِندرية",
+   "arabizi": "Eskendereya"
+  },
+  {
+   "id": "voc-preposicoes-3and-lugar",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "عَند sozinho = onde alguém está (no médico, na casa de…)",
+   "ar": "أنا عَند الدكتور",
+   "arabizi": "Ana 3and eldoctor"
+  },
+  {
+   "id": "voc-saudacoes-ashofak-elshahr-elgay",
+   "cat": "saudacoes",
+   "catLabel": "Saudações",
+   "pt": "Te vejo o mês que vem!",
+   "ar": "أشوفَك الشَهر الجاي!",
+   "arabizi": "Ashofak elshahr elgay!"
   }
  ],
  "familia": [
@@ -5584,6 +5696,42 @@ const BANK = {
    "pt": "minha escola / meu amigo",
    "ar": "مَدرَستي / صاحبي",
    "arabizi": "madrasty / sa7by"
+  },
+  {
+   "id": "fam-gedetha",
+   "pt": "a avó dela",
+   "ar": "جِدِتها",
+   "arabizi": "gedetha"
+  },
+  {
+   "id": "fam-gar",
+   "pt": "vizinho",
+   "ar": "جار",
+   "arabizi": "gar"
+  },
+  {
+   "id": "fam-gara",
+   "pt": "vizinha",
+   "ar": "جارة",
+   "arabizi": "gara"
+  },
+  {
+   "id": "fam-geran",
+   "pt": "vizinhos / vizinhas",
+   "ar": "جيران",
+   "arabizi": "geran"
+  },
+  {
+   "id": "fam-zamayel",
+   "pt": "colegas (plural)",
+   "ar": "زَمايِل",
+   "arabizi": "zamayel"
+  },
+  {
+   "id": "fam-e5uat-welad",
+   "pt": "irmãos (homens)",
+   "ar": "اخوات وِلاد",
+   "arabizi": "e5uat welad"
   }
  ],
  "perguntas": [
@@ -5694,6 +5842,18 @@ const BANK = {
    "pt": "quantas vezes por ano",
    "ar": "كام مَرّة في السَنة",
    "arabizi": "kam marra fe el sana"
+  },
+  {
+   "id": "perg-3andak-kam-sana",
+   "pt": "Quantos anos você tem? (m)",
+   "ar": "انتَ عَندَك كام سَنة؟",
+   "arabizi": "Enta 3andak kam sana?"
+  },
+  {
+   "id": "perg-3andek-kam-sana",
+   "pt": "Quantos anos você tem? (f)",
+   "ar": "انتي عَندِك كام سَنة؟",
+   "arabizi": "Enty 3andek kam sana?"
   }
  ],
  "possessivos": [
@@ -6056,6 +6216,86 @@ const BANK = {
     }
    },
    "src": "2026-08-16"
+  },
+  {
+   "id": "poss-3and",
+   "pt": "Ter (عَند + sufixo)",
+   "ar": "عَند",
+   "forms": {
+    "Eu": {
+     "ar": "عَندي",
+     "arabizi": "3andi"
+    },
+    "Ele": {
+     "ar": "عَندُه",
+     "arabizi": "3ando"
+    },
+    "Ela": {
+     "ar": "عَندَها",
+     "arabizi": "3andaha"
+    },
+    "Você (m)": {
+     "ar": "عَندَك",
+     "arabizi": "3andak"
+    },
+    "Você (f)": {
+     "ar": "عَندِك",
+     "arabizi": "3andek"
+    },
+    "Nós": {
+     "ar": "عَندِنا",
+     "arabizi": "3andena"
+    },
+    "Vocês": {
+     "ar": "عَندُكوا",
+     "arabizi": "3andoku"
+    },
+    "Eles": {
+     "ar": "عَندُهُم",
+     "arabizi": "3andohom"
+    }
+   },
+   "src": "2026-08-21 · confirmado 2026-08-26"
+  },
+  {
+   "id": "poss-3and-neg",
+   "pt": "Não ter (ما + عَند + ـش)",
+   "ar": "ماعَندي...ش",
+   "forms": {
+    "Eu": {
+     "ar": "أنا ماعنديش",
+     "arabizi": "Ana ma3andish"
+    },
+    "Você (m)": {
+     "ar": "انتَ ماعَندَكش",
+     "arabizi": "Enta ma3andaksh"
+    },
+    "Você (f)": {
+     "ar": "انتي ماعندِكيش",
+     "arabizi": "Enti ma3andekish"
+    },
+    "Ele": {
+     "ar": "هُوَ ماعندوش",
+     "arabizi": "Howa ma3andush"
+    },
+    "Ela": {
+     "ar": "هي ماعندَهاش",
+     "arabizi": "Heya ma3andahash"
+    },
+    "Nós": {
+     "ar": "احنا ماعَندِناش",
+     "arabizi": "E7na ma3andenash"
+    },
+    "Vocês": {
+     "ar": "انتوا ماعندكوش",
+     "arabizi": "Entu ma3andokush"
+    },
+    "Eles": {
+     "ar": "هُما ماعَندُهُمش",
+     "arabizi": "Homa ma3andohomsh"
+    }
+   },
+   "src": "2026-08-26"
   }
  ],
  "escrita": [
@@ -6751,6 +6991,545 @@ const BANK = {
    "ar": "بَس هما دايماً بيحاولوا يعملوا كل حاجة مع بعض.",
    "arabizi": "Bas homa dayman bei7awlu ye3melu kol 7aga ma3a ba3d.",
    "src": "2026-08-20"
+  },
+  {
+   "id": "esc-99-eu-tenho-40-anos",
+   "pt": "Eu tenho 40 anos.",
+   "ar": "أنا عَندي أربعين سَنة.",
+   "arabizi": "Ana 3andy arba3in sana.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-100-eu-gosto-de-futebol",
+   "pt": "Eu gosto de futebol.",
+   "ar": "أنا بَحِب الكورة.",
+   "arabizi": "Ana ba7eb elkora.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-101-eu-nao-gosto-de-futebol-com",
+   "pt": "Eu não gosto de futebol. (com ما...ـش)",
+   "ar": "أنا مابحبش الكورة.",
+   "arabizi": "Ana maba7ebesh elkora.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-102-eu-nao-gosto-de-futebol-com",
+   "pt": "Eu não gosto de futebol. (com مِش)",
+   "ar": "أنا مِش بَحِب الكورة.",
+   "arabizi": "Ana mesh ba7eb elkora.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-103-eu-nao-sou-brasileiro-frase-se",
+   "pt": "Eu não sou brasileiro. (frase sem verbo)",
+   "ar": "أنا مِش برازيلي.",
+   "arabizi": "Ana mesh brazily.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-104-eu-nao-me-chamo-mohamed-frase",
+   "pt": "Eu não me chamo Mohamed. (frase sem verbo)",
+   "ar": "أنا مِش اسمي مَحَمد.",
+   "arabizi": "Ana mesh esmy Mohamed.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-105-eu-nao-preciso-de-agua-verbo-i",
+   "pt": "Eu não preciso de água. (verbo irregular)",
+   "ar": "أنا مِش مِحتاج ماية.",
+   "arabizi": "Ana mesh mei7tag maya.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-106-eu-nao-quero-sair-amanha-verbo",
+   "pt": "Eu não quero sair amanhã. (verbo irregular)",
+   "ar": "أنا مِش عايِز أخرُج بُكرة.",
+   "arabizi": "Ana mesh 3aeiz a5rog bokra.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-107-eu-nao-durmo-cedo-todos-os-dia",
+   "pt": "Eu não durmo cedo todos os dias. (presente, ما...ـش)",
+   "ar": "أنا مابنامش بَدري كل يوم.",
+   "arabizi": "Ana mabnamsh badry kol youm.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-108-eu-nao-como-carne-presente",
+   "pt": "Eu não como carne. (presente, ما...ـش)",
+   "ar": "أنا ماباكُلش لَحمة.",
+   "arabizi": "Ana mabakolsh la7ma.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-109-eu-nao-como-carne-presente",
+   "pt": "Eu não como carne. (presente, مِش)",
+   "ar": "أنا مِش باكُل لَحمة.",
+   "arabizi": "Ana mesh bakol la7ma.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-110-eu-nao-vou-ao-cinema-amanha-co",
+   "pt": "Eu não vou ao cinema amanhã com Mariam. (futuro)",
+   "ar": "أنا مِش هَروح السينما بكرة مع مريم.",
+   "arabizi": "Ana mesh haru7 elcinema bokra ma3a Mariam.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-111-ali-nao-vai-trabalhar-na-seman",
+   "pt": "Ali não vai trabalhar na semana que vem. (futuro)",
+   "ar": "علي مِش هيشتغل الأسبوع الجاي.",
+   "arabizi": "Ali mesh haieshta8al elosbu3 elgay.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-112-menna-nao-vai-sair-conosco-par",
+   "pt": "Menna não vai sair conosco para não comer fora.",
+   "ar": "منة مِش هَتُخرُج معانا عشان ماتاكُلش برة.",
+   "arabizi": "Menna mesh hato5rog ma3ana 3ashan matakolsh barra.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-113-eu-vou-trabalhar-na-sexta-feir",
+   "pt": "Eu vou trabalhar na sexta-feira que vem para não ir ao escritório no domingo.",
+   "ar": "أنا هَشتَغَل يوم الجمعة الجاية عشان ماروحش المَكتب يوم الحَد.",
+   "arabizi": "Ana hashta8al youm elgom3a elgaya 3ashan maru7sh elmaktab youm el7ad.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-114-eu-fui-ao-supermercado-ontem-p",
+   "pt": "Eu fui ao supermercado ontem. (passado)",
+   "ar": "أنا رُحت السوبرماركت امبارح.",
+   "arabizi": "Ana ro7t elsupermarket embare7.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-115-eu-nao-fui-ao-supermercado-ont",
+   "pt": "Eu não fui ao supermercado ontem. (passado, ما...ـش)",
+   "ar": "أنا مارُحتش السوبرماركت امبارح.",
+   "arabizi": "Ana maro7tesh elsupermarket embare7.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-116-faca-isso-imperativo",
+   "pt": "Faça isso. (imperativo)",
+   "ar": "اِعمِل كِدة.",
+   "arabizi": "E3mel keda.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-117-nao-faca-aquilo-imperativo-neg",
+   "pt": "Não faça aquilo. (imperativo negativo)",
+   "ar": "ماتِعمِلش كِدة.",
+   "arabizi": "Mate3melsh keda.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-118-eu-nao-arrumo-a-casa-mas-eu-li",
+   "pt": "Eu não arrumo a casa, mas eu limpo o meu quarto.",
+   "ar": "أنا مابَرَوقش البيت بس أنا بَنَضَف أوضتي.",
+   "arabizi": "Ana mabaraua2sh elbeit bas ana banadaf odty.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-119-eu-nao-trabalho-em-fevereiro-p",
+   "pt": "Eu não trabalho em fevereiro porque eu sempre viajo para o Brasil.",
+   "ar": "أنا مابشتغلش في شَهر اتنين (فِبرايِر) عشان أنا دايماً بَسافِر البرازيل.",
+   "arabizi": "Ana mabashta8alsh fe shahr etnein (febrayer) 3ashan ana dayman basafer elbrazil.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-120-eu-nao-jogo-tenis-mas-sempre-v",
+   "pt": "Eu não jogo tênis, mas sempre vou à academia.",
+   "ar": "أنا مابَلعَبش تنس، بس دايماً بَروح الجيم.",
+   "arabizi": "Ana mabal3absh tenis, bas dayman baru7 elgym.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-121-hossam-nao-fala-comigo-e-eu-na",
+   "pt": "Hossam não fala comigo e eu não sei por quê.",
+   "ar": "حُسام مابيتكَلِمش معايا وأنا مِش عارِف ليه.",
+   "arabizi": "Hossam mabeitkalemsh ma3aya we ana mesh 3aref leh.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-122-eu-sei-eu-nao-sei",
+   "pt": "Eu sei. / Eu não sei.",
+   "ar": "أنا عارِف · أنا مِش عارِف",
+   "arabizi": "Ana 3aref · Ana mesh 3aref",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-123-nadia-nao-sabe-falar-portugues",
+   "pt": "Nadia não sabe falar português porque ela é egípcia.",
+   "ar": "نادية مابتعرفش تتكلم برتغالي علشان هي مَصرية.",
+   "arabizi": "Nadia mabte3rafsh tetkalem borto8aly 3alashan heya masreya.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-124-nos-nao-passamos-a-roupa-porqu",
+   "pt": "Nós não passamos a roupa porque não sabemos como.",
+   "ar": "احنا مابنكويش الهِدوم عشان مانعرفش ازاي.",
+   "arabizi": "E7na mabenekwish elhedum 3ashan mane3rafsh ezay.",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-125-por-que-voce-nao-le-livros-do",
+   "pt": "Por que você não lê livros do Paulo Coelho? (m)",
+   "ar": "انت مابتقراش كتب باولو كويليو ليه؟",
+   "arabizi": "Enta mabte2rash kotob Paulo Coelho leh?",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-126-por-que-voce-nao-le-livros-do",
+   "pt": "Por que você não lê livros do Paulo Coelho? (f)",
+   "ar": "انتي مابتقريش كتب باولو كويليو ليه؟",
+   "arabizi": "Enty mabte2rish kotob Paulo Coelho leh?",
+   "src": "2026-08-21"
+  },
+  {
+   "id": "esc-127-eu-nao-estou-com-pressa",
+   "pt": "Eu não estou com pressa.",
+   "ar": "أنا مِش مِستَعجِل.",
+   "arabizi": "Ana mesh mesta3gel.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-128-ali-nao-esta-aqui",
+   "pt": "Ali não está aqui.",
+   "ar": "علي مِش هِنا.",
+   "arabizi": "Ali mesh hena.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-129-nos-nao-gostamos-de-jogar-fute",
+   "pt": "Nós não gostamos de jogar futebol, preferimos correr.",
+   "ar": "احنا مابنحبِش نِلعَب كورة، بِنفَضَل نِجري.",
+   "arabizi": "E7na maben7epsh nel3ab kora, benfadal negry.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-130-por-que-voce-nao-bebe-cerveja",
+   "pt": "Por que você não bebe cerveja?",
+   "ar": "انتَ مابتشَربش بيرة ليه؟",
+   "arabizi": "Enta mabteshrapsh bira leh?",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-131-hana-nao-sabe-ler-alemao",
+   "pt": "Hana não sabe ler alemão.",
+   "ar": "هَنا مابتعرفش تِقرا ألماني.",
+   "arabizi": "Hana mabte3rafsh te2ra almany.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-132-o-meu-amigo-ahmed-nao-sabe-que",
+   "pt": "O meu amigo Ahmed não sabe quem é Leandro Hassum porque não assiste a filmes de comédia.",
+   "ar": "صاحبي أحمَد مابيعرَفش مين لياندرو هاسوم عشان مابيتفرجش على أفلام كوميدي.",
+   "arabizi": "Sa7by Ahmed mabie3rafsh min Leandro Hassum 3ashan mabietfaraksh 3ala aflam comedy.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-133-voce-nao-vai-para-a-festa-de-a",
+   "pt": "Você não vai para a festa de aniversário de Fady? Por quê?",
+   "ar": "انت مِش هَتروح عيد ميلاد فادي؟ ليه؟",
+   "arabizi": "Enta mesh hatru7 3id milad Fady? Leh?",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-134-voces-nao-dirigem-bem-tem-que",
+   "pt": "Vocês não dirigem bem! Têm que aprender!",
+   "ar": "انتوا مابِتسوقوش كويس! لازِم تِتعَلِموا!",
+   "arabizi": "Entu mabetsu2ush kowayes! Lazem tet3alemu!",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-135-eles-nao-devem-lavar-a-louca",
+   "pt": "Eles não devem lavar a louça.",
+   "ar": "هُما مِش لازِم يِغسِلوا المواعين.",
+   "arabizi": "Homa mesh lazem ye8selu elmaua3in.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-136-eu-nao-compro-uma-prenda-para",
+   "pt": "Eu não compro uma prenda para a minha mãe no Dia da Mãe porque ela não gosta.",
+   "ar": "أنا مابَشتِريش هدية لِماما في عيد الأم عشان هي مابتحِبش.",
+   "arabizi": "Ana mabashterish hedeya lemama fe 3id elom 3ashan heya mabet7epesh.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-137-o-meu-primo-filho-do-tio-pater",
+   "pt": "O meu primo (filho do tio paterno) não sabe dançar samba.",
+   "ar": "ابن عَمي مابيعرَفش يرقُص سامبا.",
+   "arabizi": "Ebn 3amy mabie3rafsh yor2os samba.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-138-a-minha-prima-filha-da-tia-mat",
+   "pt": "A minha prima (filha da tia materna) não canta bem.",
+   "ar": "بِنت خالتي مابتغَنيش كويس (حِلو)!",
+   "arabizi": "Bent 5alty mabet8anish kowayes (7elw).",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-139-o-meu-sobrinho-filho-da-minha",
+   "pt": "O meu sobrinho (filho da minha irmã) não penteia o cabelo dele porque ainda é muito novo.",
+   "ar": "ابن أُختي مابيسرحش شَعرُه عشان هو لِسة صُغَيَر.",
+   "arabizi": "Ebn o5ty mabeisara7sh sha3ro 3ashan howa lessa so8ayar.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-140-o-meu-irmao-nao-quer-ir-ao-med",
+   "pt": "O meu irmão não quer ir ao médico para não tomar remédio.",
+   "ar": "أخويا مِش عايز يِروح الدكتور عشان ماياخُدش دوا.",
+   "arabizi": "A5oya mesh 3aeiz yeru7 eldoctor 3ashan maya5odsh daua.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-141-o-meu-sogro-sempre-pega-um-tax",
+   "pt": "O meu sogro sempre pega um táxi para não chegar atrasado.",
+   "ar": "حَمايا دايماً بياخُد تاكسي عشان مايوصَلش مِتأخَر.",
+   "arabizi": "7amaya dayiman bia5od taksy 3ashan maieussalsh met2a5ar.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-142-eu-nao-comeco-o-trabalho-as-9h",
+   "pt": "Eu não começo o trabalho às 9h30 na quarta-feira.",
+   "ar": "أنا مابَبدأش الشغل الساعة تسعة ونص يوم الأربع.",
+   "arabizi": "Ana mababda2sh elsho8l elsa3a tes3a we nos youm elarba3.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-143-meu-irmao-nao-compra-nada-dess",
+   "pt": "Meu irmão não compra nada dessa loja.",
+   "ar": "أخويا مابيشتريش حاجة مِن المَحَل ده.",
+   "arabizi": "A5oya mabieshterish 7aga men elma7al da.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-144-minha-prima-filha-do-tio-mater",
+   "pt": "Minha prima (filha do tio materno) não aprende física na faculdade.",
+   "ar": "بنت خالي مابتتعَلمِش فيزيا في الكلية.",
+   "arabizi": "Bent 5aly mabtet3alemsh fezya fe elkoleya.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-145-eu-aprendo-portugues-na-faculd",
+   "pt": "Eu aprendo português na faculdade.",
+   "ar": "أنا بَتعَلم برتغالي في الكلية.",
+   "arabizi": "Ana bat3alem borto8aly fe elkoleya.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-146-voce-nao-escova-os-dentes-ante",
+   "pt": "Você não escova os dentes antes de dormir? (m)",
+   "ar": "انتَ مابتغسلش سِنانَك قَبل ما تنام؟",
+   "arabizi": "Enta mabete8selsh senanak 2abl ma tenam?",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-147-voce-nao-escova-os-dentes-ante",
+   "pt": "Você não escova os dentes antes de dormir? (f)",
+   "ar": "انتي مابتغسليش سنانِك قَبل ما تِنامي؟",
+   "arabizi": "Enty mabete8selish senanek 2abl ma tenamy?",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-148-ela-nao-penteia-o-cabelo-com-e",
+   "pt": "Ela não penteia o cabelo com esse creme.",
+   "ar": "هي مابِتسَرَحش شَعرَها بالكريم ده.",
+   "arabizi": "Heya mabetsara7sh sha3raha belcream da.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-149-nos-nao-escutamos-o-radio-de-m",
+   "pt": "Nós não escutamos o rádio de manhã.",
+   "ar": "احنا مابِنِسمَعش الراديو الصُبح.",
+   "arabizi": "E7na mabenesma3sh elradyo elsob7.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-150-eles-nao-sabem-fazer-comida-br",
+   "pt": "Eles não sabem fazer comida brasileira.",
+   "ar": "هُما مابيعرفوش يعملوا أكل برازيلي.",
+   "arabizi": "Homa mabie3rafush ye3melu akl brazily.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-151-eu-nao-chego-no-trabalho-cedo",
+   "pt": "Eu não chego no trabalho cedo na quinta-feira.",
+   "ar": "أنا مابوصَلش الشُغل بدري يوم الخَميس.",
+   "arabizi": "Ana mabaussalsh elsho8l badry youm el5amis.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-152-voces-nao-comem-peixe",
+   "pt": "Vocês não comem peixe?",
+   "ar": "انتوا مابتاكلوش سَمَك؟",
+   "arabizi": "Entu mabetakolush samak?",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-153-meu-pai-nao-cozinha-bem",
+   "pt": "Meu pai não cozinha bem.",
+   "ar": "بابا مابيطبُخش كويس.",
+   "arabizi": "Baba mabietbo5sh kowayes.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-154-soraya-nao-visita-a-avo-dela-t",
+   "pt": "Soraya não visita a avó dela todo fim de semana.",
+   "ar": "ثُرَية مابِتزورش جِدِتها كُل أجازة.",
+   "arabizi": "Thoraya mabetzorsh gedetha kol agaza.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-155-nos-nao-dancamos-bem-ainda-est",
+   "pt": "Nós não dançamos bem, ainda estamos aprendendo.",
+   "ar": "احنا مابنرقُصش حِلو، لِسة بِنِتعَلِم.",
+   "arabizi": "E7na mabenor2osh 7elw, lessa benet3alem.",
+   "src": "2026-08-22"
+  },
+  {
+   "id": "esc-156-eu-tenho-um-supermercado",
+   "pt": "Eu tenho um supermercado.",
+   "ar": "أنا عَندي سوبرماركت.",
+   "arabizi": "Ana 3andi supermarket.",
+   "src": "2026-08-26"
+  },
+  {
+   "id": "esc-157-eu-estou-no-advogado",
+   "pt": "Eu estou no advogado.",
+   "ar": "أنا عَند المُحامي.",
+   "arabizi": "Ana 3and elmo7amy.",
+   "src": "2026-08-26"
+  },
+  {
+   "id": "esc-158-eu-estou-na-quitanda-no-frutei",
+   "pt": "Eu estou na quitanda (no fruteiro).",
+   "ar": "أنا عَند الفَكَهاني.",
+   "arabizi": "Ana 3and elfakahany.",
+   "src": "2026-08-26"
+  },
+  {
+   "id": "esc-159-eu-tenho-muitos-amigos-na-esco",
+   "pt": "Eu tenho muitos amigos na escola.",
+   "ar": "أنا عَندي أصحاب كِتير في المَدرَسة.",
+   "arabizi": "Ana 3andi as7ab ketir fi elmadrassa.",
+   "src": "2026-08-26"
+  },
+  {
+   "id": "esc-160-eu-nao-tenho-irmaos",
+   "pt": "Eu não tenho irmãos.",
+   "ar": "أنا ماعَنديش اخوات وِلاد.",
+   "arabizi": "Ana ma3andish e5uat welad.",
+   "src": "2026-08-26"
+  },
+  {
+   "id": "esc-161-ele-tem-um-carro-novo",
+   "pt": "Ele tem um carro novo.",
+   "ar": "هُوَ عَندُه سَيارة جديدة.",
+   "arabizi": "Howa 3ando sayara gedida.",
+   "src": "2026-08-26"
+  },
+  {
+   "id": "esc-162-ele-nao-tem-tempo-hoje",
+   "pt": "Ele não tem tempo hoje.",
+   "ar": "هُوَ ماعندوش وَقت النهاردة.",
+   "arabizi": "Howa ma3andush wa2t elnaharda.",
+   "src": "2026-08-26"
+  },
+  {
+   "id": "esc-163-ela-tem-um-cachorro-que-se-cha",
+   "pt": "Ela tem um cachorro que se chama Max.",
+   "ar": "هي عَندَها كَلب اسمُه ماكس.",
+   "arabizi": "Heya 3andaha kalb esmo Max.",
+   "src": "2026-08-26"
+  },
+  {
+   "id": "esc-164-ela-nao-tem-aula-amanha",
+   "pt": "Ela não tem aula amanhã.",
+   "ar": "هي ماعندَهاش حصة بكرة.",
+   "arabizi": "Heya ma3andahash 7essa bokra.",
+   "src": "2026-08-26"
+  },
+  {
+   "id": "esc-165-voce-tem-filhos-m",
+   "pt": "Você tem filhos? (m)",
+   "ar": "انت عَندَك أولاد؟",
+   "arabizi": "Enta 3andak aulad?",
+   "src": "2026-08-26"
+  },
+  {
+   "id": "esc-166-voce-tem-filhos-f",
+   "pt": "Você tem filhos? (f)",
+   "ar": "انتي عَندِك أولاد؟",
+   "arabizi": "Enti 3andek aulad?",
+   "src": "2026-08-26"
+  },
+  {
+   "id": "esc-167-voce-nao-tem-um-computador-m",
+   "pt": "Você não tem um computador? (m)",
+   "ar": "انتَ ماعنَدكش كمبيوتر؟",
+   "arabizi": "Enta ma3andaksh computer?",
+   "src": "2026-08-26"
+  },
+  {
+   "id": "esc-168-voce-nao-tem-um-computador-f",
+   "pt": "Você não tem um computador? (f)",
+   "ar": "انتي ماعندكيش كمبيوتر؟",
+   "arabizi": "Enti ma3andekish computer?",
+   "src": "2026-08-26"
+  },
+  {
+   "id": "esc-169-nos-temos-tempo-livre-no-sabad",
+   "pt": "Nós temos tempo livre no sábado de manhã.",
+   "ar": "احنا عَندِنا وقت فاضي يوم السَبت الصُبح.",
+   "arabizi": "E7na 3andena wa2t fady youm elsabt elsob7.",
+   "src": "2026-08-26"
+  },
+  {
+   "id": "esc-170-nos-nao-temos-muitos-vizinhos",
+   "pt": "Nós não temos muitos vizinhos.",
+   "ar": "احنا ماعندِناش جيران كتير.",
+   "arabizi": "E7na ma3andenash geran ketir.",
+   "src": "2026-08-26"
+  },
+  {
+   "id": "esc-171-eles-tem-uma-casa-grande-em-al",
+   "pt": "Eles têm uma casa grande em Alexandria.",
+   "ar": "هُما عَندُهُم بيت كبير في اسكِندرية.",
+   "arabizi": "Homa 3andohom beit kebir fe eskendereya.",
+   "src": "2026-08-26"
+  },
+  {
+   "id": "esc-172-eles-nao-tem-muitos-vizinhos",
+   "pt": "Eles não têm muitos vizinhos.",
+   "ar": "هُما ماعندُهُمش جيران كتير.",
+   "arabizi": "Homa ma3andohomsh geran ketir.",
+   "src": "2026-08-26"
+  },
+  {
+   "id": "esc-173-voces-tem-dinheiro-no-banco",
+   "pt": "Vocês têm dinheiro no banco?",
+   "ar": "انتوا عَندُكوا فلوس في البنك؟",
+   "arabizi": "Entu 3andoku felus fe elbank?",
+   "src": "2026-08-26"
+  },
+  {
+   "id": "esc-174-voces-nao-tem-amigos-na-univer",
+   "pt": "Vocês não têm amigos na universidade?",
+   "ar": "انتوا ماعندكوش أصحاب في الجامعة؟",
+   "arabizi": "Entu ma3andokush as7ab fe elgam3a?",
+   "src": "2026-08-26"
+  },
+  {
+   "id": "esc-175-te-vejo-o-mes-que-vem",
+   "pt": "Te vejo o mês que vem!",
+   "ar": "أشوفَك الشَهر الجاي!",
+   "arabizi": "Ashofak elshahr elgay!",
+   "src": "2026-08-26"
   }
  ],
  "leitura": [
@@ -7128,6 +7907,264 @@ const BANK = {
     }
    ],
    "src": "2026-08-20"
+  },
+  {
+   "id": "lei-15-mini-leitura-negar-com-aula-77",
+   "title": "Mini-leitura · negar com مِش (Aula 77)",
+   "items": [
+    {
+     "pt": "Eu não sou brasileiro.",
+     "ar": "أنا مِش برازيلي.",
+     "arabizi": "Ana mesh brazily."
+    },
+    {
+     "pt": "Eu não preciso de água.",
+     "ar": "أنا مِش مِحتاج ماية.",
+     "arabizi": "Ana mesh mei7tag maya."
+    },
+    {
+     "pt": "Eu não quero sair amanhã.",
+     "ar": "أنا مِش عايِز أخرُج بُكرة.",
+     "arabizi": "Ana mesh 3aeiz a5rog bokra."
+    },
+    {
+     "pt": "Eu não vou ao cinema amanhã com Mariam.",
+     "ar": "أنا مِش هَروح السينما بكرة مع مريم.",
+     "arabizi": "Ana mesh haru7 elcinema bokra ma3a Mariam."
+    }
+   ],
+   "src": "2026-08-21"
+  },
+  {
+   "id": "lei-16-mini-leitura-negar-com-aula-77",
+   "title": "Mini-leitura · negar com ما...ـش (Aula 77)",
+   "items": [
+    {
+     "pt": "Eu não durmo cedo todos os dias.",
+     "ar": "أنا مابنامش بَدري كل يوم.",
+     "arabizi": "Ana mabnamsh badry kol youm."
+    },
+    {
+     "pt": "Eu não como carne.",
+     "ar": "أنا ماباكُلش لَحمة.",
+     "arabizi": "Ana mabakolsh la7ma."
+    },
+    {
+     "pt": "Eu não fui ao supermercado ontem.",
+     "ar": "أنا مارُحتش السوبرماركت امبارح.",
+     "arabizi": "Ana maro7tesh elsupermarket embare7."
+    },
+    {
+     "pt": "Eu não arrumo a casa, mas eu limpo o meu quarto.",
+     "ar": "أنا مابَرَوقش البيت بس أنا بَنَضَف أوضتي.",
+     "arabizi": "Ana mabaraua2sh elbeit bas ana banadaf odty."
+    }
+   ],
+   "src": "2026-08-21"
+  },
+  {
+   "id": "lei-17-mini-leitura-para-nao-e-porque",
+   "title": "Mini-leitura · «para não…» e porquês (Aula 77)",
+   "items": [
+    {
+     "pt": "Menna não vai sair conosco para não comer fora.",
+     "ar": "منة مِش هَتُخرُج معانا عشان ماتاكُلش برة.",
+     "arabizi": "Menna mesh hato5rog ma3ana 3ashan matakolsh barra."
+    },
+    {
+     "pt": "Eu vou trabalhar na sexta-feira que vem para não ir ao escritório no domingo.",
+     "ar": "أنا هَشتَغَل يوم الجمعة الجاية عشان ماروحش المَكتب يوم الحَد.",
+     "arabizi": "Ana hashta8al youm elgom3a elgaya 3ashan maru7sh elmaktab youm el7ad."
+    },
+    {
+     "pt": "Hossam não fala comigo e eu não sei por quê.",
+     "ar": "حُسام مابيتكَلِمش معايا وأنا مِش عارِف ليه.",
+     "arabizi": "Hossam mabeitkalemsh ma3aya we ana mesh 3aref leh."
+    },
+    {
+     "pt": "Nadia não sabe falar português porque ela é egípcia.",
+     "ar": "نادية مابتعرفش تتكلم برتغالي علشان هي مَصرية.",
+     "arabizi": "Nadia mabte3rafsh tetkalem borto8aly 3alashan heya masreya."
+    }
+   ],
+   "src": "2026-08-21"
+  },
+  {
+   "id": "lei-18-mini-leitura-adham-se-apresent",
+   "title": "Mini-leitura · Adham se apresenta (Aula 78)",
+   "items": [
+    {
+     "pt": "Meu nome é Adham e hoje eu vou falar um pouco sobre mim.",
+     "ar": "اسمي أدهَم والنهاردة هَتكَلِم شوية عَن نَفسي.",
+     "arabizi": "Esmy Adham we elnaharda hatkalem showaya 3an nafsy."
+    },
+    {
+     "pt": "Eu não gosto de acordar cedo, não tomo café da manhã todos os dias e não vou para a academia como muitas pessoas.",
+     "ar": "أنا مابحبش أصحى بَدري، مابفطَرش كل يوم ومابَروحش الجيم زي ناس كِتير.",
+     "arabizi": "Ana maba7ebesh as7a badry, mabaftarsh kol youm we mabaru7sh elgym zay nas ketir."
+    },
+    {
+     "pt": "Eu gosto de assistir séries e de comer, mas não gosto de cozinhar!",
+     "ar": "أنا بحب أتفرج على مُسَلسَلات وآكُل بَس مابَحِبش أطبُخ.",
+     "arabizi": "Ana ba7eb atfarag 3ala mosalsalat we akol bas maba7ebesh atbo5."
+    },
+    {
+     "pt": "Eu não preparo o café da manhã, nem o almoço, nem o jantar.",
+     "ar": "أنا مابَجَهِزش الفِطار ولا الغَدا ولا العَشا.",
+     "arabizi": "Ana mabagahezsh elfetar wala el8ada wala el3asha."
+    },
+    {
+     "pt": "Eu compro comida pronta.",
+     "ar": "أنا بَشتري أكل جاهِز.",
+     "arabizi": "Ana bashtery akl gahez."
+    }
+   ],
+   "src": "2026-08-22"
+  },
+  {
+   "id": "lei-19-mini-leitura-adham-trabalho-e-",
+   "title": "Mini-leitura · Adham · trabalho e rotina (Aula 78)",
+   "items": [
+    {
+     "pt": "Eu não trabalho nem estudo, mas às vezes eu ajudo meu pai na loja.",
+     "ar": "أنا مابشتغلش ولا بذاكِر، بَس ساعات بَساعِد بابا في المَحَل.",
+     "arabizi": "Ana mabashta8alsh wala bazaker, bas sa3at basa3ed baba fe elma7al."
+    },
+    {
+     "pt": "Ele tem uma loja pequena no bairro.",
+     "ar": "هو عَنده مَحَل صُغَيَر في الحَي.",
+     "arabizi": "Howa 3ando ma7al so8ayar fe el7ay."
+    },
+    {
+     "pt": "Eu sempre durmo tarde. Talvez por causa disso, eu sempre acordo cansado!",
+     "ar": "أنا دايماً بَنام مِتأخر. ممكِن عَشان كدة، دايماً بَصحى تَعبان.",
+     "arabizi": "Ana dayman banam met2a5ar. Momken 3ashan keda, dayman bas7a ta3ban."
+    }
+   ],
+   "src": "2026-08-22"
+  },
+  {
+   "id": "lei-20-mini-leitura-3and-onde-eu-estou",
+   "title": "Mini-leitura · «عَند» — onde eu estou (Aula 79)",
+   "items": [
+    {
+     "pt": "Eu estou na estação.",
+     "ar": "أنا عَند المَحَطة.",
+     "arabizi": "Ana 3and elma7ata."
+    },
+    {
+     "pt": "Eu estou no médico.",
+     "ar": "أنا عَند الدكتور.",
+     "arabizi": "Ana 3and eldoctor."
+    },
+    {
+     "pt": "Eu estou no barbeiro.",
+     "ar": "أنا عَند الحَلاق.",
+     "arabizi": "Ana 3and el7ala2."
+    },
+    {
+     "pt": "Eu estou na casa da Maria.",
+     "ar": "أنا عَند ماريا.",
+     "arabizi": "Ana 3and Maria."
+    },
+    {
+     "pt": "Eu estou na casa da vovó e do vovô.",
+     "ar": "أنا عَند تيتة وجدو.",
+     "arabizi": "Ana 3and teta we gedo."
+    }
+   ],
+   "src": "2026-08-26"
+  },
+  {
+   "id": "lei-21-mini-leitura-colegas-e-amigos",
+   "title": "Mini-leitura · colegas e amigos de todo lugar (Aula 79)",
+   "items": [
+    {
+     "pt": "Eu tenho muitas colegas libanesas.",
+     "ar": "أنا عَندي زَمايِل لبنانيات كتير.",
+     "arabizi": "Ana 3andi zamayel lobnaneyat ketir."
+    },
+    {
+     "pt": "Eu tenho muitos colegas argentinos.",
+     "ar": "أنا عَندي زَمايِل أرجنتينيين كتير.",
+     "arabizi": "Ana 3andi zamayel arjantineyiin ketir."
+    },
+    {
+     "pt": "Eu tenho muitas amigas brasileiras.",
+     "ar": "أنا عَندي أصحاب برازيليات كتير.",
+     "arabizi": "Ana 3andi as7ab barasileyat ketir."
+    },
+    {
+     "pt": "Eu tenho muitos amigos egípcios.",
+     "ar": "أنا عندي أصحاب مصريين كتير.",
+     "arabizi": "Ana 3andi as7ab masreyiin ketir."
+    }
+   ],
+   "src": "2026-08-26"
+  },
+  {
+   "id": "lei-22-mini-leitura-3and-ou-fi",
+   "title": "Mini-leitura · «عَند» ou «في»? (Aula 79)",
+   "items": [
+    {
+     "pt": "Eu estou no supermercado (dentro dele).",
+     "ar": "أنا في السوبرماركِت.",
+     "arabizi": "Ana fe elsupermarket."
+    },
+    {
+     "pt": "Eu estou no supermercado (no local, junto dele).",
+     "ar": "أنا عَند السوبرماركت.",
+     "arabizi": "Ana 3and elsupermarket."
+    },
+    {
+     "pt": "Eu tenho um supermercado.",
+     "ar": "أنا عَندي سوبرماركت.",
+     "arabizi": "Ana 3andi supermarket."
+    },
+    {
+     "pt": "Eu estou em casa (dentro).",
+     "ar": "أنا في البيت.",
+     "arabizi": "Ana fe elbeit."
+    },
+    {
+     "pt": "Eu estou lá em casa (no local).",
+     "ar": "أنا عَند البيت.",
+     "arabizi": "Ana 3and elbeit."
+    }
+   ],
+   "src": "2026-08-26"
+  },
+  {
+   "id": "lei-23-mini-leitura-3and-ou-fi-2",
+   "title": "Mini-leitura · «عَند» ou «في» — escritório e casa de alguém (Aula 79)",
+   "items": [
+    {
+     "pt": "Eu estou no escritório (dentro).",
+     "ar": "أنا في المَكتب.",
+     "arabizi": "Ana fe elmaktab."
+    },
+    {
+     "pt": "Eu estou no escritório (no local).",
+     "ar": "أنا عَند المَكتَب.",
+     "arabizi": "Ana 3and elmaktab."
+    },
+    {
+     "pt": "Eu estou na casa da Maria (dentro da casa dela).",
+     "ar": "أنا في بيت ماريا.",
+     "arabizi": "Ana fe beit Maria."
+    },
+    {
+     "pt": "Eu estou na casa da vovó e do vovô (dentro).",
+     "ar": "أنا في بيت تيتة وجِدو.",
+     "arabizi": "Ana fe beit teta we gedo."
+    },
+    {
+     "pt": "Eu estou lá na casa da vovó e do vovô (no local).",
+     "ar": "أنا عند بيت تيتة وجدو.",
+     "arabizi": "Ana 3and beit teta we gedo."
+    }
+   ],
+   "src": "2026-08-26"
   }
  ],
  "quotes": [
@@ -7154,6 +8191,8 @@ const BANK = {
   "Sua professora egípcia ia ficar orgulhosa. Ou vai. Depende de você. 🇪🇬",
   "El-sa3a kam? Hora do árabe. ⏰",
   "Não quebra a corrente. Você sabe como dói recomeçar do zero. ⛓️",
-  "Feliz é quem treina: mabsut. Você hoje: ? 🤔"
+  "Feliz é quem treina: mabsut. Você hoje: ? 🤔",
+  "مِش ou ما...ـش? Hoje você escolhe certo. 💪",
+  "Mesh 3aref? Depois do treino você fica 3aref. 🧠"
  ]
 };
