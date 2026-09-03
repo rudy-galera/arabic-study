@@ -6,8 +6,8 @@
 // Atualizado pelo skill /arabic-class-update.
 // ─────────────────────────────────────────────────────────────────────
 const BANK = {
- "version": "2026-08-27",
- "baseadoEm": "Aulas até 79 (2026-08-26) · Apostila nível básico · cards do site",
+ "version": "2026-09-03",
+ "baseadoEm": "Aulas até 80 (2026-09-02) · Apostila nível básico · cards do site",
  "numeros": [
   {
    "id": "num-sefr",
@@ -2994,6 +2994,88 @@ const BANK = {
      "arabizi": "Homa beiuaru"
     }
    }
+  },
+  {
+   "id": "verbo-fakar",
+   "pt": "pensar",
+   "ar": "فَكَر",
+   "arabizi": "fakar",
+   "grupo": "livro-pg88",
+   "conj": {
+    "Eu": {
+     "ar": "أنا بَفَكَر",
+     "arabizi": "Ana bafakar"
+    },
+    "Você (m)": {
+     "ar": "انتَ بِتفَكَر",
+     "arabizi": "Enta betfakar"
+    },
+    "Você (f)": {
+     "ar": "انتي بِتفَكَري",
+     "arabizi": "Enty betfakary"
+    },
+    "Ele": {
+     "ar": "هُوَ بيفَكَر",
+     "arabizi": "Howa beifakar"
+    },
+    "Ela": {
+     "ar": "هِيَ بِتفَكَر",
+     "arabizi": "Heya betfakar"
+    },
+    "Nós": {
+     "ar": "احنا بِنفَكَر",
+     "arabizi": "E7na benfakar"
+    },
+    "Vocês": {
+     "ar": "انتوا بِتفَكَروا",
+     "arabizi": "Entu betfakaru"
+    },
+    "Eles/Elas": {
+     "ar": "هُما بيفَكَروا",
+     "arabizi": "Homa beifakaru"
+    }
+   }
+  },
+  {
+   "id": "verbo-faker",
+   "pt": "lembrar-se",
+   "ar": "فاكِر",
+   "arabizi": "faker",
+   "grupo": "auxiliares",
+   "conj": {
+    "Eu": {
+     "ar": "أنا فاكِر / فاكرة",
+     "arabizi": "Ana faker / fakra"
+    },
+    "Você (m)": {
+     "ar": "انتَ فاكِر",
+     "arabizi": "Enta faker"
+    },
+    "Você (f)": {
+     "ar": "انتي فاكرة",
+     "arabizi": "Enty fakra"
+    },
+    "Ele": {
+     "ar": "هُوَ فاكِر",
+     "arabizi": "Howa faker"
+    },
+    "Ela": {
+     "ar": "هِيَ فاكرة",
+     "arabizi": "Heya fakra"
+    },
+    "Nós": {
+     "ar": "احنا فاكرين",
+     "arabizi": "E7na fakrin"
+    },
+    "Vocês": {
+     "ar": "انتوا فاكرين",
+     "arabizi": "Entu fakrin"
+    },
+    "Eles/Elas": {
+     "ar": "هُما فاكرين",
+     "arabizi": "Homa fakrin"
+    }
+   }
   }
  ],
  "vocab": [
@@ -5436,6 +5518,94 @@ const BANK = {
    "pt": "Te vejo o mês que vem!",
    "ar": "أشوفَك الشَهر الجاي!",
    "arabizi": "Ashofak elshahr elgay!"
+  },
+  {
+   "id": "voc-preposicoes-3an",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "sobre / a respeito de",
+   "ar": "عَن",
+   "arabizi": "3an"
+  },
+  {
+   "id": "voc-preposicoes-3an-nafsy",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "sobre mim",
+   "ar": "عَن نَفسي",
+   "arabizi": "3an nafsy"
+  },
+  {
+   "id": "voc-preposicoes-auel-ma",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "assim que (+ verbo)",
+   "ar": "أول ما",
+   "arabizi": "auel ma"
+  },
+  {
+   "id": "voc-preposicoes-leua7dy",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "sozinho / sozinha (eu)",
+   "ar": "لِوَحدي",
+   "arabizi": "leua7dy"
+  },
+  {
+   "id": "voc-preposicoes-nafs-elbeit",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "na mesma casa",
+   "ar": "نَفس البيت",
+   "arabizi": "nafs elbeit"
+  },
+  {
+   "id": "voc-lugares-oroba",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "Europa",
+   "ar": "أوروبا",
+   "arabizi": "Oroba"
+  },
+  {
+   "id": "voc-lugares-afriqya",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "África",
+   "ar": "أفريقيا",
+   "arabizi": "Afriqya"
+  },
+  {
+   "id": "voc-lugares-asya",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "Ásia",
+   "ar": "أسيا",
+   "arabizi": "Asya"
+  },
+  {
+   "id": "voc-lugares-amrika-elganubeya",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "América do Sul / latina",
+   "ar": "أمريكا الجَنوبية",
+   "arabizi": "Amrika elganubeya"
+  },
+  {
+   "id": "voc-preposicoes-nafs",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "mesmo / mesma",
+   "ar": "نَفس",
+   "arabizi": "nafs"
+  },
+  {
+   "id": "voc-preposicoes-we-5alas",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "e pronto / e é isso",
+   "ar": "وِخَلاص",
+   "arabizi": "we 5alas"
   }
  ],
  "familia": [
@@ -6296,6 +6466,46 @@ const BANK = {
     }
    },
    "src": "2026-08-26"
+  },
+  {
+   "id": "poss-leua7d",
+   "pt": "Sozinho (لِوَحد + sufixo)",
+   "ar": "لِوَحد",
+   "forms": {
+    "Eu": {
+     "ar": "لِوَحدي",
+     "arabizi": "leua7dy"
+    },
+    "Ele": {
+     "ar": "لِوَحدُه",
+     "arabizi": "leua7do"
+    },
+    "Ela": {
+     "ar": "لِوَحدَها",
+     "arabizi": "leua7daha"
+    },
+    "Você (m)": {
+     "ar": "لِوَحدَك",
+     "arabizi": "leua7dak"
+    },
+    "Você (f)": {
+     "ar": "لِوَحدِك",
+     "arabizi": "leua7dek"
+    },
+    "Nós": {
+     "ar": "لِوَحدِنا",
+     "arabizi": "leua7dena"
+    },
+    "Vocês": {
+     "ar": "لِوَحدُكوا",
+     "arabizi": "leua7doku"
+    },
+    "Eles": {
+     "ar": "لِوَحدُهُم",
+     "arabizi": "leua7dohom"
+    }
+   },
+   "src": "2026-09-02"
   }
  ],
  "escrita": [
@@ -7530,6 +7740,125 @@ const BANK = {
    "ar": "أشوفَك الشَهر الجاي!",
    "arabizi": "Ashofak elshahr elgay!",
    "src": "2026-08-26"
+  },
+  {
+   "id": "esc-176-eu-moro-em-dubai-nos-emirados",
+   "pt": "Eu moro em Dubai, nos Emirados.",
+   "ar": "أنا ساكِن في دبي في الامارات.",
+   "arabizi": "Ana saken fe Dubai fe elEmarat.",
+   "src": "2026-09-02"
+  },
+  {
+   "id": "esc-177-eu-vou-viajar-para-o-egito-assim-que-e",
+   "pt": "Eu vou viajar para o Egito assim que eu terminar as aulas de árabe.",
+   "ar": "أنا هَسافِر مَصر أول ما أخَلَص حصص العَربي.",
+   "arabizi": "Ana hasafer Masr auel ma a5alas 7esas el3araby.",
+   "src": "2026-09-02"
+  },
+  {
+   "id": "esc-178-eu-vou-tomar-um-banho-assim-que-voltar",
+   "pt": "Eu vou tomar um banho assim que voltar da academia.",
+   "ar": "أنا هاخُد دُش أوِل ما أرجَع مِن الجيم.",
+   "arabizi": "Ana ha5od dush auel ma arga3 men el-gym.",
+   "src": "2026-09-02"
+  },
+  {
+   "id": "esc-179-eu-decidi-ir-a-academia-amanha",
+   "pt": "Eu decidi ir à academia amanhã.",
+   "ar": "أنا قَرَرت أروح الجيم بُكرة.",
+   "arabizi": "Ana 2arart aru7 el-gym bokra.",
+   "src": "2026-09-02"
+  },
+  {
+   "id": "esc-180-eu-nao-gosto-de-ficar-em-casa-sozinho",
+   "pt": "Eu não gosto de ficar em casa sozinho/a.",
+   "ar": "أنا مابحبش أقعُد في البيت لِوَحدي.",
+   "arabizi": "Ana maba7ebsh a3od fe elbeit leua7dy.",
+   "src": "2026-09-02"
+  },
+  {
+   "id": "esc-181-ele-nao-sabe-fazer-tudo-sozinho",
+   "pt": "Ele não sabe fazer tudo sozinho.",
+   "ar": "هو مابيعرَفش يِعمِل كل حاجة لِوَحدُه.",
+   "arabizi": "Howa mabie3rafsh ye3mel kol 7aga leua7do.",
+   "src": "2026-09-02"
+  },
+  {
+   "id": "esc-182-ela-esta-aprendendo-ingles-sozinha",
+   "pt": "Ela está aprendendo inglês sozinha.",
+   "ar": "هي بِتِتعَلِم انجليزي لِوَحدَها.",
+   "arabizi": "Heya betet3alem engelizy leua7daha.",
+   "src": "2026-09-02"
+  },
+  {
+   "id": "esc-183-voce-esta-sozinho-ou-com-alguem-m",
+   "pt": "Você está sozinho? Ou com alguém? (m)",
+   "ar": "انتَ لِوحَدَك؟ وَلّا مَعَ حَد؟",
+   "arabizi": "Enta leua7dak? Walla ma3a 7ad?",
+   "src": "2026-09-02"
+  },
+  {
+   "id": "esc-184-voce-esta-sozinha-ou-com-alguem-f",
+   "pt": "Você está sozinha? Ou com alguém? (f)",
+   "ar": "انتي لِوَحدِك؟ ولّا مَعَ حَد؟",
+   "arabizi": "Enty leua7dek? Walla ma3a 7ad?",
+   "src": "2026-09-02"
+  },
+  {
+   "id": "esc-185-nos-nao-queremos-ir-ao-cinema-sozinhos",
+   "pt": "Nós não queremos ir ao cinema sozinhos.",
+   "ar": "احنا مِش عايزين نِروح السينما لِوحدِنا.",
+   "arabizi": "E7na mesh 3aeizin neru7 elcinema leua7dena.",
+   "src": "2026-09-02"
+  },
+  {
+   "id": "esc-186-eles-sempre-saem-sozinhos-no-fim-de-se",
+   "pt": "Eles sempre saem sozinhos no fim de semana.",
+   "ar": "هُما دايماً بيخرُجوا لِوحَدُهُم في الأجازة.",
+   "arabizi": "Homa dayman bei5rogu leua7dohom fe el-agaza.",
+   "src": "2026-09-02"
+  },
+  {
+   "id": "esc-187-voces-estao-aqui-sozinhos",
+   "pt": "Vocês estão aqui sozinhos?",
+   "ar": "انتوا لوحدُكوا هِنا؟",
+   "arabizi": "Entu leua7doku hena?",
+   "src": "2026-09-02"
+  },
+  {
+   "id": "esc-188-o-meu-sobrinho-filho-da-minha-irma-nao",
+   "pt": "O meu sobrinho (filho da minha irmã) não sabe escrever sozinho.",
+   "ar": "ابن أختي مابيعرفش يِكتِب لِوَحدُه.",
+   "arabizi": "Ebn o5ty mabie3rafsh yekteb leua7do.",
+   "src": "2026-09-02"
+  },
+  {
+   "id": "esc-189-o-que-voce-faz-nas-ferias-m",
+   "pt": "O que você faz nas férias? (m)",
+   "ar": "انتَ بِتِعمِل ايه في الأجازة؟",
+   "arabizi": "Enta bete3mel eh fe el-agaza?",
+   "src": "2026-09-02"
+  },
+  {
+   "id": "esc-190-eu-nao-faco-nada-eu-so-descanso",
+   "pt": "Eu não faço nada, eu só descanso.",
+   "ar": "أنا مابَعمِلش حاجة، أنا بَرَيَح بَس.",
+   "arabizi": "Ana maba3melsh 7aga, ana baraya7 bas.",
+   "src": "2026-09-02"
+  },
+  {
+   "id": "esc-191-eu-nao-me-lembro",
+   "pt": "Eu não me lembro.",
+   "ar": "أنا مِش فاكِر.",
+   "arabizi": "Ana mesh faker.",
+   "src": "2026-09-02"
+  },
+  {
+   "id": "esc-192-eu-moro-nos-emirados-em-dubai",
+   "pt": "Eu moro nos Emirados, em Dubai. (ordem alternativa)",
+   "ar": "أنا ساكِن في الامارات في دبي.",
+   "arabizi": "Ana saken fe elEmarat fe Dubai.",
+   "src": "2026-09-02"
   }
  ],
  "leitura": [
@@ -8165,6 +8494,80 @@ const BANK = {
     }
    ],
    "src": "2026-08-26"
+  },
+  {
+   "id": "lei-24-mini-leitura-sarah-se-apresenta-aulas",
+   "title": "Mini-leitura · Sarah se apresenta (Aulas 79-80)",
+   "items": [
+    {
+     "pt": "Hoje é sábado, 18 de setembro, e eu quero escrever e falar um pouco sobre mim.",
+     "ar": "النهاردة السبت 18 سَبتمبر وعايزة أكتِب وأتكَلِم شوية عَن نَفسي.",
+     "arabizi": "Enaharda youm el sabt tamantashar september, we ana 3aeiza akteb we atkalem showaya 3an nafsy."
+    },
+    {
+     "pt": "Meu nome é Sarah e eu sou brasileira do Rio de Janeiro, mas eu moro agora na Europa, em Paris.",
+     "ar": "اسمي سارة، وأنا برازيلية مِن ريو دي جانيرو بس أنا ساكنة في أوروبا في باريس دِلوَقتي.",
+     "arabizi": "Esmy Sarah we ana barazileya men Rio de Janeiro, bas ana sakna delua2ty fe Oroba, fe Paris."
+    },
+    {
+     "pt": "Eu tenho 23 anos. Eu tenho um cachorro que se chama Max e uma gata que se chama Bussy.",
+     "ar": "أنا عَندي 23 (تلاتة وعِشرين) سنة. وعَندي كَلب اسمُه ماكس وقُطة اسمَها بوسي.",
+     "arabizi": "Ana 3andy talata we 3eshrin sana. We 3andy kalb esmo Max we 2otta esmaha Bussy."
+    },
+    {
+     "pt": "Eu moro com minha mãe e meu pai na mesma casa.",
+     "ar": "أنا ساكنة مَعَ ماما وبابا في نَفس البيت.",
+     "arabizi": "Ana sakna ma3a mama we baba fe nafs elbeit."
+    },
+    {
+     "pt": "Eu não tenho nem carro nem moto, mas eu tenho uma bicicleta.",
+     "ar": "أنا ماعنديش ولا عَربية وَلا موتوسيكل، بَس أنا عَندي عَجَلة.",
+     "arabizi": "Ana ma3andish wala 3arabeya wala motosekl, bas ana 3andy 3agala."
+    },
+    {
+     "pt": "Eu gosto de estudar e aprender idiomas e coisas novas todos os dias.",
+     "ar": "أنا بَحِب أذاكِر وأتعَلِم لُغات وحاجات جِديدة كُل يوم.",
+     "arabizi": "Ana ba7eb azaker we at3alem lo8at we 7agat gedida kol youm."
+    },
+    {
+     "pt": "Eu também gosto de praticar esporte e correr; eu vou para a academia todos os dias de manhã.",
+     "ar": "أنا كَمان بَحِب ألعَب رِياضة وأجري، وأنا بَروح الجيم كل يوم الصُبح.",
+     "arabizi": "Ana kaman ba7eb al3ab reyada we agry, we ana baru7 el-gym kol youm elsob7."
+    },
+    {
+     "pt": "Eu não trabalho agora, mas eu sou estudante numa universidade grande aqui.",
+     "ar": "أنا مابشتغلش دِلوَقتي بَس أنا طالبة في جامعة كبيرة هِنا.",
+     "arabizi": "Ana mabashta8alsh delua2ty, bas ana taleba fe gam3a kebira hena."
+    }
+   ],
+   "src": "2026-09-02"
+  },
+  {
+   "id": "lei-25-mini-leitura-o-que-voce-faz-nas-ferias",
+   "title": "Mini-leitura · o que você faz nas férias (Aula 80)",
+   "items": [
+    {
+     "pt": "O que você faz nas férias?",
+     "ar": "انتَ بِتِعمِل ايه في الأجازة؟",
+     "arabizi": "Enta bete3mel eh fe el-agaza?"
+    },
+    {
+     "pt": "Eu jogo tênis na sexta-feira, e jogo videogame no meu VR novo.",
+     "ar": "أنا بَلعَب تِنِس يوم الجُمعة، وبَلعَب فيديو جيمز عَلى الـ VR الجِديد بِتاعي.",
+     "arabizi": "Ana bal3ab tenis youm elgom3a, we bal3ab video games 3ala el VR elgedid bita3y."
+    },
+    {
+     "pt": "E assisto YouTube e o jogo do Flamengo.",
+     "ar": "وبَتفَرَج عَلى اليوتيوب وماتش فلامِنجو.",
+     "arabizi": "We batfarag 3ala elYouTube we match Flamengo."
+    },
+    {
+     "pt": "Eu não faço nada, eu só descanso (e pronto).",
+     "ar": "أنا مابَعمِلش حاجة، أنا بَرَيَح بَس (وِخَلاص).",
+     "arabizi": "Ana maba3melsh 7aga, ana baraya7 bas (we 5alas)."
+    }
+   ],
+   "src": "2026-09-02"
   }
  ],
  "quotes": [
