@@ -6,8 +6,8 @@
 // Atualizado pelo skill /arabic-class-update.
 // ─────────────────────────────────────────────────────────────────────
 const BANK = {
- "version": "2026-09-03",
- "baseadoEm": "Aulas até 80 (2026-09-02) · Apostila nível básico · cards do site",
+ "version": "2026-09-11",
+ "baseadoEm": "Aulas até 83 (2026-09-11) · Apostila nível básico · cards do site",
  "numeros": [
   {
    "id": "num-sefr",
@@ -477,7 +477,7 @@ const BANK = {
    "aziF": "baya3a"
   },
   {
-   "id": "prof-",
+   "id": "prof-set-bet",
    "pt": "Dona de casa",
    "arM": "—",
    "aziM": "—",
@@ -5606,6 +5606,150 @@ const BANK = {
    "pt": "e pronto / e é isso",
    "ar": "وِخَلاص",
    "arabizi": "we 5alas"
+  },
+  {
+   "id": "voc-preposicoes-men-8eir",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "sem (+ pessoa/coisa) — Aula 81",
+   "ar": "مِن غير",
+   "arabizi": "men 8eir"
+  },
+  {
+   "id": "voc-preposicoes-men-8ery-8erak",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "sem mim / sem você (m) / sem você (f)",
+   "ar": "مِن غيري / مِن غيرَك / مِن غيرِك",
+   "arabizi": "men 8ery / men 8erak / men 8erek"
+  },
+  {
+   "id": "voc-preposicoes-men-8ero-8erha",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "sem ele / sem ela",
+   "ar": "مِن غيرُه / مِن غيرها",
+   "arabizi": "men 8ero / men 8erha"
+  },
+  {
+   "id": "voc-preposicoes-men-8erna-8erku-8erhom",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "sem nós / sem vocês / sem eles",
+   "ar": "مِن غيرنا / مِن غيركوا / مِن غيرهُم",
+   "arabizi": "men 8erna / men 8erku / men 8erhom"
+  },
+  {
+   "id": "voc-preposicoes-ma3a-7ad",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "com alguém",
+   "ar": "مَعَ حَد",
+   "arabizi": "ma3a 7ad"
+  },
+  {
+   "id": "voc-preposicoes-ma3ak-vs-3andak",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "estar com / ter consigo (مَعاك) ≠ possuir (عَندَك) — Aula 81",
+   "ar": "مَعاك اللابتوب؟ / عَندَك لابتوب؟",
+   "arabizi": "ma3ak ellaptop? / 3andak laptop?"
+  },
+  {
+   "id": "voc-preposicoes-nafs-el-sherka",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "na mesma empresa com…",
+   "ar": "في نَفس الشِركة مَعَ…",
+   "arabizi": "fe nafs elsherka ma3a…"
+  },
+  {
+   "id": "voc-sentimentos-nefsy",
+   "cat": "sentimentos",
+   "catLabel": "Sentimentos",
+   "pt": "estar com vontade de / querer muito (نِفس + sufixo) — Aula 82",
+   "ar": "نِفسي",
+   "arabizi": "nefsy"
+  },
+  {
+   "id": "voc-sentimentos-nefsy-fe",
+   "cat": "sentimentos",
+   "catLabel": "Sentimentos",
+   "pt": "نِفس + في + substantivo = querer (uma coisa)",
+   "ar": "أنا نِفسي في ماية",
+   "arabizi": "Ana nefsy fe maya"
+  },
+  {
+   "id": "voc-sentimentos-ru7-nafs",
+   "cat": "sentimentos",
+   "catLabel": "Sentimentos",
+   "pt": "alma / si mesmo",
+   "ar": "روح / نَفس",
+   "arabizi": "ru7 / nafs"
+  },
+  {
+   "id": "voc-lugares-fara7",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "casamento (a festa)",
+   "ar": "فَرَح",
+   "arabizi": "fara7"
+  },
+  {
+   "id": "voc-lugares-7afla-3ard",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "festa / show / espetáculo",
+   "ar": "حَفلة / عَرض",
+   "arabizi": "7afla / 3ard"
+  },
+  {
+   "id": "voc-preposicoes-odamy",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "na minha frente · na sua frente (m) — قُدّام + sufixo (Aula 83)",
+   "ar": "قُدّامي / قُدّامَك",
+   "arabizi": "odamy / odamak"
+  },
+  {
+   "id": "voc-preposicoes-waraya",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "atrás de mim · de você (m) · dele — وَرا + sufixo",
+   "ar": "ورايا / وَراك / وَراه",
+   "arabizi": "waraya / warak / warah"
+  },
+  {
+   "id": "voc-preposicoes-waraya-sho8l",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "ter coisas a fazer (وَرا + sufixo): tenho muito trabalho hoje",
+   "ar": "ورايا شُغل كِتير النهاردة",
+   "arabizi": "waraya sho8l ketir enaharda"
+  },
+  {
+   "id": "voc-preposicoes-gambak",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "ao seu lado (m / f) — جَنب + sufixo",
+   "ar": "جَنبَك / جَنبِك",
+   "arabizi": "gambak / gambek"
+  },
+  {
+   "id": "voc-sentimentos-zah2ana",
+   "cat": "sentimentos",
+   "catLabel": "Sentimentos",
+   "pt": "chateada / entediada (f)",
+   "ar": "زَهقانة",
+   "arabizi": "zah2ana"
+  },
+  {
+   "id": "voc-comida-tamr-madgul",
+   "cat": "comida",
+   "catLabel": "Comida",
+   "pt": "tâmaras Medjool",
+   "ar": "تَمر مَدجول",
+   "arabizi": "tamr madgul"
   }
  ],
  "familia": [
@@ -6506,6 +6650,126 @@ const BANK = {
     }
    },
    "src": "2026-09-02"
+  },
+  {
+   "id": "poss-men-8eir",
+   "pt": "Sem (مِن غير + sufixo)",
+   "ar": "مِن غير",
+   "forms": {
+    "Eu": {
+     "ar": "مِن غيري",
+     "arabizi": "men 8ery"
+    },
+    "Ele": {
+     "ar": "مِن غيرُه",
+     "arabizi": "men 8ero"
+    },
+    "Ela": {
+     "ar": "مِن غيرها",
+     "arabizi": "men 8erha"
+    },
+    "Você (m)": {
+     "ar": "مِن غيرَك",
+     "arabizi": "men 8erak"
+    },
+    "Você (f)": {
+     "ar": "مِن غيرِك",
+     "arabizi": "men 8erek"
+    },
+    "Nós": {
+     "ar": "مِن غيرنا",
+     "arabizi": "men 8erna"
+    },
+    "Vocês": {
+     "ar": "مِن غيركوا",
+     "arabizi": "men 8erku"
+    },
+    "Eles": {
+     "ar": "مِن غيرهُم",
+     "arabizi": "men 8erhom"
+    }
+   },
+   "src": "2026-09-04"
+  },
+  {
+   "id": "poss-ma3a",
+   "pt": "Com / estar com (مَعَ + sufixo)",
+   "ar": "مَعَ",
+   "forms": {
+    "Eu": {
+     "ar": "معايا",
+     "arabizi": "ma3aya"
+    },
+    "Ele": {
+     "ar": "معاه",
+     "arabizi": "ma3ah"
+    },
+    "Ela": {
+     "ar": "معاها",
+     "arabizi": "ma3aha"
+    },
+    "Você (m)": {
+     "ar": "معاك",
+     "arabizi": "ma3ak"
+    },
+    "Você (f)": {
+     "ar": "معاكي",
+     "arabizi": "ma3aki"
+    },
+    "Nós": {
+     "ar": "معانا",
+     "arabizi": "ma3ana"
+    },
+    "Vocês": {
+     "ar": "معاكوا",
+     "arabizi": "ma3aku"
+    },
+    "Eles": {
+     "ar": "معاهُم",
+     "arabizi": "ma3ahom"
+    }
+   },
+   "src": "2026-09-04"
+  },
+  {
+   "id": "poss-nefs",
+   "pt": "Estar com vontade de (نِفس + sufixo)",
+   "ar": "نِفس",
+   "forms": {
+    "Eu": {
+     "ar": "نِفسي",
+     "arabizi": "nefsy"
+    },
+    "Ele": {
+     "ar": "نِفسُه",
+     "arabizi": "nefso"
+    },
+    "Ela": {
+     "ar": "نِفسَها",
+     "arabizi": "nefsaha"
+    },
+    "Você (m)": {
+     "ar": "نِفسَك",
+     "arabizi": "nefsak"
+    },
+    "Você (f)": {
+     "ar": "نِفسِك",
+     "arabizi": "nefsek"
+    },
+    "Nós": {
+     "ar": "نِفسِنا",
+     "arabizi": "nefsena"
+    },
+    "Vocês": {
+     "ar": "نِفسُكوا",
+     "arabizi": "nefsoku"
+    },
+    "Eles": {
+     "ar": "نِفسُهُم",
+     "arabizi": "nefsohom"
+    }
+   },
+   "src": "2026-09-09"
   }
  ],
  "escrita": [
@@ -7859,6 +8123,797 @@ const BANK = {
    "ar": "أنا ساكِن في الامارات في دبي.",
    "arabizi": "Ana saken fe elEmarat fe Dubai.",
    "src": "2026-09-02"
+  },
+  {
+   "id": "esc-193-eu-nao-gosto-de-comer-sozinho-a",
+   "pt": "Eu não gosto de comer sozinho/a.",
+   "ar": "أنا مابحبش آكُل لِوَحدي.",
+   "arabizi": "Ana maba7ebesh aakol leua7dy.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-194-ahmed-mora-sozinho",
+   "pt": "Ahmed mora sozinho.",
+   "ar": "أحمَد ساكِن لِوَحده.",
+   "arabizi": "Ahmed saken leua7do.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-195-jana-gosta-de-viajar-sozinha",
+   "pt": "Jana gosta de viajar sozinha.",
+   "ar": "جنى بِتحِب تِسافِر لِوحدَها.",
+   "arabizi": "Jana bet7eb tessafer leua7daha.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-196-como-voce-vai-limpar-toda-a-casa-sozinho-m",
+   "pt": "Como você vai limpar toda a casa sozinho? (m)",
+   "ar": "انتَ هَتنَضَف البيت كُلُه لِوحدَك ازاي؟",
+   "arabizi": "Enta hatnadaf kol elbeit leua7dak ezay?",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-197-como-voce-vai-limpar-toda-a-casa-sozinha-f",
+   "pt": "Como você vai limpar toda a casa sozinha? (f)",
+   "ar": "انتي هَتنضفي كل البيت لوحدِك ازاي؟",
+   "arabizi": "Enti hatnadafi kol elbeit leua7dek ezay?",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-198-nos-nao-gostamos-de-sair-sozinhos-as",
+   "pt": "Nós não gostamos de sair sozinhos/as.",
+   "ar": "احنا مابِنحِبِش نُخرُج لِوحدِنا.",
+   "arabizi": "E7na maben7ebesh no5rog leua7dena.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-199-o-meu-marido-gosta-de-beber-cafe-sem-acucar",
+   "pt": "O meu marido gosta de beber café sem açúcar.",
+   "ar": "جوزي بيحِب يِشرَب قَهوة مِن غير سُكَر.",
+   "arabizi": "Gozi bei7eb yeshrab 2ahwa men 8eir sokar.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-200-a-minha-esposa-vai-preparar-mahshy-sem-carne",
+   "pt": "A minha esposa vai preparar mahshy sem carne.",
+   "ar": "مِراتي هَتجَهِز مَحشي مِن غير لَحمة.",
+   "arabizi": "Meraty hatgahez ma7shy men 8eir la7ma.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-201-por-que-voces-vao-sair-sem-ali",
+   "pt": "Por que vocês vão sair sem Ali?",
+   "ar": "انتوا هَتُخرُجوا مِن غير عَلي ليه؟",
+   "arabizi": "Entu hato5rogu men 8eir Ali leh?",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-202-ele-nao-quer-ir-ao-casamento-sem-mim",
+   "pt": "Ele não quer ir ao casamento sem mim.",
+   "ar": "هُوَ مِش عايِز يِروح الفَرَح مِن غيري.",
+   "arabizi": "Howa mesh 3aeiz yeru7 elfara7 men 8ery.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-203-eu-nao-quero-viajar-sem-ela",
+   "pt": "Eu não quero viajar sem ela.",
+   "ar": "أنا مِش عايِز أسافِر مِن غيرها.",
+   "arabizi": "Ana mesh 3aeiz assafer men 8erha.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-204-ela-nao-sabe-fazer-nada-sem-ele",
+   "pt": "Ela não sabe fazer nada sem ele.",
+   "ar": "هي مابِتِعرَفش تعمِل حاجة مِن غيرُه.",
+   "arabizi": "Heya mabete3rafsh te3mel 7aga men 8ero.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-205-eu-nao-quero-sair-hoje-sem-voce-m",
+   "pt": "Eu não quero sair hoje sem você. (m)",
+   "ar": "أنا مِش عايز أخرُج النهاردة مِن غيرَك.",
+   "arabizi": "Ana mesh 3aeiz a5rog elnaharda men 8erak.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-206-eu-nao-quero-sair-hoje-sem-voce-f",
+   "pt": "Eu não quero sair hoje sem você. (f)",
+   "ar": "أنا مِش عايز أخرج النهاردة مِن غيرِك.",
+   "arabizi": "Ana mesh 3aeiz a5rog elnaharda men 8erek.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-207-nos-queremos-jogar-esta-partida-sem-eles",
+   "pt": "Nós queremos jogar esta partida sem eles.",
+   "ar": "احنا عايزين نِلعَب الماتش ده مِن غيرهُم.",
+   "arabizi": "E7na 3aeizin nel3ab elmatch da men 8erhom.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-208-eles-querem-fazer-tudo-sem-nos",
+   "pt": "Eles querem fazer tudo sem nós.",
+   "ar": "هُما عايزين يعمِلوا كُل حاجة مِن غيرنا.",
+   "arabizi": "Homa 3aeizin ye3melu kol 7aga men 8erna.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-209-eles-querem-visitar-ahmed-sem-voces",
+   "pt": "Eles querem visitar Ahmed sem vocês.",
+   "ar": "هُما عايزين يِزوروا أحمَد مِن غيركوا.",
+   "arabizi": "Homa 3aeizin yezuru Ahmed men 8erku.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-210-eu-tenho-estou-com-muito-dinheiro-no-banco",
+   "pt": "Eu tenho (estou com) muito dinheiro no banco.",
+   "ar": "أنا معايا فِلوس كِتير في البَنك.",
+   "arabizi": "Ana ma3aya felus ketir fe elbank.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-211-alguem-tem-esta-com-uma-caneta-azul",
+   "pt": "Alguém tem (está com) uma caneta azul?",
+   "ar": "حَد مَعاه قَلَم أزرَق؟",
+   "arabizi": "7ad ma3ah 2alam 2azra2?",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-212-voce-esta-com-o-livro-m",
+   "pt": "Você está com o livro? (m)",
+   "ar": "انتَ معاك الكِتاب؟",
+   "arabizi": "Enta ma3ak elketab?",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-213-voce-esta-com-dinheiro-em-notas-m",
+   "pt": "Você está com dinheiro em notas? (m)",
+   "ar": "انتَ معاك فلوس كاش؟",
+   "arabizi": "Enta ma3ak felos cash?",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-214-voce-esta-com-dinheiro-em-notas-f",
+   "pt": "Você está com dinheiro em notas? (f)",
+   "ar": "انتي معاكي فلوس كاش؟",
+   "arabizi": "Enti ma3aki felos cash?",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-215-voce-esta-com-o-laptop-m-ter-consigo",
+   "pt": "Você está com o laptop? (m · مَعاك = ter consigo)",
+   "ar": "انت مَعاك اللابتوب؟",
+   "arabizi": "Enta ma3ak ellaptop?",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-216-voce-possui-um-laptop-m-possuir",
+   "pt": "Você possui um laptop? (m · عَندَك = possuir)",
+   "ar": "انت عَندَك لابتوب؟",
+   "arabizi": "Enta 3andak laptop?",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-217-voce-esta-com-o-carro",
+   "pt": "Você está com o carro?",
+   "ar": "انت معاك العربية؟",
+   "arabizi": "Enta ma3ak el3arabeya?",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-218-voce-vai-limpar-a-casa-comigo-hoje",
+   "pt": "Você vai limpar a casa comigo hoje?",
+   "ar": "انتَ هَتنَضَف البيت معايا النهاردة؟",
+   "arabizi": "Enta hatnadaf elbeit ma3aya elnaharda?",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-219-ela-quer-cantar-com-eles-no-show",
+   "pt": "Ela quer cantar com eles no show.",
+   "ar": "هي عايزة تِغَني معاهُم في الحَفلة.",
+   "arabizi": "Heya 3aeiza te8any ma3ahom fe el7afla.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-220-ele-quer-dancar-com-ela-na-festa-amanha",
+   "pt": "Ele quer dançar com ela na festa amanhã.",
+   "ar": "هُوَ عايِز يِرقُص معاها في الحَفلة بُكرة.",
+   "arabizi": "Howa 3aeiz yor2os ma3aha fe el7afla bokra.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-221-eu-nao-gosto-de-trabalhar-com-ele",
+   "pt": "Eu não gosto de trabalhar com ele.",
+   "ar": "أنا مابَحِبِش أشتَغَل معاه.",
+   "arabizi": "Ana maba7ebesh ashta8al ma3ah.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-222-eu-gosto-de-conversar-com-voce-m-f",
+   "pt": "Eu gosto de conversar com você. (m/f)",
+   "ar": "أنا بَحِب أتكلم معاك/معاكي.",
+   "arabizi": "Ana ba7eb atkalem ma3ak/ma3aki.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-223-eles-vao-arrumar-a-casa-conosco",
+   "pt": "Eles vão arrumar a casa conosco.",
+   "ar": "هُما هَيرَوَقوا البيت معانا.",
+   "arabizi": "Homa hairaua2u elbeit ma3ana.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-224-nos-vamos-ficar-aqui-com-voces",
+   "pt": "Nós vamos ficar aqui com vocês.",
+   "ar": "احنا هَنُقعُد هِنا معاكوا.",
+   "arabizi": "E7na hano3od hena ma3aku.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-225-eu-nao-quero-falar-contigo-m-f",
+   "pt": "Eu não quero falar contigo. (m/f)",
+   "ar": "أنا مِش عايز أتكَلِم مَعاك/معاكي.",
+   "arabizi": "Ana mesh 3aeiz atkalem ma3ak/ma3aki.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-226-por-que-voces-nao-querem-sair-sem-ela",
+   "pt": "Por que vocês não querem sair sem ela?",
+   "ar": "انتوا مِش عايزين تُخرُجوا مِن غيرها ليه؟",
+   "arabizi": "Entu mesh 3aeizin to5rogu men 8erha leh?",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-227-eu-vou-lavar-a-louca-com-voces",
+   "pt": "Eu vou lavar a louça com vocês.",
+   "ar": "أنا هَغسِل المواعين معاكوا.",
+   "arabizi": "Ana ha8sel elmaua3in ma3aku.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-228-eu-trabalho-na-mesma-empresa-com-ali",
+   "pt": "Eu trabalho na mesma empresa com Ali.",
+   "ar": "أنا بَشتَغَل في نفس الشِركة مَعَ عَلي.",
+   "arabizi": "Ana bashta8al fe nafs elsherka ma3a Ali.",
+   "src": "2026-09-04"
+  },
+  {
+   "id": "esc-229-eu-nao-gosto-de-sair-sem-voce-m",
+   "pt": "Eu não gosto de sair sem você. (m)",
+   "ar": "أنا مابَحِبش أخرُج مِن غيرَك.",
+   "arabizi": "Ana maba7ebesh a5rog men 8eirak.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-230-quais-sao-as-coisas-que-voce-gosta-de-fazer-sozinho",
+   "pt": "Quais são as coisas que você gosta de fazer sozinho?",
+   "ar": "ايه الحاجات اللي بِتحِب تِعمِلها لِوَحدك؟",
+   "arabizi": "Eh el7agat elly bet7eb te3melha leua7dak?",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-231-eu-gosto-de-ler-um-livro-sozinho",
+   "pt": "Eu gosto de ler um livro sozinho.",
+   "ar": "أنا بَحِب أقرا كِتاب لِوحدي.",
+   "arabizi": "Ana ba7eb a2ra ketab leua7dy.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-232-eu-jogo-videogame-sozinho",
+   "pt": "Eu jogo videogame sozinho.",
+   "ar": "أنا بَلعَب فيديو جيمز لِوَحدي.",
+   "arabizi": "Ana bal3ab video games leua7dy.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-233-a-minha-esposa-gosta-de-dancar-sozinha",
+   "pt": "A minha esposa gosta de dançar sozinha.",
+   "ar": "مِراتي بِتحِب تُرقُص لِوَحدَها.",
+   "arabizi": "Meraty bet7eb tor2os leua7daha.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-234-a-minha-esposa-gosta-de-assistir-series-de-crime-sozinha",
+   "pt": "A minha esposa gosta de assistir séries de crime sozinha.",
+   "ar": "مراتي بِتحِب تِتفَرَج عَلى مُسَلسَلات جَرايِم لِوَحدَها.",
+   "arabizi": "Meraty bet7eb tetfarag 3ala mosalsalat garayem leua7daha.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-235-eu-gosto-de-viajar-com-alguem",
+   "pt": "Eu gosto de viajar com alguém.",
+   "ar": "أنا بَحِب أسافِر مَعَ حَد.",
+   "arabizi": "Ana ba7eb assafer ma3a 7ad.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-236-eu-nao-gosto-de-viajar-com-eles",
+   "pt": "Eu não gosto de viajar com eles.",
+   "ar": "أنا مابحبش أسافِر معاهُم.",
+   "arabizi": "Ana maba7ebesh assafer ma3ahom.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-237-eu-prefiro-viajar-com-ela",
+   "pt": "Eu prefiro viajar com ela.",
+   "ar": "أنا بَفَضَل أسافِر مَعاها.",
+   "arabizi": "Ana bafadal assafer ma3aha.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-238-voce-limpa-a-casa-sozinho-m",
+   "pt": "Você limpa a casa sozinho? (m)",
+   "ar": "انتَ بِتنَضَف البيت لِوَحدَك؟",
+   "arabizi": "Enta betnadaf elbeit leua7dak?",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-239-nao-as-vezes-eu-limpo-sozinho-e-as-vezes-limpo-com-ele",
+   "pt": "Não, às vezes eu limpo sozinho e às vezes limpo com ele.",
+   "ar": "لا، أنا ساعات بَنَضَف لِوَحدي وساعات بَنَضَف مَعاه.",
+   "arabizi": "La, ana sa3at banadaf leua7dy we sa3at banadaf ma3ah.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-240-voce-prefere-trabalhar-sozinho-ou-com-salma-e-omar",
+   "pt": "Você prefere trabalhar sozinho ou com Salma e Omar?",
+   "ar": "انتَ بِتفَضَل تِشتَغَل لِوحَدَك ولا مَعَ سَلمى وعُمَر؟",
+   "arabizi": "Enta betfadal teshta8al leua7dak walla ma3a Salma we Omar?",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-241-eu-prefiro-trabalhar-com-eles",
+   "pt": "Eu prefiro trabalhar com eles.",
+   "ar": "أنا بَفَضَل أشتَغَل مَعَاهُم.",
+   "arabizi": "Ana bafadal ashta8al ma3ahom.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-242-voce-tem-esta-com-caneta-m",
+   "pt": "Você tem (está com) caneta? (m)",
+   "ar": "معاك قَلَم؟",
+   "arabizi": "Ma3ak 2alam?",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-243-voce-tem-esta-com-um-livro-f",
+   "pt": "Você tem (está com) um livro? (f)",
+   "ar": "معاكي كِتاب؟",
+   "arabizi": "Ma3aki ketab?",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-244-voce-tem-um-minuto",
+   "pt": "Você tem um minuto?",
+   "ar": "معاك دِقيقة؟",
+   "arabizi": "Ma3ak de2i2a?",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-245-eu-estou-com-vontade-de-ir-a-praia",
+   "pt": "Eu estou com vontade de ir à praia.",
+   "ar": "أنا نِفسي أروح البَحر.",
+   "arabizi": "Ana nefsy aru7 elba7r.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-246-eslam-quer-muito-comprar-um-carro-novo",
+   "pt": "Eslam quer muito comprar um carro novo.",
+   "ar": "إسلام نِفسُه يِشتِري عربية جديدة.",
+   "arabizi": "Eslam nefso yeshtery 3arabeya gedida.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-247-hala-esta-com-vontade-de-ir-ao-cinema",
+   "pt": "Hala está com vontade de ir ao cinema.",
+   "ar": "هاله نِفسَها تِروح السينما.",
+   "arabizi": "Hala nefsaha teru7 elcinema.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-248-voce-quer-tem-vontade-de-viajar-conosco-m",
+   "pt": "Você quer (tem vontade de) viajar conosco? (m)",
+   "ar": "انتَ نِفسَك تِسافِر معانا؟",
+   "arabizi": "Enta nefsak tessafer ma3ana?",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-249-voce-quer-tem-vontade-de-viajar-conosco-f",
+   "pt": "Você quer (tem vontade de) viajar conosco? (f)",
+   "ar": "انتي نِفسِك تِسافري معانا؟",
+   "arabizi": "Enty nefsek tessafry ma3ana?",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-250-nos-estamos-com-vontade-de-ir-ao-cabeleireiro-e-fazer-o-cabelo",
+   "pt": "Nós estamos com vontade de ir ao cabeleireiro e fazer o cabelo.",
+   "ar": "اِحنا نِفسِنا نِروح الكوافير ونِعمِل شَعرِنا.",
+   "arabizi": "E7na nefsena neru7 elkowafeir we ne3mel sha3rena.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-251-o-que-voces-querem-comer",
+   "pt": "O que vocês querem comer?",
+   "ar": "انتوا نِفسُكوا تاكلوا ايه؟",
+   "arabizi": "Entu nefsoku taklu eh?",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-252-elas-estao-com-vontade-de-aprender-a-dancar",
+   "pt": "Elas estão com vontade de aprender a dançar.",
+   "ar": "هُما نِفسُهُم يِتعَلِموا يُرقَصوا.",
+   "arabizi": "Homa nefsohom yet3alemu yor2osu.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-253-eu-quero-estou-com-vontade-de-agua",
+   "pt": "Eu quero (estou com vontade de) água.",
+   "ar": "أنا نِفسي في ماية.",
+   "arabizi": "Ana nefsy fe maya.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-254-eu-estou-com-vontade-de-tomar-um-banho-ducha",
+   "pt": "Eu estou com vontade de tomar um banho (ducha).",
+   "ar": "أنا نِفسي آخُد دُش.",
+   "arabizi": "Ana nefsy a5od dosh.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-255-eu-estou-com-vontade-de-tirar-ferias",
+   "pt": "Eu estou com vontade de tirar férias.",
+   "ar": "نِفسي في أجازة.",
+   "arabizi": "Nefsy fe agaza.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-256-ahmed-quer-tem-vontade-de-um-carro",
+   "pt": "Ahmed quer (tem vontade de) um carro.",
+   "ar": "أحمَد نِفسُه في عربية.",
+   "arabizi": "Ahmed nefso fe 3arabeya.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-257-estou-com-vontade-de-dormir-cedo-hoje",
+   "pt": "Estou com vontade de dormir cedo hoje.",
+   "ar": "أنا نِفسي أنام بَدري النهاردة.",
+   "arabizi": "Ana nefsy anam badry elnaharda.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-258-ele-quer-muito-viajar-este-ano",
+   "pt": "Ele quer muito viajar este ano.",
+   "ar": "هُوَ نِفسُه يِسافِر كِتير السنة دي.",
+   "arabizi": "Howa nefso yessafer ketir elsana di.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-259-ela-esta-com-vontade-de-comprar-um-vestido-novo",
+   "pt": "Ela está com vontade de comprar um vestido novo.",
+   "ar": "هي نِفسَها تِشتِري فُستان جِديد.",
+   "arabizi": "Heya nefsaha teshtery fostan gedid.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-260-voce-m-esta-com-vontade-de-sair-no-fim-de-semana",
+   "pt": "Você (m) está com vontade de sair no fim de semana?",
+   "ar": "نِفسَك تخرُج في الأجازة؟",
+   "arabizi": "Nefsak to5rog fe elagaza?",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-261-voce-f-esta-com-vontade-de-tomar-refrigerante",
+   "pt": "Você (f) está com vontade de tomar refrigerante?",
+   "ar": "نِفسِك تِشرَبي بيبسي؟",
+   "arabizi": "Nefsek teshraby pepsi?",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-262-nos-queremos-ler-um-livro-novo",
+   "pt": "Nós queremos ler um livro novo.",
+   "ar": "احنا نِفسِنا نِقرا كِتاب جِديد.",
+   "arabizi": "E7na nefsena ne2ra ketab gedid.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-263-eles-querem-aprender-a-tocar-violino",
+   "pt": "Eles querem aprender a tocar violino.",
+   "ar": "هُما نِفسُهُم يِتعَلموا يِلعبوا كَمانجا.",
+   "arabizi": "Homa nefsohom yet3alemu yel3abu kamanga.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-264-o-que-voce-esta-com-vontade-de-fazer-m",
+   "pt": "O que você está com vontade de fazer? (m)",
+   "ar": "انتَ نِفسَك تِعمِل ايه؟",
+   "arabizi": "Enta nefsak te3mel eh?",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-265-estou-com-vontade-de-jogar-bola-a-noite-com-eles",
+   "pt": "Estou com vontade de jogar bola à noite com eles.",
+   "ar": "أنا نِفسي ألعَب كورة بِليل مَعَاهُم.",
+   "arabizi": "Ana nefsy al3ab kora beleil ma3ahom.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-266-estou-com-vontade-de-almocar",
+   "pt": "Estou com vontade de almoçar.",
+   "ar": "أنا نِفسي أتغَدى.",
+   "arabizi": "Ana nefsy at8ada.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-267-estou-com-vontade-de-assistir-videos-no-youtube",
+   "pt": "Estou com vontade de assistir vídeos no YouTube.",
+   "ar": "أنا نفسي أتفرج عَلى فيديوهات على اليوتيوب.",
+   "arabizi": "Ana nefsy atfarag 3ala vidiohat 3ala elyoutube.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-268-voce-esta-com-vontade-de-tirar-ferias-m",
+   "pt": "Você está com vontade de tirar férias? (m)",
+   "ar": "انتَ نِفسَك تاخُد أجازة؟",
+   "arabizi": "Enta nefsak ta5od agaza?",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-269-sim-estou-com-muita-muita-vontade-de-tirar-ferias",
+   "pt": "Sim, estou com muita, muita vontade de tirar férias.",
+   "ar": "ايوة، نِفسي أوي أوي آخُد أجازة.",
+   "arabizi": "Aiwa, nefsy awi awi a5od agaza.",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-270-com-a-sua-familia-m",
+   "pt": "Com a sua família? (m)",
+   "ar": "مَع عيلتَك؟",
+   "arabizi": "Ma3a 3eiltak?",
+   "src": "2026-09-09"
+  },
+  {
+   "id": "esc-271-o-que-voce-esta-com-vontade-de-comer-hoje-m",
+   "pt": "O que você está com vontade de comer hoje? (m)",
+   "ar": "نِفسَك تاكُل ايه النهاردة؟",
+   "arabizi": "Nefsak takol eh enaharda?",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-272-eu-nao-quero-comer-nada",
+   "pt": "Eu não quero comer nada.",
+   "ar": "أنا مِش عايِز آكُل حاجة.",
+   "arabizi": "Ana mesh 3aeiz akol 7aga.",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-273-estou-com-vontade-de-tomar-cafe",
+   "pt": "Estou com vontade de tomar café.",
+   "ar": "نفسي أشرَب قَهوة.",
+   "arabizi": "Nefsy ashrab 2ahwa.",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-274-o-que-voce-esta-com-vontade-de-fazer-no-fim-de-semana-m",
+   "pt": "O que você está com vontade de fazer no fim de semana? (m)",
+   "ar": "نِفسَك تِعمِل ايه في الويك اند؟",
+   "arabizi": "Nefsak te3mel eh fe elweekend?",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-275-estou-com-vontade-de-jogar-tenis-a-noite-e-de-ir-ao-cinema-a",
+   "pt": "Estou com vontade de jogar tênis à noite e de ir ao cinema amanhã.",
+   "ar": "أنا نِفسي ألعَب تِنِس بليل ونِفسي أروح السينما بُكرة.",
+   "arabizi": "Ana nefsy al3ab tenis beleil we nefsy aru7 elcinema bokra.",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-276-que-filme-voce-esta-com-vontade-de-ver-no-cinema-m",
+   "pt": "Que filme você está com vontade de ver no cinema? (m)",
+   "ar": "نِفسَك تِتفَرَج على فيلم ايه في السينما؟",
+   "arabizi": "Nefsak tetfarag 3ala film eh fe elcinema?",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-277-com-quem-voce-esta-com-vontade-de-sair-m",
+   "pt": "Com quem você está com vontade de sair? (m)",
+   "ar": "نِفسَك تُخرُج مَعَ مين؟",
+   "arabizi": "Nefsak to5rog ma3a min?",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-278-estou-com-vontade-de-sair-com-a-minha-esposa",
+   "pt": "Estou com vontade de sair com a minha esposa.",
+   "ar": "نِفسي أخرُج مَعَ مِراتي.",
+   "arabizi": "Nefsy a5rog ma3a meraty.",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-279-com-qual-jogador-do-flamengo-voce-tem-vontade-de-jogar-bola",
+   "pt": "Com qual jogador do Flamengo você tem vontade de jogar bola? (m)",
+   "ar": "نِفسَك تِلعَب كورة مَعَ مين مِن لَعيبة فلامِنجو؟",
+   "arabizi": "Nefsak tel3ab kora ma3a min men la3ibet Flamengo?",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-280-para-onde-voce-esta-com-vontade-de-viajar-m",
+   "pt": "Para onde você está com vontade de viajar? (m)",
+   "ar": "نِفسَك تِسافِر فين؟",
+   "arabizi": "Nefsak tessafer fein?",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-281-estou-com-vontade-de-viajar-para-o-japao-e-a-coreia-no-ano-q",
+   "pt": "Estou com vontade de viajar para o Japão e a Coreia no ano que vem.",
+   "ar": "نفسي أسافِر اليابان وكوريا السنة اللي جاية.",
+   "arabizi": "Nefsy asafer elyaban we Korya elsana elly gaya.",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-282-hoje-e-o-aniversario-da-sua-esposa",
+   "pt": "Hoje é o aniversário da sua esposa.",
+   "ar": "النهاردة عيد ميلاد مِراتك.",
+   "arabizi": "Enaharda 3id milad meratak.",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-283-que-presente-ela-quer",
+   "pt": "Que presente ela quer? (نِفسها في…)",
+   "ar": "هي نِفسها في ايه هِدية؟",
+   "arabizi": "Heya nefsaha fe eh hedeya?",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-284-ela-quer-um-anel-da-tiffany",
+   "pt": "Ela quer um anel da Tiffany.",
+   "ar": "هي نِفسِها في خاتِم مِن تيفاني.",
+   "arabizi": "Heya nefsaha fe 5atem men Tiffany.",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-285-ela-esta-com-vontade-de-viajar-no-aniversario-dela",
+   "pt": "Ela está com vontade de viajar no aniversário dela?",
+   "ar": "هِيَ نِفسها تِسافِر في عيد ميلادها؟",
+   "arabizi": "Heya nefsaha tessafer fe 3id miladha?",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-286-sim-ela-esta-com-vontade-de-viajar-para-a-italia",
+   "pt": "Sim, ela está com vontade de viajar para a Itália.",
+   "ar": "ايوة، هي نِفسها تِسافِر إيطاليا.",
+   "arabizi": "Aiwa, heya nefsaha tessafer Italia.",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-287-hoje-e-o-aniversario-do-seu-irmao-que-presente-ele-quer",
+   "pt": "Hoje é o aniversário do seu irmão; que presente ele quer?",
+   "ar": "النهاردة عيد ميلاد أخوك، هو نِفسه في ايه هِدية؟",
+   "arabizi": "Enaharda 3id milad a5uk, howa nefso fe eh hedeya?",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-288-ele-quer-videogames",
+   "pt": "Ele quer videogames.",
+   "ar": "هو نفسُه في فيديو جيمز.",
+   "arabizi": "Howa nefso fe video games.",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-289-voce-tem-irmao-m",
+   "pt": "Você tem irmão? (m)",
+   "ar": "انتَ عَندَك أخ؟",
+   "arabizi": "Enta 3andak a5?",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-290-sim-eu-tenho-um-irmao-por-parte-de-mae",
+   "pt": "Sim, eu tenho um irmão por parte de mãe.",
+   "ar": "ايوة، أنا عَندي أخ مِن ماما.",
+   "arabizi": "Aiwa, ana 3andi a5 men mama.",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-291-o-que-sua-mae-e-seu-pai-querem-m",
+   "pt": "O que sua mãe e seu pai querem? (m)",
+   "ar": "مامتَك وباباك نِفسُهم في ايه؟",
+   "arabizi": "Mamtak we babak nefsohom fe eh?",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-292-eles-estao-com-vontade-de-comprar-muitas-tamaras-medjool-dos",
+   "pt": "Eles estão com vontade de comprar muitas tâmaras Medjool dos Emirados.",
+   "ar": "هُما نِفسُهُم يِشتِروا تَمر مَدجول كِتير مِن الإمارات.",
+   "arabizi": "Homa nefsohom yeshteru tamr madgul ketir men elEmarat.",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-293-o-que-ha-na-sua-frente-m",
+   "pt": "O que há na sua frente? (m)",
+   "ar": "فيه ايه قُدامَك؟",
+   "arabizi": "Fih eh odamak?",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-294-na-minha-frente-fica-o-supermercado-al-hayah",
+   "pt": "Na minha frente fica o supermercado Al Hayah.",
+   "ar": "قُدامي سوبرماركِت الحياة.",
+   "arabizi": "Odamy supermarket el7aya.",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-295-voce-esta-na-frente-de-que-m",
+   "pt": "Você está na frente de quê? (m)",
+   "ar": "انتَ قُدام ايه؟",
+   "arabizi": "Enta odam eh?",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-296-eu-estou-em-frente-ao-supermercado",
+   "pt": "Eu estou em frente ao supermercado.",
+   "ar": "أنا قُدام السوبَرماركِت.",
+   "arabizi": "Ana odam elsupermarket.",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-297-o-supermercado-fica-na-minha-frente",
+   "pt": "O supermercado fica na minha frente.",
+   "ar": "السوبر ماركِت قُدامي.",
+   "arabizi": "Elsupermarket odamy.",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-298-o-que-ha-atras-de-voce-m",
+   "pt": "O que há atrás de você? (m)",
+   "ar": "فيه ايه وراك؟",
+   "arabizi": "Fih eh warak?",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-299-minha-mae-esta-atras-de-mim",
+   "pt": "Minha mãe está atrás de mim.",
+   "ar": "ماما ورايا.",
+   "arabizi": "Mama waraya.",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-300-atras-de-mim-ha-uma-mesa-de-escritorio",
+   "pt": "Atrás de mim há uma escrivaninha (mesa de escritório).",
+   "ar": "ورايا فيه مَكتَب.",
+   "arabizi": "Waraya fih maktab.",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-301-eu-quero-sentar-ao-seu-lado-m-f",
+   "pt": "Eu quero sentar ao seu lado. (m / f)",
+   "ar": "أنا عايِز أقعُد جَنبَك (جَنبِك).",
+   "arabizi": "Ana 3aeiz a3od gambak (gambek).",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-302-eu-tenho-muito-trabalho-hoje-com-3and",
+   "pt": "Eu tenho muito trabalho hoje. (com عَند)",
+   "ar": "أنا عَندي شُغل كِتير النهاردة.",
+   "arabizi": "Ana 3andi sho8l ketir enaharda.",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-303-eu-tenho-muito-trabalho-a-fazer-hoje-com-wara",
+   "pt": "Eu tenho muito trabalho (a fazer) hoje. (com ورا)",
+   "ar": "أنا ورايا شُغل كتير النهاردة.",
+   "arabizi": "Ana waraya sho8l ketir enaharda.",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-304-ali-tem-muitas-coisas-a-fazer-hoje-ele-tem-que-limpar-e-arru",
+   "pt": "Ali tem muitas coisas (a fazer) hoje: ele tem que limpar e arrumar a casa, depois tem que estudar português.",
+   "ar": "علي وراه حاجات كِتير النهاردة، هو لازِم يِنَضَف ويِرَوَق البيت، بَعدين لازِم يِذاكِر بُرتغالي.",
+   "arabizi": "Ali warah 7agat ketir enaharda, howa lazem yenadaf we yeraua2 elbeit, ba3dein lazem yezaker borto8aly.",
+   "src": "2026-09-11"
+  },
+  {
+   "id": "esc-305-estou-muito-chateado-mas-nao-vou-sair-de-casa",
+   "pt": "Estou muito chateado, mas não vou sair de casa.",
+   "ar": "أنا زَهقان أوي، لَكني مِش هخرُج مِن البيت.",
+   "arabizi": "Ana zah2an awi, lakeni mesh ha5rog men elbeit.",
+   "src": "2026-09-11"
   }
  ],
  "leitura": [
@@ -8568,6 +9623,186 @@ const BANK = {
     }
    ],
    "src": "2026-09-02"
+  },
+  {
+   "id": "lei-26-mini-leitura-o-que-voce-gosta-de",
+   "title": "Mini-leitura · o que você gosta de fazer sozinho (Aula 82)",
+   "items": [
+    {
+     "pt": "Quais são as coisas que você gosta de fazer sozinho?",
+     "ar": "ايه الحاجات اللي بِتحِب تِعمِلها لِوَحدك؟",
+     "arabizi": "Eh el7agat elly bet7eb te3melha leua7dak?"
+    },
+    {
+     "pt": "Eu gosto de ler um livro sozinho.",
+     "ar": "أنا بَحِب أقرا كِتاب لِوحدي.",
+     "arabizi": "Ana ba7eb a2ra ketab leua7dy."
+    },
+    {
+     "pt": "E eu jogo videogame sozinho.",
+     "ar": "أنا بَلعَب فيديو جيمز لِوَحدي.",
+     "arabizi": "Ana bal3ab video games leua7dy."
+    },
+    {
+     "pt": "A minha esposa gosta de dançar sozinha.",
+     "ar": "مِراتي بِتحِب تُرقُص لِوَحدَها.",
+     "arabizi": "Meraty bet7eb tor2os leua7daha."
+    },
+    {
+     "pt": "A minha esposa gosta de assistir séries de crime sozinha.",
+     "ar": "مراتي بِتحِب تِتفَرَج عَلى مُسَلسَلات جَرايِم لِوَحدَها.",
+     "arabizi": "Meraty bet7eb tetfarag 3ala mosalsalat garayem leua7daha."
+    }
+   ],
+   "src": "2026-09-09"
+  },
+  {
+   "id": "lei-27-mini-leitura-sozinho-ou-acompanh",
+   "title": "Mini-leitura · sozinho ou acompanhado? (Aula 82)",
+   "items": [
+    {
+     "pt": "Ela gosta de fazer compras no shopping comigo, e eu gosto de fazer compras no shopping com ela.",
+     "ar": "هي بِتحِب تِعمِل شوبينج في المول معايا، وأنا بَحِب أعمِل شوبينج في المول معاها.",
+     "arabizi": "Heya bet7eb te3mel shopping fe elmall ma3aya, we ana ba7eb a3mel shopping fe elmall ma3aha."
+    },
+    {
+     "pt": "Você limpa a casa sozinho?",
+     "ar": "انتَ بِتنَضَف البيت لِوَحدَك؟",
+     "arabizi": "Enta betnadaf elbeit leua7dak?"
+    },
+    {
+     "pt": "Não, às vezes eu limpo sozinho e às vezes limpo com ele.",
+     "ar": "لا، أنا ساعات بَنَضَف لِوَحدي وساعات بَنَضَف مَعاه.",
+     "arabizi": "La, ana sa3at banadaf leua7dy we sa3at banadaf ma3ah."
+    },
+    {
+     "pt": "Você prefere trabalhar sozinho ou com Salma e Omar?",
+     "ar": "انتَ بِتفَضَل تِشتَغَل لِوحَدَك ولا مَعَ سَلمى وعُمَر؟",
+     "arabizi": "Enta betfadal teshta8al leua7dak walla ma3a Salma we Omar?"
+    },
+    {
+     "pt": "Eu prefiro trabalhar com eles.",
+     "ar": "أنا بَفَضَل أشتَغَل مَعَاهُم.",
+     "arabizi": "Ana bafadal ashta8al ma3ahom."
+    }
+   ],
+   "src": "2026-09-09"
+  },
+  {
+   "id": "lei-28-mini-leitura-nefsy-o-que-da-vont",
+   "title": "Mini-leitura · «nefsy» — o que dá vontade (Aula 82)",
+   "items": [
+    {
+     "pt": "O que você está com vontade de fazer?",
+     "ar": "انتَ نِفسَك تِعمِل ايه؟",
+     "arabizi": "Enta nefsak te3mel eh?"
+    },
+    {
+     "pt": "Estou com vontade de jogar bola à noite com eles.",
+     "ar": "أنا نِفسي ألعَب كورة بِليل مَعَاهُم.",
+     "arabizi": "Ana nefsy al3ab kora beleil ma3ahom."
+    },
+    {
+     "pt": "Estou com vontade de almoçar.",
+     "ar": "أنا نِفسي أتغَدى.",
+     "arabizi": "Ana nefsy at8ada."
+    },
+    {
+     "pt": "E estou com vontade de assistir vídeos no YouTube.",
+     "ar": "أنا نفسي أتفرج عَلى فيديوهات على اليوتيوب.",
+     "arabizi": "Ana nefsy atfarag 3ala vidiohat 3ala elyoutube."
+    },
+    {
+     "pt": "Você está com vontade de tirar férias?",
+     "ar": "انتَ نِفسَك تاخُد أجازة؟",
+     "arabizi": "Enta nefsak ta5od agaza?"
+    },
+    {
+     "pt": "Sim, estou com muita, muita vontade de tirar férias.",
+     "ar": "ايوة، نِفسي أوي أوي آخُد أجازة.",
+     "arabizi": "Aiwa, nefsy awi awi a5od agaza."
+    }
+   ],
+   "src": "2026-09-09"
+  },
+  {
+   "id": "lei-29-mini-leitura-com-quem-e-sem-quem",
+   "title": "Mini-leitura · com quem e sem quem (Aula 81)",
+   "items": [
+    {
+     "pt": "Ele não quer ir ao casamento sem mim.",
+     "ar": "هُوَ مِش عايِز يِروح الفَرَح مِن غيري.",
+     "arabizi": "Howa mesh 3aeiz yeru7 elfara7 men 8ery."
+    },
+    {
+     "pt": "Nós queremos jogar esta partida sem eles.",
+     "ar": "احنا عايزين نِلعَب الماتش ده مِن غيرهُم.",
+     "arabizi": "E7na 3aeizin nel3ab elmatch da men 8erhom."
+    },
+    {
+     "pt": "Eles querem visitar Ahmed sem vocês.",
+     "ar": "هُما عايزين يِزوروا أحمَد مِن غيركوا.",
+     "arabizi": "Homa 3aeizin yezuru Ahmed men 8erku."
+    },
+    {
+     "pt": "Eles vão arrumar a casa conosco.",
+     "ar": "هُما هَيرَوَقوا البيت معانا.",
+     "arabizi": "Homa hairaua2u elbeit ma3ana."
+    },
+    {
+     "pt": "Nós vamos ficar aqui com vocês.",
+     "ar": "احنا هَنُقعُد هِنا معاكوا.",
+     "arabizi": "E7na hano3od hena ma3aku."
+    }
+   ],
+   "src": "2026-09-04"
+  },
+  {
+   "id": "lei-30-dialogo-mona-esta-chateada",
+   "title": "Diálogo · Mona está chateada (gabarito da atividade da Aula 82)",
+   "items": [
+    {
+     "pt": "A: Mona, como você está?",
+     "ar": "ازيك يامُنى؟",
+     "arabizi": "Ezayek ya Mona?"
+    },
+    {
+     "pt": "B: Estou bem, graças a Deus, e você?",
+     "ar": "كويسة الحمدُ لله، انتي؟",
+     "arabizi": "Kowayesa el 7amdlelah, enty?"
+    },
+    {
+     "pt": "A: Estou bem, mas um pouco chateada!",
+     "ar": "كويسة بَس زَهقانة شوية.",
+     "arabizi": "Kowayesa bas zah2ana shwaya."
+    },
+    {
+     "pt": "B: Está chateada por quê?",
+     "ar": "زهقانة ليه؟",
+     "arabizi": "Zah2ana leh?"
+    },
+    {
+     "pt": "A: Meu marido sempre sai sozinho, ele não gosta de sair comigo! E eu não gosto de ficar em casa sozinha.",
+     "ar": "جوزي دايماً بيُخرُج لِوَحدُه، هو مابيحِبِش يُخرُج معايا! أنا مابحبِش أقعُد في البيت لِوَحدي.",
+     "arabizi": "Gozi dayman beio5rog leua7do, howa mabei7ebesh yo5rog ma3aya! Ana maba7ebsh a3od fe elbeit leua7dy."
+    },
+    {
+     "pt": "B: Ele sai sozinho ou sai com alguém?",
+     "ar": "هو بيُخرُج لِوَحدُه وَلّا مَعَ حَد؟",
+     "arabizi": "Howa beio5rog leua7do walla ma3a 7ad?"
+    },
+    {
+     "pt": "A: Às vezes ele sai sozinho e outras vezes sai com os amigos dele.",
+     "ar": "هو ساعات بِيُخرُج لِوَحدُه وساعات بيخرُج مَعَ أصحابُه.",
+     "arabizi": "Howa sa3at beio5rog leua7do we sa3at beio5rog ma3a as7abo."
+    },
+    {
+     "pt": "B: Você precisa conversar com ele! (f)",
+     "ar": "انتي لازِم (مِحتاجة) تِتكَلِمي مَعاه!",
+     "arabizi": "Enty lazem (mei7taga) tetkalemy ma3ah!"
+    }
+   ],
+   "src": "2026-09-11"
   }
  ],
  "quotes": [

@@ -36,6 +36,10 @@ for (const c of CATS) {
     if (!it.id) problems.push(`${c}: item sem id (${JSON.stringify(it).slice(0,60)})`);
     if (c === 'profissoes') {
       if (!it.pt || !it.aziM || !it.aziF || !it.arM || !it.arF) problems.push(`profissoes ${it.id}: falta forma m/f`);
+      const real = v => v && v.trim() !== '—';
+      if (!real(it.aziM) && !real(it.aziF)) problems.push(`profissoes ${it.id}: nenhuma forma real (m e f são "—")`);
+      if (real(it.aziM) !== real(it.arM) || real(it.aziF) !== real(it.arF)) problems.push(`profissoes ${it.id}: árabe e arabizi discordam sobre qual gênero existe`);
+      if (/-$/.test(it.id)) problems.push(`profissoes ${it.id}: id incompleto`);
     } else if (c === 'verbos') {
       if (!it.pt || !it.conj) { problems.push(`verbos ${it.id}: sem conj`); continue; }
       for (const p of PERSONS8) if (!it.conj[p] || !it.conj[p].ar || !it.conj[p].arabizi)

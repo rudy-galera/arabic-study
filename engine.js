@@ -210,10 +210,14 @@ function makeQuestion(item, cat, dateIso){
   }
 
   if (cat === 'profissoes') {
-    const fem = rand(seed + 'g', 2) === 1;
+    // Algumas profissões só existem num gênero (ex.: «Dona de casa» só f, «Programador» só m);
+    // a forma inexistente vem como "—" no bank. Nunca sortear esse gênero nem usá-lo como distrator.
+    const has = v => !!v && v.trim() !== '—';
+    const canM = has(item.aziM), canF = has(item.aziF);
+    const fem = canM && canF ? rand(seed + 'g', 2) === 1 : canF;
     const label = fem ? item.aziF : item.aziM;
     const arScript = fem ? item.arF : item.arM;
-    const keyFn = p => fem ? p.aziF : p.aziM;
+    const keyFn = p => { const v = fem ? p.aziF : p.aziM; return has(v) ? v : null; };
     return assemble(`<div class="q-big">${item.pt} <span class="q-tag">${fem ? 'feminino' : 'masculino'}</span></div><div class="q-ask">Como se diz em árabe?</div>`,
       label, sampleDistractors(BANK.profissoes, label, 3, keyFn, seed),
       `<div class="ans-ar">${arScript}</div><div class="ans-az">${label}</div><div class="ans-pt">${item.pt} (${fem?'f':'m'})</div>`,
