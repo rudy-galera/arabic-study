@@ -6,8 +6,8 @@
 // Atualizado pelo skill /arabic-class-update.
 // ─────────────────────────────────────────────────────────────────────
 const BANK = {
- "version": "2026-09-11",
- "baseadoEm": "Aulas até 83 (2026-09-11) · Apostila nível básico · cards do site",
+ "version": "2026-09-30",
+ "baseadoEm": "Aulas até 85 (2026-09-30) · Apostila nível básico · cards do site",
  "numeros": [
   {
    "id": "num-sefr",
@@ -313,6 +313,12 @@ const BANK = {
    "pt": "todo dia",
    "ar": "كُل يوم",
    "arabizi": "kol youm"
+  },
+  {
+   "id": "dia-auel-embare7",
+   "pt": "anteontem",
+   "ar": "أوِل امبارِح",
+   "arabizi": "auel embare7"
   }
  ],
  "profissoes": [
@@ -5750,6 +5756,150 @@ const BANK = {
    "pt": "tâmaras Medjool",
    "ar": "تَمر مَدجول",
    "arabizi": "tamr madgul"
+  },
+  {
+   "id": "voc-saudacoes-wa7ashteny",
+   "cat": "saudacoes",
+   "catLabel": "Saudações",
+   "pt": "Sinto sua falta / saudades (para homem / para mulher)",
+   "ar": "وَحَشتِني / وَحَشتيني",
+   "arabizi": "wa7ashteny / wa7ashtiny"
+  },
+  {
+   "id": "voc-comida-mal7",
+   "cat": "comida",
+   "catLabel": "Comida",
+   "pt": "sal",
+   "ar": "مَلح",
+   "arabizi": "mal7"
+  },
+  {
+   "id": "voc-comida-shatta",
+   "cat": "comida",
+   "catLabel": "Comida",
+   "pt": "pimenta (picante)",
+   "ar": "شَطة",
+   "arabizi": "shatta"
+  },
+  {
+   "id": "voc-lugares-banzina",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "posto de gasolina",
+   "ar": "بَنزينة",
+   "arabizi": "banzina"
+  },
+  {
+   "id": "voc-lugares-marua7a",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "ventilador",
+   "ar": "مَروَحة",
+   "arabizi": "marua7a"
+  },
+  {
+   "id": "voc-lugares-takiif",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "ar-condicionado",
+   "ar": "تَكييف",
+   "arabizi": "takiif"
+  },
+  {
+   "id": "voc-lugares-serir",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "cama",
+   "ar": "سِرير",
+   "arabizi": "serir"
+  },
+  {
+   "id": "voc-lugares-shebak",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "janela",
+   "ar": "شِباك",
+   "arabizi": "shebak"
+  },
+  {
+   "id": "voc-sentimentos-morhaq",
+   "cat": "sentimentos",
+   "catLabel": "Sentimentos",
+   "pt": "cansado, sem energia (exausto)",
+   "ar": "مُرهَق",
+   "arabizi": "morhaq"
+  },
+  {
+   "id": "voc-sentimentos-bard",
+   "cat": "sentimentos",
+   "catLabel": "Sentimentos",
+   "pt": "gripe / resfriado (ter gripe = عَند + بَرد)",
+   "ar": "بَرد",
+   "arabizi": "bard"
+  },
+  {
+   "id": "voc-preposicoes-orayeb-meni",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "perto de mim",
+   "ar": "قُرَيِب مِني",
+   "arabizi": "orayeb meni"
+  },
+  {
+   "id": "voc-preposicoes-orayeb-menak",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "perto de você (m / f)",
+   "ar": "قُرَيِب مِنَك / مِنِك",
+   "arabizi": "orayeb menak / menek"
+  },
+  {
+   "id": "voc-preposicoes-orayeb-menku",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "perto de vocês",
+   "ar": "قُرَيِب مِنكوا",
+   "arabizi": "orayeb menku"
+  },
+  {
+   "id": "voc-preposicoes-be3id-3ani",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "longe de mim",
+   "ar": "بِعيد عَني",
+   "arabizi": "be3id 3ani"
+  },
+  {
+   "id": "voc-preposicoes-be3id-3anha-3anhom",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "longe dela / longe deles",
+   "ar": "بِعيد عَنها / عَنهُم",
+   "arabizi": "be3id 3anha / 3anhom"
+  },
+  {
+   "id": "voc-preposicoes-gamby",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "ao meu lado",
+   "ar": "جَنبي",
+   "arabizi": "gamby"
+  },
+  {
+   "id": "voc-preposicoes-gambaha-gambena",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "ao lado dela / ao nosso lado",
+   "ar": "جَنبَها / جَنبِنا",
+   "arabizi": "gambaha / gambena"
+  },
+  {
+   "id": "voc-preposicoes-warak-waraki",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "atrás de você (m / f)",
+   "ar": "وَراك / وَراكي",
+   "arabizi": "warak / waraki"
   }
  ],
  "familia": [
@@ -6168,6 +6318,12 @@ const BANK = {
    "pt": "Quantos anos você tem? (f)",
    "ar": "انتي عَندِك كام سَنة؟",
    "arabizi": "Enty 3andek kam sana?"
+  },
+  {
+   "id": "perg-malak-malek",
+   "pt": "O que você tem? / O que houve? (m / f)",
+   "ar": "مالَك؟ / مالِك؟",
+   "arabizi": "Malak? / Malek?"
   }
  ],
  "possessivos": [
@@ -6770,6 +6926,246 @@ const BANK = {
     }
    },
    "src": "2026-09-09"
+  },
+  {
+   "id": "poss-kan-3and",
+   "pt": "Ter no passado — tinha/tive (كان + عَند)",
+   "ar": "كان عَند",
+   "forms": {
+    "Eu": {
+     "ar": "كان عَندي",
+     "arabizi": "kan 3andi"
+    },
+    "Ele": {
+     "ar": "كان عَندُه",
+     "arabizi": "kan 3ando"
+    },
+    "Ela": {
+     "ar": "كان عَندَها",
+     "arabizi": "kan 3andaha"
+    },
+    "Você (m)": {
+     "ar": "كان عَندَك",
+     "arabizi": "kan 3andak"
+    },
+    "Você (f)": {
+     "ar": "كان عَندِك",
+     "arabizi": "kan 3andek"
+    },
+    "Nós": {
+     "ar": "كان عَندِنا",
+     "arabizi": "kan 3andena"
+    },
+    "Vocês": {
+     "ar": "كان عَندُكوا",
+     "arabizi": "kan 3andoku"
+    },
+    "Eles": {
+     "ar": "كان عَندُهُم",
+     "arabizi": "kan 3andohom"
+    }
+   },
+   "src": "2026-09-18 (Aula 84) · كان invariável + paradigma عَند"
+  },
+  {
+   "id": "poss-haikun-3and",
+   "pt": "Ter no futuro — vou ter (هَيكون + عَند)",
+   "ar": "هَيكون عَند",
+   "forms": {
+    "Eu": {
+     "ar": "هَيكون عَندي",
+     "arabizi": "haikun 3andi"
+    },
+    "Ele": {
+     "ar": "هَيكون عَندُه",
+     "arabizi": "haikun 3ando"
+    },
+    "Ela": {
+     "ar": "هَيكون عَندَها",
+     "arabizi": "haikun 3andaha"
+    },
+    "Você (m)": {
+     "ar": "هَيكون عَندَك",
+     "arabizi": "haikun 3andak"
+    },
+    "Você (f)": {
+     "ar": "هَيكون عَندِك",
+     "arabizi": "haikun 3andek"
+    },
+    "Nós": {
+     "ar": "هَيكون عَندِنا",
+     "arabizi": "haikun 3andena"
+    },
+    "Vocês": {
+     "ar": "هَيكون عَندُكوا",
+     "arabizi": "haikun 3andoku"
+    },
+    "Eles": {
+     "ar": "هَيكون عَندُهُم",
+     "arabizi": "haikun 3andohom"
+    }
+   },
+   "src": "2026-09-18 (Aula 84) · هَيكون invariável + paradigma عَند"
+  },
+  {
+   "id": "poss-camisa",
+   "pt": "Camisa",
+   "ar": "قَميص",
+   "forms": {
+    "Eu": {
+     "ar": "قَميصي",
+     "arabizi": "2amisy"
+    },
+    "Ele": {
+     "ar": "قَميصُه",
+     "arabizi": "2amiso"
+    },
+    "Ela": {
+     "ar": "قَميصها",
+     "arabizi": "2amisha"
+    },
+    "Você (m)": {
+     "ar": "قَميصَك",
+     "arabizi": "2amisak"
+    },
+    "Você (f)": {
+     "ar": "قَميصِك",
+     "arabizi": "2amisek"
+    },
+    "Nós": {
+     "ar": "قَميصنا",
+     "arabizi": "2amisna"
+    },
+    "Vocês": {
+     "ar": "قَميصكوا",
+     "arabizi": "2amisku"
+    },
+    "Eles": {
+     "ar": "قَميصهُم",
+     "arabizi": "2amishom"
+    }
+   },
+   "src": "2026-09-18 (Aula 84)"
+  },
+  {
+   "id": "poss-caneta",
+   "pt": "Caneta",
+   "ar": "قَلَم",
+   "forms": {
+    "Eu": {
+     "ar": "قَلَمي",
+     "arabizi": "2alamy"
+    },
+    "Ele": {
+     "ar": "قَلَمُه",
+     "arabizi": "2alamo"
+    },
+    "Ela": {
+     "ar": "قَلمها",
+     "arabizi": "2alamha"
+    },
+    "Você (m)": {
+     "ar": "قَلَمَك",
+     "arabizi": "2alamak"
+    },
+    "Você (f)": {
+     "ar": "قَلمِك",
+     "arabizi": "2alamek"
+    },
+    "Nós": {
+     "ar": "قَلَمنا",
+     "arabizi": "2alamna"
+    },
+    "Vocês": {
+     "ar": "قَلمكوا",
+     "arabizi": "2alamku"
+    },
+    "Eles": {
+     "ar": "قَلَمهُم",
+     "arabizi": "2alamhom"
+    }
+   },
+   "src": "2026-09-30 (Aula 85)"
+  },
+  {
+   "id": "poss-caderno",
+   "pt": "Caderno",
+   "ar": "كُراسة",
+   "forms": {
+    "Eu": {
+     "ar": "كُراستي",
+     "arabizi": "Korasty"
+    },
+    "Ele": {
+     "ar": "كُراستُه",
+     "arabizi": "Korasto"
+    },
+    "Ela": {
+     "ar": "كراسِتها",
+     "arabizi": "Korassetha"
+    },
+    "Você (m)": {
+     "ar": "كُراستَك",
+     "arabizi": "Korastak"
+    },
+    "Você (f)": {
+     "ar": "كراستِك",
+     "arabizi": "Korastek"
+    },
+    "Nós": {
+     "ar": "كُراسِتنا",
+     "arabizi": "Korassetna"
+    },
+    "Vocês": {
+     "ar": "كُراسِتكوا",
+     "arabizi": "Korassetku"
+    },
+    "Eles": {
+     "ar": "كُراسِتهُم",
+     "arabizi": "Korasethom"
+    }
+   },
+   "src": "2026-09-30 (Aula 85)"
+  },
+  {
+   "id": "poss-empresa",
+   "pt": "Empresa",
+   "ar": "شِركة",
+   "forms": {
+    "Eu": {
+     "ar": "شِركِتي",
+     "arabizi": "sherkety"
+    },
+    "Ele": {
+     "ar": "شِركِتُه",
+     "arabizi": "sherketo"
+    },
+    "Ela": {
+     "ar": "شِركِتها",
+     "arabizi": "sherketha"
+    },
+    "Você (m)": {
+     "ar": "شِركِتَك",
+     "arabizi": "sherketak"
+    },
+    "Você (f)": {
+     "ar": "شِركِتك",
+     "arabizi": "sherketek"
+    },
+    "Nós": {
+     "ar": "شِركِتنا",
+     "arabizi": "sherketna"
+    },
+    "Vocês": {
+     "ar": "شِركِتكوا",
+     "arabizi": "sherketku"
+    },
+    "Eles": {
+     "ar": "شِركِتهُم",
+     "arabizi": "sherkethom"
+    }
+   },
+   "src": "2026-09-30 (Aula 85)"
   }
  ],
  "escrita": [
@@ -8914,6 +9310,251 @@ const BANK = {
    "ar": "أنا زَهقان أوي، لَكني مِش هخرُج مِن البيت.",
    "arabizi": "Ana zah2an awi, lakeni mesh ha5rog men elbeit.",
    "src": "2026-09-11"
+  },
+  {
+   "id": "esc-306-eu-vou-ter-muito-trabalho-no-proximo-dezembro",
+   "pt": "Eu vou ter muito trabalho no próximo dezembro.",
+   "ar": "أنا هَيكون عندي شُغل كِتير في ديسَمبر الجاي.",
+   "arabizi": "Ana haikun 3andy sho8l ketir fe December elgay.",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-307-ali-vai-ter-uma-reuniao-muito-importante-na-empresa-no-dia-8",
+   "pt": "Ali vai ter uma reunião muito importante na empresa no dia 8 de outubro.",
+   "ar": "علي هَيكون عَندُه اِجتِماع مُهِم أوي في الشِركة يوم 8 أكتوبَر.",
+   "arabizi": "Ali haikun 3ando ektema3 mohem awi fe elsherka youm 8 october.",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-308-voces-vao-ter-tempo-livre-no-fim-de-semana",
+   "pt": "Vocês vão ter tempo livre no fim de semana?",
+   "ar": "انتوا هَيكون عَندُكوا وَقت فاضي في الأجازة (الويكيند)؟",
+   "arabizi": "Entu haikun 3andoku wa2t fady fe elagaza?",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-309-nos-vamos-ter-uma-viagem-no-proximo-verao",
+   "pt": "Nós vamos ter uma viagem no próximo verão.",
+   "ar": "احنا هَيكون عَندِنا سَفر الصيف الجاي.",
+   "arabizi": "E7na haikun 3andena safar elseif elgay.",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-310-voce-m-tinha-teve-gripe",
+   "pt": "Você (m) tinha/teve gripe?",
+   "ar": "انتَ كان عَندَك بَرد؟",
+   "arabizi": "Enta kan 3andak bard?",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-311-voce-f-tinha-teve-gripe",
+   "pt": "Você (f) tinha/teve gripe?",
+   "ar": "انتي كان عَندِك بَرد؟",
+   "arabizi": "Enty kan 3andek bard?",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-312-nos-tinhamos-tivemos-muito-trabalho-ontem",
+   "pt": "Nós tínhamos/tivemos muito trabalho ontem.",
+   "ar": "احنا كان عَندِنا شُغل كِتير امبارِح.",
+   "arabizi": "E7na kan 3andena sho8l ketir embare7.",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-313-eu-tinha-tive-uma-reuniao-com-o-gerente-anteontem",
+   "pt": "Eu tinha/tive uma reunião com o gerente anteontem.",
+   "ar": "أنا كان عَندي اِجتِماع مَعَ المدير أول امبارِح.",
+   "arabizi": "Ana kan 3andy ektema3 ma3a elmodir auel embare7.",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-314-eu-quero-cafe-sem-acucar-por-favor",
+   "pt": "Eu quero café sem açúcar, por favor!",
+   "ar": "أنا عايز قَهوة مِن غير سُكَر، لَو سَمَحت!",
+   "arabizi": "Ana 3aeiz 2ahwa men 8eir sokar, lau sama7t!",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-315-a-comida-esta-sem-sal",
+   "pt": "A comida está sem sal!",
+   "ar": "الأكل مِن غير مَلح!",
+   "arabizi": "Elakl men 8eir mal7!",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-316-eu-quero-a-pizza-sem-cebola-por-favor",
+   "pt": "Eu quero a pizza sem cebola, por favor!",
+   "ar": "أنا عايز البيتزا مِن غير بَصَل لو سَمَحت!",
+   "arabizi": "Ana 3aeiz elpizza men 8eir bassal lau sama7t!",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-317-eu-quero-a-comida-sem-pimenta-por-favor",
+   "pt": "Eu quero a comida sem pimenta, por favor!",
+   "ar": "أنا عايِز الأكل مِن غير شَطة، لو سَمَحت!",
+   "arabizi": "Ana 3aeiz elakl men 8eir shatta lau sama7t!",
+   "src": "2026-09-30 · também na Aula 84"
+  },
+  {
+   "id": "esc-318-a-minha-mae-mora-perto-de-mim",
+   "pt": "A minha mãe mora perto de mim.",
+   "ar": "ماما ساكنة قُرَيب مِني.",
+   "arabizi": "Mama sakna orayeb meni.",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-319-ha-um-posto-de-gasolina-perto-de-voce-m-f",
+   "pt": "Há um posto de gasolina perto de você (m / f)?",
+   "ar": "فيه بَنزينة قريب مِنَك؟ / فيه بنزينة قريب مِنك؟",
+   "arabizi": "Fih banzina orayeb menak? / Fih banzina orayeb menek?",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-320-ha-um-supermercado-perto-dela",
+   "pt": "Há um supermercado perto dela?",
+   "ar": "فيه سوبرماركِت قريب مِنها؟",
+   "arabizi": "Fih supermarket orayeb menha?",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-321-os-meus-irmaos-moram-longe-de-mim",
+   "pt": "Os meus irmãos moram longe de mim.",
+   "ar": "إخواتي ساكنين بِعيد عَني.",
+   "arabizi": "E5uaty saknin be3id 3ani.",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-322-a-minha-irma-mora-longe-dela-da-mae",
+   "pt": "A minha irmã mora longe dela (da mãe).",
+   "ar": "أُختي ساكنة بِعيد عَنها.",
+   "arabizi": "O5ty sakna be3id 3anha.",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-323-ali-vai-sentar-se-ficar-longe-deles-porque-ele-tem-gripe",
+   "pt": "Ali vai sentar-se (ficar) longe deles, porque ele tem gripe.",
+   "ar": "علي هَيُقعُد بِعيد عَنهُم عَشان هو عَندُه بَرد.",
+   "arabizi": "Ali haio3od be3id 3anhom 3ashan howa 3ando bard.",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-324-os-meus-pais-moram-muito-perto-de-voces",
+   "pt": "Os meus pais moram muito perto de vocês!",
+   "ar": "ماما وبابا ساكنين قُريب أوي مِنكوا!",
+   "arabizi": "Mama we baba saknin orayeb awi menku!",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-325-karim-gosta-de-sentar-se-ao-lado-dela",
+   "pt": "Karim gosta de sentar-se ao lado dela.",
+   "ar": "كريم بيحِب يُقعُد جَمبَها.",
+   "arabizi": "Karim bei7eb yo3od gambaha.",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-326-o-que-tem-ao-seu-lado-m-f",
+   "pt": "O que tem ao seu lado (m / f)?",
+   "ar": "فيه ايه جَنبَك/جَنبِك؟",
+   "arabizi": "Fih eh gambak / gambek?",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-327-ao-meu-lado-ha-uma-escrivaninha-e-um-ventilador",
+   "pt": "Ao meu lado há uma escrivaninha e um ventilador.",
+   "ar": "جَنبي فيه مَكتَب ومَروَحة.",
+   "arabizi": "Gamby fih maktab we marua7a.",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-328-o-que-voce-m-faz-em-casa",
+   "pt": "O que você (m) faz em casa?",
+   "ar": "انتَ بِتِعمِل ايه في البيت؟",
+   "arabizi": "Enta bet3mel eh fe elbeit?",
+   "src": "2026-09-18"
+  },
+  {
+   "id": "esc-329-eu-nao-viajo-em-janeiro",
+   "pt": "Eu não viajo em janeiro.",
+   "ar": "أنا مابسافِرش في ينايِر (شَهر 1).",
+   "arabizi": "Ana mabasafersh fe yanayer.",
+   "src": "2026-09-30"
+  },
+  {
+   "id": "esc-330-meu-cunhado-marido-da-minha-irma-nao-trabalha-na-arabia-saud",
+   "pt": "Meu cunhado (marido da minha irmã) não trabalha na Arábia Saudita.",
+   "ar": "جوز أختي مابيشتَغَلش في السعودية.",
+   "arabizi": "Goz o5ty mabieshta8alsh fe elso3deya.",
+   "src": "2026-09-30"
+  },
+  {
+   "id": "esc-331-a-minha-sobrinha-filha-do-meu-irmao-nao-tem-escola-amanha",
+   "pt": "A minha sobrinha (filha do meu irmão) não tem escola amanhã.",
+   "ar": "بِنت أخويا ماعَندَهاش مَدرسة بكرة.",
+   "arabizi": "Bent a5oya ma3andahash madrassa bokra.",
+   "src": "2026-09-30"
+  },
+  {
+   "id": "esc-332-a-minha-esposa-e-eu-nao-gostamos-de-viajar-sozinhos",
+   "pt": "A minha esposa e eu não gostamos de viajar sozinhos.",
+   "ar": "أنا وِمراتي مابِنحِبش نِسافِر لِوَحدِنا.",
+   "arabizi": "Ana we meraty maben7ebesh nessafer leua7dena.",
+   "src": "2026-09-30"
+  },
+  {
+   "id": "esc-333-eles-vao-arrumar-a-sala-sem-voces",
+   "pt": "Eles vão arrumar a sala sem vocês.",
+   "ar": "هُما هَيروقوا الصالة مِن غيركوا.",
+   "arabizi": "Homa hairaua2u elsala men 8eirku.",
+   "src": "2026-09-30"
+  },
+  {
+   "id": "esc-334-eu-quero-ir-ao-museu-com-voce-m-f",
+   "pt": "Eu quero ir ao museu com você (m / f).",
+   "ar": "أنا عايِز أروح المَتحَف مَعاك (مَعاكي).",
+   "arabizi": "Ana 3aeiz aru7 elmat7af ma3ak (ma3aki).",
+   "src": "2026-09-30"
+  },
+  {
+   "id": "esc-335-o-que-voce-m-tem-vontade-de-fazer-no-verao",
+   "pt": "O que você (m) tem vontade de fazer no verão?",
+   "ar": "انتَ نِفسَك تِعمِل ايه في الصيف؟",
+   "arabizi": "Enta nefsak te3mel eh fe elseif?",
+   "src": "2026-09-30"
+  },
+  {
+   "id": "esc-336-o-que-voce-f-tem-vontade-de-fazer-no-verao",
+   "pt": "O que você (f) tem vontade de fazer no verão?",
+   "ar": "انتي نِفسِك تِعملي ايه في الصيف؟",
+   "arabizi": "Enty nefsek te3mely eh fe elseif?",
+   "src": "2026-09-30"
+  },
+  {
+   "id": "esc-337-eu-estou-atras-de-voce-m-f",
+   "pt": "Eu estou atrás de você (m / f)!",
+   "ar": "أنا وراك! / أنا وراكي!",
+   "arabizi": "Ana warak! / Ana waraki!",
+   "src": "2026-09-30"
+  },
+  {
+   "id": "esc-338-eu-moro-perto-de-voce-m",
+   "pt": "Eu moro perto de você (m)!",
+   "ar": "أنا ساكِن قريب مِنَك!",
+   "arabizi": "Ana saken orayeb menak!",
+   "src": "2026-09-30"
+  },
+  {
+   "id": "esc-339-a-sara-mora-longe-de-mim",
+   "pt": "A Sara mora longe de mim.",
+   "ar": "سارة ساكنة بعيد عَني.",
+   "arabizi": "Sara sakna be3id 3ani.",
+   "src": "2026-09-30"
+  },
+  {
+   "id": "esc-340-eles-querem-sentar-se-ao-nosso-lado",
+   "pt": "Eles querem sentar-se ao nosso lado.",
+   "ar": "هُما عايزين يُقعُدوا جَنبِنا.",
+   "arabizi": "Homa 3aeizin yo3odo gambena.",
+   "src": "2026-09-30"
   }
  ],
  "leitura": [
@@ -9803,6 +10444,63 @@ const BANK = {
     }
    ],
    "src": "2026-09-11"
+  },
+  {
+   "id": "lei-31-juntos-com-ela-sozinho-tarefas-de-casa",
+   "title": "Juntos · com ela · sozinho(a) — tarefas de casa (Aula 84)",
+   "src": "2026-09-18 (tabela da Aula 84)",
+   "items": [
+    {
+     "pt": "Nós assistimos séries da Netflix juntos.",
+     "ar": "احنا بِنِتفَرَج عَلى مسلسلات نتفليكس مَعَ بعض.",
+     "arabizi": "E7na benetfarag 3ala mosalsalat Netflix ma3a ba3d."
+    },
+    {
+     "pt": "Nós limpamos a casa juntos.",
+     "ar": "احنا بِنَضَف البيت مَعَ بَعض.",
+     "arabizi": "E7na bennadaf elbeit ma3a ba3d."
+    },
+    {
+     "pt": "Nós preparamos o café da manhã e o jantar juntos.",
+     "ar": "احنا بِنحَضَر الفِطار والعَشا مَعَ بَعض.",
+     "arabizi": "E7na ben7adar elfetar wel3asha ma3a ba3d."
+    },
+    {
+     "pt": "Eu cozinho o almoço com ela.",
+     "ar": "أنا بَطبُخ الغَدا مَعاها.",
+     "arabizi": "Ana batbo5 el8ada ma3aha."
+    },
+    {
+     "pt": "Às vezes eu passeio com ele (o cachorro) e às vezes ela passeia com ele sozinha.",
+     "ar": "ساعات أنا بَمشي معاه (الكَلب) وساعات هي بِتِمشي معاه لوحدها.",
+     "arabizi": "Sa3at ana bamshy ma3ah (elkalb) we sa3at heya betmshy ma3ah leua7daha."
+    },
+    {
+     "pt": "Eu lavo a roupa sozinho.",
+     "ar": "أنا بَغسَل الهدوم لوحدي.",
+     "arabizi": "Ana ba8sel elhdom leua7dy."
+    },
+    {
+     "pt": "Eu arrumo o quarto sozinho.",
+     "ar": "أنا بَرَوَق الأوضة لِوَحدي.",
+     "arabizi": "Ana baraua2 eloda leua7dy."
+    },
+    {
+     "pt": "Eu estudo árabe sozinho.",
+     "ar": "أنا بَتعَلِم عربي لوحدي.",
+     "arabizi": "Ana bat3alem 3araby leua7dy."
+    },
+    {
+     "pt": "Ela lava a louça sozinha.",
+     "ar": "هي بِتِغسِل المواعين لِوَحدَها.",
+     "arabizi": "Heya bet8sel elmaua3in leua7daha."
+    },
+    {
+     "pt": "Ela passa a roupa sozinha.",
+     "ar": "هي بِتكوي الهدوم لِوَحدَها.",
+     "arabizi": "Heya betkwy elhdom leua7daha."
+    }
+   ]
   }
  ],
  "quotes": [
