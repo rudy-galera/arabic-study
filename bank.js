@@ -6,8 +6,8 @@
 // Atualizado pelo skill /arabic-class-update.
 // ─────────────────────────────────────────────────────────────────────
 const BANK = {
- "version": "2026-09-30",
- "baseadoEm": "Aulas até 85 (2026-09-30) · Apostila nível básico · cards do site",
+ "version": "2026-10-07",
+ "baseadoEm": "Aulas até 86 (2026-10-07) · Apostila nível básico · cards do site",
  "numeros": [
   {
    "id": "num-sefr",
@@ -5900,6 +5900,30 @@ const BANK = {
    "pt": "atrás de você (m / f)",
    "ar": "وَراك / وَراكي",
    "arabizi": "warak / waraki"
+  },
+  {
+   "id": "voc-sentimentos-re5em-re5ma",
+   "cat": "sentimentos",
+   "catLabel": "Sentimentos",
+   "pt": "chato / chata (pessoa)",
+   "ar": "رِخِم / رِخمة",
+   "arabizi": "re5em / re5ma"
+  },
+  {
+   "id": "voc-comida-keka",
+   "cat": "comida",
+   "catLabel": "Comida",
+   "pt": "bolo (keka)",
+   "ar": "كيكة",
+   "arabizi": "keka"
+  },
+  {
+   "id": "voc-comida-messakar-messakara",
+   "cat": "comida",
+   "catLabel": "Comida",
+   "pt": "doce (sabor, m/f)",
+   "ar": "مِسَكَر / مِسَكَرة",
+   "arabizi": "messakar / messakara"
   }
  ],
  "familia": [
@@ -6196,6 +6220,12 @@ const BANK = {
    "pt": "irmãos (homens)",
    "ar": "اخوات وِلاد",
    "arabizi": "e5uat welad"
+  },
+  {
+   "id": "fam-3id-elom",
+   "pt": "Dia da Mãe",
+   "ar": "عيد الأم",
+   "arabizi": "3id elom"
   }
  ],
  "perguntas": [
@@ -7166,6 +7196,46 @@ const BANK = {
     }
    },
    "src": "2026-09-30 (Aula 85)"
+  },
+  {
+   "id": "poss-laken",
+   "pt": "Mas (لَكِن + sufixo)",
+   "ar": "لَكِن",
+   "forms": {
+    "Eu": {
+     "ar": "لكني",
+     "arabizi": "lakeny"
+    },
+    "Ele": {
+     "ar": "لَكنُه",
+     "arabizi": "lakeno"
+    },
+    "Ela": {
+     "ar": "لَكنها",
+     "arabizi": "lakenaha"
+    },
+    "Você (m)": {
+     "ar": "لَكِنَك",
+     "arabizi": "lakenak"
+    },
+    "Você (f)": {
+     "ar": "لَكِنِك",
+     "arabizi": "lakenek"
+    },
+    "Nós": {
+     "ar": "لَكنِنا",
+     "arabizi": "lakenena"
+    },
+    "Vocês": {
+     "ar": "لَكنُكوا",
+     "arabizi": "lakenoku"
+    },
+    "Eles": {
+     "ar": "لَكنُهُم",
+     "arabizi": "lakenohom"
+    }
+   },
+   "src": "2026-10-07 (Aula 86)"
   }
  ],
  "escrita": [
@@ -9555,6 +9625,125 @@ const BANK = {
    "ar": "هُما عايزين يُقعُدوا جَنبِنا.",
    "arabizi": "Homa 3aeizin yo3odo gambena.",
    "src": "2026-09-30"
+  },
+  {
+   "id": "esc-341-nos-vamos-a-praia-e-depois-almocamos-num-restaur",
+   "pt": "Nós vamos à praia e depois almoçamos num restaurante com a minha irmã, o marido dela, a minha tia (materna) e a filha dela. Foi um dia lindo!",
+   "ar": "احنا بِنروح البَحر وبعدين بِنِتغَدى في مَطعَم مَعَ أُختي وجوزها وخالتي وبِنتَها وكان يوم حِلو أوي.",
+   "arabizi": "E7na benru7 elba7r we ba3dein benetghada fe mat3am ma3a o5ty we gozha we 5alty we bentha we kan youm 7elw awi.",
+   "src": "2026-10-07"
+  },
+  {
+   "id": "esc-342-os-nossos-filhos-sao-brasileiros-mas-eles-nao-fa",
+   "pt": "Os nossos filhos são brasileiros, mas eles não falam português bem.",
+   "ar": "أولادنا بَرازيليين، لَكنُهُم مابيتكَلموش بُرتُغالي كويس.",
+   "arabizi": "Auladna barazileiin, lakenohom maboetkalemosh borto8aly kowayes.",
+   "src": "2026-10-07"
+  },
+  {
+   "id": "esc-343-eu-quero-viajar-de-carro-mas-eu-nao-quero-dirigi",
+   "pt": "Eu quero viajar de carro, mas eu não quero dirigir.",
+   "ar": "أنا عايِز أسافِر بالعربية لَكني مِش عايِز أسوق.",
+   "arabizi": "Ana 3aeiz assafer bel3arabeya, lakeny mesh 3aaeiz assu2.",
+   "src": "2026-10-07"
+  },
+  {
+   "id": "esc-344-ali-quer-visitar-a-vovo-mas-ele-nao-tem-tempo",
+   "pt": "Ali quer visitar a vovó, mas ele não tem tempo.",
+   "ar": "علي عايِز يِزور تيتة (جِدِتُه)، لَكنُه ماعندوش وَقت.",
+   "arabizi": "Ali 3aeiz yezur tita (gedeto), lakeno ma3andush wa2t.",
+   "src": "2026-10-07"
+  },
+  {
+   "id": "esc-345-nos-vamos-a-praia-amanha-mas-nos-nao-vamos-nadar",
+   "pt": "Nós vamos à praia amanhã, mas nós não vamos nadar.",
+   "ar": "احنا هَنروح البَحر بُكرة، لَكِننا مِش هَنعوم.",
+   "arabizi": "E7na hanru7 elba7r bokra, lakenena mesh han3um.",
+   "src": "2026-10-07"
+  },
+  {
+   "id": "esc-346-voces-podem-sair-com-os-amigos-mas-voces-tem-que",
+   "pt": "Vocês podem sair com os amigos, mas vocês têm que voltar para casa às 11:30.",
+   "ar": "انتوا مُمكِن تُخرُجوا مَعَ أصحابكوا، لَكنُكوا لازِم تِرَوَحوا الساعة حِداشَر ونُص.",
+   "arabizi": "Entu momken to5rogu ma3a as7abku, lakenoku lazem terau7u elsa3a 7edashar we nos.",
+   "src": "2026-10-07"
+  },
+  {
+   "id": "esc-347-amanha-e-o-dia-da-mae-eu-vou-comprar-um-presente",
+   "pt": "Amanhã é o dia da mãe, eu vou comprar um presente para a minha mãe e vou visitá-la.",
+   "ar": "بُكرة عيد الأم، هَشتِري هدية لِماما وهَزورها.",
+   "arabizi": "Bokra 3id elom, hashtery hedeya le mama we hazorha.",
+   "src": "2026-10-07"
+  },
+  {
+   "id": "esc-348-ali-quer-visitar-me-na-minha-casa-nova",
+   "pt": "Ali quer visitar-me na minha casa nova.",
+   "ar": "علي عايِز يِزورني في بيتي الجديد.",
+   "arabizi": "Ali 3aeiz yezorni fe beity elgedid.",
+   "src": "2026-10-07"
+  },
+  {
+   "id": "esc-349-eu-nao-quero-falar-com-o-ahmed-ele-nao-gosta-de",
+   "pt": "Eu não quero falar com o Ahmed, ele não gosta de mim.",
+   "ar": "أنا مِش عايِز اتكَلِم مَع أحمَد، هو مابيحِبِنيش.",
+   "arabizi": "Ana mesh 3aeiz atkalem ma3a Ahmed, howa mabei7ebenish.",
+   "src": "2026-10-07"
+  },
+  {
+   "id": "esc-350-o-ahmed-e-muito-chato-eu-nao-gosto-dele",
+   "pt": "O Ahmed é muito chato, eu não gosto dele.",
+   "ar": "أحمَد رِخِم أوي، مِابَحِبُوش.",
+   "arabizi": "Ahmed re5em awi, maba7ebush.",
+   "src": "2026-10-07"
+  },
+  {
+   "id": "esc-351-nos-vamos-visitar-te-m-depois-do-casamento",
+   "pt": "Nós vamos visitar-te (m) depois do casamento.",
+   "ar": "احنا هَنزورَك بَعَد الفَرح.",
+   "arabizi": "E7na hanzorak ba3d elfara7.",
+   "src": "2026-10-07"
+  },
+  {
+   "id": "esc-352-nos-vamos-visitar-te-f-depois-do-casamento",
+   "pt": "Nós vamos visitar-te (f) depois do casamento.",
+   "ar": "احنا هَنزورِك بَعد الفَرَح.",
+   "arabizi": "E7na hanzorek ba3d elfara7.",
+   "src": "2026-10-07"
+  },
+  {
+   "id": "esc-353-quando-voces-estao-livres-eu-quero-visitar-vos-p",
+   "pt": "Quando vocês estão livres? Eu quero visitar-vos para conversarmos um pouco.",
+   "ar": "انتوا فاضيين امتى؟ أنا عايز أزوركوا عشان نِتكَلِم شوية.",
+   "arabizi": "Entu fadyin emta? Ana 3aeiz azorku 3ashan netkalem shewaya.",
+   "src": "2026-10-07"
+  },
+  {
+   "id": "esc-354-o-ahmed-e-a-mona-estao-muito-doentes-voce-tem-qu",
+   "pt": "O Ahmed e a Mona estão muito doentes, você tem que visitá-los.",
+   "ar": "أحمَد ومُنى تعبانين أوي، انت لازِم تِزورهُم.",
+   "arabizi": "Ahmed we Mona ta3banin awi, enta lazem tezorhom.",
+   "src": "2026-10-07"
+  },
+  {
+   "id": "esc-355-estas-calcas-sao-muito-bonitas-eu-quero-compra-l",
+   "pt": "Estas calças são muito bonitas, eu quero comprá-las.",
+   "ar": "البَنطَلون ده حِلو أوي، عايِز أشتريه.",
+   "arabizi": "Elbantalon da 7elw awi, 3aeiz ashterih.",
+   "src": "2026-10-07"
+  },
+  {
+   "id": "esc-356-este-bolo-e-muito-doce-nao-quero-come-lo",
+   "pt": "Este bolo é muito doce, não quero comê-lo.",
+   "ar": "الكيكة دي مِسَكَرة أوي، مِش عايِز آكُلها.",
+   "arabizi": "Elkeka di messakara awi, mesh 3aeiz akolha.",
+   "src": "2026-10-07"
+  },
+  {
+   "id": "esc-357-este-cha-e-muito-doce-nao-quero-bebe-lo",
+   "pt": "Este chá é muito doce, não quero bebê-lo.",
+   "ar": "الشاي ده مِسَكَر أوي، مِش عايِز أشرَبُه.",
+   "arabizi": "Elshay da messakar awi, mesh 3aeiz ashrabo.",
+   "src": "2026-10-07"
   }
  ],
  "leitura": [
