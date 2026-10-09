@@ -6,8 +6,8 @@
 // Atualizado pelo skill /arabic-class-update.
 // ─────────────────────────────────────────────────────────────────────
 const BANK = {
- "version": "2026-10-07",
- "baseadoEm": "Aulas até 86 (2026-10-07) · Apostila nível básico · cards do site",
+ "version": "2026-10-09",
+ "baseadoEm": "Aulas até 87 (2026-10-09) · Apostila nível básico · cards do site",
  "numeros": [
   {
    "id": "num-sefr",
@@ -5924,6 +5924,38 @@ const BANK = {
    "pt": "doce (sabor, m/f)",
    "ar": "مِسَكَر / مِسَكَرة",
    "arabizi": "messakar / messakara"
+  },
+  {
+   "id": "voc-comida-memala7-memala7a",
+   "cat": "comida",
+   "catLabel": "Comida",
+   "pt": "salgado / salgada",
+   "ar": "مِمَلَح / مِمَلَحة",
+   "arabizi": "memala7 / memala7a"
+  },
+  {
+   "id": "voc-lugares-genina",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "parque (jardim)",
+   "ar": "جنينة",
+   "arabizi": "genina"
+  },
+  {
+   "id": "voc-sentimentos-nos-nos",
+   "cat": "sentimentos",
+   "catLabel": "Sentimentos",
+   "pt": "mais ou menos (estou)",
+   "ar": "نُص نُص",
+   "arabizi": "nos nos"
+  },
+  {
+   "id": "voc-sentimentos-mesh-a7san-7aga",
+   "cat": "sentimentos",
+   "catLabel": "Sentimentos",
+   "pt": "não estou no meu melhor (não é a melhor coisa)",
+   "ar": "مِش أحسَن حاجة",
+   "arabizi": "mesh a7san 7aga"
   }
  ],
  "familia": [
@@ -6354,6 +6386,12 @@ const BANK = {
    "pt": "O que você tem? / O que houve? (m / f)",
    "ar": "مالَك؟ / مالِك؟",
    "arabizi": "Malak? / Malek?"
+  },
+  {
+   "id": "perg-ba2alak-2ad-eh",
+   "pt": "faz quanto tempo que você…? (بَقال + sufixo + قَد ايه)",
+   "ar": "بَقالَك قَد ايه",
+   "arabizi": "ba2alak 2ad eh"
   }
  ],
  "possessivos": [
@@ -7236,6 +7274,46 @@ const BANK = {
     }
    },
    "src": "2026-10-07 (Aula 86)"
+  },
+  {
+   "id": "poss-ba2al",
+   "pt": "Faz (tempo) que… (بَقال + sufixo + tempo + verbo)",
+   "ar": "بَقال",
+   "forms": {
+    "Eu": {
+     "ar": "بَقالي",
+     "arabizi": "ba2aly"
+    },
+    "Ele": {
+     "ar": "بَقالُه",
+     "arabizi": "ba2alo"
+    },
+    "Ela": {
+     "ar": "بَقالها",
+     "arabizi": "ba2alha"
+    },
+    "Você (m)": {
+     "ar": "بَقالَك",
+     "arabizi": "ba2alak"
+    },
+    "Você (f)": {
+     "ar": "بَقالِك",
+     "arabizi": "ba2alek"
+    },
+    "Nós": {
+     "ar": "بَقالنا",
+     "arabizi": "ba2alna"
+    },
+    "Vocês": {
+     "ar": "بَقالكوا",
+     "arabizi": "ba2alku"
+    },
+    "Eles": {
+     "ar": "بقالهم",
+     "arabizi": "ba2alhom"
+    }
+   },
+   "src": "2026-10-09 (Aula 87)"
   }
  ],
  "escrita": [
@@ -9744,6 +9822,188 @@ const BANK = {
    "ar": "الشاي ده مِسَكَر أوي، مِش عايِز أشرَبُه.",
    "arabizi": "Elshay da messakar awi, mesh 3aeiz ashrabo.",
    "src": "2026-10-07"
+  },
+  {
+   "id": "esc-358-a-minha-casa-e-muito-grande-eu-nao-gosto-de-a-ar",
+   "pt": "A minha casa é muito grande, eu não gosto de a arrumar.",
+   "ar": "بيتي كبير أوي، أنا مابحبش أروقُه.",
+   "arabizi": "Beity kebir awi, ana maba7ebesh araua2o.",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-359-o-meu-quarto-esta-muito-baguncado-nao-o-quero-li",
+   "pt": "O meu quarto está muito bagunçado, não o quero limpar.",
+   "ar": "أوضتي مِفَركِشة أوي، مِش عايِز أنَضَفها.",
+   "arabizi": "Odty mefarkesha awi, mesh 3aeiz anadafha.",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-360-esta-comida-e-muito-salgada-ahmed-nao-a-vai-come",
+   "pt": "Esta comida é muito salgada, Ahmed não a vai comer.",
+   "ar": "الأكل ده مِمَلَح أوي، أحمَد مِش هَياكُلُه.",
+   "arabizi": "Elakl da memala7 awi, Ahmed mesh haiaklo.",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-361-faz-um-ano-que-eu-estudo-arabe",
+   "pt": "Faz um ano que eu estudo árabe.",
+   "ar": "بَقالي سنة بَذاكِر عربي.",
+   "arabizi": "Ba2aly sana bazaker 3arabi.",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-362-faz-um-ano-que-eu-estudo-arabe-verbo-antes-de",
+   "pt": "Faz um ano que eu estudo árabe (verbo antes de بَقال).",
+   "ar": "أنا بَذاكِر عربي بقالي سنة.",
+   "arabizi": "Ana bazaker 3arabi ba2aly sana.",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-363-faz-11-anos-que-moro-nos-emirados",
+   "pt": "Faz 11 anos que moro nos Emirados.",
+   "ar": "بَقالي حِداشَر سنة ساكِن في الامارات.",
+   "arabizi": "Ba2aly 11 sana saken fe elemarat.",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-364-faz-2-meses-que-ele-e-casado",
+   "pt": "Faz 2 meses que ele é casado.",
+   "ar": "بَقالُه شَهرين مِتجَوِز.",
+   "arabizi": "Ba2alo shahrein metgawez.",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-365-faz-uma-hora-que-ele-esta-a-falar-ao-telemovel",
+   "pt": "Faz uma hora que ele está a falar ao telemóvel.",
+   "ar": "بَقاله ساعة بيتكلم في الموبايل.",
+   "arabizi": "Ba2alo sa3a bietkalem fe elmobile.",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-366-faz-30-minutos-que-ela-esta-a-fazer-o-cabelo",
+   "pt": "Faz 30 minutos que ela está a fazer o cabelo.",
+   "ar": "بَقالها نُص ساعة بِتِعمِل شَعرَها.",
+   "arabizi": "Ba2alha nos sa3a bete3mal sha3raha.",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-367-faz-11-meses-que-ela-vai-a-academia",
+   "pt": "Faz 11 meses que ela vai à academia.",
+   "ar": "بَقالها حِداشَر شَهر بِتروح الجيم.",
+   "arabizi": "Ba2alha 11 shahr betru7 elgym.",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-368-faz-quase-um-ano-que-ela-vai-a-academia",
+   "pt": "Faz quase um ano que ela vai à academia.",
+   "ar": "بَقالها سنة تَقريباً بتروح الجيم.",
+   "arabizi": "Ba2alha sana ta2riban betru7 elgym.",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-369-faz-15-minutos-que-voce-m-esta-a-passar-a-roupa",
+   "pt": "Faz 15 minutos que você (m) está a passar a roupa!",
+   "ar": "بَقالَك خَمستاشَر دقيقة (رُبع ساعة) بِتِكوي الهدوم!",
+   "arabizi": "Ba2alak rob3 sa3a betekwi elhodum!",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-370-faz-15-minutos-que-voce-f-esta-a-passar-a-roupa",
+   "pt": "Faz 15 minutos que você (f) está a passar a roupa!",
+   "ar": "بَقالِك رُبع ساعة بتكوي الهدوم!",
+   "arabizi": "Ba2alek rob3 sa3a betekwi elhodum!",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-371-faz-2-horas-que-voce-m-esta-a-lavar-a-louca",
+   "pt": "Faz 2 horas que você (m) está a lavar a louça!",
+   "ar": "بَقالَك ساعتين بِتِغسِل المواعين!",
+   "arabizi": "Ba2alak sa3tein bete8sel elmaua3in!",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-372-faz-2-horas-que-voce-f-esta-a-lavar-a-louca",
+   "pt": "Faz 2 horas que você (f) está a lavar a louça!",
+   "ar": "بَقالِك ساعتين بتغسلي المواعين!",
+   "arabizi": "Ba2alek sa3tein bete8sely elmaua3in!",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-373-faz-dois-anos-que-moramos-juntos",
+   "pt": "Faz dois anos que moramos juntos.",
+   "ar": "بَقالنا سَنتين ساكنين مَعَ بَعض.",
+   "arabizi": "Ba2alna sanatein saknin ma3a ba3d.",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-374-faz-dois-meses-que-estamos-a-aprender-espanhol",
+   "pt": "Faz dois meses que estamos a aprender espanhol.",
+   "ar": "بَقالنا شَهرين بِنِتعَلِم أسباني.",
+   "arabizi": "Ba2alna shahrein benet3alem asbany.",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-375-faz-um-dia-que-voces-trabalham",
+   "pt": "Faz um dia que vocês trabalham.",
+   "ar": "بَقالكوا يوم بِتِشتَغلوا.",
+   "arabizi": "Ba2alku youm beteshta8alu.",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-376-faz-duas-horas-que-voces-estao-a-preparar-o-almo",
+   "pt": "Faz duas horas que vocês estão a preparar o almoço.",
+   "ar": "بَقالكوا ساعتين بتجهزوا الغَدا.",
+   "arabizi": "Ba2alku sa3tein betgahezu el8ada.",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-377-o-jantar-esta-pronto-faz-muito-tempo-que-eles-o",
+   "pt": "O jantar está pronto? Faz muito tempo que eles o estão a preparar.",
+   "ar": "العَشا جاهِز؟ بقالهم كتير بيجَهِزوه.",
+   "arabizi": "El3asha gahez? Ba2alhom ketir beigahezu.",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-378-faz-muito-tempo-que-elas-estao-doentes",
+   "pt": "Faz muito tempo que elas estão doentes.",
+   "ar": "بقالهم كتير تَعبانين.",
+   "arabizi": "Ba2alhom ketir ta3banin.",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-379-faz-quanto-tempo-que-voce-m-trabalha-nesta-empre",
+   "pt": "Faz quanto tempo que você (m) trabalha nesta empresa?",
+   "ar": "بَقالَك قَد ايه بِتِشتَغَل في الشركة دي؟",
+   "arabizi": "Ba2alak 2ad eh beteshta8al fe elsherka di?",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-380-faz-quanto-tempo-que-voce-f-trabalha-nesta-empre",
+   "pt": "Faz quanto tempo que você (f) trabalha nesta empresa?",
+   "ar": "بَقالِك قَد ايه بتشتغلي في الشركة دي؟",
+   "arabizi": "Ba2alek 2ad eh beteshta8aly fe elsherka di?",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-381-faz-quanto-tempo-que-voces-moram-nesta-cidade",
+   "pt": "Faz quanto tempo que vocês moram nesta cidade?",
+   "ar": "بَقالكوا قَد ايه ساكنين في المَدينة دي؟",
+   "arabizi": "Ba2alku 2ad eh saknin fe elmadina di?",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-382-faz-quanto-tempo-que-voce-m-esta-a-aprender-a-da",
+   "pt": "Faz quanto tempo que você (m) está a aprender a dançar?",
+   "ar": "بقالَك قَد ايه بِتتعَلِم تُرقُص؟",
+   "arabizi": "Ba2alak 2ad eh betet3alem tor2os?",
+   "src": "2026-10-09"
+  },
+  {
+   "id": "esc-383-faz-quanto-tempo-que-voce-f-esta-a-aprender-a-da",
+   "pt": "Faz quanto tempo que você (f) está a aprender a dançar?",
+   "ar": "بقالك قد ايه بتتعلمي ترقصي؟",
+   "arabizi": "Ba2alek 2ad eh betet3alemy tor2osy?",
+   "src": "2026-10-09"
   }
  ],
  "leitura": [
@@ -10688,6 +10948,63 @@ const BANK = {
      "pt": "Ela passa a roupa sozinha.",
      "ar": "هي بِتكوي الهدوم لِوَحدَها.",
      "arabizi": "Heya betkwy elhdom leua7daha."
+    }
+   ]
+  },
+  {
+   "id": "lei-33-heba-nao-sai-de-casa-ha-muito-tempo",
+   "title": "Heba não sai de casa há muito tempo — diálogo (Aula 87)",
+   "src": "2026-10-09 (Aula 87)",
+   "items": [
+    {
+     "pt": "A: Olá Heba, como você está agora?",
+     "ar": "أهلاً ياهبه! ازيك دلوقتي؟",
+     "arabizi": "Ahlan ya Heba! Ezayek delua2ty?"
+    },
+    {
+     "pt": "B: Estou mais ou menos, não estou muito bem.",
+     "ar": "نُص نُص، مِش كويسة أوي.",
+     "arabizi": "Nos nos, mesh kowayessa awi."
+    },
+    {
+     "pt": "B (alternativa): Não estou no meu melhor.",
+     "ar": "مِش أحسَن حاجة.",
+     "arabizi": "Mesh a7san 7aga."
+    },
+    {
+     "pt": "A: Por quê? Faz quanto tempo que você não sai de casa?",
+     "ar": "ليه ياهبه؟ بَقالِك قَد ايه مابتخرجيش مِن البيت؟",
+     "arabizi": "Leh ya Heba? Ba2alek 2ad eh mabeto5roguish men elbeit?"
+    },
+    {
+     "pt": "B: Faz muito tempo, e todos os dias eu faço a mesma coisa. Quero sair ou viajar, mas não quero sair sozinha.",
+     "ar": "بقالي كتير أوي، وكُل يوم بَعمِل نَفس الحاجة، نِفسي أخرُج أو أسافِر بَس مِش عايزة أخرُج لِوَحدي.",
+     "arabizi": "Ba2aly ketir awi, we kol youm ba3mel nafs el7aga, nefsy a5rog au assafer bas mesh 3aeiza a5rog leua7dy."
+    },
+    {
+     "pt": "A: Eu posso sair com você!",
+     "ar": "أنا مُمكِن أخرُج مَعاكي.",
+     "arabizi": "Ana momken a5rog ma3aki."
+    },
+    {
+     "pt": "B: Quero ir ao parque e comer ou beber alguma coisa. Você tem carro?",
+     "ar": "أنا نِفسي أروح الجنينة وآكُل أو أشرَب حاجة. انتي عَندِك عربية؟",
+     "arabizi": "Ana nefsy aru7 elgenina we akol au ashrab 7aga. Enty 3andek 3arabeya?"
+    },
+    {
+     "pt": "A: Eu não tenho carro, tenho uma bicicleta, mas o meu irmão tem carro.",
+     "ar": "أنا ماعنديش عربية، عَندي عجلة، بَس أخويا عَندُه عربية.",
+     "arabizi": "Ana ma3andish 3arabeya, 3andy 3agala, bas a5oya 3ando 3arabeya."
+    },
+    {
+     "pt": "B: Sem problemas! Podemos ir de metrô ou de ônibus.",
+     "ar": "مافيش مشكلة! مُمكِن نروح بالمترو أو بالباص (بالأتوبيس).",
+     "arabizi": "Mafish moshkela! Momken neru7 belmetro au belbas (belotobis)."
+    },
+    {
+     "pt": "A: Não! Eu vou falar com o meu irmão e vamos de carro!",
+     "ar": "لا لا لا لا! أنا هَتكَلِم مَعَ أخويا وهَنروح بالعربية!",
+     "arabizi": "La la la la! Ana hatkalem ma3a a5oya we hanru7 bel3arabeya."
     }
    ]
   }
