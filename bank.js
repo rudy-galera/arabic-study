@@ -6,8 +6,8 @@
 // Atualizado pelo skill /arabic-class-update.
 // ─────────────────────────────────────────────────────────────────────
 const BANK = {
- "version": "2026-10-09",
- "baseadoEm": "Aulas até 87 (2026-10-09) · Apostila nível básico · cards do site",
+ "version": "2026-10-14",
+ "baseadoEm": "Aulas até 88 (2026-10-14) · Apostila nível básico · cards do site",
  "numeros": [
   {
    "id": "num-sefr",
@@ -3082,6 +3082,47 @@ const BANK = {
      "arabizi": "Homa fakrin"
     }
    }
+  },
+  {
+   "id": "verbo-2abel",
+   "pt": "encontrar (alguém)",
+   "ar": "قابِل",
+   "arabizi": "2abel",
+   "grupo": "rotina",
+   "conj": {
+    "Eu": {
+     "ar": "أنا بَقابِل",
+     "arabizi": "Ana ba2abel"
+    },
+    "Você (m)": {
+     "ar": "انتَ بِتقابِل",
+     "arabizi": "Enta bet2abel"
+    },
+    "Você (f)": {
+     "ar": "انتي بِتقابلي",
+     "arabizi": "Enty bet2ably"
+    },
+    "Ele": {
+     "ar": "هُوَ بيقابِل",
+     "arabizi": "Howa bei2abel"
+    },
+    "Ela": {
+     "ar": "هِيَ بِتقابِل",
+     "arabizi": "Heya bet2abel"
+    },
+    "Nós": {
+     "ar": "احنا بِنقابِل",
+     "arabizi": "E7na ben2abel"
+    },
+    "Vocês": {
+     "ar": "انتوا بِتقابلوا",
+     "arabizi": "Entu bet2ablu"
+    },
+    "Eles/Elas": {
+     "ar": "هُما بيقابلوا",
+     "arabizi": "Homa bei2ablu"
+    }
+   }
   }
  ],
  "vocab": [
@@ -5956,6 +5997,14 @@ const BANK = {
    "pt": "não estou no meu melhor (não é a melhor coisa)",
    "ar": "مِش أحسَن حاجة",
    "arabizi": "mesh a7san 7aga"
+  },
+  {
+   "id": "voc-sentimentos-mesada3",
+   "cat": "sentimentos",
+   "catLabel": "Sentimentos",
+   "pt": "com dor de cabeça (m / f / pl)",
+   "ar": "مِصَدَع / مِصدعة / مِصدعين",
+   "arabizi": "mesada3 / mesad3a / mesad3in"
   }
  ],
  "familia": [
@@ -6258,6 +6307,12 @@ const BANK = {
    "pt": "Dia da Mãe",
    "ar": "عيد الأم",
    "arabizi": "3id elom"
+  },
+  {
+   "id": "fam-waledein",
+   "pt": "pais (pai e mãe)",
+   "ar": "والدين",
+   "arabizi": "waledein"
   }
  ],
  "perguntas": [
@@ -10004,6 +10059,90 @@ const BANK = {
    "ar": "بقالك قد ايه بتتعلمي ترقصي؟",
    "arabizi": "Ba2alek 2ad eh betet3alemy tor2osy?",
    "src": "2026-10-09"
+  },
+  {
+   "id": "esc-384-eu-quero-encontrar-a-minha-irma-na-sexta-feira",
+   "pt": "Eu quero encontrar a minha irmã na sexta-feira.",
+   "ar": "أنا عايز أقابِل أُختي يوم الجُمعة.",
+   "arabizi": "Ana 3aeiz a2abel o5ty youm elgom3a.",
+   "src": "2026-10-14"
+  },
+  {
+   "id": "esc-385-eu-sempre-encontro-o-meu-irmao-na-casa-dos-pais",
+   "pt": "Eu sempre encontro o meu irmão na casa dos pais.",
+   "ar": "أنا دايماً بَقابِل أخويا في بيت ماما وبابا.",
+   "arabizi": "Ana dayiman ba2abel a5oya fe beit mama we baba.",
+   "src": "2026-10-14"
+  },
+  {
+   "id": "esc-386-ahmed-tem-dor-de-cabeca-ele-nao-quer-encontrar-n",
+   "pt": "Ahmed tem dor de cabeça, ele não quer encontrar ninguém hoje.",
+   "ar": "أحمَد مِصدَع، مش عايز يقابِل حَد النهاردة.",
+   "arabizi": "Ahmed mesada3, mesh 3aeiz ye2abel 7ad enaharda.",
+   "src": "2026-10-14"
+  },
+  {
+   "id": "esc-387-mona-quer-encontrar-me-amanha-depois-do-trabalho",
+   "pt": "Mona quer encontrar-me amanhã depois do trabalho para irmos fazer compras.",
+   "ar": "مُنى عايزة تقابلني بُكرة بعد الشُغل عشان نِروح نِعمِل شوبينج.",
+   "arabizi": "Mona 3aeiza te2abelni bokra ba3d elsho8l 3ashan neru7 ne3mel shopping.",
+   "src": "2026-10-14"
+  },
+  {
+   "id": "esc-388-porque-voce-m-me-quer-encontrar-ta-tudo-bem",
+   "pt": "Porque você (m) me quer encontrar? Tá tudo bem?",
+   "ar": "انتَ عايز تقابلني ليه؟ انتَ كويس؟",
+   "arabizi": "Enta 3aeiz te2abelni leh? Enta kowayes?",
+   "src": "2026-10-14"
+  },
+  {
+   "id": "esc-389-porque-voce-f-me-quer-encontrar-ta-tudo-bem",
+   "pt": "Porque você (f) me quer encontrar? Tá tudo bem?",
+   "ar": "انتي عايزة تقابليني ليه؟ انتي كويسة؟",
+   "arabizi": "Enty 3aeiza te2abelini leh? Enty kowayessa?",
+   "src": "2026-10-14"
+  },
+  {
+   "id": "esc-390-nos-vamos-encontrar-vos-perto-do-supermercado",
+   "pt": "Nós vamos encontrar-vos perto do supermercado.",
+   "ar": "احنا هَنقابلكوا عَند السوبرماركت.",
+   "arabizi": "E7na han2abelku 3and elsupermarket.",
+   "src": "2026-10-14"
+  },
+  {
+   "id": "esc-391-voces-vao-encontrar-o-gerente-onde",
+   "pt": "Vocês vão encontrar o gerente onde?",
+   "ar": "انتوا هَتقابلوا المُدير فين؟",
+   "arabizi": "Entu hat2ablu elmodir fen?",
+   "src": "2026-10-14"
+  },
+  {
+   "id": "esc-392-nos-vamos-encontra-lo-neste-restaurante",
+   "pt": "Nós vamos encontrá-lo neste restaurante.",
+   "ar": "احنا هَنقابلُه في المَطعَم ده.",
+   "arabizi": "E7na han2ablu fe elmat3am da.",
+   "src": "2026-10-14"
+  },
+  {
+   "id": "esc-393-eles-sempre-encontram-a-familia-toda-na-casa-dos",
+   "pt": "Eles sempre encontram a família toda na casa dos avós.",
+   "ar": "هُما دايماً بيقابلوا كُل العيلة في بيت تيتة وجدو.",
+   "arabizi": "Homa dayiman bei2ablu kol el3eila fe beit teta we gedo.",
+   "src": "2026-10-14"
+  },
+  {
+   "id": "esc-394-eu-quero-encontrar-te-m-esta-semana-quando-voce",
+   "pt": "Eu quero encontrar-te (m) esta semana! Quando você está livre?",
+   "ar": "أنا عايِز أقابلَك الأسبوع ده! انت فاضي امتى؟",
+   "arabizi": "Ana 3aeiz a2ablak elosbu3 da! Enta fady emta?",
+   "src": "2026-10-14"
+  },
+  {
+   "id": "esc-395-eu-quero-encontrar-te-f-esta-semana-quando-voce",
+   "pt": "Eu quero encontrar-te (f) esta semana! Quando você está livre?",
+   "ar": "أنا عايز أقابلِك الأسبوع ده! انتي فاضية امتى؟",
+   "arabizi": "Ana 3aeiz a2ablek elosbu3 da! Enty fadya emta?",
+   "src": "2026-10-14"
   }
  ],
  "leitura": [
@@ -11005,6 +11144,63 @@ const BANK = {
      "pt": "A: Não! Eu vou falar com o meu irmão e vamos de carro!",
      "ar": "لا لا لا لا! أنا هَتكَلِم مَعَ أخويا وهَنروح بالعربية!",
      "arabizi": "La la la la! Ana hatkalem ma3a a5oya we hanru7 bel3arabeya."
+    }
+   ]
+  },
+  {
+   "id": "lei-34-faz-quanto-tempo-perguntas-e-respostas",
+   "title": "Faz quanto tempo? — perguntas e respostas com بَقال (Aula 88)",
+   "src": "2026-10-14 (Aula 88 · gabarito das perguntas da Aula 87)",
+   "items": [
+    {
+     "pt": "Faz quanto tempo que você mora em Dubai?",
+     "ar": "بَقالِك قَد ايه عايِش في دُبي؟",
+     "arabizi": "Ba2alek 2ad eh 3ayesh fe Dubai?"
+    },
+    {
+     "pt": "Faz dez anos que moro em Dubai.",
+     "ar": "بقالي عَشَر سنين عايش في دبي.",
+     "arabizi": "Ba2aly 3ashar senin 3ayesh fe Dubai."
+    },
+    {
+     "pt": "Faz quanto tempo que você trabalha?",
+     "ar": "بقالَك قَد ايه بتشتغل؟",
+     "arabizi": "Ba2alak 2ad eh beteshta8al?"
+    },
+    {
+     "pt": "Faz dois anos que trabalho nesta empresa, mas faz muito tempo que trabalho em geral.",
+     "ar": "بقالي سَنَتين بَشتغل في الشركة دي بَس بقالي كتير بَشتَغَل عامةً.",
+     "arabizi": "Ba2aly sanatein bashta8al fe elsherka di bas ba2aly ketir bashta8al 3amatan."
+    },
+    {
+     "pt": "Faz quanto tempo que você aprende árabe?",
+     "ar": "بقالَك قد ايه بتتعلم عربي؟",
+     "arabizi": "Ba2alak 2ad eh betet3alem 3arabi?"
+    },
+    {
+     "pt": "Faz um ano que aprendo árabe.",
+     "ar": "بقالي سنة بتعلم عربي.",
+     "arabizi": "Ba2aly sana bat3alem 3arabi."
+    },
+    {
+     "pt": "Faz quanto tempo que você conhece a sua esposa?",
+     "ar": "بقالَك قد ايه تعرف مِراتَك؟",
+     "arabizi": "Ba2alak 2ad eh te3raf meratak?"
+    },
+    {
+     "pt": "Faz doze anos que conheço a minha esposa.",
+     "ar": "بقالي اتناشَر سنة أعرَف مِراتي.",
+     "arabizi": "Ba2aly etnashar sana a3raf meraty."
+    },
+    {
+     "pt": "Faz quanto tempo que a sua mãe e o seu pai são casados?",
+     "ar": "مامتَك وباباك بَقالهُم قد ايه مِتجوزين؟",
+     "arabizi": "Mamtak we babak ba2alhom 2ad eh metgawzin?"
+    },
+    {
+     "pt": "A mamãe e o papai são casados faz quarenta anos.",
+     "ar": "ماما وبابا متجوزين بَقالهُم أربعين سنة.",
+     "arabizi": "Mama we baba metgawzin ba2alhom arbe3in sana."
     }
    ]
   }
