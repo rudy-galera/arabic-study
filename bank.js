@@ -6,8 +6,8 @@
 // Atualizado pelo skill /arabic-class-update.
 // ─────────────────────────────────────────────────────────────────────
 const BANK = {
- "version": "2026-10-14",
- "baseadoEm": "Aulas até 88 (2026-10-14) · Apostila nível básico · cards do site",
+ "version": "2026-11-07",
+ "baseadoEm": "Aulas até 93 (2026-11-06) · Apostila nível básico · cards do site",
  "numeros": [
   {
    "id": "num-sefr",
@@ -3123,6 +3123,88 @@ const BANK = {
      "arabizi": "Homa bei2ablu"
     }
    }
+  },
+  {
+   "id": "verbo-etessel",
+   "pt": "ligar / telefonar (para) — اتصل بـ",
+   "ar": "اِتصَل بـ",
+   "arabizi": "etessal be-",
+   "grupo": "rotina",
+   "conj": {
+    "Eu": {
+     "ar": "أنا بَتِصِل",
+     "arabizi": "Ana batessel"
+    },
+    "Você (m)": {
+     "ar": "انتَ بِتِتصِل",
+     "arabizi": "Enta betetessel"
+    },
+    "Você (f)": {
+     "ar": "انتي بِتِتصِلي",
+     "arabizi": "Enty betetesseli"
+    },
+    "Ele": {
+     "ar": "هُوَ بيتصِل",
+     "arabizi": "Howa beitessel"
+    },
+    "Ela": {
+     "ar": "هِيَ بِتِتصِل",
+     "arabizi": "Heya betetessel"
+    },
+    "Nós": {
+     "ar": "احنا بِنِتصِل",
+     "arabizi": "E7na benetessel"
+    },
+    "Vocês": {
+     "ar": "انتوا بِتِتصِلوا",
+     "arabizi": "Entu betetesselu"
+    },
+    "Eles/Elas": {
+     "ar": "هُما بيتصِلوا",
+     "arabizi": "Homa beitesselu"
+    }
+   }
+  },
+  {
+   "id": "verbo-2al",
+   "pt": "dizer",
+   "ar": "قال",
+   "arabizi": "2al",
+   "grupo": "rotina",
+   "conj": {
+    "Eu": {
+     "ar": "أنا بَقول",
+     "arabizi": "Ana ba2ul"
+    },
+    "Você (m)": {
+     "ar": "انتَ بِتقول",
+     "arabizi": "Enta bet2ul"
+    },
+    "Você (f)": {
+     "ar": "انتي بِتقولي",
+     "arabizi": "Enty bet2uly"
+    },
+    "Ele": {
+     "ar": "هُوَ بيقول",
+     "arabizi": "Howa bei2ul"
+    },
+    "Ela": {
+     "ar": "هِيَ بِتقول",
+     "arabizi": "Heya bet2ul"
+    },
+    "Nós": {
+     "ar": "احنا بِنقول",
+     "arabizi": "E7na ben2ul"
+    },
+    "Vocês": {
+     "ar": "انتوا بِتقولوا",
+     "arabizi": "Entu bet2ulu"
+    },
+    "Eles/Elas": {
+     "ar": "هُما بيقولوا",
+     "arabizi": "Homa bei2ulu"
+    }
+   }
   }
  ],
  "vocab": [
@@ -6005,6 +6087,126 @@ const BANK = {
    "pt": "com dor de cabeça (m / f / pl)",
    "ar": "مِصَدَع / مِصدعة / مِصدعين",
    "arabizi": "mesada3 / mesad3a / mesad3in"
+  },
+  {
+   "id": "voc-sentimentos-metdaye2",
+   "cat": "sentimentos",
+   "catLabel": "Sentimentos",
+   "pt": "chateado / chateada (irritado)",
+   "ar": "مِتضايِق / مِتضايقة",
+   "arabizi": "metdaye2 / metday2a"
+  },
+  {
+   "id": "voc-preposicoes-le2an",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "porque (= لِأن · لأُنه = porque ele)",
+   "ar": "لِأن",
+   "arabizi": "le2an"
+  },
+  {
+   "id": "voc-preposicoes-lamma",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "quando (não-pergunta; pergunta = امتى)",
+   "ar": "لَمّا",
+   "arabizi": "lamma"
+  },
+  {
+   "id": "voc-preposicoes-abadan",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "nunca (com negação)",
+   "ar": "أبداً",
+   "arabizi": "abadan"
+  },
+  {
+   "id": "voc-preposicoes-tany",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "de novo",
+   "ar": "تاني",
+   "arabizi": "tany"
+  },
+  {
+   "id": "voc-preposicoes-kaza-marra",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "várias vezes",
+   "ar": "كِذا مَرّة",
+   "arabizi": "kaza marra"
+  },
+  {
+   "id": "voc-comida-diet",
+   "cat": "comida",
+   "catLabel": "Comida",
+   "pt": "dieta (fazer dieta: بِنِعمِل دايت)",
+   "ar": "دايت (رِجيم)",
+   "arabizi": "diet"
+  },
+  {
+   "id": "voc-sentimentos-za3lan-za3lana",
+   "cat": "sentimentos",
+   "catLabel": "Sentimentos",
+   "pt": "triste / chateado (m / f) — Aula 91",
+   "ar": "زَعلان / زَعلانة",
+   "arabizi": "za3lan / za3lana"
+  },
+  {
+   "id": "voc-preposicoes-masalan",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "por exemplo",
+   "ar": "مَثَلاً",
+   "arabizi": "masalan"
+  },
+  {
+   "id": "voc-preposicoes-kaza-youm",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "alguns dias (vários dias)",
+   "ar": "كِذا يوم",
+   "arabizi": "kaza youm"
+  },
+  {
+   "id": "voc-preposicoes-kol-7aga",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "tudo (todas as coisas)",
+   "ar": "كُل حاجة",
+   "arabizi": "kol 7aga"
+  },
+  {
+   "id": "voc-preposicoes-7aleyan",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "atualmente",
+   "ar": "حالياً",
+   "arabizi": "7aleyan"
+  },
+  {
+   "id": "voc-preposicoes-yemken",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "talvez (futuro incerto) — Aula 93",
+   "ar": "يِمكِن",
+   "arabizi": "yemken"
+  },
+  {
+   "id": "voc-preposicoes-e7temal",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "talvez / provavelmente (احتِمال) — Aula 93",
+   "ar": "احتِمال",
+   "arabizi": "e7temal"
+  },
+  {
+   "id": "voc-preposicoes-gayez",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "talvez / pode ser (جايِز) — Aula 93",
+   "ar": "جايِز",
+   "arabizi": "gayez"
   }
  ],
  "familia": [
@@ -6313,6 +6515,12 @@ const BANK = {
    "pt": "pais (pai e mãe)",
    "ar": "والدين",
    "arabizi": "waledein"
+  },
+  {
+   "id": "fam-5atib-5atiba",
+   "pt": "noivo / noiva",
+   "ar": "خَطيب / خَطيبة",
+   "arabizi": "5atib / 5atiba"
   }
  ],
  "perguntas": [
@@ -10143,6 +10351,538 @@ const BANK = {
    "ar": "أنا عايز أقابلِك الأسبوع ده! انتي فاضية امتى؟",
    "arabizi": "Ana 3aeiz a2ablek elosbu3 da! Enty fadya emta?",
    "src": "2026-10-14"
+  },
+  {
+   "id": "esc-396-eu-e-o-hossam-estamos-a-fazer-dieta-por-isso-enc",
+   "pt": "Eu e o Hossam estamos a fazer dieta, por isso encontro-o todos os dias no parque para correr um pouco e fazer exercício.",
+   "ar": "أنا وحسام بِنِعمِل دايت (رجيم)، عشان كدة، بَقابلُه كُل يوم في الجنينة عشان نِجري شوية ونِعمَل (نِلعَب) رياضة.",
+   "arabizi": "Ana we Hossam bene3mel diet, 3ashan keda ba2ablo kol youm fe elgenina 3ashan negry shewaya we ne3mel (nel3ab) reyada.",
+   "src": "2026-10-16"
+  },
+  {
+   "id": "esc-397-mohamed-trabalha-muito-durante-a-semana-apesar-d",
+   "pt": "Mohamed trabalha muito durante a semana; apesar disso, ele sempre encontra a noiva dele e janta com ela na quinta-feira.",
+   "ar": "محمد بيشتَغَل كتير في الأسبوع، رغم كدة دايماً بيقابِل خطيبتُه وبيتعَشى معاها يوم الخَميس.",
+   "arabizi": "Mohamed bieshta8al ketir fe elosbu3, ra8m keda dayiman bei2abel 5atebto we biet3asha ma3aha youm el5amis.",
+   "src": "2026-10-16"
+  },
+  {
+   "id": "esc-398-juliana-esta-a-aprender-arabe-por-isso-quando-en",
+   "pt": "Juliana está a aprender árabe, por isso, quando encontra os seus amigos egípcios, ela fala árabe com eles.",
+   "ar": "جوليانا بِتتعلم عربي، عشان كدة لَمّا بِتقابِل أصحابها المصريين، بتتكلم عربي معاهُم.",
+   "arabizi": "Juliana betet3alem 3arabi 3ashan keda lamma bet2abel as7abha elmasreiin betetkalem 3arabi ma3ahom.",
+   "src": "2026-10-16"
+  },
+  {
+   "id": "esc-399-eu-vou-ajudar-te-m",
+   "pt": "Eu vou ajudar-te (m).",
+   "ar": "أنا هَساعدَك.",
+   "arabizi": "Ana hassa3dak.",
+   "src": "2026-10-16"
+  },
+  {
+   "id": "esc-400-eu-vou-ajudar-te-f",
+   "pt": "Eu vou ajudar-te (f).",
+   "ar": "أنا هَساعدِك.",
+   "arabizi": "Ana hassa3dek.",
+   "src": "2026-10-16"
+  },
+  {
+   "id": "esc-401-ahmed-nunca-me-ajuda-apesar-disso-eu-vou-ajuda-l",
+   "pt": "Ahmed nunca me ajuda; apesar disso, eu vou ajudá-lo amanhã no projeto.",
+   "ar": "أحمَد مابيساعِدنيش أبداً، رَغم كدة، هَساعدُه بكرة في المشروع.",
+   "arabizi": "Ahmed mabeisa3ednish abadan, ra8m keda, hasa3do bokra fe elmashru3.",
+   "src": "2026-10-16"
+  },
+  {
+   "id": "esc-402-maria-sempre-me-ajuda-quando-falo-com-ela-eu-gos",
+   "pt": "Maria sempre me ajuda quando falo com ela, eu gosto muito dela!",
+   "ar": "ماريا دايماً بتساعِدني لَما بَتكَلم مَعاها، بحبها أوي.",
+   "arabizi": "Maria dayiman betsa3edny lama batkalem ma3aha, ba7ebaha awi.",
+   "src": "2026-10-16"
+  },
+  {
+   "id": "esc-403-voces-tem-que-ajudar-os-idosos-na-rua",
+   "pt": "Vocês têm que ajudar os idosos na rua.",
+   "ar": "انتوا لازِم تِساعدوا الناس الكبيرة في الشارِع.",
+   "arabizi": "Entu lazem tesa3du elnas elkebira fe elshare3.",
+   "src": "2026-10-16"
+  },
+  {
+   "id": "esc-404-elas-ajudam-todo-o-mundo-sao-muito-gentis",
+   "pt": "Elas ajudam todo o mundo, são muito gentis.",
+   "ar": "هُما بيساعدوا كُل الناس، هُما لُطاف أوي.",
+   "arabizi": "Homa beisa3du kol elnas, homa lotaf awi.",
+   "src": "2026-10-16"
+  },
+  {
+   "id": "esc-405-nos-nao-queremos-ajudar-o-karim-porque-ele-e-mui",
+   "pt": "Nós não queremos ajudar o Karim, porque ele é muito chato e não gosta de ajudar ninguém!",
+   "ar": "احنا مِش عايزين نِساعِد كريم، لأُنه رخم أوي ومابيحِبِش يِساعِد حَد.",
+   "arabizi": "E7na mesh 3aeizin nessa3d Karim le2ano re5em awi we mabei7ebesh yessa3d 7ad.",
+   "src": "2026-10-16"
+  },
+  {
+   "id": "esc-406-faz-duas-horas-que-estou-a-tentar-mandar-uma-men",
+   "pt": "Faz duas horas que estou a tentar mandar uma mensagem para a minha tia (irmã do pai), mas não há internet.",
+   "ar": "بَقالي ساعتين بَحاوِل أبعَت ماسدج (رِسالة) لِعمتي، بس مافيش نِت.",
+   "arabizi": "Ba2aly sa3ten ba7auel ab3at ressala le3amety bas mafish net.",
+   "src": "2026-10-16"
+  },
+  {
+   "id": "esc-407-nos-vamos-tentar-arrumar-a-casa-toda-porque-a-mi",
+   "pt": "Nós vamos tentar arrumar a casa toda, porque a minha mãe vai me visitar no fim de semana.",
+   "ar": "احنا هَنحاوِل نِرَوَق كل البيت (البيت كلُه)، عشان ماما هتزورني في الأجازة.",
+   "arabizi": "E7na han7auel neraua2 kol elbeit (elbeit kolo) 3ashan mama hatzorni fe elagaza.",
+   "src": "2026-10-16"
+  },
+  {
+   "id": "esc-408-karim-esta-a-tentar-falar-com-a-noiva-dele-mas-e",
+   "pt": "Karim está a tentar falar com a noiva dele, mas ela está chateada com ele.",
+   "ar": "كريم بيحاوِل يتكلم مَعَ خطيبتُه، لَكنَها متضايقة مِنُه.",
+   "arabizi": "Karim bei7auel yetkalem ma3a 5atebto, lakenaha metday2a meno.",
+   "src": "2026-10-16"
+  },
+  {
+   "id": "esc-409-eles-nao-querem-tentar-de-novo",
+   "pt": "Eles não querem tentar de novo.",
+   "ar": "هُما مِش عايزين يحاولوا تاني.",
+   "arabizi": "Homa mesh 3aeizin ye7aulu tany.",
+   "src": "2026-10-16"
+  },
+  {
+   "id": "esc-410-voce-tem-que-tentar-encontrar-a-maha-e-ajuda-la",
+   "pt": "Você tem que tentar encontrar a Maha e ajudá-la na tarefa (TPC).",
+   "ar": "انتَ لازِم تِحاوِل تقابِل مها وتِساعِدها في الواجِب.",
+   "arabizi": "Enta lazem te7auel te2abel Maha we tesa3edha fe elwageb.",
+   "src": "2026-10-16"
+  },
+  {
+   "id": "esc-411-eu-preciso-encontrar-o-meu-chefe-para-falar-com",
+   "pt": "Eu preciso encontrar o meu chefe para falar com ele sobre o novo projeto.",
+   "ar": "أنا مِحتاج أقابِل مُديري عشان أتكَلم مَعاه (نِتكَلِم) عَن المَشروع الجِديد.",
+   "arabizi": "Ana mei7tag a2abel modiry 3ashan atakalem ma3ah (netkalem) 3an elmashru3 elgedid.",
+   "src": "2026-10-21"
+  },
+  {
+   "id": "esc-412-nos-vamos-a-casa-do-hesham-porque-o-queremos-aju",
+   "pt": "Nós vamos à casa do Hesham porque o queremos ajudar na cozinha.",
+   "ar": "احنا هَنروح بيت هِشام عشان عايزين نِساعدُه في المَطبَخ.",
+   "arabizi": "E7na hanru7 beit Hesham 3ashan 3aeizin nesa3do fe elmatba5.",
+   "src": "2026-10-21"
+  },
+  {
+   "id": "esc-413-voce-m-tem-que-tentar-um-pouco-nada-e-facil",
+   "pt": "Você (m) tem que tentar um pouco! Nada é fácil!",
+   "ar": "انتَ لازِم تِحاوِل شوية! مافيش حاجة سهلة!",
+   "arabizi": "Enta lazem te7auel shewaya! Mafish 7aga sahla!",
+   "src": "2026-10-21"
+  },
+  {
+   "id": "esc-414-voce-f-tem-que-tentar-um-pouco-nada-e-facil",
+   "pt": "Você (f) tem que tentar um pouco! Nada é fácil!",
+   "ar": "انتي لازِم تحاولي شوية! مافيش حاجة سَهلة!",
+   "arabizi": "Enty lazem te7auly shewaya! Mafish 7aga sahla!",
+   "src": "2026-10-21"
+  },
+  {
+   "id": "esc-415-onde-voce-m-esta-faz-uma-hora-que-te-estou-a-tel",
+   "pt": "Onde você (m) está?? Faz uma hora que te estou a telefonar!",
+   "ar": "انتَ فين؟؟ بَقالي ساعة بَتِصِل بيك!",
+   "arabizi": "Enta fen?? Ba2aly sa3a batessel bik!",
+   "src": "2026-10-21"
+  },
+  {
+   "id": "esc-416-onde-voce-f-esta-faz-uma-hora-que-te-estou-a-tel",
+   "pt": "Onde você (f) está?? Faz uma hora que te estou a telefonar!",
+   "ar": "انتي فين؟؟ بقالي ساعة بتصِل بيكي!",
+   "arabizi": "Enty fen?? Ba2aly sa3a batessel biki!",
+   "src": "2026-10-21"
+  },
+  {
+   "id": "esc-417-ahmed-esta-a-ligar-para-o-gerente-porque-ha-um-p",
+   "pt": "Ahmed está a ligar para o gerente, porque há um problema grande no trabalho.",
+   "ar": "أحمَد بيتصِل بِالمُدير، عشان فيه مُشكِلة كبيرة في الشُغل.",
+   "arabizi": "Ahmed bietessel belmodir 3ashan fi moshkela kebira fe elsho8l.",
+   "src": "2026-10-21"
+  },
+  {
+   "id": "esc-418-ela-quer-ligar-para-a-tia-materna-dela-mas-nao-t",
+   "pt": "Ela quer ligar para a tia (materna) dela, mas não tem crédito.",
+   "ar": "هي عايزة تتصِل بِخالِتها، بَس ماعندَهاش رَصيد.",
+   "arabizi": "Heya 3aiza tetessel be5aletha bas ma3andahash rasid.",
+   "src": "2026-10-21"
+  },
+  {
+   "id": "esc-419-quando-voce-m-vai-telefonar-para-ela-hoje-e-o-an",
+   "pt": "Quando você (m) vai telefonar para ela? Hoje é o aniversário dela.",
+   "ar": "انتَ هتِتصِل بيها امتى؟ النهاردة عيد ميلادها.",
+   "arabizi": "Enta hatetessel biha emta? Elnaharda 3id miladha.",
+   "src": "2026-10-21"
+  },
+  {
+   "id": "esc-420-quando-voce-f-vai-telefonar-para-ela-hoje-e-o-an",
+   "pt": "Quando você (f) vai telefonar para ela? Hoje é o aniversário dela.",
+   "ar": "انتي هتتصلي بيها امتى؟ النهاردة عيد ميلادها.",
+   "arabizi": "Enty hatetesseli biha emta? Elnaharda 3id miladha.",
+   "src": "2026-10-21"
+  },
+  {
+   "id": "esc-421-eles-telefonam-me-varias-vezes-por-dia",
+   "pt": "Eles telefonam-me várias vezes por dia.",
+   "ar": "هُما بيتصلوا بيا كذا مرة في اليوم.",
+   "arabizi": "Homa bietesselu beya kaza marra fe elyoum.",
+   "src": "2026-10-21"
+  },
+  {
+   "id": "esc-422-voces-podem-telefonar-me-nao-tenho-credito",
+   "pt": "Vocês podem telefonar-me? Não tenho crédito.",
+   "ar": "مُمكِن تتصلوا بيا؟ ماعنديش رَصيد.",
+   "arabizi": "Momken teteselu beya? Ma3andish rasid.",
+   "src": "2026-10-21"
+  },
+  {
+   "id": "esc-423-tenho-muitas-saudades-tuas-m-quero-ver-te-em-bre",
+   "pt": "Tenho muitas saudades tuas (m)! Quero ver-te em breve!",
+   "ar": "وحشتني أوي! عايِز أشوفَك قريب!",
+   "arabizi": "Wa7ashteni awi! 3ayez ashufak orayeb!",
+   "src": "2026-10-21"
+  },
+  {
+   "id": "esc-424-tenho-muitas-saudades-tuas-f-quero-ver-te-em-bre",
+   "pt": "Tenho muitas saudades tuas (f)! Quero ver-te em breve!",
+   "ar": "وحشتيني أوي! عايز أشوفِك قريب!",
+   "arabizi": "Wa7ashtini awi! 3ayez ashufek orayeb!",
+   "src": "2026-10-21"
+  },
+  {
+   "id": "esc-425-mazen-gosta-de-ver-os-videos-desse-youtuber",
+   "pt": "Mazen gosta de ver os vídeos desse youtuber.",
+   "ar": "مازِن بيحِب يشوف فيديوهات اليوتيوبر ده.",
+   "arabizi": "Mazen bei7eb yeshuf vediohat elyoutuber da.",
+   "src": "2026-10-21"
+  },
+  {
+   "id": "esc-426-sara-nao-gosta-de-ver-filmes-de-terror",
+   "pt": "Sara não gosta de ver filmes de terror.",
+   "ar": "سارة مابتحِبِش تشوف أفلام رَعب.",
+   "arabizi": "Sara mabet7ebesh teshuf aflam ro3b.",
+   "src": "2026-10-21"
+  },
+  {
+   "id": "esc-427-voce-tem-que-buscar-o-seu-sobrinho-filho-do-irma",
+   "pt": "Você tem que buscar o seu sobrinho (filho do irmão) na escola para vê-lo.",
+   "ar": "لازِم تاخُد ابن أخوك مِن المَدرسة عشان تشوفه.",
+   "arabizi": "Lazem ta5od ebn a5ok men elmadrassa 3ashan teshofu.",
+   "src": "2026-10-21"
+  },
+  {
+   "id": "esc-428-nos-nao-vemos-enxergamos-bem-sem-os-oculos",
+   "pt": "Nós não vemos (enxergamos) bem sem os óculos.",
+   "ar": "احنا مابنشوفش كويس مِن غير النضارة.",
+   "arabizi": "E7na mabenshofsh kowayes men 8eir elnadara.",
+   "src": "2026-10-21"
+  },
+  {
+   "id": "esc-430-eu-sei-falar-portugues-mas-nao-sei-dizer-esta-palavr",
+   "pt": "Eu sei falar português, mas eu não sei dizer esta palavra.",
+   "ar": "أنا بَعرَف أتكلم برتغالي، بس أنا مابعرفش أقول الكلمة دي.",
+   "arabizi": "Ana ba3raf atkalem borto8aly bas ana maba3rafsh a2ul elkelma di.",
+   "src": "2026-10-23"
+  },
+  {
+   "id": "esc-431-ele-diz-tudo-ao-seu-amigo-alaa",
+   "pt": "Ele diz tudo ao seu amigo Alaa.",
+   "ar": "هو بيقول كُل حاجة لِصاحبُه عَلاء.",
+   "arabizi": "Howa bei2ul kol 7aga lesa7bo Alaa.",
+   "src": "2026-10-23"
+  },
+  {
+   "id": "esc-432-ela-tem-que-dizer-isto-ao-gerente",
+   "pt": "Ela tem que dizer isto ao gerente.",
+   "ar": "هي لازِم تقول ده/كدة لِلمُدير.",
+   "arabizi": "Heya lazem te2ul da/keda lelmodir.",
+   "src": "2026-10-23"
+  },
+  {
+   "id": "esc-433-quando-voce-m-vai-dizer-a-verdade-aos-pais",
+   "pt": "Quando você (m) vai dizer a verdade aos pais?",
+   "ar": "انتَ هَتقول الحقيقة لِمامتَك وباباك امتى؟",
+   "arabizi": "Enta hat2ul el7a2i2a lemamtak we babak emta?",
+   "src": "2026-10-23"
+  },
+  {
+   "id": "esc-434-quando-voce-f-vai-dizer-a-verdade-aos-pais",
+   "pt": "Quando você (f) vai dizer a verdade aos pais?",
+   "ar": "انتي هتقولي الحقيقة لِمامتِك وباباكي امتى؟",
+   "arabizi": "Enty hat2uly el7a2i2a lemamtek we babaky emta?",
+   "src": "2026-10-23"
+  },
+  {
+   "id": "esc-435-nos-nao-vamos-dizer-nada-a-ninguem",
+   "pt": "Nós não vamos dizer nada a ninguém.",
+   "ar": "احنا مش هَنقول حاجة لِحَد.",
+   "arabizi": "E7na mesh han2ul 7aga le7ad.",
+   "src": "2026-10-23"
+  },
+  {
+   "id": "esc-436-voces-precisam-falar-com-eles-para-dizer-lhes-a-verd",
+   "pt": "Vocês precisam falar com eles para dizer-lhes a verdade.",
+   "ar": "انتوا مِحتاجين تتكلموا معاهُم عشان تقولوا لهم الحقيقة.",
+   "arabizi": "Entu mei7taguin tetkalemu ma3ahom 3ashan te2ulo lohom el7a2i2a.",
+   "src": "2026-10-23"
+  },
+  {
+   "id": "esc-437-elas-nao-querem-dizer-nada-a-mae",
+   "pt": "Elas não querem dizer nada à mãe.",
+   "ar": "هُما مش عايزين يقولوا حاجة لمامِتهُم.",
+   "arabizi": "Homa mesh 3aeizin ye2ulu 7aga lemamethom.",
+   "src": "2026-10-23"
+  },
+  {
+   "id": "esc-438-hoje-precisamos-fazer-muitas-coisas-mas-nao-temos-mu",
+   "pt": "Hoje nós precisamos fazer muitas coisas, mas não temos muito tempo, mas a gente vai tentar!",
+   "ar": "النهاردة احنا محتاجين نِعمِل حاجات كتير بَس ماعندناش وقت كتير، بَس هَنحاوِل!",
+   "arabizi": "Elnaharda e7na me7taguin ne3mel 7agat ketir bas ma3andenash wa2t ketir, bas han7auel!",
+   "src": "2026-10-23"
+  },
+  {
+   "id": "esc-439-de-manha-precisamos-sair-para-encontrar-ahmed-e-fati",
+   "pt": "De manhã, precisamos sair para encontrar Ahmed e Fátima para conversar com eles sobre um problema no trabalho.",
+   "ar": "الصُبح مِحتاجين نخرج عشان نِقابِل أحمد وفاطمة عشان نتكلم معاهم عَن مشكلة في الشُغل.",
+   "arabizi": "Elsop7 me7taguin no5rog 3ashan ne2abel Ahmed we Fatima 3ashan netkalem ma3ahom 3an moshkela fe elsho8l.",
+   "src": "2026-10-23"
+  },
+  {
+   "id": "esc-440-eles-trabalham-conosco-na-empresa-e-sempre-nos-ajuda",
+   "pt": "Eles trabalham conosco na empresa e sempre nos ajudam.",
+   "ar": "هما بيشتغلوا معانا في الشركة ودايماً بيساعدونا.",
+   "arabizi": "Homa bieshta8alu ma3ana fe elsherka we dayiman beisa3duna.",
+   "src": "2026-10-23"
+  },
+  {
+   "id": "esc-441-de-tarde-precisamos-visitar-nosso-primo-hassan",
+   "pt": "De tarde, nós precisamos visitar o nosso primo (filho da tia materna) Hassan, ele está doente faz alguns dias.",
+   "ar": "بعد الضُهر، محتاجين نزور ابن خالتنا حسن، هو تعبان بَقالُه كذا يوم.",
+   "arabizi": "Ba3d eldohr, mei7taguin nezur ebn 5aletna Hassan, howa ta3ban ba2alo kaza youm.",
+   "src": "2026-10-23"
+  },
+  {
+   "id": "esc-442-ele-mora-noutra-cidade-um-pouco-longe",
+   "pt": "Ele mora noutra cidade um pouco longe, e precisamos ir e voltar cedo, porque à noite temos de encontrar Amir.",
+   "ar": "هو ساكن في مدينة تانية بعيدة شوية، ومحتاجين نروح ونِرَوَح بدري عشان بليل لازِم نقابِل أمير.",
+   "arabizi": "Howa saken fe madina tanya be3ida shewaya we me7taguin neru7 we neraua7 badry 3ashan beleil lazem ne2abel Amir.",
+   "src": "2026-10-23"
+  },
+  {
+   "id": "esc-443-amir-e-engenheiro-e-esta-fazendo-um-projeto-novo",
+   "pt": "Amir é engenheiro e ele está fazendo um projeto novo na empresa.",
+   "ar": "أمير مُهَندِس وبيعمِل مشروع جديد في الشركة.",
+   "arabizi": "Amir mohandes we bie3mel mashru3 gedid fe elsherka.",
+   "src": "2026-10-23"
+  },
+  {
+   "id": "esc-444-posso-sair-com-os-meus-amigos-hoje-a-noite",
+   "pt": "Posso sair com os meus amigos hoje à noite?",
+   "ar": "مُمكِن أخرُج مَعَ أصحابي النهاردة بِليل؟",
+   "arabizi": "Momken a5rog ma3a as7aby elnaharda beleil?",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-445-posso-brincar-contigo-m-f",
+   "pt": "Posso brincar contigo? (m / f)",
+   "ar": "مُمكِن ألعَب مَعاك (معاكي)؟",
+   "arabizi": "Momken al3ab ma3ak (ma3aki)?",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-446-voce-pode-telefonar-para-o-ali-m",
+   "pt": "Você pode telefonar para o Ali? (m)",
+   "ar": "مُمكِن تِتِصِل بِعلي؟",
+   "arabizi": "Momken tetessel be Ali?",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-447-voce-pode-telefonar-para-o-ali-f",
+   "pt": "Você pode telefonar para o Ali? (f)",
+   "ar": "مُمكِن تتصلي بعلي؟",
+   "arabizi": "Momken tetessely be Ali?",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-448-voces-podem-limpar-o-escritorio-por-favor",
+   "pt": "Vocês podem limpar o escritório, por favor?",
+   "ar": "مُمكِن تِنَضفوا المَكتَب، لو سمَحتوا؟",
+   "arabizi": "Momken tenadafu elmaktab, lau sama7tu?",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-449-eu-talvez-telefone-para-voce-amanha-m-f",
+   "pt": "Eu talvez telefone para você amanhã. (m / f)",
+   "ar": "أنا مُمكِن أتِصِل بيك (بيكي) بُكرة.",
+   "arabizi": "Ana momken atessel bik (biki) bokra.",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-450-ele-talvez-fale-com-o-gerente-sobre-o-novo-projeto",
+   "pt": "Ele talvez fale com o gerente sobre o novo projeto na reunião.",
+   "ar": "هو ممكن يتكلم مَعَ المُدير عَن المَشروع الجديد في الميتينج (الإجتِماع).",
+   "arabizi": "Howa momken yetkalem ma3a elmodir 3an elmashru3 elgedid fe elmeeting (elegtema3).",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-451-a-sara-talvez-compre-um-carro-novo-no-fim-do-ano",
+   "pt": "A Sara talvez compre um carro novo no fim do ano.",
+   "ar": "سارة مُمكِن تِشتِري عربية جديدة آخِر السنة.",
+   "arabizi": "Sara momken teshtery 3arabeya gedida a5er elsana.",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-452-voce-talvez-chegue-atrasado-a-escola-m",
+   "pt": "Você talvez chegue atrasado à escola. (m)",
+   "ar": "انت مُمكِن تِوصَل متأخر المدرسة.",
+   "arabizi": "Enta momken teussal met2a5ar elmadrassa.",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-453-voce-talvez-chegue-atrasada-a-escola-f",
+   "pt": "Você talvez chegue atrasada à escola. (f)",
+   "ar": "انتي ممكن توصلي متأخر المدرسة.",
+   "arabizi": "Enty momken teussaly met2a5ar elmadrassa.",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-454-nos-talvez-leiamos-uma-historia-para-as-criancas-h",
+   "pt": "Nós talvez leiamos uma história para as crianças hoje à noite.",
+   "ar": "احنا مُمكِن نِقرا قصة لِلأولاد النهاردة بليل.",
+   "arabizi": "E7na momken ne2ra qessa lelaulad elnaharda beleil.",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-455-eles-talvez-nao-digam-a-verdade-para-o-pai-deles",
+   "pt": "Eles talvez não digam a verdade para o pai deles.",
+   "ar": "هُما مُمكِن مايقولوش الحقيقة لباباهُم.",
+   "arabizi": "Homa momken may2olush el7a2i2a lebabahom.",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-456-voces-talvez-encontrem-o-youssef-no-barbeiro",
+   "pt": "Vocês talvez encontrem o Youssef no barbeiro.",
+   "ar": "انتوا مُمكِن تِقابلوا يوسف في الحَلاق.",
+   "arabizi": "Entu momken te2ablu Youssef fe el7ala2.",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-457-eu-talvez-veja-o-filme-novo-no-cinema-com-o-meu-ma",
+   "pt": "Eu talvez veja o filme novo no cinema com o meu marido.",
+   "ar": "أنا يِمكِن أتفرج عَلى الفيلم الجديد في السينما مع جوزي.",
+   "arabizi": "Ana yemken atfarag 3ala elfelm elgedid fe elcinema ma3a gozy.",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-458-ele-talvez-tente-de-novo",
+   "pt": "Ele talvez tente de novo.",
+   "ar": "هُوَ يِمكِن يحاوِل تاني.",
+   "arabizi": "Howa yemken ye7auel tany.",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-459-ela-talvez-ajude-o-ali-nao-sei",
+   "pt": "Ela talvez ajude o Ali, não sei.",
+   "ar": "هي يِمكِن تِساعِد عَلي، ماعرفش (مش عارِف).",
+   "arabizi": "Heya yemken tessa3ed Ali, ma3rafsh (mesh 3aref).",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-460-nos-talvez-passemos-a-roupa-antes-de-dormir",
+   "pt": "Nós talvez passemos a roupa antes de dormir.",
+   "ar": "احنا يِمكِن نكوي الهدوم قَبل ما نِنام.",
+   "arabizi": "E7na yemken nekwi elhodum 2abl ma nenam.",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-461-voce-talvez-viaje-na-proxima-semana-m",
+   "pt": "Você talvez viaje na próxima semana. (m)",
+   "ar": "انتَ يِمكن تِسافِر الأسبوع الجاي.",
+   "arabizi": "Enta yemken tessafer elosbu3 elgay.",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-462-voce-talvez-viaje-na-proxima-semana-f",
+   "pt": "Você talvez viaje na próxima semana. (f)",
+   "ar": "انتي يمكِن تسافري الأسبوع الجاي.",
+   "arabizi": "Enty yemken tessafry elosbu3 elgay.",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-463-eles-talvez-voltem-para-o-brasil-em-2028",
+   "pt": "Eles talvez voltem para o Brasil em 2028.",
+   "ar": "هُما يِمكِن يرجعوا البرازيل في 2028.",
+   "arabizi": "Homa yemken yerga3u elbarazil fe 2028.",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-464-eu-talvez-te-visite-no-fim-de-semana-m-f",
+   "pt": "Eu talvez te visite no fim de semana. (m / f)",
+   "ar": "أنا احتِمال أزورَك (أزورِك) في الأجازة.",
+   "arabizi": "Ana e7temal azurak (azurek) fe elagaza.",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-465-ele-talvez-aprenda-portugues-no-ano-que-vem-para-f",
+   "pt": "Ele talvez aprenda português no ano que vem para falar com a noiva dele.",
+   "ar": "هو احتِمال يتعلم برتغالي السنة الجاية عشان يتكلم مَعَ خطيبتُه.",
+   "arabizi": "Howa e7temal yet3alem borto8aly elsana elgaya 3ashan yetkalem ma3a 5atebto.",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-466-ela-talvez-aprenda-espanhol-no-ano-que-vem",
+   "pt": "Ela talvez aprenda espanhol no ano que vem.",
+   "ar": "هي احتمال تتعلم أسباني السنة الجاية.",
+   "arabizi": "Heya e7temal tet3alem asbany elsana elgaya.",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-467-voce-talvez-ande-muito-na-arabia-saudita-m",
+   "pt": "Você talvez ande muito na Arábia Saudita. (m)",
+   "ar": "انت احتِمال تمشي كتير في السعودية.",
+   "arabizi": "Enta e7temal temshy ketir fe elso3odeya.",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-468-voce-talvez-ande-muito-na-arabia-saudita-f",
+   "pt": "Você talvez ande muito na Arábia Saudita. (f)",
+   "ar": "انتي احتِمال تمشي كتير في السعودية.",
+   "arabizi": "Enty e7temal temshy ketir fe elso3odeya.",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-469-nos-talvez-corramos-3-km-amanha",
+   "pt": "Nós talvez corramos 3 km amanhã.",
+   "ar": "احنا احتمال نجري تلاتة كيلو متر بكرة.",
+   "arabizi": "E7na e7temal negry talata kilometr bokra.",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-470-voces-talvez-facam-a-tarefa-na-casa-da-avo",
+   "pt": "Vocês talvez façam a tarefa na casa da avó.",
+   "ar": "انتوا احتِمال تِعملوا الواجِب في بيت تيتة.",
+   "arabizi": "Entu e7temal te3melu elwageb fe beit teta.",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-471-eles-talvez-nao-vao-a-festa-hoje",
+   "pt": "Eles talvez não vão à festa hoje.",
+   "ar": "هُما جايِز مايروحوش الحفلة النهاردة.",
+   "arabizi": "Homa gayez mayro7ush el7afla elnaharda.",
+   "src": "2026-11-06"
+  },
+  {
+   "id": "esc-472-eu-talvez-compre-roupa-para-o-natal",
+   "pt": "Eu talvez compre roupa para o Natal.",
+   "ar": "أنا جايز أشتري هدوم لِلكريسماس.",
+   "arabizi": "Ana gayez ashtery hodum lelkrismas.",
+   "src": "2026-11-06"
   }
  ],
  "leitura": [
@@ -11201,6 +11941,187 @@ const BANK = {
      "pt": "A mamãe e o papai são casados faz quarenta anos.",
      "ar": "ماما وبابا متجوزين بَقالهُم أربعين سنة.",
      "arabizi": "Mama we baba metgawzin ba2alhom arbe3in sana."
+    }
+   ]
+  },
+  {
+   "id": "lei-35-conversa-falar-e-dizer-aula-91",
+   "title": "Conversa — falar, dizer e o dia a dia (Aula 91)",
+   "src": "2026-10-23 (Aula 91)",
+   "items": [
+    {
+     "pt": "Quantas línguas você fala?",
+     "ar": "انت بتتكلم كام لغة؟",
+     "arabizi": "Enta betetkalem kam lo8a?"
+    },
+    {
+     "pt": "Eu falo duas línguas: português e inglês, e atualmente estou aprendendo árabe.",
+     "ar": "أنا بتكلم لغتين: برتغالي وانجليزي وحالياً بتعَلِم عربي.",
+     "arabizi": "Ana batkalem lo8atein: borto8aly we engelizy we 7aleyan bat3alem 3arabi."
+    },
+    {
+     "pt": "Com quem você gosta de falar quando está triste?",
+     "ar": "انت بتحب تتكلم مع مين وانت زعلان؟",
+     "arabizi": "Enta bet7eb tetkalem ma3a min we enta za3lan?"
+    },
+    {
+     "pt": "Eu gosto de falar com a minha esposa quando estou triste.",
+     "ar": "أنا بَحِب اتكَلِم مع مراتي وأنا زَعلان.",
+     "arabizi": "Ana ba7eb atkalem ma3a meraty we ana za3lan."
+    },
+    {
+     "pt": "Você prefere falar ao telefone ou no WhatsApp?",
+     "ar": "انت بتفَضَل تتكلم في التليفون ولا تتكلم على واتساب؟",
+     "arabizi": "Enta betfadal tetkalem fe eltelefon walla tetkalem 3ala WhatsApp?"
+    },
+    {
+     "pt": "Eu prefiro falar no WhatsApp.",
+     "ar": "أنا بَفَضَل أتَكلم عَلى الواتساب.",
+     "arabizi": "Ana bafadal atkalem 3ala elWhatsApp."
+    },
+    {
+     "pt": "Por quê?",
+     "ar": "ليه؟",
+     "arabizi": "Leh?"
+    },
+    {
+     "pt": "Não gosto de falar ao telefone.",
+     "ar": "مابحبش أتكَلم في التليفون.",
+     "arabizi": "Maba7ebesh atkalem fe eltelefon."
+    },
+    {
+     "pt": "Você está vendo (assistindo) alguma coisa agora?",
+     "ar": "انتَ بتشوف (بتتفرج عَلى) حاجة دلوقتي؟",
+     "arabizi": "Enta betshuf (betetfarag 3ala) 7aga delwa2ty?"
+    },
+    {
+     "pt": "Sim, estou vendo Trap na Netflix, uma série inglesa mais ou menos.",
+     "ar": "ايوة، أنا بشوف تراب عَلى نتفليكس، مسلسل انجليزي نص نص.",
+     "arabizi": "Aywa, ana bashuf Trap 3ala Netflix, mosalsal engelizy nos nos."
+    },
+    {
+     "pt": "Amanhã você vai encontrar alguém?",
+     "ar": "بكرة هتقابِل حد؟",
+     "arabizi": "Bokra hat2abel 7ad?"
+    },
+    {
+     "pt": "Não, não vou encontrar ninguém. Vou descansar em casa na folga e não vou fazer nada.",
+     "ar": "لا، أنا مِش هَقابِل حَد. أنا هَرَيَح في البيت في الأجازة ومِش هَعمِل حاجة.",
+     "arabizi": "La2, ana mesh ha2abel 7ad. Ana haraya7 fe elbeit fe elagaza we mesh ha3mel 7aga."
+    },
+    {
+     "pt": "Você ajuda os seus colegas no trabalho? Como?",
+     "ar": "انتَ بِتساعِد زَمايلك في الشُغل؟ ازاي؟",
+     "arabizi": "Enta betsa3ed zamaylak fe elsho8l? Ezay?"
+    },
+    {
+     "pt": "Sim, eu ajudo muito os meus colegas em tudo, por exemplo mando e-mails, falo com o gerente e faço reuniões e tarefas.",
+     "ar": "ايوة، أنا بَساعِد زَمايلي كتير في كل حاجة، مثلاً ببعت ايميلات وبتكلم مع المدير وبَعمِل ميتينجز (اجتماعات) وتاسكات.",
+     "arabizi": "Aywa, ana basa3ed zamayly ketir fe kol 7aga, masalan bab3at emailat we batkalem ma3a elmodir we ba3mel meetings (egtema3at) we tasks."
+    },
+    {
+     "pt": "O que você está tentando fazer atualmente?",
+     "ar": "انت بتحاول تعمل ايه حالياً؟",
+     "arabizi": "Enta bet7awel te3mel eh 7aleyan?"
+    },
+    {
+     "pt": "Estou tentando fazer dieta para emagrecer, tento comer comida caseira e saudável e tento dormir cedo.",
+     "ar": "أنا بحاوِل أعمِل دايت عشان أخِس، بحاوِل آكُل أكل بيتي وصحي وبَحاوِل أنام بَدري.",
+     "arabizi": "Ana ba7awel a3mel diet 3ashan a5es, ba7awel akol akl beity we se7y we ba7awel anam badry."
+    }
+   ]
+  },
+  {
+   "id": "lei-36-dialogo-o-fim-de-semana-aula-93",
+   "title": "Diálogo · o fim de semana — talvez… (Aula 93)",
+   "src": "2026-11-06 (Aula 93)",
+   "items": [
+    {
+     "pt": "O que você vai fazer no fim de semana (nas folgas)?",
+     "ar": "هتعمل ايه في الويك أند (الأجازة)؟",
+     "arabizi": "Hate3mel eh fe elweekend (elagaza)?"
+    },
+    {
+     "pt": "Eu talvez vá à praia amanhã com a minha esposa e a minha mãe.",
+     "ar": "أنا احتمال أروح البَحر بُكرة مَعَ مراتي وماما.",
+     "arabizi": "Ana e7temal aru7 elba7r bokra ma3a meraty we mama."
+    },
+    {
+     "pt": "Você não vai à academia? Por quê?",
+     "ar": "مش هتروح الجيم؟ ليه؟",
+     "arabizi": "Mesh hatru7 elgym? Leh?"
+    },
+    {
+     "pt": "Eu não vou à academia nas folgas, prefiro descansar na piscina.",
+     "ar": "أنا مابروحش الجيم في الأجازة، أنا بَفَضَل أريح في البسين.",
+     "arabizi": "Ana mabaru7sh elgym fe elagaza, ana bafadal araya7 fe elbesin."
+    },
+    {
+     "pt": "Você não vai ver os seus amigos? — Talvez… depende.",
+     "ar": "مش هتشوف أصحابَك؟ — يِمكِن / ممكن / احتِمال… عَلى حَسَب.",
+     "arabizi": "Mesh hatshuf as7abak? — Yemken / momken / e7temal… 3ala 7asab."
+    }
+   ]
+  },
+  {
+   "id": "lei-37-perguntas-apresente-se-aula-92",
+   "title": "Perguntas · apresente-se (Aula 92)",
+   "src": "2026-10-28 (Aula 92)",
+   "items": [
+    {
+     "pt": "Apresente-se: qual é o seu nome? De onde você é? Onde mora agora? O que faz? Quantos anos tem? É casado? Tem animais?",
+     "ar": "عَرَف نَفسَك: اسمَك ايه؟ انت منين؟ ساكِن فين دلوقتي؟ بتشتغل ايه؟ عندك كام سنة؟ متجوز؟ عندك حيوانات؟",
+     "arabizi": "3aref nafsak: esmak eh? Enta menein? Saken fein delwa2ty? Beteshta8al eh? 3andak kam sana? Metgawez? 3andak 7ayawanat?"
+    },
+    {
+     "pt": "O que você faz no seu dia?",
+     "ar": "انت بِتعمِل ايه في يومَك؟",
+     "arabizi": "Enta bete3mel eh fe yomak?"
+    },
+    {
+     "pt": "Quantas línguas você sabe falar?",
+     "ar": "بِتِعرَف تِتكَلم كام لغة؟",
+     "arabizi": "Bete3raf tetkalem kam lo8a?"
+    },
+    {
+     "pt": "Você pratica esporte? Qual?",
+     "ar": "بِتِلعَب رياضة؟ ايه؟",
+     "arabizi": "Betel3ab reyada? Eh?"
+    },
+    {
+     "pt": "Você gosta de ler? Sobre o quê?",
+     "ar": "بِتحِب تِقرا؟ عَن ايه؟",
+     "arabizi": "Bet7eb te2ra? 3an eh?"
+    },
+    {
+     "pt": "O que você faz quando está triste?",
+     "ar": "بِتعمل ايه لَما تِكون زَعلان؟",
+     "arabizi": "Bete3mel eh lama tekun za3lan?"
+    },
+    {
+     "pt": "O que você vai fazer nas férias de Natal?",
+     "ar": "هَتِعمِل ايه في أجازة الكريسماس؟",
+     "arabizi": "Hate3mel eh fe agazet elkrismas?"
+    },
+    {
+     "pt": "O que você vai fazer nas férias de Carnaval?",
+     "ar": "هَتعمل ايه في أجازة الكرنفال؟",
+     "arabizi": "Hate3mel eh fe agazet elkarnaval?"
+    },
+    {
+     "pt": "O que você vai fazer no seu aniversário?",
+     "ar": "هَتعمِل ايه في عيد ميلادَك؟",
+     "arabizi": "Hate3mel eh fe 3id miladak?"
+    },
+    {
+     "pt": "Quem é o seu melhor amigo (amigo mais próximo)? Por quê?",
+     "ar": "مين أقرب صاحِب ليك؟ ليه؟",
+     "arabizi": "Min a2rab sa7eb lik? Leh?"
+    },
+    {
+     "pt": "Faz quanto tempo que você trabalha? Gosta do seu trabalho? Por quê?",
+     "ar": "بقالَك قد ايه بتشتغل؟ بتحب شُغلَك؟ ليه؟",
+     "arabizi": "Ba2alak 2ad eh beteshta8al? Bet7eb sho8lak? Leh?"
     }
    ]
   }
