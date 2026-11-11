@@ -7,7 +7,7 @@
 // ─────────────────────────────────────────────────────────────────────
 const BANK = {
  "version": "2026-11-11",
- "baseadoEm": "Aulas até 93 (2026-11-06) · Apostila nível básico · Apostila 2 pp.1-24 · cards do site",
+ "baseadoEm": "Aulas até 94 (2026-11-11) · Apostila nível básico · Apostila 2 pp.1-28 · cards do site",
  "numeros": [
   {
    "id": "num-sefr",
@@ -10367,6 +10367,126 @@ const BANK = {
    "ar": "قُطة",
    "arabizi": "2otta",
    "imp": 1
+  },
+  {
+   "id": "voc-outros-darury",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "é necessário (ضروري + verbo)",
+   "ar": "ضَروري",
+   "arabizi": "darury"
+  },
+  {
+   "id": "voc-outros-el-mafrud",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "deveria (المفروض + verbo)",
+   "ar": "المَفروض",
+   "arabizi": "el mafrud"
+  },
+  {
+   "id": "voc-outros-7a2i2y",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "certo / é verdade",
+   "ar": "حَقيقي",
+   "arabizi": "7a2i2y"
+  },
+  {
+   "id": "voc-outros-wallahi",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "sério? / juro",
+   "ar": "والله",
+   "arabizi": "wallahi"
+  },
+  {
+   "id": "voc-outros-a3mal",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "negócios",
+   "ar": "أعمال",
+   "arabizi": "a3mal"
+  },
+  {
+   "id": "voc-outros-ragol-a3mal",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "empresário",
+   "ar": "رَجُل أعمال",
+   "arabizi": "ragol a3mal"
+  },
+  {
+   "id": "voc-outros-garima",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "crime",
+   "ar": "جَريمة",
+   "arabizi": "garima"
+  },
+  {
+   "id": "voc-outros-falsafa",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "filosofia",
+   "ar": "فَلسَفة",
+   "arabizi": "falsafa"
+  },
+  {
+   "id": "voc-outros-namima",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "fofoca",
+   "ar": "نَميمة",
+   "arabizi": "namima"
+  },
+  {
+   "id": "voc-outros-mosta7il",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "é impossível",
+   "ar": "مُستَحيل",
+   "arabizi": "mosta7il"
+  },
+  {
+   "id": "voc-outros-mamnu3",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "é proibido",
+   "ar": "مَمنوع",
+   "arabizi": "mamnu3"
+  },
+  {
+   "id": "voc-outros-masmu7",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "é permitido",
+   "ar": "مَسموح",
+   "arabizi": "masmu7"
+  },
+  {
+   "id": "voc-outros-ma3ad",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "horário (o horário marcado)",
+   "ar": "ميعاد",
+   "arabizi": "ma3ad"
+  },
+  {
+   "id": "voc-outros-be-sot-3aly",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "em voz alta",
+   "ar": "بِصوت عالي",
+   "arabizi": "be sot 3aly"
+  },
+  {
+   "id": "voc-outros-barken",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "estacionar",
+   "ar": "بَركِن",
+   "arabizi": "barken"
   }
  ],
  "familia": [
@@ -15561,6 +15681,125 @@ const BANK = {
    "ar": "بقالي كتير ساكِن هنا.",
    "arabizi": "Ba2aly ketir saken hena.",
    "src": "Apostila 2 p.18"
+  },
+  {
+   "id": "esc-483-eu-tenho-de-acordar-cedo-amanha-porque-tenho-uma-r",
+   "pt": "Eu tenho de acordar cedo amanhã porque tenho uma reunião muito importante.",
+   "ar": "أنا لازِم أصحى بَدري بُكرة عشان عندي اجتِماع مُهِم أوي.",
+   "arabizi": "Ana lazem as7a badry bokra 3ashan 3andy ektema3 mohem awi.",
+   "src": "2026-11-11"
+  },
+  {
+   "id": "esc-484-ele-tem-que-arrumar-o-quarto-dele-hoje-a-noite-por",
+   "pt": "Ele tem que arrumar o quarto dele hoje à noite porque está muito bagunçado.",
+   "ar": "هو لازِم يروق أوضتُه النهاردة بِليل لأنها مِفركشة أوي.",
+   "arabizi": "Howa lazem yeraua2 odto enaharda beleil la2enaha mefarkesha awi.",
+   "src": "2026-11-11"
+  },
+  {
+   "id": "esc-485-voce-tem-que-escovar-os-dentes-depois-de-comer-m",
+   "pt": "Você tem que escovar os dentes depois de comer. (m)",
+   "ar": "انتَ لازِم تِغسِل سنانَك بعد ما تاكُل.",
+   "arabizi": "Enta lazem te8sel senanak ba3d ma takol.",
+   "src": "2026-11-11"
+  },
+  {
+   "id": "esc-486-voce-tem-que-escovar-os-dentes-depois-de-comer-f",
+   "pt": "Você tem que escovar os dentes depois de comer. (f)",
+   "ar": "انتي لازِم تغسلي سنانِك بعد ما تاكلي.",
+   "arabizi": "Enty lazem te8sely senanek ba3d ma takly.",
+   "src": "2026-11-11"
+  },
+  {
+   "id": "esc-487-ela-deve-pentear-o-cabelo-antes-de-sair-de-casa",
+   "pt": "Ela deve pentear o cabelo antes de sair de casa.",
+   "ar": "هي لازم تِسَرَح شَعرَها قَبل ما تُخرُج مِن البيت.",
+   "arabizi": "Heya lazem tessara7 sha3raha 2abl ma to5rog men elbeit.",
+   "src": "2026-11-11"
+  },
+  {
+   "id": "esc-488-nos-temos-de-telefonar-para-eles-porque-e-o-aniver",
+   "pt": "Nós temos de telefonar para eles porque é o aniversário do filho deles.",
+   "ar": "احنا لازِم نِتِصل بِيهم عشان عيد ميلاد ابنُهم.",
+   "arabizi": "E7na lazem netessel bihom 3ashan 3id milad ebnohom.",
+   "src": "2026-11-11"
+  },
+  {
+   "id": "esc-489-voces-tem-que-dizer-a-verdade-para-os-pais",
+   "pt": "Vocês têm que dizer a verdade para os pais.",
+   "ar": "انتوا لازِم تقولوا الحقيقة لِماما وبابا.",
+   "arabizi": "Entu lazem te2ulu el7a2i2a le mama we baba.",
+   "src": "2026-11-11"
+  },
+  {
+   "id": "esc-490-e-necessario-que-eu-termine-o-trabalho-agora",
+   "pt": "É necessário que eu termine o trabalho agora.",
+   "ar": "أنا ضروري أخَلَص الشُغل دلوقتي.",
+   "arabizi": "Ana darury a5alas elsho8l delua2ty.",
+   "src": "2026-11-11"
+  },
+  {
+   "id": "esc-491-e-necessario-que-ele-estude-para-a-prova",
+   "pt": "É necessário que ele estude para a prova.",
+   "ar": "هو ضروري يِذاكِر لِلإمتِحان.",
+   "arabizi": "Howa darury yezaker lelemte7an.",
+   "src": "2026-11-11"
+  },
+  {
+   "id": "esc-492-e-necessario-que-ela-limpe-a-sala-antes-de-a-famil",
+   "pt": "É necessário que ela limpe a sala antes de a família chegar.",
+   "ar": "هي ضروري تِنَضَف الصالة قبل ما العيلة تِوصَل.",
+   "arabizi": "Heya darury tenadaf elsala 2abl ma el3eila teussal.",
+   "src": "2026-11-11"
+  },
+  {
+   "id": "esc-493-e-necessario-que-voce-aprenda-arabe-m",
+   "pt": "É necessário que você aprenda árabe. (m)",
+   "ar": "انتَ ضروري تتعلم عربي.",
+   "arabizi": "Enta darury tet3alem 3arabi.",
+   "src": "2026-11-11"
+  },
+  {
+   "id": "esc-494-e-necessario-que-nos-vejamos-voces-amanha",
+   "pt": "É necessário que nós vejamos vocês amanhã.",
+   "ar": "احنا ضروري نِشوفكوا بُكرة.",
+   "arabizi": "E7na darury neshofku bokra.",
+   "src": "2026-11-11"
+  },
+  {
+   "id": "esc-495-voce-deveria-descansar-hoje",
+   "pt": "Você deveria descansar hoje!",
+   "ar": "انتَ المفروض تريح النهاردة!",
+   "arabizi": "Enta elmafrud teraya7 elnaharda!",
+   "src": "2026-11-11"
+  },
+  {
+   "id": "esc-496-voces-deveriam-ajudar-a-irma-de-voces",
+   "pt": "Vocês deveriam ajudar a irmã de vocês.",
+   "ar": "انتوا المفروض تساعدوا أختُكوا.",
+   "arabizi": "Entu elmafrud tessa3du o5toku.",
+   "src": "2026-11-11"
+  },
+  {
+   "id": "esc-497-voce-deveria-escutar-mais-e-falar-menos-m",
+   "pt": "Você deveria escutar mais e falar menos. (m)",
+   "ar": "انتَ المَفروض تِسمَع أكتَر وتتكلم أقَل.",
+   "arabizi": "Enta elmafrud tesma3 aktar we tetkalem a2al.",
+   "src": "2026-11-11"
+  },
+  {
+   "id": "esc-498-voce-deveria-escutar-mais-e-falar-menos-f",
+   "pt": "Você deveria escutar mais e falar menos. (f)",
+   "ar": "انتي المفروض تسمعي أكتر وتتكلمي أقل.",
+   "arabizi": "Enty elmafrud tesma3y aktar we tetkalemy a2al.",
+   "src": "2026-11-11"
+  },
+  {
+   "id": "esc-499-nos-falamos-mal-do-chefe-juntos",
+   "pt": "Nós falamos mal do chefe juntos.",
+   "ar": "بنتكلم مع بعض على المدير.",
+   "arabizi": "Benetkalem ma3a ba3d 3ala elmodir.",
+   "src": "2026-11-11"
   }
  ],
  "leitura": [
@@ -17045,6 +17284,53 @@ const BANK = {
      "pt": "Ramy: Rua Al-Salam, 15, Heliópolis (Masr El Gedida).",
      "ar": "رامي: 15 شارع السلام، مصر الجديدة.",
      "arabizi": "Ramy: 15 share3 el salam, masr el gedida."
+    }
+   ]
+  },
+  {
+   "id": "lei-43-o-gerente-e-o-secretario-apostila2",
+   "title": "Diálogo · o gerente e o secretário — لازِم / ضروري / المفروض (Apostila 2 pp.27-28)",
+   "src": "Apostila 2 p.27-28",
+   "items": [
+    {
+     "pt": "O gerente: Hassan, você precisa ligar para o Sr. Samir e saber o horário da reunião com ele.",
+     "ar": "المُدير: يا حَسَن، انت لازِم تِتِصل بأستاذ سَمير وتِعرف ميعاد الإجتماع مَعاه.",
+     "arabizi": "El modir: Ya Hassan, enta lazem tetessel bi ostaz Samir we te3raf ma3ad el ektema3 ma3ah."
+    },
+    {
+     "pt": "O secretário: Claro, senhor.",
+     "ar": "السكرتير: أكيد يا فندم.",
+     "arabizi": "El sekerter: Akid ya fandam."
+    },
+    {
+     "pt": "O gerente: E você precisa encontrar o cliente novo na terça-feira de manhã.",
+     "ar": "المُدير: ولازِم تِقابِل العَميل الجديد يوم التلات الصُبح.",
+     "arabizi": "El modir: We lazem te2abel el 3amil el gedid youm el talat el sop7."
+    },
+    {
+     "pt": "O secretário: Certo, senhor. Mais alguma coisa?",
+     "ar": "السكرتير: تَمام يا فندم، حاجة تانية؟",
+     "arabizi": "El sekerter: Tmam ya fandam, 7aga tanya?"
+    },
+    {
+     "pt": "O gerente: É necessário enviar os e-mails para os funcionários hoje.",
+     "ar": "المُدير: ضَروري تِبعَت الإيميلات للموظفين النهاردة.",
+     "arabizi": "El modir: Darury teb3at el e-mailat lel mouazafin enaharda."
+    },
+    {
+     "pt": "O secretário: Certo, senhor, vou enviá-los agora.",
+     "ar": "السكرتير: تَمام يا فندم، هَبعَتهُم دلوقتي.",
+     "arabizi": "El sekerter: Tmam ya fandam, hab3athom delua2ty."
+    },
+    {
+     "pt": "O gerente: E você deveria ver o trabalho no outro escritório e me dizer se há algum problema.",
+     "ar": "المُدير: والمَفروض تشوف الشغل في المكتب التاني وتقولي لو فيه مُشكِلة.",
+     "arabizi": "El modir: We el mafrud teshuf el sho8l fe el maktab el tany we te2uly lau fih moshkela."
+    },
+    {
+     "pt": "O secretário: Claro, senhor, vou tentar fazer tudo isso!",
+     "ar": "السكرتير: أكيد يا فندم، هَحاوِل أعمل كل ده!",
+     "arabizi": "El sekerter: Akid ya fandam, ha7awel a3mel kol da!"
     }
    ]
   }
