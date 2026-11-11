@@ -326,3 +326,7 @@ section h2 .num { background: #f4a261; color: #1a1d28; width: 26px; height: 26px
   .streak-day .dot { background: #f5f3eb; border-color: #e5e3dc; }
   .q-progress, .next-milestone .nm-bar { background: #e5e3dc; }
 }
+
+/* Busca global — botão grande na home (abre o overlay do search.js) */
+.hub-search { display: block; width: 100%; margin: 0 0 14px; padding: 16px; border-radius: 14px; border: 2px solid #f4a261; background: #161821; color: #f3f4f6; font-size: 17px; font-weight: 600; font-family: inherit; text-align: left; cursor: pointer; }
+@media (prefers-color-scheme: light) { .hub-search { background: #fff; color: #1f2230; border-color: #c1440e; } }

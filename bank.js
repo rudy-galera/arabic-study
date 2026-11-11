@@ -6,8 +6,8 @@
 // Atualizado pelo skill /arabic-class-update.
 // ─────────────────────────────────────────────────────────────────────
 const BANK = {
- "version": "2026-11-07",
- "baseadoEm": "Aulas até 93 (2026-11-06) · Apostila nível básico · cards do site",
+ "version": "2026-11-11",
+ "baseadoEm": "Aulas até 93 (2026-11-06) · Apostila nível básico · Apostila 2 pp.1-24 · cards do site",
  "numeros": [
   {
    "id": "num-sefr",
@@ -6207,6 +6207,206 @@ const BANK = {
    "pt": "talvez / pode ser (جايِز) — Aula 93",
    "ar": "جايِز",
    "arabizi": "gayez"
+  },
+  {
+   "id": "voc-outros-ektema3",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "reunião",
+   "ar": "إجتِماع",
+   "arabizi": "ektema3"
+  },
+  {
+   "id": "voc-outros-mohem",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "importante (m / f / pl)",
+   "ar": "مُهِم / مُهِمة / مُهِمين",
+   "arabizi": "mohem / mohema / mohemin"
+  },
+  {
+   "id": "voc-outros-3adatan",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "normalmente",
+   "ar": "عادةً",
+   "arabizi": "3adatan"
+  },
+  {
+   "id": "voc-outros-karar",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "decidiu",
+   "ar": "قَرَر",
+   "arabizi": "karar"
+  },
+  {
+   "id": "voc-outros-seua2a",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "dirigir (a direção)",
+   "ar": "سِواقة",
+   "arabizi": "seua2a"
+  },
+  {
+   "id": "voc-outros-beista8el",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "aproveita (ele aproveita)",
+   "ar": "بيستغِل",
+   "arabizi": "beista8el"
+  },
+  {
+   "id": "voc-outros-forsa",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "oportunidade",
+   "ar": "فُرصة",
+   "arabizi": "forsa"
+  },
+  {
+   "id": "voc-outros-7essas",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "aulas (as sessões)",
+   "ar": "حِصَص",
+   "arabizi": "7essas"
+  },
+  {
+   "id": "voc-outros-ro5sa",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "carteira de motorista",
+   "ar": "رُخصة",
+   "arabizi": "ro5sa"
+  },
+  {
+   "id": "voc-outros-mashakel",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "problemas",
+   "ar": "مَشاكِل",
+   "arabizi": "mashakel"
+  },
+  {
+   "id": "voc-outros-kal-3ada",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "como sempre (como de costume)",
+   "ar": "كالعادة",
+   "arabizi": "kal 3ada"
+  },
+  {
+   "id": "voc-outros-ana-bagi",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "eu venho",
+   "ar": "أنا بَجي",
+   "arabizi": "ana bagi"
+  },
+  {
+   "id": "voc-outros-tafassil",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "detalhes",
+   "ar": "تَفاصِيل",
+   "arabizi": "tafassil"
+  },
+  {
+   "id": "voc-outros-shonat",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "malas",
+   "ar": "شُنَط",
+   "arabizi": "shonat"
+  },
+  {
+   "id": "voc-outros-shater",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "bom / competente",
+   "ar": "شاطِر",
+   "arabizi": "shater"
+  },
+  {
+   "id": "voc-outros-a7ya2",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "matéria: biologia",
+   "ar": "أحياء",
+   "arabizi": "a7ya2"
+  },
+  {
+   "id": "voc-outros-go8rafya",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "matéria: geografia",
+   "ar": "جُغرافيا",
+   "arabizi": "go8rafya"
+  },
+  {
+   "id": "voc-outros-tari5",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "matéria: história",
+   "ar": "تاريخ",
+   "arabizi": "tari5"
+  },
+  {
+   "id": "voc-sentimentos-mota7ames",
+   "cat": "sentimentos",
+   "catLabel": "Sentimentos",
+   "pt": "animado (m / f / pl)",
+   "ar": "مُتحَمِس / مُتحَمِسة / مُتحَمِسين",
+   "arabizi": "mota7ames / mota7amesa / mota7amesin"
+  },
+  {
+   "id": "voc-sentimentos-mesta3gel",
+   "cat": "sentimentos",
+   "catLabel": "Sentimentos",
+   "pt": "com pressa (m / f / pl)",
+   "ar": "مِستعجِل / مِستعجِلة / مِستعجلين",
+   "arabizi": "mesta3gel / mesta3gela / mesta3gelin"
+  },
+  {
+   "id": "voc-lugares-7eta",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "lugar (حِتة)",
+   "ar": "حِتة",
+   "arabizi": "7eta"
+  },
+  {
+   "id": "voc-saudacoes-metef2in",
+   "cat": "saudacoes",
+   "catLabel": "Saudações",
+   "pt": "combinado",
+   "ar": "مِتفِقين",
+   "arabizi": "metef2in"
+  },
+  {
+   "id": "voc-saudacoes-ashufek-kaman-shewia",
+   "cat": "saudacoes",
+   "catLabel": "Saudações",
+   "pt": "até daqui a pouco (f)",
+   "ar": "أشوفِك كمان شوية",
+   "arabizi": "ashufek kaman shewia"
+  },
+  {
+   "id": "voc-saudacoes-eh-el-a5bar",
+   "cat": "saudacoes",
+   "catLabel": "Saudações",
+   "pt": "quais as novidades?",
+   "ar": "إيه الأخبار؟",
+   "arabizi": "eh el a5bar?"
+  },
+  {
+   "id": "voc-saudacoes-sanya-wa7da",
+   "cat": "saudacoes",
+   "catLabel": "Saudações",
+   "pt": "um segundo (só um instante)",
+   "ar": "ثانية واحدة",
+   "arabizi": "sanya wa7da"
   }
  ],
  "familia": [
@@ -6521,6 +6721,54 @@ const BANK = {
    "pt": "noivo / noiva",
    "ar": "خَطيب / خَطيبة",
    "arabizi": "5atib / 5atiba"
+  },
+  {
+   "id": "fam-osra",
+   "pt": "família (núcleo)",
+   "ar": "أُسرة",
+   "arabizi": "osra"
+  },
+  {
+   "id": "fam-atfal",
+   "pt": "crianças",
+   "ar": "أطفال",
+   "arabizi": "atfal"
+  },
+  {
+   "id": "fam-zog-zoga",
+   "pt": "marido / esposa (formal)",
+   "ar": "زوج / زوجة",
+   "arabizi": "zog / zoga"
+  },
+  {
+   "id": "fam-ragel",
+   "pt": "homem",
+   "ar": "رَجِل",
+   "arabizi": "ragel"
+  },
+  {
+   "id": "fam-set",
+   "pt": "mulher",
+   "ar": "سِت",
+   "arabizi": "set"
+  },
+  {
+   "id": "fam-nas",
+   "pt": "pessoas",
+   "ar": "ناس",
+   "arabizi": "nas"
+  },
+  {
+   "id": "fam-7afid-7afida",
+   "pt": "neto / neta",
+   "ar": "حَفِيد / حَفِيدة",
+   "arabizi": "7afid / 7afida"
+  },
+  {
+   "id": "fam-7amaa",
+   "pt": "sogra",
+   "ar": "حَماة",
+   "arabizi": "7amaa"
   }
  ],
  "perguntas": [
@@ -7577,6 +7825,406 @@ const BANK = {
     }
    },
    "src": "2026-10-09 (Aula 87)"
+  },
+  {
+   "id": "poss-casa",
+   "pt": "Casa",
+   "ar": "بيت",
+   "src": "Apostila 2 p.2",
+   "forms": {
+    "Eu": {
+     "ar": "بيتي",
+     "arabizi": "beity"
+    },
+    "Ele": {
+     "ar": "بيته",
+     "arabizi": "beito"
+    },
+    "Ela": {
+     "ar": "بيتها",
+     "arabizi": "beitha"
+    },
+    "Você (m)": {
+     "ar": "بيتَك",
+     "arabizi": "beitak"
+    },
+    "Você (f)": {
+     "ar": "بيتِك",
+     "arabizi": "beitek"
+    },
+    "Nós": {
+     "ar": "بيتنا",
+     "arabizi": "beitna"
+    },
+    "Vocês": {
+     "ar": "بيتكوا",
+     "arabizi": "beitku"
+    },
+    "Eles": {
+     "ar": "بيتهُم",
+     "arabizi": "beithom"
+    }
+   }
+  },
+  {
+   "id": "poss-filha",
+   "pt": "Filha / menina",
+   "ar": "بِنت",
+   "src": "Apostila 2 p.2",
+   "forms": {
+    "Eu": {
+     "ar": "بِنتي",
+     "arabizi": "benty"
+    },
+    "Ele": {
+     "ar": "بِنته",
+     "arabizi": "bento"
+    },
+    "Ela": {
+     "ar": "بِنتها",
+     "arabizi": "bentaha"
+    },
+    "Você (m)": {
+     "ar": "بِنتَك",
+     "arabizi": "bentak"
+    },
+    "Você (f)": {
+     "ar": "بِنتِك",
+     "arabizi": "bentek"
+    },
+    "Nós": {
+     "ar": "بِنتِنا",
+     "arabizi": "bentena"
+    },
+    "Vocês": {
+     "ar": "بِنتكوا",
+     "arabizi": "bentoku"
+    },
+    "Eles": {
+     "ar": "بِنتهُم",
+     "arabizi": "bentohom"
+    }
+   }
+  },
+  {
+   "id": "poss-filhos",
+   "pt": "Filhos / crianças",
+   "ar": "أولاد",
+   "src": "Apostila 2 p.2",
+   "forms": {
+    "Eu": {
+     "ar": "أولادي",
+     "arabizi": "aulady"
+    },
+    "Ele": {
+     "ar": "أولاده",
+     "arabizi": "aulado"
+    },
+    "Ela": {
+     "ar": "أولادها",
+     "arabizi": "auladha"
+    },
+    "Você (m)": {
+     "ar": "أولادَك",
+     "arabizi": "auladak"
+    },
+    "Você (f)": {
+     "ar": "أولادِك",
+     "arabizi": "auladek"
+    },
+    "Nós": {
+     "ar": "أولادنا",
+     "arabizi": "auladna"
+    },
+    "Vocês": {
+     "ar": "أولادكوا",
+     "arabizi": "auladku"
+    },
+    "Eles": {
+     "ar": "أولادهُم",
+     "arabizi": "auladhom"
+    }
+   }
+  },
+  {
+   "id": "poss-carteira",
+   "pt": "Carteira",
+   "ar": "مَحفَظة",
+   "src": "Apostila 2 p.4",
+   "forms": {
+    "Eu": {
+     "ar": "مَحفَظتي",
+     "arabizi": "ma7fazty"
+    },
+    "Ele": {
+     "ar": "مَحفَظته",
+     "arabizi": "ma7fazto"
+    },
+    "Ela": {
+     "ar": "مَحفَظِتها",
+     "arabizi": "ma7fazetha"
+    },
+    "Você (m)": {
+     "ar": "مَحفَظتَك",
+     "arabizi": "ma7faztak"
+    },
+    "Você (f)": {
+     "ar": "مَحفَظتِك",
+     "arabizi": "ma7faztek"
+    },
+    "Nós": {
+     "ar": "مَحفَظِتنا",
+     "arabizi": "ma7fazetna"
+    },
+    "Vocês": {
+     "ar": "مَحفَظِتكوا",
+     "arabizi": "ma7fazetku"
+    },
+    "Eles": {
+     "ar": "مَحفَظِتهُم",
+     "arabizi": "ma7fazethom"
+    }
+   }
+  },
+  {
+   "id": "poss-oculos",
+   "pt": "Óculos",
+   "ar": "نَضارة",
+   "src": "Apostila 2 p.4",
+   "forms": {
+    "Eu": {
+     "ar": "نَضارتي",
+     "arabizi": "nadarty"
+    },
+    "Ele": {
+     "ar": "نَضارته",
+     "arabizi": "nadarto"
+    },
+    "Ela": {
+     "ar": "نَضارِتها",
+     "arabizi": "nadaretha"
+    },
+    "Você (m)": {
+     "ar": "نَضارتَك",
+     "arabizi": "nadartak"
+    },
+    "Você (f)": {
+     "ar": "نَضارتِك",
+     "arabizi": "nadartek"
+    },
+    "Nós": {
+     "ar": "نَضارِتنا",
+     "arabizi": "nadaretna"
+    },
+    "Vocês": {
+     "ar": "نَضارِتكوا",
+     "arabizi": "nadaretku"
+    },
+    "Eles": {
+     "ar": "نَضارِتهُم",
+     "arabizi": "nadarethom"
+    }
+   }
+  },
+  {
+   "id": "poss-wara",
+   "pt": "Atrás (وَرا)",
+   "ar": "وَرا",
+   "src": "Apostila 2 p.17",
+   "forms": {
+    "Eu": {
+     "ar": "ورايا",
+     "arabizi": "waraya"
+    },
+    "Ele": {
+     "ar": "وَراه",
+     "arabizi": "warah"
+    },
+    "Ela": {
+     "ar": "وَراها",
+     "arabizi": "waraha"
+    },
+    "Você (m)": {
+     "ar": "وَراك",
+     "arabizi": "warak"
+    },
+    "Você (f)": {
+     "ar": "وَراكي",
+     "arabizi": "waraky"
+    },
+    "Nós": {
+     "ar": "وَرانا",
+     "arabizi": "warana"
+    },
+    "Vocês": {
+     "ar": "وَراكوا",
+     "arabizi": "waraku"
+    },
+    "Eles": {
+     "ar": "وَراهُم",
+     "arabizi": "warahom"
+    }
+   }
+  },
+  {
+   "id": "poss-gamb",
+   "pt": "Ao lado (جَنب)",
+   "ar": "جَنب",
+   "src": "Apostila 2 p.17",
+   "forms": {
+    "Eu": {
+     "ar": "جَنبي",
+     "arabizi": "gamby"
+    },
+    "Ele": {
+     "ar": "جَنبه",
+     "arabizi": "gambo"
+    },
+    "Ela": {
+     "ar": "جَنبها",
+     "arabizi": "gambaha"
+    },
+    "Você (m)": {
+     "ar": "جَنبَك",
+     "arabizi": "gambak"
+    },
+    "Você (f)": {
+     "ar": "جَنبِك",
+     "arabizi": "gambek"
+    },
+    "Nós": {
+     "ar": "جَنبِنا",
+     "arabizi": "gambena"
+    },
+    "Vocês": {
+     "ar": "جَنبكوا",
+     "arabizi": "gamboku"
+    },
+    "Eles": {
+     "ar": "جَنبهُم",
+     "arabizi": "gambohom"
+    }
+   }
+  },
+  {
+   "id": "poss-odam",
+   "pt": "Em frente (قُدام)",
+   "ar": "قُدام",
+   "src": "Apostila 2 p.17",
+   "forms": {
+    "Eu": {
+     "ar": "قُدامي",
+     "arabizi": "odamy"
+    },
+    "Ele": {
+     "ar": "قُدامه",
+     "arabizi": "odamo"
+    },
+    "Ela": {
+     "ar": "قُدامها",
+     "arabizi": "odamha"
+    },
+    "Você (m)": {
+     "ar": "قُدامَك",
+     "arabizi": "odamak"
+    },
+    "Você (f)": {
+     "ar": "قُدامِك",
+     "arabizi": "odamek"
+    },
+    "Nós": {
+     "ar": "قُدامنا",
+     "arabizi": "odamna"
+    },
+    "Vocês": {
+     "ar": "قُدامكوا",
+     "arabizi": "odamku"
+    },
+    "Eles": {
+     "ar": "قُدامهُم",
+     "arabizi": "odamhom"
+    }
+   }
+  },
+  {
+   "id": "poss-bi",
+   "pt": "Preposição بـ + pronome (ligar para…)",
+   "ar": "بـ",
+   "src": "Apostila 2 p.22",
+   "forms": {
+    "Eu": {
+     "ar": "بيا",
+     "arabizi": "beya"
+    },
+    "Ele": {
+     "ar": "بِيه",
+     "arabizi": "bih"
+    },
+    "Ela": {
+     "ar": "بِيها",
+     "arabizi": "biha"
+    },
+    "Você (m)": {
+     "ar": "بِيك",
+     "arabizi": "bik"
+    },
+    "Você (f)": {
+     "ar": "بِيكي",
+     "arabizi": "biky"
+    },
+    "Nós": {
+     "ar": "بِينا",
+     "arabizi": "bina"
+    },
+    "Vocês": {
+     "ar": "بِيكوا",
+     "arabizi": "biku"
+    },
+    "Eles": {
+     "ar": "بِيهُم",
+     "arabizi": "bihom"
+    }
+   }
+  },
+  {
+   "id": "poss-bei7eb-objeto",
+   "pt": "Ele ama … (هو بيحِب + pronome-objeto)",
+   "ar": "هو بيحِب",
+   "src": "Apostila 2 p.17",
+   "forms": {
+    "Eu": {
+     "ar": "هو بيحِبني",
+     "arabizi": "howa bei7ebeny"
+    },
+    "Ele": {
+     "ar": "هو بيحِبه",
+     "arabizi": "howa bei7ebo"
+    },
+    "Ela": {
+     "ar": "هو بيحِبها",
+     "arabizi": "howa bei7ebaha"
+    },
+    "Você (m)": {
+     "ar": "هو بيحِبَك",
+     "arabizi": "howa bei7ebak"
+    },
+    "Você (f)": {
+     "ar": "هو بيحِبِك",
+     "arabizi": "howa bei7ebek"
+    },
+    "Nós": {
+     "ar": "هو بيحِبِنا",
+     "arabizi": "howa bei7ebena"
+    },
+    "Vocês": {
+     "ar": "هو بيحِبكوا",
+     "arabizi": "howa bei7eboku"
+    },
+    "Eles": {
+     "ar": "هو بيحِبهُم",
+     "arabizi": "howa bei7ebohom"
+    }
+   }
   }
  ],
  "escrita": [
@@ -10883,6 +11531,76 @@ const BANK = {
    "ar": "أنا جايز أشتري هدوم لِلكريسماس.",
    "arabizi": "Ana gayez ashtery hodum lelkrismas.",
    "src": "2026-11-06"
+  },
+  {
+   "id": "esc-473-eu-nao-gosto-de-comer-queijo",
+   "pt": "Eu não gosto de comer queijo.",
+   "ar": "أنا مابحبش آكل جِبنة.",
+   "arabizi": "Ana maba7ebsh akol gebna.",
+   "src": "Apostila 2 p.8"
+  },
+  {
+   "id": "esc-474-eu-nao-jogo-muito-no-computador",
+   "pt": "Eu não jogo muito no computador.",
+   "ar": "أنا مابلعبش على الكمبيوتر كِتير.",
+   "arabizi": "Ana mabal3absh 3ala el computer ktir.",
+   "src": "Apostila 2 p.8"
+  },
+  {
+   "id": "esc-475-ele-nao-dorme-cedo",
+   "pt": "Ele não dorme cedo.",
+   "ar": "هو مابينامش بدري.",
+   "arabizi": "Howa mabeinamsh badry.",
+   "src": "Apostila 2 p.8"
+  },
+  {
+   "id": "esc-476-nos-nao-sabemos-falar-arabe",
+   "pt": "Nós não sabemos falar árabe.",
+   "ar": "إحنا مابنعرفش نتكلم عربي.",
+   "arabizi": "E7na mabene3rafsh netkalem 3araby.",
+   "src": "Apostila 2 p.8"
+  },
+  {
+   "id": "esc-477-ela-esta-com-vontade-de-comer-shawerma",
+   "pt": "Ela está com vontade de comer shawerma.",
+   "ar": "هي نِفسها تاكل شاورما.",
+   "arabizi": "Heya nefsaha takol shawerma.",
+   "src": "Apostila 2 p.14"
+  },
+  {
+   "id": "esc-478-eu-estou-com-vontade-de-pizza",
+   "pt": "Eu estou com vontade de pizza.",
+   "ar": "أنا نِفسي في بيتزا.",
+   "arabizi": "Ana nefsi fi pizza.",
+   "src": "Apostila 2 p.14"
+  },
+  {
+   "id": "esc-479-ele-esta-com-vontade-de-cafe",
+   "pt": "Ele está com vontade de café.",
+   "ar": "هو نِفسه في قهوة.",
+   "arabizi": "Howa nefso fi ahua.",
+   "src": "Apostila 2 p.14"
+  },
+  {
+   "id": "esc-480-faz-uma-hora-que-ele-esta-falando-no-telefone-com-",
+   "pt": "Faz uma hora que ele está falando no telefone com Ali.",
+   "ar": "بقاله ساعة بيتكلم في التليفون مع علي.",
+   "arabizi": "Ba2alo sa3a bietkalem fe el telefon ma3a Ali.",
+   "src": "Apostila 2 p.17"
+  },
+  {
+   "id": "esc-481-faz-uma-semana-que-eu-nao-vejo-samir",
+   "pt": "Faz uma semana que eu não vejo Samir.",
+   "ar": "بقالي أسبوع مابشوفش سمير.",
+   "arabizi": "Ba2aly asbu3 mabashofsh Samir.",
+   "src": "Apostila 2 p.18"
+  },
+  {
+   "id": "esc-482-faz-muito-tempo-que-eu-moro-aqui",
+   "pt": "Faz muito tempo que eu moro aqui.",
+   "ar": "بقالي كتير ساكِن هنا.",
+   "arabizi": "Ba2aly ketir saken hena.",
+   "src": "Apostila 2 p.18"
   }
  ],
  "leitura": [
@@ -12122,6 +12840,251 @@ const BANK = {
      "pt": "Faz quanto tempo que você trabalha? Gosta do seu trabalho? Por quê?",
      "ar": "بقالَك قد ايه بتشتغل؟ بتحب شُغلَك؟ ليه؟",
      "arabizi": "Ba2alak 2ad eh beteshta8al? Bet7eb sho8lak? Leh?"
+    }
+   ]
+  },
+  {
+   "id": "lei-38-ehab-apresenta-a-familia-apostila2",
+   "title": "Leitura · Ehab apresenta a família (Apostila 2 p.7)",
+   "src": "Apostila 2 p.7",
+   "items": [
+    {
+     "pt": "Hoje eu quero mostrar a vocês a minha família.",
+     "ar": "النهاردة أنا عايز أوريكوا أُسرتي.",
+     "arabizi": "Enaharda ana 3aeiz auariku osrety."
+    },
+    {
+     "pt": "A minha família é pequena, e nós vivemos juntos na mesma casa.",
+     "ar": "أُسرتي صُغَيَّرة، وإحنا عايشين مع بعض في نفس البيت.",
+     "arabizi": "Osrety so8ayara, e7na 3ayshin ma3a ba3d fi nafs el beit."
+    },
+    {
+     "pt": "Meu nome é Ehab e eu tenho uma irmã mais velha que se chama Manal e outra irmã pequena que se chama Ebtessam.",
+     "ar": "أنا اسمي إيهاب وعندي أخت كبيرة اسمها منال وأخت تانية صُغَيَّرة اسمها ابتسام.",
+     "arabizi": "Ana esmy Ehab we 3andy o5t kebira esmaha Manal we o5t tanya so8ayara esmaha Ebtessam."
+    },
+    {
+     "pt": "Meu pai se chama Samy e minha mãe se chama Radwa.",
+     "ar": "بابايا اسمه سامي ومامتي اسمها رَضوى.",
+     "arabizi": "Babaya esmo Samy we mamty esmaha Radua."
+    },
+    {
+     "pt": "Meu pai é contador e minha mãe é professora.",
+     "ar": "بابايا مُحاسِب ومامتي مُدَرِسة.",
+     "arabizi": "Babaya mo7asseb we mamty modaressa."
+    },
+    {
+     "pt": "Na nossa família há muitos professores, porque a minha tia Salwa também trabalha como professora e o meu tio Amir também é professor.",
+     "ar": "عيلتنا فيها مُدَرِسين كتير، لأن عمتي سلوى كمان بتشتغل مُدَرِسة وخالي أمير برضه مُدَرِس.",
+     "arabizi": "3eletna fiha modaressin ktir, la2en 3amety Salua kaman beteshta8al modaressa we 5aly Amir bardo modares."
+    },
+    {
+     "pt": "A minha mãe é professora de biologia, a minha tia é professora de geografia e o meu tio é professor de história.",
+     "ar": "مامتي مُدَرِسة أحياء وعمتي مُدَرِسة جُغرافيا وخالي مُدَرِس تاريخ.",
+     "arabizi": "Mamty modaresset a7ya2 we 3amety modaresset go8rafia we 5aly modares tari5."
+    },
+    {
+     "pt": "Eu e as minhas irmãs ainda somos estudantes na escola.",
+     "ar": "أنا وإخواتي البنات لِسا طُلاب في المدرسة.",
+     "arabizi": "Ana we e5uaty el banat lessa tolab fe el madrassa."
+    },
+    {
+     "pt": "Nós vamos para a mesma escola com os filhos do meu tio.",
+     "ar": "إحنا بنروح نفس المدرسة مع أولاد عمي.",
+     "arabizi": "E7na benru7 nafs el madrassa ma3a aulad 3amy."
+    },
+    {
+     "pt": "Porque a escola é perto da nossa casa e da casa deles.",
+     "ar": "لأن المدرسة قريبة من بيتنا ومن بيتهم.",
+     "arabizi": "La2en el madrassa orayeba men beitna we beithom."
+    },
+    {
+     "pt": "Nós e eles moramos no mesmo bairro.",
+     "ar": "إحنا وهما ساكنين في نفس الحي.",
+     "arabizi": "E7na we homa saknin fi nafs el 7ay."
+    }
+   ]
+  },
+  {
+   "id": "lei-39-ramy-quer-aprender-a-dirigir-apostila2",
+   "title": "Leitura · Ramy quer aprender a dirigir (Apostila 2 p.11)",
+   "src": "Apostila 2 p.11",
+   "items": [
+    {
+     "pt": "Ramy tem uma reunião importante no trabalho hoje e precisa chegar cedo à empresa.",
+     "ar": "رامي عنده إجتِماع مُهِم في الشغل النهاردة ولازم يوصل الشركة بدري.",
+     "arabizi": "Ramy 3ando ektema3 mohem fe el sho8l enaharda we lazem yaussal el sherka badry."
+    },
+    {
+     "pt": "Normalmente Ramy pega o ônibus para ir ao trabalho, mas hoje ele está com pressa, então decidiu pegar um táxi.",
+     "ar": "رامي عادةً بياخد الأتوبيس عشان يروح الشغل، بس النهاردة هو مِستعجِل فقرر ياخد تاكسي.",
+     "arabizi": "Ramy 3adatan bia5od el otobis 3ashan yeru7 el sho8l, bas enaharda howa mesta3gel fa karar ya5od taxi."
+    },
+    {
+     "pt": "Ramy não tem carro porque não sabe dirigir.",
+     "ar": "رامي ماعندوش عربية لأنه مِش بيعرف يسوق.",
+     "arabizi": "Ramy ma3andush 3arabeya la2no mesh bei3raf yessu2."
+    },
+    {
+     "pt": "Ele quer aprender a dirigir, mas não tem muito tempo livre, porque trabalha todos os dias das 8h da manhã às 5h da tarde e volta para casa por volta das 7h da noite.",
+     "ar": "هو عايز يتعلم السواقة بس هو ماعندوش وقت فاضي كتير، وده لأنه بيشتغل كل يوم من الساعة 8 الصبح للساعة 5 بعد الضهر وبيرجع البيت على الساعة 7 بالليل.",
+     "arabizi": "Howa 3aeiz yet3alem el seua2a, bas howa ma3andush wa2t fady ktir we da la2eno beishta8al men el sa3a 8 el sop7 lel sa3a 5 ba3d el dohr kol youm we beirga3 el beit 3ala el sa3a 7 beilel."
+    },
+    {
+     "pt": "Ele vai tirar férias em julho que vem e está pensando em aproveitar a oportunidade para ir a uma autoescola aprender, porque vai ter muito tempo livre nas férias.",
+     "ar": "هو هياخد أجازة في شهر يوليو الجاي وبيفكر يستغِل الفُرصة ويروح مدرسة سواقة عشان يتعلم، لأنه هيكون عنده وقت فاضي كتير في الأجازة.",
+     "arabizi": "Howa haya5od agaza fi shahr yolyo el gai we beifakar yesta8el el forsa we yeru7 madraset seua2a 3ashan yet3alem, la2eno haykun 3ando wa2t fady ktir fe el agaza."
+    },
+    {
+     "pt": "Ele está muito animado e quer comprar um carro assim que terminar as aulas e tirar a carteira.",
+     "ar": "هو مُتحَمِس اوي وعايز يشتري عربية أول ما يخلص الحِصَص وياخد الرُخصة.",
+     "arabizi": "Howa mota7ames awi we 3aeiz yeshtery 3arabeya awel ma ye5ales el 7essas we ya5od el ro5sa."
+    }
+   ]
+  },
+  {
+   "id": "lei-40-amir-e-samy-viagem-hurghada-apostila2",
+   "title": "Diálogo · Amir e Samy vão para Hurghada (Apostila 2 pp.15-16)",
+   "src": "Apostila 2 p.15-16",
+   "items": [
+    {
+     "pt": "Amir: Olá, Samy, tudo bem? Como você está?",
+     "ar": "أمير: أهلاً يا سامي، عامل إيه؟ إزيك؟",
+     "arabizi": "Amir: Ahlan ya Samy, 3amel eh? Ezayak?"
+    },
+    {
+     "pt": "Samy: Tudo bem, graças a Deus. E você, quais as novidades?",
+     "ar": "سامي: تمام الحمد لله، وانت إيه الأخبار؟",
+     "arabizi": "Samy: Tmam el 7amdlelah, we enta eh el a5bar?"
+    },
+    {
+     "pt": "Amir: Tudo certo. Só estou um pouco chateado.",
+     "ar": "أمير: كله تمام. بس زهقان شوية.",
+     "arabizi": "Amir: Kolo tmam, bas zah2an shewia."
+    },
+    {
+     "pt": "Samy: Mas por quê?",
+     "ar": "سامي: ليه بس؟",
+     "arabizi": "Samy: Leh bas?"
+    },
+    {
+     "pt": "Amir: Alguns problemas no trabalho, como sempre.",
+     "ar": "أمير: شوية مشاكِل في الشغل كالعادة.",
+     "arabizi": "Amir: Shewayet mashakel fe el sho8l kal 3ada."
+    },
+    {
+     "pt": "Samy: Eu vou para Hurghada com Samir e Fahmy na quinta-feira; vamos ficar lá de quinta a sábado. Quer vir com a gente?",
+     "ar": "سامي: أنا هروح الغردقة مع سمير وفهمي يوم الخميس، هنقعد هناك من الخميس للسبت. تحب تيجي معانا؟",
+     "arabizi": "Samy: Ana haru7 el gharda2a ma3a Samir we Fahmy youm el 5amis, hano3od henak men el 5amis lel sapt. Te7eb tegy ma3ana?"
+    },
+    {
+     "pt": "Amir: Sim, claro. Adoraria ir com vocês. Você sabe que eu não gosto de viajar para lugar nenhum sozinho.",
+     "ar": "أمير: آه، طبعاً. أحب أجي معاكوا. انت عارف مابحبش أسافر حِتة لوحدي.",
+     "arabizi": "Amir: Ah, tab3an. A7eb agy ma3aku. Enta 3aref maba7ebsh assafer 7eta leua7dy."
+    },
+    {
+     "pt": "Samy: Ótimo. Prepara as malas, e eu te ligo depois para te contar os detalhes.",
+     "ar": "سامي: تمام اوي. جَهِز الشُنَط وهتِصِل بيك بعدين عشان أقولك التفاصيل.",
+     "arabizi": "Samy: Tmam awi. Gahez el shonat we hatessel bik ba3dein 3ashan a2ulak el tafassil."
+    }
+   ]
+  },
+  {
+   "id": "lei-41-amira-e-zeinab-ir-ao-medico-apostila2",
+   "title": "Diálogo · Amira e Zeinab vão ao médico (Apostila 2 pp.19-20)",
+   "src": "Apostila 2 p.19-20",
+   "items": [
+    {
+     "pt": "Amira: Como você está, Zeinab? Tudo bem? Faz muito tempo que você não vai à faculdade, você está bem?",
+     "ar": "أميرة: إزيك يا زينب؟ عاملة إيه؟ بقالِك كتير مِش بتروحي الكلية، انتي كويسة؟",
+     "arabizi": "Amira: Ezayek ya Zeinab? 3amla eh? Ba2alek ktir mesh betru7y el koleya, enty kouayessa?"
+    },
+    {
+     "pt": "Zeinab: Estou um pouco doente há alguns dias e preciso ir ao médico.",
+     "ar": "زينب: أنا تعبانة شوية بقالي كام يوم ومِحتاجة أروح الدكتور.",
+     "arabizi": "Zeinab: Ana ta3bana shewia ba2aly kam youm we mei7taga aru7 el doctor."
+    },
+    {
+     "pt": "Amira: Se não tiver ninguém para ir com você, eu posso ir com você.",
+     "ar": "أميرة: لو مافيش حد يروح معاكي، أنا مُمكِن أروح معاكي.",
+     "arabizi": "Amira: Lau mafish 7ad yeru7 ma3aky, ana momken aru7 ma3aky."
+    },
+    {
+     "pt": "Zeinab: Muito obrigada, Amira. Você está sempre ao meu lado e me ajuda em muitas coisas.",
+     "ar": "زينب: مِتشكرة اوي يا أميرة. انتي دايماً جنبي وبتساعديني في حاجات كتير.",
+     "arabizi": "Zeinab: Motashakera awi ya Amira. Enty dayman gamby we betsa3dini fi 7agat ktir."
+    },
+    {
+     "pt": "Amira: Quer que a gente vá ao médico hoje? Eu conheço um médico muito bom e a clínica é perto daqui.",
+     "ar": "أميرة: تحبي نروح الدكتور النهاردة؟ أنا أعرف دكتور شاطِر اوي والعيادة قريبة من هنا.",
+     "arabizi": "Amira: Te7eby neru7 el doctor enaharda? Ana a3raf doctor shater awi we el 3eyada orayeba men hena."
+    },
+    {
+     "pt": "Zeinab: Combinado, hoje ao meio-dia está bom.",
+     "ar": "زينب: تمام، النهاردة الضهر كويس.",
+     "arabizi": "Zeinab: Tmam, enaharda el dohr kouayes."
+    },
+    {
+     "pt": "Amira: Combinado, tchau. Até daqui a pouco.",
+     "ar": "أميرة: مِتفِقين، سلام. أشوفِك كمان شوية.",
+     "arabizi": "Amira: Metef2in, salam. Ashufek kaman shewia."
+    }
+   ]
+  },
+  {
+   "id": "lei-42-ali-liga-para-ramy-apostila2",
+   "title": "Diálogo · Ali liga para Ramy (Apostila 2 p.24)",
+   "src": "Apostila 2 p.24",
+   "items": [
+    {
+     "pt": "Ali: Alô! Como vai, Ramy? Quais as novidades?",
+     "ar": "علي: ألو! إزيك يا رامي؟ إيه الأخبار؟",
+     "arabizi": "Ali: Alô! Ezayak ya Ramy? Eh el a5bar?"
+    },
+    {
+     "pt": "Ramy: Estou bem, graças a Deus.",
+     "ar": "رامي: أنا تمام، الحمد لله.",
+     "arabizi": "Ramy: Ana tmam, el 7amdlelah."
+    },
+    {
+     "pt": "Ali: Você pode me ajudar? Você tem o número do Amir?",
+     "ar": "علي: مُمكِن تساعدني؟ معاك رقم أمير؟",
+     "arabizi": "Ali: Momken tesa3edny? Ma3ak rakam Amir?"
+    },
+    {
+     "pt": "Ramy: Sim, tenho.",
+     "ar": "رامي: آه، معايا.",
+     "arabizi": "Ramy: Ah, ma3aya."
+    },
+    {
+     "pt": "Ali: Você pode me mandar o número? Preciso ligar para ele e não estou achando o número dele!",
+     "ar": "علي: مُمكِن تبعتلي الرقم؟ أنا مِحتاج أتِصِل بيه ومِش لاقي رقمه!",
+     "arabizi": "Ali: Momken teb3atly el rakam? Ana mei7tag atessel bih we mesh la2y rakamo!"
+    },
+    {
+     "pt": "Ramy: Claro, um segundo, vou ver no celular.",
+     "ar": "رامي: أكيد، ثانية واحدة، هشوف على الموبايل.",
+     "arabizi": "Ramy: Akid, sanya wa7da, hashuf 3ala el mobile."
+    },
+    {
+     "pt": "Ali: Ok, muito obrigado.",
+     "ar": "علي: تمام، شكراً اوي.",
+     "arabizi": "Ali: Tmam, shukran awi."
+    },
+    {
+     "pt": "Ramy: Posso te ajudar em mais alguma coisa?",
+     "ar": "رامي: أساعدك في حاجة تانية؟",
+     "arabizi": "Ramy: Assa3dak fi 7aga tanya?"
+    },
+    {
+     "pt": "Ali: Você também pode me dizer qual é o endereço da casa nova do Amir?",
+     "ar": "علي: مُمكِن كمان تقولي عِنوان بيت أمير الجديد إيه؟",
+     "arabizi": "Ali: Momken kaman te2uly 3enuan beit Amir el gedid?"
+    },
+    {
+     "pt": "Ramy: Rua Al-Salam, 15, Heliópolis (Masr El Gedida).",
+     "ar": "رامي: 15 شارع السلام، مصر الجديدة.",
+     "arabizi": "Ramy: 15 share3 el salam, masr el gedida."
     }
    ]
   }
