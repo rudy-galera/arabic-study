@@ -17333,6 +17333,118 @@ const BANK = {
      "arabizi": "El sekerter: Akid ya fandam, ha7awel a3mel kol da!"
     }
    ]
+  },
+  {
+   "id": "lei-44-respostas-sobre-mim-aula-94",
+   "title": "Conversa · respostas sobre mim — leitura, aniversário, amigos, trabalho (Aula 94)",
+   "src": "2026-11-11 (Aula 94 · arabizi e tradução escritos pelo Claude)",
+   "items": [
+    {
+     "pt": "Você gosta de ler? Sobre o quê?",
+     "ar": "بِتحِب تِقرا؟ عَن ايه؟",
+     "arabizi": "Bet7eb te2ra? 3an eh?"
+    },
+    {
+     "pt": "Sim, eu gosto de ler livros sobre negócios, crime e filosofia.",
+     "ar": "ايوة، أنا بحب أقرا كُتُب عن البيزنس والجريمة والفَلسَفة.",
+     "arabizi": "Aywa, ana ba7eb a2ra kotob 3an el business we elgarima we elfalsafa."
+    },
+    {
+     "pt": "Quem é o seu escritor favorito?",
+     "ar": "مين الكاتب المُفَضَل؟",
+     "arabizi": "Min elkateb elmofadal?"
+    },
+    {
+     "pt": "Eu não tenho escritor favorito, eu leio qualquer livro.",
+     "ar": "أنا ماعنديش كاتب مفضل، أنا بقرا أي كُتُب.",
+     "arabizi": "Ana ma3andish kateb mofadal, ana ba2ra ay kotob."
+    },
+    {
+     "pt": "Quais são os seus livros favoritos?",
+     "ar": "ايه كتبك المفضلة؟",
+     "arabizi": "Eh kotobak elmofadala?"
+    },
+    {
+     "pt": "Naguib Mahfouz.",
+     "ar": "نجيب محفوظ.",
+     "arabizi": "Naguib Mahfouz."
+    },
+    {
+     "pt": "Quando você lê?",
+     "ar": "انت بتقرا امتى؟",
+     "arabizi": "Enta bete2ra emta?"
+    },
+    {
+     "pt": "Antes de dormir ou de manhã, depois do café da manhã.",
+     "ar": "قَبل ما أنام أو الصُبح بعد الفِطار.",
+     "arabizi": "2abl ma anam aw elsop7 ba3d elfetar."
+    },
+    {
+     "pt": "O que você vai fazer no seu aniversário?",
+     "ar": "هَتعمِل ايه في عيد ميلادَك؟",
+     "arabizi": "Hate3mel eh fe 3id miladak?"
+    },
+    {
+     "pt": "Vou jantar com a minha esposa e vou a uma festa com os meus amigos.",
+     "ar": "هَتعَشى مَعَ مراتي وهَروح حَفلة مَعَ أصحابي.",
+     "arabizi": "Hat3asha ma3a merati we haru7 7afla ma3a as7aby."
+    },
+    {
+     "pt": "Não vou fazer nada diferente. Normal.",
+     "ar": "أنا مِش هَعمِل حاجة مُختلفة. عادي.",
+     "arabizi": "Ana mesh ha3mel 7aga mo5talefa. 3ady."
+    },
+    {
+     "pt": "Quando é o seu aniversário?",
+     "ar": "عيد ميلادَك امتى؟",
+     "arabizi": "3id miladak emta?"
+    },
+    {
+     "pt": "O meu aniversário é no dia 4 de janeiro (quatro do um).",
+     "ar": "عيد ميلادي يوم 4 يناير. (أربعة واحِد)",
+     "arabizi": "3id miladi yom 4 yanayer. (arba3a wa7ed)"
+    },
+    {
+     "pt": "Quem é o seu amigo mais próximo? Por quê?",
+     "ar": "مين أقرب صاحِب ليك؟ ليه؟",
+     "arabizi": "Min a2rab sa7eb lik? Leh?"
+    },
+    {
+     "pt": "Depois dos quarenta anos, eu já não tenho um amigo próximo. Porque é difícil.",
+     "ar": "بعد سن (أربعين سنة) ماعنديش صاحب قُريب خَلاص. عشان صَعب.",
+     "arabizi": "Ba3d sen (arb3in sana) ma3andish sa7eb orayeb 5alas. 3ashan sa3b."
+    },
+    {
+     "pt": "Há quanto tempo você trabalha? Gosta do seu trabalho? Por quê?",
+     "ar": "بقالَك قد ايه بتشتغل؟ بتحب شُغلَك؟ ليه؟",
+     "arabizi": "Ba2alak 2ad eh beteshta8al? Bet7eb sho8lak? Leh?"
+    },
+    {
+     "pt": "Faz muito tempo que eu trabalho.",
+     "ar": "بَقالي كتير بشتغل.",
+     "arabizi": "Ba2aly ketir bashta8al."
+    },
+    {
+     "pt": "Faz uns vinte anos que eu trabalho.",
+     "ar": "بقالي حوالي عشرين سنة بشتغل.",
+     "arabizi": "Ba2aly 7awaly 3eshrin sana bashta8al."
+    },
+    {
+     "pt": "Sim, eu gosto do meu trabalho, graças a Deus, porque trabalho de casa todos os dias e aprendo coisas novas em marketing digital.",
+     "ar": "ايوة أنا بحب شغلي الحمد لله عشان بشتغل مِن البيت كل يوم وبتعلم حاجات جديدة في الديجيتال ماركتينج.",
+     "arabizi": "Aywa, ana ba7eb sho8ly el 7amdlelah 3ashan bashta8al men elbeit kol yom we bat3alem 7agat gedida fe eldigital marketing."
+    },
+    {
+     "pt": "Você gosta dos seus colegas?",
+     "ar": "بتحِب زَمايلَك؟",
+     "arabizi": "Bet7eb zamaylak?"
+    },
+    {
+     "pt": "Sim, eu tenho uma colega próxima de mim que se chama Seresh; ela é do Paquistão, mas mora em Londres.",
+     "ar": "ايوة، أنا عَندي واحدة زميلتي قريبة مني اسمها سيريش، هي مِن باكستان بس هي ساكنة في لَندَن.",
+     "arabizi": "Aywa, ana 3andy wa7da zamilty orayeba meny esmaha Seresh, heya men Pakistan bas heya sakna fe London."
+    }
+   ]
   }
  ],
  "quotes": [
