@@ -6407,6 +6407,3966 @@ const BANK = {
    "pt": "um segundo (só um instante)",
    "ar": "ثانية واحدة",
    "arabizi": "sanya wa7da"
+  },
+  {
+   "id": "voc-preposicoes-elma7al-da-belcream-da",
+   "cat": "preposicoes",
+   "catLabel": "Preposições e conectores",
+   "pt": "esse (vem DEPOIS do substantivo): dessa loja / com esse creme",
+   "ar": "المَحَل ده · بالكريم ده",
+   "arabizi": "elma7al da · belcream da",
+   "imp": 1
+  },
+  {
+   "id": "voc-preposicoes-ana-3and-maria",
+   "cat": "preposicoes",
+   "catLabel": "Preposições e conectores",
+   "pt": "estar no lugar de alguém (na casa de)",
+   "ar": "أنا عَند ماريا",
+   "arabizi": "Ana 3and Maria",
+   "imp": 1
+  },
+  {
+   "id": "voc-preposicoes-leua7dak-leua7dek-leua7dena-leua7doku-le",
+   "cat": "preposicoes",
+   "catLabel": "Preposições e conectores",
+   "pt": "sozinho: você m/f · nós (Aula 81) · vocês · eles (paradigma لِوَحد)",
+   "ar": "لِوَحدَك / لِوَحدِك · لِوَحدِنا · لِوَحدُكوا · لِوَحدُهُم",
+   "arabizi": "leua7dak / leua7dek · leua7dena · leua7doku · leua7dohom",
+   "imp": 1
+  },
+  {
+   "id": "voc-preposicoes-ma3aya-ma3aku",
+   "cat": "preposicoes",
+   "catLabel": "Preposições e conectores",
+   "pt": "comigo · com vocês (Aula 81)",
+   "ar": "معايا · معاكوا",
+   "arabizi": "ma3aya · ma3aku",
+   "imp": 1
+  },
+  {
+   "id": "voc-preposicoes-au-walla",
+   "cat": "preposicoes",
+   "catLabel": "Preposições e conectores",
+   "pt": "ou (entre opções) · ou então",
+   "ar": "أو · ولا",
+   "arabizi": "au · walla",
+   "imp": 1
+  },
+  {
+   "id": "voc-preposicoes-orayeb-meni-menak-menek-menha-menku",
+   "cat": "preposicoes",
+   "catLabel": "Preposições e conectores",
+   "pt": "perto de mim · de você (m/f) · dela · de vocês — Aula 84",
+   "ar": "قُرَيِب مِني · مِنَك / مِنِك · مِنها · مِنكوا",
+   "arabizi": "orayeb meni · menak / menek · menha · menku",
+   "imp": 1
+  },
+  {
+   "id": "voc-preposicoes-be3id-3ani-3anha-3anhom",
+   "cat": "preposicoes",
+   "catLabel": "Preposições e conectores",
+   "pt": "longe de mim · dela · deles — Aula 84",
+   "ar": "بِعيد عَني · عَنها · عَنهُم",
+   "arabizi": "be3id 3ani · 3anha · 3anhom",
+   "imp": 1
+  },
+  {
+   "id": "voc-preposicoes-gamby-gambaha-gambena",
+   "cat": "preposicoes",
+   "catLabel": "Preposições e conectores",
+   "pt": "ao meu lado · ao lado dela · ao nosso lado — Aulas 84-85",
+   "ar": "جَنبي · جَنبَها · جَنبِنا",
+   "arabizi": "gamby · gambaha · gambena",
+   "imp": 1
+  },
+  {
+   "id": "voc-preposicoes-be-bel3arabi-shay-bellaban-beltayara",
+   "cat": "preposicoes",
+   "catLabel": "Preposições e conectores",
+   "pt": "bi- = em (idioma) · com (comida) · de (transporte) — Aula 90",
+   "ar": "بِـ · بالعربي · شاي باللبن · بالطيارة",
+   "arabizi": "be- · bel3arabi · shay bellaban · beltayara",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-ma-verbo-sh",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "«Sanduíche» — o ما...ـش envolve o verbo como o pão envolve o recheio (imagem da professora)",
+   "ar": "ما + الفِعل + ـش",
+   "arabizi": "ma + verbo + sh",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-o-som-muda-a-escrita-nao",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "AULA 78 · mudanças fonéticas dentro da sanduíche: U→O · I→E · B→P · G→K",
+   "ar": "ما + الفِعل + ـش",
+   "arabizi": "o som muda, a escrita não",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-e7na-maben7epsh",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "B→P · nós não gostamos",
+   "ar": "احنا مابنحبِش",
+   "arabizi": "E7na maben7epsh",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-enta-mabteshrapsh",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "B→P · você não bebe",
+   "ar": "انتَ مابتشَربش",
+   "arabizi": "Enta mabteshrapsh",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-heya-mabet7epesh",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "B→P · ela não gosta",
+   "ar": "هي مابتحِبش",
+   "arabizi": "heya mabet7epesh",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-mabietfaraksh",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "G→K · ele não assiste",
+   "ar": "مابيتفرجش",
+   "arabizi": "mabietfaraksh",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-enta-mabete8selsh",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "I→E · você não escova",
+   "ar": "انتَ مابتغسلش",
+   "arabizi": "Enta mabete8selsh",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-entu-mabetakolush",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "U→O · vocês não comem (forma derivada, não ditada em aula)",
+   "ar": "انتوا مابتاكلوش",
+   "arabizi": "Entu mabetakolush",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-ana-maba7ebesh",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "⚠ a mudança é de SOM, não de escrita — a professora também escreve maba7ebesh para أنا مابحبش",
+   "ar": "أنا مابحبش",
+   "arabizi": "Ana maba7ebesh",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-ana-mesh-brazily",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "1· sem verbo: não sou brasileiro",
+   "ar": "أنا مِش برازيلي",
+   "arabizi": "Ana mesh brazily",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-ana-mesh-esmy-mohamed",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "1· sem verbo: não me chamo Mohamed",
+   "ar": "أنا مِش اسمي مَحَمد",
+   "arabizi": "Ana mesh esmy Mohamed",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-ana-mesh-mei7tag-maya",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "2· verbo irregular: não preciso de água",
+   "ar": "أنا مِش مِحتاج ماية",
+   "arabizi": "Ana mesh mei7tag maya",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-ana-mesh-3aeiz-a5rog-bokra",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "2· verbo irregular: não quero sair amanhã",
+   "ar": "أنا مِش عايِز أخرُج بُكرة",
+   "arabizi": "Ana mesh 3aeiz a5rog bokra",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-ana-mabakolsh-la7ma",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "3· presente (ما...ـش): não como carne",
+   "ar": "أنا ماباكُلش لَحمة",
+   "arabizi": "Ana mabakolsh la7ma",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-ana-mesh-bakol-la7ma",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "3· presente (مِش): não como carne",
+   "ar": "أنا مِش باكُل لَحمة",
+   "arabizi": "Ana mesh bakol la7ma",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-ana-mabnamsh-badry-kol-youm",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "3· presente: não durmo cedo todos os dias",
+   "ar": "أنا مابنامش بَدري كل يوم",
+   "arabizi": "Ana mabnamsh badry kol youm",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-ana-mesh-haru7-elcinema-bokra",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "4· futuro (só مِش): não vou ao cinema amanhã",
+   "ar": "أنا مِش هَروح السينما بكرة",
+   "arabizi": "Ana mesh haru7 elcinema bokra",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-ali-mesh-haieshta8al-elosbu3-elgay",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "4· futuro: Ali não vai trabalhar na semana que vem",
+   "ar": "علي مِش هيشتغل الأسبوع الجاي",
+   "arabizi": "Ali mesh haieshta8al elosbu3 elgay",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-3ashan-matakolsh-barra",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "5· para não … : para não comer fora",
+   "ar": "عشان ماتاكُلش برة",
+   "arabizi": "3ashan matakolsh barra",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-3ashan-maru7sh-elmaktab",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "5· para não … : para não ir ao escritório",
+   "ar": "عشان ماروحش المَكتب",
+   "arabizi": "3ashan maru7sh elmaktab",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-ana-maro7tesh-elsupermarket-embare7",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "6· passado (ما...ـش): não fui ao supermercado ontem",
+   "ar": "أنا مارُحتش السوبرماركت امبارح",
+   "arabizi": "Ana maro7tesh elsupermarket embare7",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-e3mel-keda",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "7· imperativo: faça isso",
+   "ar": "اِعمِل كِدة",
+   "arabizi": "E3mel keda",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-mate3melsh-keda",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "7· imperativo negativo: não faça aquilo",
+   "ar": "ماتِعمِلش كِدة",
+   "arabizi": "Mate3melsh keda",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-ana-3aref-ana-mesh-3aref",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "eu sei / eu não sei",
+   "ar": "أنا عارِف / أنا مِش عارِف",
+   "arabizi": "Ana 3aref / Ana mesh 3aref",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-ana-mabaraua2sh-elbeit-bas-ana-banadaf-o",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "«bas» com negação: não arrumo a casa, mas eu limpo o meu quarto",
+   "ar": "أنا مابَرَوقش البيت بس أنا بَنَضَف أوضتي",
+   "arabizi": "Ana mabaraua2sh elbeit bas ana banadaf odty",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-mabte2rash-leh-mabte2rish-leh",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "pergunta negativa (m / f): por que você não lê?",
+   "ar": "مابتقراش … ليه؟ / مابتقريش … ليه؟",
+   "arabizi": "mabte2rash … leh? / mabte2rish … leh?",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-ma3and-sh",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "AULA 79 · não ter: ما + عَند + ـش",
+   "ar": "ماعَندي...ش",
+   "arabizi": "ma3and...sh",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-ana-ma3andish",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "eu não tenho",
+   "ar": "أنا ماعنديش",
+   "arabizi": "Ana ma3andish",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-enta-ma3andaksh",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "você não tem (m)",
+   "ar": "انتَ ماعَندَكش",
+   "arabizi": "Enta ma3andaksh",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-enti-ma3andekish",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "você não tem (f)",
+   "ar": "انتي ماعندِكيش",
+   "arabizi": "Enti ma3andekish",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-howa-ma3andush",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "ele não tem",
+   "ar": "هُوَ ماعندوش",
+   "arabizi": "Howa ma3andush",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-heya-ma3andahash",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "ela não tem",
+   "ar": "هي ماعندَهاش",
+   "arabizi": "Heya ma3andahash",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-e7na-ma3andenash",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "nós não temos",
+   "ar": "احنا ماعَندِناش",
+   "arabizi": "E7na ma3andenash",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-entu-ma3andokush",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "vocês não têm",
+   "ar": "انتوا ماعندكوش",
+   "arabizi": "Entu ma3andokush",
+   "imp": 1
+  },
+  {
+   "id": "voc-negacao-homa-ma3andohomsh",
+   "cat": "negacao",
+   "catLabel": "Negação · مِش / ما...ـش",
+   "pt": "eles não têm",
+   "ar": "هُما ماعَندُهُمش",
+   "arabizi": "Homa ma3andohomsh",
+   "imp": 1
+  },
+  {
+   "id": "voc-transporte-3arabeya",
+   "cat": "transporte",
+   "catLabel": "Transporte",
+   "pt": "carro",
+   "ar": "عَرَبية",
+   "arabizi": "3arabeya",
+   "imp": 1
+  },
+  {
+   "id": "voc-transporte-bel-3arabeya",
+   "cat": "transporte",
+   "catLabel": "Transporte",
+   "pt": "de carro",
+   "ar": "بالعَرَبية",
+   "arabizi": "bel-3arabeya",
+   "imp": 1
+  },
+  {
+   "id": "voc-transporte-el-metro",
+   "cat": "transporte",
+   "catLabel": "Transporte",
+   "pt": "metrô",
+   "ar": "المِترو",
+   "arabizi": "el-metro",
+   "imp": 1
+  },
+  {
+   "id": "voc-transporte-bel-metro",
+   "cat": "transporte",
+   "catLabel": "Transporte",
+   "pt": "de metrô",
+   "ar": "بالمِترو",
+   "arabizi": "bel-metro",
+   "imp": 1
+  },
+  {
+   "id": "voc-transporte-otobis",
+   "cat": "transporte",
+   "catLabel": "Transporte",
+   "pt": "ônibus",
+   "ar": "أوتوبيس",
+   "arabizi": "otobis",
+   "imp": 1
+  },
+  {
+   "id": "voc-transporte-ta5od-el-otobis",
+   "cat": "transporte",
+   "catLabel": "Transporte",
+   "pt": "pegar o ônibus",
+   "ar": "تاخُد الأوتوبيس",
+   "arabizi": "ta5od el-otobis",
+   "imp": 1
+  },
+  {
+   "id": "voc-transporte-taksy",
+   "cat": "transporte",
+   "catLabel": "Transporte",
+   "pt": "táxi",
+   "ar": "تاكسي",
+   "arabizi": "taksy",
+   "imp": 1
+  },
+  {
+   "id": "voc-transporte-motosekl",
+   "cat": "transporte",
+   "catLabel": "Transporte",
+   "pt": "motocicleta",
+   "ar": "موتوسيكل",
+   "arabizi": "motosekl",
+   "imp": 1
+  },
+  {
+   "id": "voc-transporte-3agala",
+   "cat": "transporte",
+   "catLabel": "Transporte",
+   "pt": "bicicleta",
+   "ar": "عَجَلة",
+   "arabizi": "3agala",
+   "imp": 1
+  },
+  {
+   "id": "voc-transporte-tayara",
+   "cat": "transporte",
+   "catLabel": "Transporte",
+   "pt": "avião",
+   "ar": "طَيّارة",
+   "arabizi": "tayara",
+   "imp": 1
+  },
+  {
+   "id": "voc-transporte-2atr",
+   "cat": "transporte",
+   "catLabel": "Transporte",
+   "pt": "trem",
+   "ar": "قَطر",
+   "arabizi": "2atr",
+   "imp": 1
+  },
+  {
+   "id": "voc-transporte-3ala-regly",
+   "cat": "transporte",
+   "catLabel": "Transporte",
+   "pt": "a pé",
+   "ar": "على رِجلي",
+   "arabizi": "3ala regly",
+   "imp": 1
+  },
+  {
+   "id": "voc-transporte-microbus",
+   "cat": "transporte",
+   "catLabel": "Transporte",
+   "pt": "micro-ônibus",
+   "ar": "ميكروباص",
+   "arabizi": "microbus",
+   "imp": 1
+  },
+  {
+   "id": "voc-transporte-markeb",
+   "cat": "transporte",
+   "catLabel": "Transporte",
+   "pt": "barco",
+   "ar": "مَركِب",
+   "arabizi": "markeb",
+   "imp": 1
+  },
+  {
+   "id": "voc-transporte-safina",
+   "cat": "transporte",
+   "catLabel": "Transporte",
+   "pt": "navio",
+   "ar": "سَفينة",
+   "arabizi": "safina",
+   "imp": 1
+  },
+  {
+   "id": "voc-transporte-mashy",
+   "cat": "transporte",
+   "catLabel": "Transporte",
+   "pt": "a pé (caminhando)",
+   "ar": "مَشي",
+   "arabizi": "mashy",
+   "imp": 1
+  },
+  {
+   "id": "voc-transporte-el-mouaslat-el-3ama",
+   "cat": "transporte",
+   "catLabel": "Transporte",
+   "pt": "transporte público",
+   "ar": "المواصلات العامة",
+   "arabizi": "el mouaslat el 3ama",
+   "imp": 1
+  },
+  {
+   "id": "voc-transporte-sayara",
+   "cat": "transporte",
+   "catLabel": "Transporte",
+   "pt": "carro (variante da Aula 79)",
+   "ar": "سَيارة",
+   "arabizi": "sayara",
+   "imp": 1
+  },
+  {
+   "id": "voc-transporte-beskeleta",
+   "cat": "transporte",
+   "catLabel": "Transporte",
+   "pt": "bicicleta (variante da Aula 80)",
+   "ar": "بِسكِلِتة",
+   "arabizi": "beskeleta",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-sa3a",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "hora / relógio",
+   "ar": "ساعة",
+   "arabizi": "sa3a",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-el-sa3a-tamanya",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "às 8 horas",
+   "ar": "الساعة تَمانية",
+   "arabizi": "el-sa3a tamanya",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-el-sob7",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "manhã",
+   "ar": "الصُبح",
+   "arabizi": "el-sob7",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-el-dohr",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "meio-dia",
+   "ar": "الضُهر",
+   "arabizi": "el-dohr",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-el-3asr-ba3d-el-dohr",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "à tarde",
+   "ar": "العَصر / بَعد الضُهر",
+   "arabizi": "el-3asr / ba3d el-dohr",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-beleil",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "à noite",
+   "ar": "بِليل",
+   "arabizi": "beleil",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-ba3d-bokra",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "depois de amanhã",
+   "ar": "بَعد بُكرة",
+   "arabizi": "ba3d bokra",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-osbu3",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "semana",
+   "ar": "أُسبوع",
+   "arabizi": "osbu3",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-el-osbu3-da",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "esta semana",
+   "ar": "الأُسبوع ده",
+   "arabizi": "el-osbu3 da",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-el-osbu3-elly-gay",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "semana que vem",
+   "ar": "الأُسبوع اللي جاي",
+   "arabizi": "el-osbu3 elly gay",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-shahr",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "mês",
+   "ar": "شَهر",
+   "arabizi": "shahr",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-el-shahr-elly-gay",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "mês que vem",
+   "ar": "الشَهر اللي جاي",
+   "arabizi": "el-shahr elly gay",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-sana",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "ano",
+   "ar": "سَنة",
+   "arabizi": "sana",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-agaza",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "feriado",
+   "ar": "أجازة",
+   "arabizi": "agaza",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-daiman",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "sempre",
+   "ar": "دائِمًا",
+   "arabizi": "daiman",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-we-sa3at",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "outras vezes",
+   "ar": "وساعات",
+   "arabizi": "we sa3at",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-lessa",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "ainda (com negação)",
+   "ar": "لِسة",
+   "arabizi": "lessa",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-7awaly-nos-nos",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "mais ou menos",
+   "ar": "حَوالي / نُص نُص",
+   "arabizi": "7awaly / nos nos",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-2abl-el-sa3a-3ashara",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "antes das 10h",
+   "ar": "قَبل الساعة عَشَرة",
+   "arabizi": "2abl el-sa3a 3ashara",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-zay-kol-yom",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "como todos os dias",
+   "ar": "زي كُل يوم",
+   "arabizi": "zay kol yom",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-3id-milad",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "aniversário",
+   "ar": "عيد مِلاد",
+   "arabizi": "3id milad",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-sa3ten",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "duas horas",
+   "ar": "ساعتين",
+   "arabizi": "sa3ten",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-3id-el-milad",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "Natal",
+   "ar": "عيد الميلاد",
+   "arabizi": "3id el milad",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-el-carnaval",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "Carnaval",
+   "ar": "الكَرنَفال",
+   "arabizi": "el carnaval",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-el-krismas",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "Natal (variante das aulas)",
+   "ar": "الكريسماس",
+   "arabizi": "el krismas",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-ras-elsana",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "ano novo",
+   "ar": "راس السنة",
+   "arabizi": "ras elsana",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-sheta",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "inverno",
+   "ar": "شِتا",
+   "arabizi": "sheta",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-aa5er",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "final / fim de (o final do mês)",
+   "ar": "آخِر",
+   "arabizi": "aa5er",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-de2i2a",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "minuto",
+   "ar": "دِقيقة",
+   "arabizi": "de2i2a",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-elsana-di",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "este ano",
+   "ar": "السَنة دي",
+   "arabizi": "elsana di",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-wa2t",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "tempo (duração)",
+   "ar": "وَقت",
+   "arabizi": "wa2t",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-da2aye2",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "minutos — Aula 87",
+   "ar": "دقايق",
+   "arabizi": "da2aye2",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-ba2aly-sana-bazaker-3arabi",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "faz (tempo) que… · بَقال + sufixo + tempo + verbo (eu: بَقالي) — Aula 87",
+   "ar": "بَقالي سنة بَذاكِر عربي",
+   "arabizi": "ba2aly sana bazaker 3arabi",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-ba2aly-ketir",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "faz muito tempo que eu…",
+   "ar": "بَقالي كتير",
+   "arabizi": "ba2aly ketir",
+   "imp": 1
+  },
+  {
+   "id": "voc-tempo-tul-7ayaty",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "toda a minha vida",
+   "ar": "طول حياتي",
+   "arabizi": "tul 7ayaty",
+   "imp": 1
+  },
+  {
+   "id": "voc-sentimentos-farkasha",
+   "cat": "sentimentos",
+   "catLabel": "Sentimentos e estados",
+   "pt": "bagunça (substantivo) — Aula 87",
+   "ar": "فَركَشة",
+   "arabizi": "farkasha",
+   "imp": 1
+  },
+  {
+   "id": "voc-sentimentos-nefsak-nefsek-nefso-nefsaha",
+   "cat": "sentimentos",
+   "catLabel": "Sentimentos e estados",
+   "pt": "vontade: você m/f · ele · ela",
+   "ar": "نِفسَك / نِفسِك · نِفسُه · نِفسَها",
+   "arabizi": "nefsak / nefsek · nefso · nefsaha",
+   "imp": 1
+  },
+  {
+   "id": "voc-sentimentos-nefsena-nefsoku-nefsohom",
+   "cat": "sentimentos",
+   "catLabel": "Sentimentos e estados",
+   "pt": "vontade: nós · vocês · eles",
+   "ar": "نِفسِنا · نِفسُكوا · نِفسُهُم",
+   "arabizi": "nefsena · nefsoku · nefsohom",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-kebir",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "grande",
+   "ar": "كِبير",
+   "arabizi": "kebir",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-so8ayar",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "pequeno",
+   "ar": "صُغَيَر",
+   "arabizi": "so8ayar",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-gedid-gedida",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "novo / nova",
+   "ar": "جِديد / جِديدة",
+   "arabizi": "gedid / gedida",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-2adim",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "velho / antigo",
+   "ar": "قَديم",
+   "arabizi": "2adim",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-8aly",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "caro",
+   "ar": "غالي",
+   "arabizi": "8aly",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-re5is",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "barato",
+   "ar": "رِخيص",
+   "arabizi": "re5is",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-gamil-7elw",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "bonito",
+   "ar": "جَميل / حِلو",
+   "arabizi": "gamil / 7elw",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-we7esh",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "feio",
+   "ar": "وِحِش",
+   "arabizi": "we7esh",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-nedif",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "limpo",
+   "ar": "نِضيف",
+   "arabizi": "nedif",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-wesi5",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "sujo",
+   "ar": "وِسِخ",
+   "arabizi": "wesi5",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-be3id",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "longe",
+   "ar": "بِعيد",
+   "arabizi": "be3id",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-2orayeb",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "perto",
+   "ar": "قُرَيَب",
+   "arabizi": "2orayeb",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-malyan",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "cheio",
+   "ar": "مَليان",
+   "arabizi": "malyan",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-mo5talef-mo5talefa",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "diferente (m / f)",
+   "ar": "مُختَلِف / مُختَلِفة",
+   "arabizi": "mo5talef / mo5talefa",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-el-mofadal-el-mofadala",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "favorito / favorita",
+   "ar": "المُفَضَل / المُفَضَلة",
+   "arabizi": "el-mofadal / el-mofadala",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-8any-8aneya",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "rico / rica",
+   "ar": "غَني / غَنية",
+   "arabizi": "8any / 8aneya",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-sahl",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "fácil",
+   "ar": "سَهل",
+   "arabizi": "sahl",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-sa3b",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "difícil",
+   "ar": "صَعب",
+   "arabizi": "sa3b",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-gahez",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "pronto",
+   "ar": "جاهِز",
+   "arabizi": "gahez",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-gahza",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "pronta (f) — Aula 87",
+   "ar": "جاهزة",
+   "arabizi": "gahza",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-mohem",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "importante",
+   "ar": "مُهِم",
+   "arabizi": "mohem",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-taza",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "fresco/a",
+   "ar": "طازة",
+   "arabizi": "taza",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-3ady",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "normal",
+   "ar": "عادي",
+   "arabizi": "3ady",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-maxhur-maxhura",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "famoso (m/f)",
+   "ar": "مَشهور / مَشهورة",
+   "arabizi": "maxhur / maxhura",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-hady-hadya",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "calmo / quieto (m/f)",
+   "ar": "هادي / هادية",
+   "arabizi": "hady / hadya",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-laziz-laziza",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "delicioso (m/f)",
+   "ar": "لَذيذ / لَذيذة",
+   "arabizi": "laziz / laziza",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-tayeb-tayeba",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "bondoso / bom (m/f)",
+   "ar": "طَيِب / طَيبة",
+   "arabizi": "tayeb / tayeba",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-sa7i7",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "correto / verdadeiro",
+   "ar": "صَحيح",
+   "arabizi": "sa7i7",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-sa7",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "certo",
+   "ar": "صَح",
+   "arabizi": "sa7",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-basit-basita",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "simples (m/f)",
+   "ar": "بَسيط / بَسيطة",
+   "arabizi": "basit / basita",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-monazam",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "organizado",
+   "ar": "مُنَظَم",
+   "arabizi": "monazam",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-3ala-elma3ash",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "aposentado/a (lit. na aposentadoria)",
+   "ar": "على المَعاش",
+   "arabizi": "3ala elma3ash",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-taqlidy",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "típico/a",
+   "ar": "تَقليدي",
+   "arabizi": "taqlidy",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-zaki-zakeya",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "inteligente (m/f)",
+   "ar": "ذَكي / ذَكية",
+   "arabizi": "zaki / zakeya",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-so8ayar-so8ayara",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "jovem / pequeno (m/f)",
+   "ar": "صُغَيَر / صُغَيَرة",
+   "arabizi": "so8ayar / so8ayara",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-romansey",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "romântico",
+   "ar": "رومانسي",
+   "arabizi": "romansey",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-ro3b",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "de terror",
+   "ar": "رُعب",
+   "arabizi": "ro3b",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-wasa2eki",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "documentário (adj.)",
+   "ar": "وَثائِقي",
+   "arabizi": "wasa2eki",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-se7y",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "saudável",
+   "ar": "صِحي",
+   "arabizi": "se7y",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-2azra2",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "azul",
+   "ar": "أزرَق",
+   "arabizi": "2azra2",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-sahl-sahl-awi",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "fácil / muito fácil",
+   "ar": "سَهل / سَهل أوي",
+   "arabizi": "sahl / sahl awi",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-garayem",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "de crime (séries de crime)",
+   "ar": "جَرايِم",
+   "arabizi": "garayem",
+   "imp": 1
+  },
+  {
+   "id": "voc-adjetivos-latif-latifa-lotaf",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "gentil (m / f · plural) — Aula 89",
+   "ar": "لَطيف / لَطيفة · لُطاف",
+   "arabizi": "latif / latifa · lotaf",
+   "imp": 1
+  },
+  {
+   "id": "voc-intensidade-awi",
+   "cat": "intensidade",
+   "catLabel": "Advérbios de intensidade",
+   "pt": "muito (após adjetivo/verbo)",
+   "ar": "أوي",
+   "arabizi": "awi",
+   "imp": 1
+  },
+  {
+   "id": "voc-intensidade-ketir",
+   "cat": "intensidade",
+   "catLabel": "Advérbios de intensidade",
+   "pt": "muito / bastante",
+   "ar": "كِتير",
+   "arabizi": "ketir",
+   "imp": 1
+  },
+  {
+   "id": "voc-intensidade-shouaya",
+   "cat": "intensidade",
+   "catLabel": "Advérbios de intensidade",
+   "pt": "um pouco",
+   "ar": "شُوَيّة",
+   "arabizi": "shouaya",
+   "imp": 1
+  },
+  {
+   "id": "voc-intensidade-shouayet-7agat",
+   "cat": "intensidade",
+   "catLabel": "Advérbios de intensidade",
+   "pt": "pouco / poucos (poucas coisas)",
+   "ar": "شُوَيّة حاجات",
+   "arabizi": "shouayet 7agat",
+   "imp": 1
+  },
+  {
+   "id": "voc-intensidade-aktar",
+   "cat": "intensidade",
+   "catLabel": "Advérbios de intensidade",
+   "pt": "demais / mais",
+   "ar": "أكتَر",
+   "arabizi": "aktar",
+   "imp": 1
+  },
+  {
+   "id": "voc-intensidade-a2al",
+   "cat": "intensidade",
+   "catLabel": "Advérbios de intensidade",
+   "pt": "menos",
+   "ar": "أَقَل",
+   "arabizi": "a2al",
+   "imp": 1
+  },
+  {
+   "id": "voc-intensidade-kouayes-awi",
+   "cat": "intensidade",
+   "catLabel": "Advérbios de intensidade",
+   "pt": "muito bem",
+   "ar": "كُوَيِس أوي",
+   "arabizi": "kouayes awi",
+   "imp": 1
+  },
+  {
+   "id": "voc-intensidade-beisor3a",
+   "cat": "intensidade",
+   "catLabel": "Advérbios de intensidade",
+   "pt": "rápido",
+   "ar": "بِسُرعة",
+   "arabizi": "beisor3a",
+   "imp": 1
+  },
+  {
+   "id": "voc-intensidade-bebata",
+   "cat": "intensidade",
+   "catLabel": "Advérbios de intensidade",
+   "pt": "devagar",
+   "ar": "بِبَطَه",
+   "arabizi": "bebata",
+   "imp": 1
+  },
+  {
+   "id": "voc-intensidade-begad",
+   "cat": "intensidade",
+   "catLabel": "Advérbios de intensidade",
+   "pt": "de verdade / realmente",
+   "ar": "بِجَد",
+   "arabizi": "begad",
+   "imp": 1
+  },
+  {
+   "id": "voc-intensidade-gidan",
+   "cat": "intensidade",
+   "catLabel": "Advérbios de intensidade",
+   "pt": "muito (após verbo/adj.)",
+   "ar": "جِداً",
+   "arabizi": "gidan",
+   "imp": 1
+  },
+  {
+   "id": "voc-intensidade-akid",
+   "cat": "intensidade",
+   "catLabel": "Advérbios de intensidade",
+   "pt": "com certeza",
+   "ar": "أكيد",
+   "arabizi": "akid",
+   "imp": 1
+  },
+  {
+   "id": "voc-intensidade-tab3an",
+   "cat": "intensidade",
+   "catLabel": "Advérbios de intensidade",
+   "pt": "claro",
+   "ar": "طَبعاً",
+   "arabizi": "tab3an",
+   "imp": 1
+  },
+  {
+   "id": "voc-intensidade-belzat",
+   "cat": "intensidade",
+   "catLabel": "Advérbios de intensidade",
+   "pt": "especialmente",
+   "ar": "بالذات",
+   "arabizi": "belzat",
+   "imp": 1
+  },
+  {
+   "id": "voc-intensidade-besara7a",
+   "cat": "intensidade",
+   "catLabel": "Advérbios de intensidade",
+   "pt": "sinceramente",
+   "ar": "بِصَراحة",
+   "arabizi": "besara7a",
+   "imp": 1
+  },
+  {
+   "id": "voc-intensidade-betalaka",
+   "cat": "intensidade",
+   "catLabel": "Advérbios de intensidade",
+   "pt": "fluentemente",
+   "ar": "بِطَلاقة",
+   "arabizi": "betalaka",
+   "imp": 1
+  },
+  {
+   "id": "voc-intensidade-kefaya",
+   "cat": "intensidade",
+   "catLabel": "Advérbios de intensidade",
+   "pt": "suficiente",
+   "ar": "كِفاية",
+   "arabizi": "kefaya",
+   "imp": 1
+  },
+  {
+   "id": "voc-intensidade-7alan",
+   "cat": "intensidade",
+   "catLabel": "Advérbios de intensidade",
+   "pt": "imediatamente / agora mesmo",
+   "ar": "حالاً",
+   "arabizi": "7alan",
+   "imp": 1
+  },
+  {
+   "id": "voc-intensidade-ta2riban",
+   "cat": "intensidade",
+   "catLabel": "Advérbios de intensidade",
+   "pt": "quase",
+   "ar": "تَقريباً",
+   "arabizi": "ta2riban",
+   "imp": 1
+  },
+  {
+   "id": "voc-pronomes-ana",
+   "cat": "pronomes",
+   "catLabel": "Pronomes pessoais e possessivos",
+   "pt": "eu",
+   "ar": "أنا",
+   "arabizi": "ana",
+   "imp": 1
+  },
+  {
+   "id": "voc-pronomes-enta",
+   "cat": "pronomes",
+   "catLabel": "Pronomes pessoais e possessivos",
+   "pt": "você (m)",
+   "ar": "اِنتَ",
+   "arabizi": "enta",
+   "imp": 1
+  },
+  {
+   "id": "voc-pronomes-enty",
+   "cat": "pronomes",
+   "catLabel": "Pronomes pessoais e possessivos",
+   "pt": "você (f)",
+   "ar": "اِنتي",
+   "arabizi": "enty",
+   "imp": 1
+  },
+  {
+   "id": "voc-pronomes-howa",
+   "cat": "pronomes",
+   "catLabel": "Pronomes pessoais e possessivos",
+   "pt": "ele",
+   "ar": "هُوَ",
+   "arabizi": "howa",
+   "imp": 1
+  },
+  {
+   "id": "voc-pronomes-heya",
+   "cat": "pronomes",
+   "catLabel": "Pronomes pessoais e possessivos",
+   "pt": "ela",
+   "ar": "هِيَ",
+   "arabizi": "heya",
+   "imp": 1
+  },
+  {
+   "id": "voc-pronomes-e7na",
+   "cat": "pronomes",
+   "catLabel": "Pronomes pessoais e possessivos",
+   "pt": "nós",
+   "ar": "اِحنا",
+   "arabizi": "e7na",
+   "imp": 1
+  },
+  {
+   "id": "voc-pronomes-entu",
+   "cat": "pronomes",
+   "catLabel": "Pronomes pessoais e possessivos",
+   "pt": "vocês",
+   "ar": "انتوا",
+   "arabizi": "entu",
+   "imp": 1
+  },
+  {
+   "id": "voc-pronomes-homa",
+   "cat": "pronomes",
+   "catLabel": "Pronomes pessoais e possessivos",
+   "pt": "eles / elas",
+   "ar": "هُما",
+   "arabizi": "homa",
+   "imp": 1
+  },
+  {
+   "id": "voc-pronomes-y-ya",
+   "cat": "pronomes",
+   "catLabel": "Pronomes pessoais e possessivos",
+   "pt": "meu / minha (sufixo)",
+   "ar": "ـي",
+   "arabizi": "-y / -ya",
+   "imp": 1
+  },
+  {
+   "id": "voc-pronomes-ak",
+   "cat": "pronomes",
+   "catLabel": "Pronomes pessoais e possessivos",
+   "pt": "seu / sua (m, sufixo)",
+   "ar": "ـَك",
+   "arabizi": "-ak",
+   "imp": 1
+  },
+  {
+   "id": "voc-pronomes-ek",
+   "cat": "pronomes",
+   "catLabel": "Pronomes pessoais e possessivos",
+   "pt": "seu / sua (f, sufixo)",
+   "ar": "ـِك",
+   "arabizi": "-ek",
+   "imp": 1
+  },
+  {
+   "id": "voc-pronomes-o-u",
+   "cat": "pronomes",
+   "catLabel": "Pronomes pessoais e possessivos",
+   "pt": "dele (sufixo)",
+   "ar": "ـُه",
+   "arabizi": "-o / -u",
+   "imp": 1
+  },
+  {
+   "id": "voc-pronomes-ha",
+   "cat": "pronomes",
+   "catLabel": "Pronomes pessoais e possessivos",
+   "pt": "dela (sufixo)",
+   "ar": "ـها",
+   "arabizi": "-ha",
+   "imp": 1
+  },
+  {
+   "id": "voc-pronomes-na",
+   "cat": "pronomes",
+   "catLabel": "Pronomes pessoais e possessivos",
+   "pt": "nosso (sufixo)",
+   "ar": "ـنا",
+   "arabizi": "-na",
+   "imp": 1
+  },
+  {
+   "id": "voc-pronomes-hom",
+   "cat": "pronomes",
+   "catLabel": "Pronomes pessoais e possessivos",
+   "pt": "deles (sufixo)",
+   "ar": "ـهُم",
+   "arabizi": "-hom",
+   "imp": 1
+  },
+  {
+   "id": "voc-pronomes-nafsy",
+   "cat": "pronomes",
+   "catLabel": "Pronomes pessoais e possessivos",
+   "pt": "eu mesmo/a",
+   "ar": "نَفسي",
+   "arabizi": "nafsy",
+   "imp": 1
+  },
+  {
+   "id": "voc-pronomes-di",
+   "cat": "pronomes",
+   "catLabel": "Pronomes pessoais e possessivos",
+   "pt": "esta (f)",
+   "ar": "دي",
+   "arabizi": "di",
+   "imp": 1
+  },
+  {
+   "id": "voc-pronomes-dol",
+   "cat": "pronomes",
+   "catLabel": "Pronomes pessoais e possessivos",
+   "pt": "esses / essas",
+   "ar": "دول",
+   "arabizi": "dol",
+   "imp": 1
+  },
+  {
+   "id": "voc-pronomes-bita3y",
+   "cat": "pronomes",
+   "catLabel": "Pronomes pessoais e possessivos",
+   "pt": "meu / minha (partícula, vem depois)",
+   "ar": "بِتاعي",
+   "arabizi": "bita3y",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-el-7essab",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "a conta",
+   "ar": "الحِساب",
+   "arabizi": "el-7essab",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-gneh",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "libra egípcia",
+   "ar": "جِنيه",
+   "arabizi": "gneh",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-ba2y",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "troco",
+   "ar": "باقي",
+   "arabizi": "ba2y",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-ha5od",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "vou pegar / vou levar",
+   "ar": "هاخُد",
+   "arabizi": "ha5od",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-online",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "online",
+   "ar": "أونلاين",
+   "arabizi": "online",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-2amis",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "camisa",
+   "ar": "قَميص",
+   "arabizi": "2amis",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-2omsan",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "camisas (plural)",
+   "ar": "قُمصان",
+   "arabizi": "2omsan",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-blousa-tshirt",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "blusa / camiseta",
+   "ar": "بلوزة / تيشرت",
+   "arabizi": "blousa / tshirt",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-bantalon",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "calça",
+   "ar": "بَنطَلون",
+   "arabizi": "bantalon",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-bantalon-jeans",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "calça jeans",
+   "ar": "بَنطَلون جينز",
+   "arabizi": "bantalon jeans",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-gazma",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "sapato",
+   "ar": "جَزمة",
+   "arabizi": "gazma",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-shanta",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "bolsa",
+   "ar": "شَنطة",
+   "arabizi": "shanta",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-ma7faza",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "carteira",
+   "ar": "مَحفَظة",
+   "arabizi": "ma7faza",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-mogauharat",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "joias — Aula 83",
+   "ar": "مُجَوهَرات",
+   "arabizi": "mogauharat",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-5atem",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "anel",
+   "ar": "خاتِم",
+   "arabizi": "5atem",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-barfan",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "perfume",
+   "ar": "بَرفان",
+   "arabizi": "barfan",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-tar7a",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "lenço (de cabeça)",
+   "ar": "طَرحة",
+   "arabizi": "tar7a",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-hedum",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "roupa",
+   "ar": "هِدوم",
+   "arabizi": "hedum",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-hedumy",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "minha roupa",
+   "ar": "هِدومي",
+   "arabizi": "hedumy",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-felus",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "dinheiro",
+   "ar": "فلوس",
+   "arabizi": "felus",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-zoboun",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "cliente",
+   "ar": "زَبون",
+   "arabizi": "zoboun",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-fostan",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "vestido",
+   "ar": "فُستان",
+   "arabizi": "fostan",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-jiba",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "saia",
+   "ar": "جيبة",
+   "arabizi": "jiba",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-leps",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "roupa (peça)",
+   "ar": "لِبس",
+   "arabizi": "leps",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-meqyaj",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "maquiagem",
+   "ar": "مِكياج",
+   "arabizi": "meqyaj",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-hadaya",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "lembrancinhas / presentes",
+   "ar": "هَدايا",
+   "arabizi": "hadaya",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-derham-darahem",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "dirham / dirhams",
+   "ar": "دِرهَم / دراهِم",
+   "arabizi": "derham / darahem",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-2alam",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "caneta",
+   "ar": "قَلَم",
+   "arabizi": "2alam",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-felos-cash",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "dinheiro em notas / em espécie",
+   "ar": "فلوس كاش",
+   "arabizi": "felos cash",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-kandura-galabeya",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "kandura / galabeya",
+   "ar": "كَندورة / جَلابية",
+   "arabizi": "kandura / galabeya",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-korassa-kashkul",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "caderno — Aula 85",
+   "ar": "كُراسة / كَشكول",
+   "arabizi": "korassa / kashkul",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-banatil",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "calças (várias)",
+   "ar": "بَناطيل",
+   "arabizi": "banatil",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-hedeya",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "presente",
+   "ar": "هِدية",
+   "arabizi": "hedeya",
+   "imp": 1
+  },
+  {
+   "id": "voc-compras-rasid",
+   "cat": "compras",
+   "catLabel": "Compras e dinheiro",
+   "pt": "crédito (do celular) — Aula 90",
+   "ar": "رَصيد",
+   "arabizi": "rasid",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-7aga",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "coisa",
+   "ar": "حاجة",
+   "arabizi": "7aga",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-7agat",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "coisas",
+   "ar": "حاجات",
+   "arabizi": "7agat",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-beeideiku",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "com as (vossas) mãos",
+   "ar": "بِإيديكوا",
+   "arabizi": "bêeideiku",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-ay-7aga",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "qualquer coisa",
+   "ar": "أي حاجة",
+   "arabizi": "ay 7aga",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-7ad",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "alguém / ninguém",
+   "ar": "حُد",
+   "arabizi": "7ad",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-kol",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "todos / cada",
+   "ar": "كُل",
+   "arabizi": "kol",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-marra",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "vez",
+   "ar": "مَرّة",
+   "arabizi": "marra",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-marra-tanya",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "outra vez",
+   "ar": "مَرّة تانية",
+   "arabizi": "marra tanya",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-emte7an",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "prova",
+   "ar": "اِمتِحان",
+   "arabizi": "emte7an",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-7essa",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "aula",
+   "ar": "حِصة",
+   "arabizi": "7essa",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-ketab",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "livro",
+   "ar": "كِتاب",
+   "arabizi": "ketab",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-kotob",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "livros",
+   "ar": "كُتُب",
+   "arabizi": "kotob",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-sura-suar",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "foto / fotos",
+   "ar": "صورة / صُوَر",
+   "arabizi": "sura / suar",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-7afla",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "festa",
+   "ar": "حَفلة",
+   "arabizi": "7afla",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-lo8a-lo8at",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "idioma / idiomas (Aula 80)",
+   "ar": "لُغة / لُغات",
+   "arabizi": "lo8a / lo8at",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-ana-2arart",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "eu decidi (passado)",
+   "ar": "أنا قَرَرت",
+   "arabizi": "Ana 2arart",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-seif",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "verão",
+   "ar": "صيف",
+   "arabizi": "seif",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-safar",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "viagem",
+   "ar": "سَفَر",
+   "arabizi": "safar",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-mossiqa",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "música (gênero / som)",
+   "ar": "موسيقى",
+   "arabizi": "mossiQa",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-o8neya",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "canção",
+   "ar": "أُغنية",
+   "arabizi": "o8neya",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-a8any",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "canções",
+   "ar": "أَغاني",
+   "arabizi": "a8any",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-el-radyo",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "rádio",
+   "ar": "الراديو",
+   "arabizi": "el-radyo",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-film",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "filme",
+   "ar": "فيلم",
+   "arabizi": "film",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-filmy-el-mufadal",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "meu filme favorito",
+   "ar": "فيلمي المُفَضَل",
+   "arabizi": "filmy el-mufadal",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-3arusa",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "dica / pista",
+   "ar": "عَروسة",
+   "arabizi": "3arusa",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-reyada",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "esporte",
+   "ar": "رياضة",
+   "arabizi": "reyada",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-koret-kadam",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "futebol",
+   "ar": "كُرة قَدَم",
+   "arabizi": "koret kadam",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-el-kora",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "futebol (forma usada nas aulas)",
+   "ar": "الكورة",
+   "arabizi": "el-kora",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-la3iba",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "jogadores — Aula 83",
+   "ar": "لَعيبة",
+   "arabizi": "la3iba",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-video-games",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "videogame(s)",
+   "ar": "فيديو جيمز",
+   "arabizi": "video games",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-basket",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "basquete",
+   "ar": "باسكِت",
+   "arabizi": "basket",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-samba",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "samba (dança)",
+   "ar": "سامبا",
+   "arabizi": "samba",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-tenis",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "tênis (esporte)",
+   "ar": "تنس",
+   "arabizi": "tenis",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-piano",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "piano",
+   "ar": "بيانو",
+   "arabizi": "piano",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-guitar",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "violão / guitarra",
+   "ar": "جيتار",
+   "arabizi": "guitar",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-kamanga-kaman",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "violino",
+   "ar": "كَمَنجة / كَمان",
+   "arabizi": "kamanga / kaman",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-tabla",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "tambor",
+   "ar": "طَبلة",
+   "arabizi": "tabla",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-beliardu",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "bilhar",
+   "ar": "بِلياردو",
+   "arabizi": "beliardu",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-shams",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "sol",
+   "ar": "شَمس",
+   "arabizi": "shams",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-computer",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "computador",
+   "ar": "كُمبيوتَر",
+   "arabizi": "computer",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-mobile",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "celular",
+   "ar": "موبايل",
+   "arabizi": "mobile",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-laptop",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "laptop / notebook",
+   "ar": "لابتوب",
+   "arabizi": "laptop",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-tablet",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "tablet",
+   "ar": "تابلت",
+   "arabizi": "tablet",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-daua",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "remédio",
+   "ar": "دوا",
+   "arabizi": "daua",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-lo8at",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "idiomas",
+   "ar": "لُغات",
+   "arabizi": "lo8at",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-3arabi",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "árabe",
+   "ar": "عَرَبي",
+   "arabizi": "3arabi",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-engelizy",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "inglês",
+   "ar": "اِنجليزي",
+   "arabizi": "engelizy",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-borto8aly",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "português",
+   "ar": "بُرتُغالي",
+   "arabizi": "borto8aly",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-ward",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "flores",
+   "ar": "وَرد",
+   "arabizi": "ward",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-kas-el-3alam",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "Copa do Mundo",
+   "ar": "كاس العالَم",
+   "arabizi": "kas el-3alam",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-ay",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "qualquer",
+   "ar": "أي",
+   "arabizi": "ay",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-nafs-el-sha2a",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "mesmo apartamento",
+   "ar": "نَفس الشَقة",
+   "arabizi": "nafs el-sha2a",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-fe3lan",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "realmente / de verdade",
+   "ar": "فِعلاً",
+   "arabizi": "fe3lan",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-sha3r",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "cabelo",
+   "ar": "شَعر",
+   "arabizi": "sha3r",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-5elal-el-osbu3",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "durante a semana",
+   "ar": "خِلال الأُسبوع",
+   "arabizi": "5elal el-osbu3",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-telefezion",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "televisão",
+   "ar": "تلفزيون",
+   "arabizi": "telefezion",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-aflam",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "filmes",
+   "ar": "أفلام",
+   "arabizi": "aflam",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-mosalsal",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "série / novela",
+   "ar": "مُسَلسَل",
+   "arabizi": "mosalsal",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-mosalsalat",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "séries / novelas",
+   "ar": "مُسَلسَلات",
+   "arabizi": "mosalsalat",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-nashara",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "jornal (na TV)",
+   "ar": "نَشرة",
+   "arabizi": "nashara",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-match",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "jogo / partida",
+   "ar": "ماتش",
+   "arabizi": "match",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-magala",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "revista",
+   "ar": "مَجَلة",
+   "arabizi": "magala",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-dars",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "lição",
+   "ar": "دَرس",
+   "arabizi": "dars",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-fezya",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "matéria: física",
+   "ar": "فيزيا",
+   "arabizi": "fezya",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-kemya",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "matéria: química",
+   "ar": "كِميا",
+   "arabizi": "kemya",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-nas-ketir",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "muitas pessoas",
+   "ar": "ناس كِتير",
+   "arabizi": "nas ketir",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-showaya",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "um pouco",
+   "ar": "شوية",
+   "arabizi": "showaya",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-cream",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "creme",
+   "ar": "كريم",
+   "arabizi": "cream",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-batkalem-3an",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "falar sobre (eu falo sobre)",
+   "ar": "بتكلم عَن",
+   "arabizi": "batkalem 3an",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-cv",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "currículo",
+   "ar": "سي في",
+   "arabizi": "CV",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-resala",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "mensagem",
+   "ar": "رِسالة",
+   "arabizi": "resala",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-gawab",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "carta",
+   "ar": "جَواب",
+   "arabizi": "gawab",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-e-mail",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "e-mail",
+   "ar": "إيميل",
+   "arabizi": "e-mail",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-mashru3",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "projeto",
+   "ar": "مَشروع",
+   "arabizi": "mashru3",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-mosa3da",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "ajuda",
+   "ar": "مُساعدة",
+   "arabizi": "mosa3da",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-mofag2a",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "surpresa",
+   "ar": "مُفاجأة",
+   "arabizi": "mofag2a",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-ser",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "segredo",
+   "ar": "سِر",
+   "arabizi": "ser",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-naga7",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "sucesso",
+   "ar": "نَجاح",
+   "arabizi": "naga7",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-maua3in",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "louça",
+   "ar": "مواعين",
+   "arabizi": "maua3in",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-el7ar",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "calor (o)",
+   "ar": "الحَر",
+   "arabizi": "el7ar",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-dausha",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "barulho",
+   "ar": "دوشة",
+   "arabizi": "dausha",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-estana-estany",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "espera! (m / f)",
+   "ar": "اِستَنى / اِستَني",
+   "arabizi": "estana / estany",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-houayat",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "hobbies",
+   "ar": "هوايات",
+   "arabizi": "houayat",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-seba7a",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "natação",
+   "ar": "سِباحة",
+   "arabizi": "seba7a",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-koret-sala",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "basquete (lit. bola de cesto)",
+   "ar": "كُرة سَلة",
+   "arabizi": "koret sala",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-golf",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "golfe",
+   "ar": "جولف",
+   "arabizi": "golf",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-action",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "ação",
+   "ar": "أكشن",
+   "arabizi": "action",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-mo8amarat",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "aventura",
+   "ar": "مُغامَرات",
+   "arabizi": "mo8amarat",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-cartoon",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "desenho animado",
+   "ar": "كارتون",
+   "arabizi": "cartoon",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-rock-pop-classic",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "rock / pop / clássica",
+   "ar": "روك / بوب / كلاسيك",
+   "arabizi": "rock / pop / classic",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-mashaya",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "esteira",
+   "ar": "مَشاية",
+   "arabizi": "mashaya",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-basbor",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "passaporte",
+   "ar": "باسبور",
+   "arabizi": "basbor",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-7amam-shams",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "banho de sol",
+   "ar": "حَمّام شَمس",
+   "arabizi": "7amam shams",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-asnan",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "dentes",
+   "ar": "أسنان",
+   "arabizi": "asnan",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-dauafer",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "unhas",
+   "ar": "ضَوافِر",
+   "arabizi": "dauafer",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-senan",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "dentes (variante das aulas)",
+   "ar": "سِنان",
+   "arabizi": "senan",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-el-7a2i2a",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "a verdade",
+   "ar": "الحَقيقة",
+   "arabizi": "el 7a2i2a",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-el-shonat",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "as malas",
+   "ar": "الشُنَط",
+   "arabizi": "el shonat",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-sabab",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "motivo",
+   "ar": "سَبَب",
+   "arabizi": "sabab",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-wasfa",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "receita (de cozinha)",
+   "ar": "وَصفة",
+   "arabizi": "wasfa",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-dosh",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "banho (ducha)",
+   "ar": "دُش",
+   "arabizi": "dosh",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-a5od-dosh",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "tomar banho",
+   "ar": "آخُد دُش",
+   "arabizi": "a5od dosh",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-se7a",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "saúde",
+   "ar": "صِحة",
+   "arabizi": "se7a",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-ba5aly-baly-ne5aly-balna",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "cuidar de / prestar atenção em (eu · nós)",
+   "ar": "بَخَلي بالي · نِخَلَي بالنا",
+   "arabizi": "ba5aly baly · ne5aly balna",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-kamanga",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "violino",
+   "ar": "كَمانجا",
+   "arabizi": "kamanga",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-vidiohat",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "vídeos",
+   "ar": "فيديوهات",
+   "arabizi": "vidiohat",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-7assa",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "aula (período de aula) — Aula 85",
+   "ar": "حِصة",
+   "arabizi": "7assa",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-3amatan",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "em geral — Aula 88",
+   "ar": "عامةً",
+   "arabizi": "3amatan",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-moshkela",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "problema — Aula 90",
+   "ar": "مُشكِلة",
+   "arabizi": "moshkela",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-kaza-marra-marrat",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "várias vezes · vezes — Aula 90",
+   "ar": "كِذا مَرّة · مَرّات",
+   "arabizi": "kaza marra · marrat",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-nadara",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "óculos — Aula 90",
+   "ar": "نَضارة",
+   "arabizi": "nadara",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-wageb",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "TPC / dever de casa — Aula 89",
+   "ar": "واجِب",
+   "arabizi": "wageb",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-elnas-elkebira",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "idosos (as pessoas mais velhas) — Aula 89",
+   "ar": "الناس الكبيرة",
+   "arabizi": "elnas elkebira",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-5alas-bas-kefaya",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "chega! / basta! — Aula 89",
+   "ar": "خَلاص / بَس / كِفاية",
+   "arabizi": "5alas / bas / kefaya",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-vedio",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "vídeo (singular) — Aula 90",
+   "ar": "فيديو",
+   "arabizi": "vedio",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-kelma",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "palavra — Aula 91",
+   "ar": "كِلمة",
+   "arabizi": "kelma",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-7ekaya-qessa-7aduta",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "história / conto (para crianças) — Aula 93",
+   "ar": "حِكاية / قِصة / حَدوتة",
+   "arabizi": "7ekaya / qessa / 7aduta",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-lo8atein",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "duas línguas — Aula 91",
+   "ar": "لُغتين",
+   "arabizi": "lo8atein",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-shad-3adaly",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "cãibra — Aula 91",
+   "ar": "شَد عَضَلي",
+   "arabizi": "shad 3adaly",
+   "imp": 1
+  },
+  {
+   "id": "voc-outros-ana-ba5es",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "eu emagreço (emagrecer) — Aula 91",
+   "ar": "أنا بَخِس",
+   "arabizi": "Ana ba5es",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-ana-ha",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "[regra] eu (futuro)",
+   "ar": "أنا هَـ…",
+   "arabizi": "Ana ha…",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-howa-hay",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "[regra] ele (futuro)",
+   "ar": "هُوَ هَيـ…",
+   "arabizi": "Howa hay…",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-heya-hat",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "[regra] ela (futuro)",
+   "ar": "هِيَ هَتـ…",
+   "arabizi": "Heya hat…",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-enta-hat",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "[regra] você m (futuro)",
+   "ar": "انتَ هَتـ…",
+   "arabizi": "Enta hat…",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-enty-hat-y",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "[regra] você f (futuro)",
+   "ar": "انتي هَتـ…ـي",
+   "arabizi": "Enty hat…y",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-e7na-han",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "[regra] nós (futuro)",
+   "ar": "احنا هَنـ…",
+   "arabizi": "E7na han…",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-ana-hatkalem",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "ex: eu vou falar",
+   "ar": "أنا هَتكَلِم",
+   "arabizi": "Ana hatkalem",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-howa-haishtery",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "ex: ele vai comprar",
+   "ar": "هُوَ هَيشتِري",
+   "arabizi": "Howa haishtery",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-e7na-hansafer",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "ex: nós vamos viajar",
+   "ar": "احنا هَنسافِر",
+   "arabizi": "E7na hansafer",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-fe-el-seif",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "no verão",
+   "ar": "في الصيف",
+   "arabizi": "fe el-seif",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-hat3mel-eh-fe-el-seif",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "O que vai fazer no verão?",
+   "ar": "هَتِعمِل ايه في الصيف؟",
+   "arabizi": "Hat3mel eh fe el-seif?",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-ana-mish-ha",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "[negativo] eu não vou…",
+   "ar": "أنا مِش هَـ…",
+   "arabizi": "Ana mish ha…",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-e7na-mish-han",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "[negativo] nós não vamos…",
+   "ar": "احنا مِش هَنـ…",
+   "arabizi": "E7na mish han…",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-enta-mish-hat",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "[negativo] você m não vai…",
+   "ar": "انتَ مِش هَتـ…",
+   "arabizi": "Enta mish hat…",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-mish-hashtry-7aga",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "ex: não vou comprar nada",
+   "ar": "مِش هَشتِري حاجة",
+   "arabizi": "mish hashtry 7aga",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-mish-haneshtery-7aga",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "ex: não vamos comprar nada",
+   "ar": "مِش هَنِشتِري حاجة",
+   "arabizi": "mish haneshtery 7aga",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-2abl-ma-verb",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "antes de + verbo",
+   "ar": "قَبل ما + فِعل",
+   "arabizi": "2abl ma + verb",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-2abl-ma-teru7-el-7afla",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "ex: antes de ir à festa",
+   "ar": "قَبل ما تِروح الحَفلة",
+   "arabizi": "2abl ma teru7 el-7afla",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-lamma-baru7",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "ex: quando eu for / vou",
+   "ar": "لَمّا بَروح",
+   "arabizi": "lamma baru7",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-kan-haikun",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "[Aula 84] كان / هَيكون = auxiliar «ser» p/ passado e futuro dos irregulares (ex.: عَند)",
+   "ar": "كان / هَيكون",
+   "arabizi": "kan / haikun",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-ana-kan-3andy",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "eu tinha / tive (ter no passado)",
+   "ar": "أنا كان عَندي",
+   "arabizi": "Ana kan 3andy",
+   "imp": 1
+  },
+  {
+   "id": "voc-futuro-ana-haikun-3andy",
+   "cat": "futuro",
+   "catLabel": "Futuro · هَـ",
+   "pt": "eu vou ter (ter no futuro)",
+   "ar": "أنا هَيكون عَندي",
+   "arabizi": "Ana haikun 3andy",
+   "imp": 1
+  },
+  {
+   "id": "voc-numeros-etnen",
+   "cat": "numeros",
+   "catLabel": "Números",
+   "pt": "2 · dois",
+   "ar": "اِتنين",
+   "arabizi": "etnen",
+   "imp": 1
+  },
+  {
+   "id": "voc-numeros-seta",
+   "cat": "numeros",
+   "catLabel": "Números",
+   "pt": "6 · seis",
+   "ar": "سِتة",
+   "arabizi": "seta",
+   "imp": 1
+  },
+  {
+   "id": "voc-numeros-saba3a",
+   "cat": "numeros",
+   "catLabel": "Números",
+   "pt": "7 · sete",
+   "ar": "سَبعة",
+   "arabizi": "saba3a",
+   "imp": 1
+  },
+  {
+   "id": "voc-numeros-tesa3a",
+   "cat": "numeros",
+   "catLabel": "Números",
+   "pt": "9 · nove",
+   "ar": "تِسعة",
+   "arabizi": "tesa3a",
+   "imp": 1
+  },
+  {
+   "id": "voc-numeros-talatashar",
+   "cat": "numeros",
+   "catLabel": "Números",
+   "pt": "13 · treze",
+   "ar": "تَلاتاشر",
+   "arabizi": "talatashar",
+   "imp": 1
+  },
+  {
+   "id": "voc-numeros-setashar",
+   "cat": "numeros",
+   "catLabel": "Números",
+   "pt": "16 · dezesseis",
+   "ar": "سِتاشر",
+   "arabizi": "setashar",
+   "imp": 1
+  },
+  {
+   "id": "voc-numeros-arbe3in",
+   "cat": "numeros",
+   "catLabel": "Números",
+   "pt": "40 · quarenta",
+   "ar": "أربِعين",
+   "arabizi": "arbe3in",
+   "imp": 1
+  },
+  {
+   "id": "voc-numeros-setin",
+   "cat": "numeros",
+   "catLabel": "Números",
+   "pt": "60 · sessenta",
+   "ar": "سِتين",
+   "arabizi": "setin",
+   "imp": 1
+  },
+  {
+   "id": "voc-numeros-auel-aula",
+   "cat": "numeros",
+   "catLabel": "Números",
+   "pt": "1º (m/f)",
+   "ar": "أوّل / أولى",
+   "arabizi": "auel / aula",
+   "imp": 1
+  },
+  {
+   "id": "voc-numeros-tany-tanya",
+   "cat": "numeros",
+   "catLabel": "Números",
+   "pt": "2º (m/f)",
+   "ar": "تاني / تانية",
+   "arabizi": "tany / tanya",
+   "imp": 1
+  },
+  {
+   "id": "voc-numeros-talet-talta",
+   "cat": "numeros",
+   "catLabel": "Números",
+   "pt": "3º (m/f)",
+   "ar": "تالِت / تالتة",
+   "arabizi": "talet / talta",
+   "imp": 1
+  },
+  {
+   "id": "voc-numeros-rabe3-rab3a",
+   "cat": "numeros",
+   "catLabel": "Números",
+   "pt": "4º (m/f)",
+   "ar": "رابِع / رابعة",
+   "arabizi": "rabe3 / rab3a",
+   "imp": 1
+  },
+  {
+   "id": "voc-numeros-5ames-5amsa",
+   "cat": "numeros",
+   "catLabel": "Números",
+   "pt": "5º (m/f)",
+   "ar": "خامِس / خامسة",
+   "arabizi": "5ames / 5amsa",
+   "imp": 1
+  },
+  {
+   "id": "voc-numeros-sades-satsa",
+   "cat": "numeros",
+   "catLabel": "Números",
+   "pt": "6º (m/f)",
+   "ar": "سادِس / سادسة",
+   "arabizi": "sades / satsa",
+   "imp": 1
+  },
+  {
+   "id": "voc-numeros-sabe3-sab3a",
+   "cat": "numeros",
+   "catLabel": "Números",
+   "pt": "7º (m/f)",
+   "ar": "سابِع / سابعة",
+   "arabizi": "sabe3 / sab3a",
+   "imp": 1
+  },
+  {
+   "id": "voc-numeros-tamen-tamna",
+   "cat": "numeros",
+   "catLabel": "Números",
+   "pt": "8º (m/f)",
+   "ar": "تامِن / تامنة",
+   "arabizi": "tamen / tamna",
+   "imp": 1
+  },
+  {
+   "id": "voc-numeros-tase3-tas3a",
+   "cat": "numeros",
+   "catLabel": "Números",
+   "pt": "9º (m/f)",
+   "ar": "تاسِع / تاسعة",
+   "arabizi": "tase3 / tas3a",
+   "imp": 1
+  },
+  {
+   "id": "voc-numeros-3asher-3ashra",
+   "cat": "numeros",
+   "catLabel": "Números",
+   "pt": "10º (m/f)",
+   "ar": "عاشِر / عاشرة",
+   "arabizi": "3asher / 3ashra",
+   "imp": 1
+  },
+  {
+   "id": "voc-meses-yanayer",
+   "cat": "meses",
+   "catLabel": "Meses do ano",
+   "pt": "janeiro",
+   "ar": "يناير",
+   "arabizi": "yanayer",
+   "imp": 1
+  },
+  {
+   "id": "voc-meses-febrayer",
+   "cat": "meses",
+   "catLabel": "Meses do ano",
+   "pt": "fevereiro",
+   "ar": "فبراير",
+   "arabizi": "febrayer",
+   "imp": 1
+  },
+  {
+   "id": "voc-meses-mares",
+   "cat": "meses",
+   "catLabel": "Meses do ano",
+   "pt": "março",
+   "ar": "مارس",
+   "arabizi": "mares",
+   "imp": 1
+  },
+  {
+   "id": "voc-meses-abril",
+   "cat": "meses",
+   "catLabel": "Meses do ano",
+   "pt": "abril",
+   "ar": "أبريل",
+   "arabizi": "abril",
+   "imp": 1
+  },
+  {
+   "id": "voc-meses-maio",
+   "cat": "meses",
+   "catLabel": "Meses do ano",
+   "pt": "maio",
+   "ar": "مايو",
+   "arabizi": "maio",
+   "imp": 1
+  },
+  {
+   "id": "voc-meses-yonyo",
+   "cat": "meses",
+   "catLabel": "Meses do ano",
+   "pt": "junho",
+   "ar": "يونيو",
+   "arabizi": "yonyo",
+   "imp": 1
+  },
+  {
+   "id": "voc-meses-yolyo",
+   "cat": "meses",
+   "catLabel": "Meses do ano",
+   "pt": "julho",
+   "ar": "يوليو",
+   "arabizi": "yolyo",
+   "imp": 1
+  },
+  {
+   "id": "voc-meses-a8ostos",
+   "cat": "meses",
+   "catLabel": "Meses do ano",
+   "pt": "agosto",
+   "ar": "أغسطس",
+   "arabizi": "a8ostos",
+   "imp": 1
+  },
+  {
+   "id": "voc-meses-september",
+   "cat": "meses",
+   "catLabel": "Meses do ano",
+   "pt": "setembro",
+   "ar": "سبتمبر",
+   "arabizi": "september",
+   "imp": 1
+  },
+  {
+   "id": "voc-meses-october",
+   "cat": "meses",
+   "catLabel": "Meses do ano",
+   "pt": "outubro",
+   "ar": "أكتوبر",
+   "arabizi": "october",
+   "imp": 1
+  },
+  {
+   "id": "voc-meses-november",
+   "cat": "meses",
+   "catLabel": "Meses do ano",
+   "pt": "novembro",
+   "ar": "نوفمبر",
+   "arabizi": "november",
+   "imp": 1
+  },
+  {
+   "id": "voc-meses-dezember",
+   "cat": "meses",
+   "catLabel": "Meses do ano",
+   "pt": "dezembro",
+   "ar": "ديسمبر",
+   "arabizi": "dezember",
+   "imp": 1
+  },
+  {
+   "id": "voc-estado_civil-a3zab",
+   "cat": "estado_civil",
+   "catLabel": "Estado civil",
+   "pt": "solteiro",
+   "ar": "أعزَب",
+   "arabizi": "a3zab",
+   "imp": 1
+  },
+  {
+   "id": "voc-estado_civil-anessa",
+   "cat": "estado_civil",
+   "catLabel": "Estado civil",
+   "pt": "solteira",
+   "ar": "آنِسة",
+   "arabizi": "anessa",
+   "imp": 1
+  },
+  {
+   "id": "voc-estado_civil-metgauez-metgaueza",
+   "cat": "estado_civil",
+   "catLabel": "Estado civil",
+   "pt": "casado / casada",
+   "ar": "مِتجَوِز / مِتجَوِزة",
+   "arabizi": "metgauez / metgaueza",
+   "imp": 1
+  },
+  {
+   "id": "voc-estado_civil-motalaq-motalaqa",
+   "cat": "estado_civil",
+   "catLabel": "Estado civil",
+   "pt": "divorciado / divorciada",
+   "ar": "مُطَلَق / مُطَلَقة",
+   "arabizi": "motalaq / motalaqa",
+   "imp": 1
+  },
+  {
+   "id": "voc-estado_civil-armal-armala",
+   "cat": "estado_civil",
+   "catLabel": "Estado civil",
+   "pt": "viúvo / viúva",
+   "ar": "أرمَل / أرمَلة",
+   "arabizi": "armal / armala",
+   "imp": 1
+  },
+  {
+   "id": "voc-estado_civil-monfassel-monfassela",
+   "cat": "estado_civil",
+   "catLabel": "Estado civil",
+   "pt": "separado / separada",
+   "ar": "مُنفَصِل / مُنفَصِلة",
+   "arabizi": "monfassel / monfassela",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-masr-masry-masreya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Egito — egípcio(a)",
+   "ar": "مَصر — مَصري / مَصرية",
+   "arabizi": "Masr — masry / masreya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-masreyin-masreyat",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "egípcios / egípcias (pl)",
+   "ar": "مَصريين / مَصريات",
+   "arabizi": "masreyin / masreyat",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-barazileiin-barazileyat",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "brasileiros / brasileiras (pl)",
+   "ar": "بَرازيليين / برازيليات",
+   "arabizi": "barazileiin / barazileyat",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-el-sudan-sudany-sudaneya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Sudão — sudanês(a)",
+   "ar": "السودان — سوداني / سودانية",
+   "arabizi": "el Sudan — sudany / sudaneya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-el-gaza2er-gaza2ery-gaza2erya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Argélia — argelino(a)",
+   "ar": "الجَزائر — جَزائري / جَزائرية",
+   "arabizi": "el Gaza2er — gaza2ery / gaza2erya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-el-ma8reb-ma8reby-ma8rebeya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Marrocos — marroquino(a)",
+   "ar": "المَغرِب — مَغرِبي / مَغرِبية",
+   "arabizi": "el Ma8reb — ma8reby / ma8rebeya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-lobnan-lobnany-lobnaneya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Líbano — libanês(a)",
+   "ar": "لُبنان — لُبناني / لُبنانية",
+   "arabizi": "Lobnan — lobnany / lobnaneya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-sorya-sury-sureya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Síria — sírio(a)",
+   "ar": "سوريا — سوري / سورية",
+   "arabizi": "Sorya — sury / sureya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-el-3era2-3era2y-3era2eya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Iraque — iraquiano(a)",
+   "ar": "العِراق — عِراقي / عِراقية",
+   "arabizi": "el 3era2 — 3era2y / 3era2eya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-lebya-liby-libeya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Líbia — líbio(a)",
+   "ar": "ليبيا — ليبي / ليبية",
+   "arabizi": "Lebya — liby / libeya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-felestin-felestiny-felestineya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Palestina — palestino(a)",
+   "ar": "فِلَسطين — فِلَسطيني / فِلَسطينية",
+   "arabizi": "Felestin — felestiny / felestineya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-el-ordon-ordony-ordoneya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Jordânia — jordaniano(a)",
+   "ar": "الأُردُن — أُردُني / أُردُنية",
+   "arabizi": "el Ordon — ordony / ordoneya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-el-so3udeya-so3udy-so3udeya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Arábia Saudita — saudita",
+   "ar": "السعودية — سعودي / سعودية",
+   "arabizi": "el So3udeya — so3udy / so3udeya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-el-emarat-emaraty-emarateya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Emirados — emiradense",
+   "ar": "الإمارات — إماراتي / إماراتية",
+   "arabizi": "el Emarat — emaraty / emarateya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-qatar-qatary-qatareya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Catar — catariano(a)",
+   "ar": "قَطَر — قَطَري / قَطَرية",
+   "arabizi": "Qatar — qatary / qatareya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-el-kowait-kowety-koweteya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Kuwait — kuwaitiano(a)",
+   "ar": "الكُويت — كُويتي / كُويتية",
+   "arabizi": "el Kowait — kowety / koweteya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-italia-italy-italeya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Itália — italiano(a)",
+   "ar": "إيطاليا — إيطالي / إيطالية",
+   "arabizi": "Italia — italy / italeya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-el-borto8al-borto8aly-borto8aleya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Portugal — português(a)",
+   "ar": "البُرتُغال — بُرتُغالي / بُرتُغالية",
+   "arabizi": "el Borto8al — borto8aly / borto8aleya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-faransa-faransauy-faransaueya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "França — francês(a)",
+   "ar": "فَرَنسا — فَرَنساوي / فَرَنساوية",
+   "arabizi": "Faransa — faransauy / faransaueya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-asbanya-asbany-asbaneya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Espanha — espanhol(a)",
+   "ar": "إسبانيا — أسباني / أسبانية",
+   "arabizi": "Asbanya — asbany / asbaneya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-engeltera-engelezy-engelezeya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Inglaterra — inglês(a)",
+   "ar": "إنجلترا — إنجليزي / إنجليزية",
+   "arabizi": "Engeltera — engelezy / engelezeya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-almanya-almany-almaneya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Alemanha — alemão(ã)",
+   "ar": "ألمانيا — ألماني / ألمانية",
+   "arabizi": "Almanya — almany / almaneya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-rossya-russy-rosseya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Rússia — russo(a)",
+   "ar": "روسيا — روسي / روسية",
+   "arabizi": "Rossya — russy / rosseya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-torkeya-torky-torkeya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Turquia — turco(a)",
+   "ar": "تُركيا — تُركي / تُركية",
+   "arabizi": "Torkeya — torky / torkeya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-el-hend-hendy-hendeya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Índia — indiano(a)",
+   "ar": "الهِند — هِندي / هِندية",
+   "arabizi": "el Hend — hendy / hendeya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-iran-irany-iraneya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Irã — iraniano(a)",
+   "ar": "إيران — إيراني / إيرانية",
+   "arabizi": "Iran — irany / iraneya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-el-sin-siny-sineya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "China — chinês(a)",
+   "ar": "الصين — صيني / صينية",
+   "arabizi": "el Sin — siny / sineya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-el-yaban-yabany-yabaneya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Japão — japonês(a)",
+   "ar": "اليابان — ياباني / يابانية",
+   "arabizi": "el Yaban — yabany / yabaneya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-korya-kory-koreya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Coreia — coreano(a)",
+   "ar": "كوريا — كوري / كورية",
+   "arabizi": "Korya — kory / koreya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-amrika-amriky-amrikeya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "EUA — americano(a)",
+   "ar": "أمريكا — أمريكي / أمريكية",
+   "arabizi": "Amrika — amriky / amrikeya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-canada-canady-canadeya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Canadá — canadense",
+   "ar": "كَنَدا — كَنَدي / كَنَدية",
+   "arabizi": "Canada — canady / canadeya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-el-maksik-maksiky-maksikeya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "México — mexicano(a)",
+   "ar": "المكسيك — مكسيكي / مكسيكية",
+   "arabizi": "el Maksik — maksiky / maksikeya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-el-barazil-barazily-barazileya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Brasil — brasileiro(a)",
+   "ar": "البَرازيل — بَرازيلي / بَرازيلية",
+   "arabizi": "el Barazil — barazily / barazileya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-el-arjantin-arjantiny-arjanteneya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Argentina — argentino(a)",
+   "ar": "الأرجَنتين — أرجَنتيني / أرجَنتينية",
+   "arabizi": "el Arjantin — arjantiny / arjanteneya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-colombeya-colomby-colombeya",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "Colômbia — colombiano(a)",
+   "ar": "كولومبيا — كولومبي / كولومبية",
+   "arabizi": "Colombeya — colomby / colombeya",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-el-3arab",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "os árabes (povo)",
+   "ar": "العَرَب",
+   "arabizi": "el 3arab",
+   "imp": 1
+  },
+  {
+   "id": "voc-paises-el-3alam-kollo",
+   "cat": "paises",
+   "catLabel": "Países e nacionalidades",
+   "pt": "o mundo (todo)",
+   "ar": "العالَم كُلُه",
+   "arabizi": "el 3alam kollo",
+   "imp": 1
+  },
+  {
+   "id": "voc-animais-7ayauan-7ayauanat",
+   "cat": "animais",
+   "catLabel": "Animais",
+   "pt": "animal / animais",
+   "ar": "حَيوان / حَيوانات",
+   "arabizi": "7ayauan / 7ayauanat",
+   "imp": 1
+  },
+  {
+   "id": "voc-animais-genenet-el-7ayauanat",
+   "cat": "animais",
+   "catLabel": "Animais",
+   "pt": "zoológico",
+   "ar": "جِنينة الحَيوانات",
+   "arabizi": "genenet el 7ayauanat",
+   "imp": 1
+  },
+  {
+   "id": "voc-animais-assad",
+   "cat": "animais",
+   "catLabel": "Animais",
+   "pt": "leão",
+   "ar": "أسَد",
+   "arabizi": "assad",
+   "imp": 1
+  },
+  {
+   "id": "voc-animais-nemr",
+   "cat": "animais",
+   "catLabel": "Animais",
+   "pt": "tigre",
+   "ar": "نِمر",
+   "arabizi": "nemr",
+   "imp": 1
+  },
+  {
+   "id": "voc-animais-zarafa",
+   "cat": "animais",
+   "catLabel": "Animais",
+   "pt": "girafa",
+   "ar": "زَرافة",
+   "arabizi": "zarafa",
+   "imp": 1
+  },
+  {
+   "id": "voc-animais-fil",
+   "cat": "animais",
+   "catLabel": "Animais",
+   "pt": "elefante",
+   "ar": "فيل",
+   "arabizi": "fil",
+   "imp": 1
+  },
+  {
+   "id": "voc-animais-malahy",
+   "cat": "animais",
+   "catLabel": "Animais",
+   "pt": "parque de diversão",
+   "ar": "مَلاهي",
+   "arabizi": "malahy",
+   "imp": 1
+  },
+  {
+   "id": "voc-animais-kalb",
+   "cat": "animais",
+   "catLabel": "Animais",
+   "pt": "cachorro",
+   "ar": "كَلب",
+   "arabizi": "kalb",
+   "imp": 1
+  },
+  {
+   "id": "voc-animais-2otta",
+   "cat": "animais",
+   "catLabel": "Animais",
+   "pt": "gato / gata (feminino em árabe)",
+   "ar": "قُطة",
+   "arabizi": "2otta",
+   "imp": 1
   }
  ],
  "familia": [

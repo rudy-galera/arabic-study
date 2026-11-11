@@ -330,3 +330,49 @@ section h2 .num { background: #f4a261; color: #1a1d28; width: 26px; height: 26px
 /* Busca global — botão grande na home (abre o overlay do search.js) */
 .hub-search { display: block; width: 100%; margin: 0 0 14px; padding: 16px; border-radius: 14px; border: 2px solid #f4a261; background: #161821; color: #f3f4f6; font-size: 17px; font-weight: 600; font-family: inherit; text-align: left; cursor: pointer; }
 @media (prefers-color-scheme: light) { .hub-search { background: #fff; color: #1f2230; border-color: #c1440e; } }
+
+/* ── Treino v3: recordação ── */
+.q-new { color: #65b08a; font-weight: 800; }
+.q-type { width: 100%; background: #0f1115; color: #f3f4f6; border: 1.5px solid #2a2d36; border-radius: 12px; padding: 15px 14px; font-size: 19px; font-family: inherit; margin-top: 16px; }
+.q-type:focus { outline: none; border-color: #f4a261; }
+.q-chip { margin-top: 14px; padding: 10px 12px; border-radius: 10px; font-size: 15px; font-weight: 600; }
+.q-chip.ok { background: rgba(101,176,138,0.14); color: #8fd6b0; }
+.q-chip.mid { background: rgba(244,162,97,0.14); color: #f4a261; }
+.q-chip.bad { background: rgba(224,93,93,0.12); color: #f2a0a0; }
+.q-grade { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 8px; }
+.q-grade button { border-radius: 12px; padding: 14px 6px; font-size: 16px; font-weight: 800; font-family: inherit; cursor: pointer; border: 2px solid #2a2d36; background: #1a1d28; color: #f3f4f6; display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.q-grade small { font-size: 11px; font-weight: 500; opacity: 0.75; }
+.q-grade .g-again { border-color: #5a2e2e; color: #f2a0a0; }
+.q-grade .g-hard { border-color: #6b4a2a; color: #f4a261; }
+.q-grade .g-good { border-color: #2e5443; color: #8fd6b0; }
+.q-grade .sug { box-shadow: 0 0 0 3px rgba(244,162,97,0.35); }
+.end-prog { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 18px 0; }
+.end-prog div { background: #1a1d28; border: 1px solid #2a2d36; border-radius: 12px; padding: 12px 6px; text-align: center; }
+.end-prog b { display: block; font-size: 24px; color: #fff; }
+.end-prog span { font-size: 12px; color: #9ca3af; }
+/* progresso na home */
+.prog-card { background: #161821; border: 1px solid #2a2d36; border-radius: 14px; padding: 16px; margin: 14px 0; }
+.prog-top { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; text-align: center; }
+.prog-top b { display: block; font-size: 28px; color: #fff; line-height: 1.1; }
+.prog-top span { font-size: 12px; color: #9ca3af; }
+.prog-top .hl b { color: #65b08a; }
+.prog-row { display: grid; grid-template-columns: 110px 1fr 64px; gap: 8px; align-items: center; margin-top: 10px; font-size: 13px; color: #d1d5db; }
+.prog-bar { height: 10px; border-radius: 6px; background: #2a2d36; overflow: hidden; display: flex; }
+.prog-bar .m { background: #65b08a; } .prog-bar .l { background: #f4a261; }
+.prog-row .n { text-align: right; color: #9ca3af; font-variant-numeric: tabular-nums; }
+.prog-legend { margin-top: 12px; font-size: 12px; color: #9ca3af; display: flex; gap: 14px; flex-wrap: wrap; }
+.prog-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 5px; vertical-align: -1px; }
+@media (prefers-color-scheme: light) {
+  .q-type { background: #fff; color: #1f2230; border-color: #e5e3dc; }
+  .q-grade button, .end-prog div, .prog-card { background: #fff; border-color: #e5e3dc; color: #1f2230; }
+  .end-prog b, .prog-top b { color: #1f2230; }
+  .prog-top .hl b { color: #2e7d57; }
+  .prog-row { color: #374151; } .prog-bar { background: #eceae3; }
+  .prog-bar .m { background: #2e7d57; } .prog-bar .l { background: #c1440e; }
+  .q-grade .g-good { color: #2e7d57; } .q-grade .g-hard { color: #c1440e; } .q-grade .g-again { color: #b33a3a; }
+}
+@media (prefers-color-scheme: light) {
+  .q-chip.ok { color: #2e7d57; } .q-chip.mid { color: #c1440e; } .q-chip.bad { color: #b33a3a; }
+  .q-feedback.ok .verdict { color: #2e7d57; } .q-feedback.bad .verdict { color: #b33a3a; }
+  .q-feedback .ans-az { color: #374151; } .q-feedback .ans-pt { color: #4b5563; }
+}

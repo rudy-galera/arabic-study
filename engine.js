@@ -16,7 +16,8 @@ const LS = {
   usedEscrita: 'at2.usedEscrita',
   usedLeitura: 'at2.usedLeitura',
   migrated: 'at2.migratedV1',
-  freezes: 'at2.freezes'        // { 'YYYY-MM': usadas }
+  freezes: 'at2.freezes',       // { 'YYYY-MM': usadas }
+  progress: 'at2.progressLog'    // { 'YYYY-MM-DD': nº de dominadas } — v3
 };
 
 // ── datas ──
@@ -63,23 +64,84 @@ function migrateV1(){
 
 // ── SRS ──
 // caixas 0..5 → intervalo em dias até a próxima revisão
-const INTERVALS = [0, 1, 2, 4, 7, 14];
+// v3 (2026-11-11): caixas 0..6. Só a RECORDAÇÃO (você produz a resposta) sobe de caixa;
+// a múltipla escolha ficou só para a primeira apresentação de um item novo.
+const INTERVALS = [0, 1, 3, 7, 14, 30, 60];
+const MAX_BOX = INTERVALS.length - 1;
 
 function srsGet(){ return lsGet(LS.srs, {}); }
-function srsAnswer(itemId, correct){
+
+// primeira apresentação (múltipla escolha): no máximo caixa 1 — ainda não conta como sabido
+function srsIntro(itemId, correct){
   const srs = srsGet();
   const st = srs[itemId] || { box: 0, due: todayIso(), reps: 0, lapses: 0 };
   st.reps++;
-  if (correct) {
-    st.box = Math.min(5, st.box + 1);
-  } else {
-    st.lapses++;
-    st.box = Math.max(0, st.box - 2);
-  }
-  st.due = addDays(todayIso(), INTERVALS[st.box]);
+  st.box = correct ? 1 : 0;
+  st.due = addDays(todayIso(), 1);
   st.last = todayIso();
   srs[itemId] = st;
   lsSet(LS.srs, srs);
+}
+
+// recordação: grade = 'again' | 'hard' | 'good'
+function srsGrade(itemId, grade){
+  const srs = srsGet();
+  const st = srs[itemId] || { box: 0, due: todayIso(), reps: 0, lapses: 0 };
+  const prev = st.box;
+  st.reps++; st.rc = (st.rc || 0) + 1;
+  if (grade === 'good') {
+    st.ok = (st.ok || 0) + 1;
+    const gap = st.last ? Math.round((new Date(todayIso()+'T12:00:00') - new Date(st.last+'T12:00:00')) / 864e5) : 0;
+    if (gap >= 7) { if (!st.m) st.mAt = todayIso(); st.m = 1; } // lembrou depois de ≥7 dias sem ver → dominada
+    st.box = Math.min(MAX_BOX, prev + 1);
+  } else if (grade === 'hard') {
+    st.ok = (st.ok || 0) + 1;
+    st.box = Math.max(1, prev);
+  } else {
+    st.lapses++; st.m = 0;
+    st.box = Math.max(0, prev - 2);
+  }
+  st.due = addDays(todayIso(), Math.max(1, INTERVALS[st.box]));
+  st.last = todayIso();
+  srs[itemId] = st;
+  lsSet(LS.srs, srs);
+}
+
+// compat (v2): resposta de múltipla escolha
+function srsAnswer(itemId, correct){ srsIntro(itemId, correct); }
+
+// ── progresso (v3) ──
+const SRS_POOLS = () => ({
+  verbos: BANK.verbos, vocab: BANK.vocab, familia: BANK.familia, possessivos: BANK.possessivos,
+  numeros: BANK.numeros, profissoes: BANK.profissoes, perguntas: BANK.perguntas, dias: BANK.dias
+});
+const PROGRESS_LABEL = { verbos:'Verbos', vocab:'Vocabulário', familia:'Família', possessivos:'Possessivos',
+  numeros:'Números', profissoes:'Profissões', perguntas:'Perguntas', dias:'Dias & tempo' };
+function progressStats(){
+  const srs = srsGet();
+  const out = { mastered: 0, learning: 0, fresh: 0, total: 0, byCat: {} };
+  for (const [cat, pool] of Object.entries(SRS_POOLS())) {
+    const c = { mastered: 0, learning: 0, fresh: 0, total: pool.length };
+    for (const it of pool) {
+      const st = srs[it.id];
+      if (!st) c.fresh++; else if (st.m) c.mastered++; else c.learning++;
+    }
+    out.byCat[cat] = c;
+    out.mastered += c.mastered; out.learning += c.learning; out.fresh += c.fresh; out.total += c.total;
+  }
+  return out;
+}
+// guarda o nº de dominadas por dia e devolve o ganho dos últimos 7 dias
+function progressLogAndDelta(){
+  const stats = progressStats();
+  const log = lsGet(LS.progress, {});
+  const today = todayIso();
+  log[today] = stats.mastered;
+  lsSet(LS.progress, log);
+  const weekAgo = addDays(today, -7);
+  const older = Object.keys(log).filter(d => d <= weekAgo).sort();
+  const base = older.length ? log[older[older.length - 1]] : (Object.keys(log).sort().map(d => log[d])[0] || 0);
+  return { stats, weekDelta: stats.mastered - base, hasWeek: older.length > 0 };
 }
 
 // PRNG determinístico de 32 bits (Math.imul evita o overflow de precisão do JS
@@ -110,15 +172,30 @@ function seededShuffle(arr, seedStr){
 }
 
 // ── montagem da sessão ──
+// v3: revisões vencidas primeiro; itens novos limitados a ~35% da sessão (material das
+// aulas/apostila mais recente primeiro, palavras antigas importadas do cartão depois);
+// sobra = revisão antecipada; só então mais itens novos.
+const NEW_SHARE = 0.35;
 function pickForCategory(items, quota, srs, seed){
+  if (!quota) return [];
   const today = todayIso();
-  const withState = items.map(it => ({ it, st: srs[it.id] }));
+  const withState = items.map((it, i) => ({ it, i, st: srs[it.id] }));
   const due  = withState.filter(x => x.st && x.st.due <= today)
                         .sort((a,b) => (a.st.box - b.st.box) || (a.st.due < b.st.due ? -1 : 1));
-  const news = seededShuffle(withState.filter(x => !x.st), seed);
+  const freshAll = withState.filter(x => !x.st);
+  const news = [
+    ...freshAll.filter(x => !x.it.imp).sort((a,b) => b.i - a.i),
+    ...seededShuffle(freshAll.filter(x => x.it.imp), seed)
+  ];
   const future = withState.filter(x => x.st && x.st.due > today)
                           .sort((a,b) => (a.st.due < b.st.due ? -1 : 1));
-  return [...due, ...news, ...future].slice(0, quota).map(x => x.it);
+  const newCap = Math.max(1, Math.round(quota * NEW_SHARE));
+  const picked = due.slice(0, quota - Math.min(newCap, news.length));
+  const nNew = Math.min(news.length, quota - picked.length, Math.max(newCap, quota - picked.length - future.length));
+  picked.push(...news.slice(0, nNew));
+  picked.push(...future.slice(0, quota - picked.length));
+  if (picked.length < quota) picked.push(...news.slice(nNew, nNew + quota - picked.length));
+  return picked.map(x => x.it);
 }
 
 function buildSession(dateIso, typeOverride){
@@ -133,14 +210,17 @@ function buildSession(dateIso, typeOverride){
   };
   for (const [cat, pool] of Object.entries(catPools)) {
     for (const item of pickForCategory(pool, q[cat] || 0, srs, dateIso + cat)) {
-      cards.push(makeQuestion(item, cat, dateIso));
+      const recall = !!srs[item.id];                 // já visto → você produz a resposta
+      const qq = makeQuestion(item, cat, dateIso, recall);
+      qq.kind = recall ? 'recall' : 'intro';
+      cards.push(qq);
     }
   }
   const shuffled = seededShuffle(cards, dateIso + ':order');
   const escrita = q.escrita ? pickRotating(BANK.escrita, LS.usedEscrita, q.escrita) : [];
   const leitura = q.leitura ? pickRotating(BANK.leitura, LS.usedLeitura, q.leitura) : [];
   return { date: dateIso, type, label: TYPE_LABEL[type], cards: shuffled, escrita, leitura,
-           estMin: Math.round(shuffled.length * 0.28 + escrita.length * 2 + leitura.length * 2.5) };
+           estMin: Math.round(shuffled.length * 0.4 + escrita.length * 2 + leitura.length * 2.5) };
 }
 
 // rotação LRU para escrita/leitura
@@ -182,12 +262,12 @@ function assemble(promptHtml, correct, distractors, answerHtml, item, cat, mode)
   return { itemId: item.id, cat, mode, promptHtml, options: opts, correct, answerHtml };
 }
 
-function makeQuestion(item, cat, dateIso){
+function makeQuestion(item, cat, dateIso, produce){
   const seed = dateIso + item.id;
   const az = x => x.arabizi, pt = x => x.pt;
 
   if (cat === 'numeros') {
-    const modes = ['pt2az','digit2az','az2pt','ar2az'];
+    const modes = produce ? ['pt2az','digit2az'] : ['pt2az','digit2az','az2pt','ar2az'];
     const mode = modes[rand(seed, modes.length)];
     if (mode === 'digit2az' && item.num) {
       return assemble(`<div class="q-big">${item.num.split('/')[1] ? item.num.split('/')[1].trim() : item.num}</div><div class="q-ask">Como se diz este número?</div>`,
@@ -227,7 +307,7 @@ function makeQuestion(item, cat, dateIso){
   if (cat === 'verbos') {
     const person = PERSONS8[rand(seed + 'p', PERSONS8.length)];
     const c = item.conj[person];
-    if (!c) return makeSimpleVocabQ(item, cat, BANK.verbos, seed); // fallback improvável
+    if (!c) return makeSimpleVocabQ(item, cat, BANK.verbos, seed, produce); // fallback improvável
     const sameVerb = rand(seed + 'm', 10) < 6;
     let distractors;
     if (sameVerb) {
@@ -262,13 +342,13 @@ function makeQuestion(item, cat, dateIso){
 
   // dias, vocab, familia, perguntas → vocabulário simples
   const pool = { dias: BANK.dias, vocab: BANK.vocab, familia: BANK.familia, perguntas: BANK.perguntas }[cat];
-  return makeSimpleVocabQ(item, cat, pool, seed);
+  return makeSimpleVocabQ(item, cat, pool, seed, produce);
 }
 
-function makeSimpleVocabQ(item, cat, pool, seed){
+function makeSimpleVocabQ(item, cat, pool, seed, produce){
   const subPool = item.cat ? pool.filter(p => p.cat === item.cat) : pool;
   const usePool = subPool.length >= 6 ? subPool : pool;
-  const modes = ['pt2az','az2pt','ar2pt'];
+  const modes = produce ? ['pt2az'] : ['pt2az','az2pt','ar2pt'];
   const mode = modes[rand(seed + 'vm', modes.length)];
   const az = x => x.arabizi, pt = x => x.pt;
   if (mode === 'az2pt') {
@@ -285,6 +365,35 @@ function makeSimpleVocabQ(item, cat, pool, seed){
 
 function fullAnswer(it){
   return `<div class="ans-ar">${it.ar || ''}</div><div class="ans-az">${it.arabizi || ''}</div><div class="ans-pt">${it.pt || ''}</div>`;
+}
+
+// ── conferência tolerante do que você digitou (arabizi) ──
+const PRON = /^(ana|enta|enty|enti|howa|heya|e7na|entu|homa)\s+/i;
+function azNorm(s){
+  return (s || '').toLowerCase().replace(/\(.*?\)/g, ' ').replace(PRON, '')
+    .replace(/^el-?/, '').replace(/ou/g, 'u').replace(/ee/g, 'i').replace(/ei/g, 'e')
+    .replace(/[^a-z0-9]/g, '');
+}
+function lev(a, b){
+  const m = a.length, n = b.length; if (!m) return n; if (!n) return m;
+  let prev = Array.from({ length: n + 1 }, (_, j) => j);
+  for (let i = 1; i <= m; i++) {
+    const cur = [i];
+    for (let j = 1; j <= n; j++) cur[j] = Math.min(prev[j] + 1, cur[j-1] + 1, prev[j-1] + (a[i-1] === b[j-1] ? 0 : 1));
+    prev = cur;
+  }
+  return prev[n];
+}
+// 'exact' | 'close' | 'no'
+function checkTyped(typed, answer){
+  const t = azNorm(typed); if (!t) return null;
+  let best = 'no';
+  for (const alt of String(answer).split(/\s*[\/;]\s*|\s+—\s+/)) {
+    const a = azNorm(alt); if (!a) continue;
+    if (t === a) return 'exact';
+    if (lev(t, a) <= Math.max(1, Math.floor(a.length / 6))) best = 'close';
+  }
+  return best;
 }
 
 // ── histórico, streak, freezes, marcos ──
@@ -385,6 +494,7 @@ function completeSession(session, score, total, recoverDate){
   if (session.escrita.length) markRotatingUsed(LS.usedEscrita, session.escrita.map(e => e.id), BANK.escrita.length);
   if (session.leitura.length) markRotatingUsed(LS.usedLeitura, session.leitura.map(l => l.id), BANK.leitura.length);
   pingDone(date);
+  try { progressLogAndDelta(); } catch(e){}
   const streak = currentStreak();
   return { streak, milestone: hitMilestone(streak), next: nextMilestone(streak) };
 }

@@ -40,6 +40,16 @@
     <div class="desc" id="treinoDesc">Carregando…</div>
   </a>
 
+  <div class="prog-card" id="progCard">
+    <div class="prog-top">
+      <div class="hl"><b id="pgMastered">0</b><span>✅ dominadas</span></div>
+      <div><b id="pgWeek">—</b><span>📈 últimos 7 dias</span></div>
+      <div><b id="pgLearning">0</b><span>🔁 aprendendo</span></div>
+    </div>
+    <div id="pgRows"></div>
+    <div class="prog-legend"><span><i style="background:#65b08a"></i>dominada = lembrou sozinho depois de 7+ dias</span><span><i style="background:#f4a261"></i>aprendendo</span><span><i style="background:#2a2d36"></i>ainda não vista</span></div>
+  </div>
+
   <div class="stat-grid">
     <div class="stat-card"><div class="v" id="stStreak">0</div><div class="l">🔥 streak</div></div>
     <div class="stat-card"><div class="v" id="stFreezes">3</div><div class="l">🧊 freezes no mês</div></div>
@@ -173,6 +183,20 @@
     const ok = await enablePush(msg => { pushBtn.textContent = '🔔 ' + msg; });
     if (ok) pushBtn.classList.add('on');
   });
+
+  // ── progresso (v3) ──
+  try {
+    const { stats, weekDelta, hasWeek } = progressLogAndDelta();
+    document.getElementById('pgMastered').textContent = stats.mastered;
+    document.getElementById('pgLearning').textContent = stats.learning;
+    document.getElementById('pgWeek').textContent = hasWeek ? (weekDelta >= 0 ? '+' + weekDelta : weekDelta) : (stats.mastered ? '+' + stats.mastered : '—');
+    const order = ['verbos','vocab','familia','possessivos','numeros','profissoes','perguntas','dias'];
+    document.getElementById('pgRows').innerHTML = order.map(k => {
+      const c = stats.byCat[k]; if (!c || !c.total) return '';
+      const pm = 100 * c.mastered / c.total, pl = 100 * c.learning / c.total;
+      return `<div class="prog-row"><span>${PROGRESS_LABEL[k]}</span><div class="prog-bar"><div class="m" style="width:${pm}%"></div><div class="l" style="width:${pl}%"></div></div><span class="n">${c.mastered}/${c.total}</span></div>`;
+    }).join('');
+  } catch (e) { document.getElementById('progCard').style.display = 'none'; }
 </script>
 
 <script src="search.js"></script>

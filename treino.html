@@ -30,7 +30,8 @@
 <script>
 // ─────────────────────────────────────────────────────────────────────
 // Treino Diário — player da sessão
-// Fases: cards MCQ (com refila dos errados) → escrita → leitura → fim
+// Fases: cards (v3: recordação para itens já vistos · múltipla escolha só na
+// primeira apresentação; errados voltam no fim) → escrita → leitura → fim
 // ─────────────────────────────────────────────────────────────────────
 const params = new URLSearchParams(location.search);
 const recoverDate = params.get('recover'); // treino de recuperação de um dia perdido
@@ -56,8 +57,11 @@ const state = {
   phase: 'cards',       // cards → escrita → leitura → end
   escritaIdx: 0,
   leituraIdx: 0,
-  extras: { escritaOk: 0, leituraOk: 0 }
+  extras: { escritaOk: 0, leituraOk: 0 },
+  recall: { total: 0, ok: 0 },
+  masteredBefore: 0
 };
+try { state.masteredBefore = progressStats().mastered; } catch(e){}
 
 const CAT_LABEL = {
   numeros:'Números', dias:'Dias & tempo', profissoes:'Profissões', verbos:'Verbos',
@@ -97,9 +101,10 @@ function renderCard(){
   }
   const q = state.queue[state.idx];
   const isRequeue = state.requeued.has(state.idx);
+  if (q.kind === 'recall') return renderRecall(q, isRequeue);
   shell(`
     <div class="q-card">
-      <div class="q-cat">${CAT_LABEL[q.cat] || q.cat}${isRequeue ? ' · de novo 💪' : ''} · ${state.idx + 1}/${state.queue.length}</div>
+      <div class="q-cat">${CAT_LABEL[q.cat] || q.cat}${isRequeue ? ' · de novo 💪' : ' · <span class="q-new">NOVO</span>'} · ${state.idx + 1}/${state.queue.length}</div>
       ${q.promptHtml}
       <div class="q-opts" id="opts">
         ${q.options.map((o,i) => `<button class="q-opt" data-i="${i}">${o}</button>`).join('')}
@@ -122,7 +127,7 @@ function answer(q, btn, isRequeue){
   });
   // SRS: só a primeira tentativa do dia conta
   if (!isRequeue) {
-    srsAnswer(q.itemId, correct);
+    srsIntro(q.itemId, correct);
     state.answeredFirstTry++;
     if (correct) state.firstTryCorrect++;
     if (!correct) {
@@ -142,6 +147,55 @@ function answer(q, btn, isRequeue){
     <button class="q-next" id="next">${correct ? 'Próxima →' : 'Entendi, próxima →'}</button>`;
   document.getElementById('next').addEventListener('click', () => { state.idx++; render(); });
   document.getElementById('next').focus();
+}
+
+// ── recordação (v3): você produz a resposta, depois se avalia ──
+function renderRecall(q, isRequeue){
+  shell(`
+    <div class="q-card">
+      <div class="q-cat">${CAT_LABEL[q.cat] || q.cat} · lembrar${isRequeue ? ' · de novo 💪' : ''} · ${state.idx + 1}/${state.queue.length}</div>
+      ${q.promptHtml}
+      <input class="q-type" id="typed" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+        placeholder="Digite em arabizi — ou fale em voz alta">
+      <button class="q-next" id="reveal">Mostrar resposta</button>
+      <div id="fb"></div>
+    </div>`);
+  const inp = document.getElementById('typed');
+  const reveal = () => revealRecall(q, isRequeue, inp.value);
+  document.getElementById('reveal').addEventListener('click', reveal);
+  inp.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); reveal(); } });
+  setTimeout(() => inp.focus(), 50);
+}
+
+function revealRecall(q, isRequeue, typed){
+  const btn = document.getElementById('reveal'); if (!btn) return;
+  btn.remove();
+  document.getElementById('typed').disabled = true;
+  const res = checkTyped(typed, q.correct);
+  const chip = res === 'exact' ? '<div class="q-chip ok">✓ Igual à resposta</div>'
+             : res === 'close' ? '<div class="q-chip mid">≈ Quase igual — confira a grafia</div>'
+             : res === 'no'    ? `<div class="q-chip bad">✗ Você escreveu: <b>${typed.replace(/</g,'&lt;')}</b></div>` : '';
+  const hint = res === 'exact' ? 'good' : res === 'close' ? 'hard' : res === 'no' ? 'again' : '';
+  document.getElementById('fb').innerHTML = `
+    ${chip}
+    <div class="q-feedback ok" style="margin-top:10px;"><div class="verdict">Resposta:</div>${q.answerHtml}</div>
+    <div class="q-ask" style="margin-top:14px;">Como foi?</div>
+    <div class="q-grade">
+      <button class="g-again${hint==='again'?' sug':''}" data-g="again">Errei<small>volta no fim</small></button>
+      <button class="g-hard${hint==='hard'?' sug':''}" data-g="hard">Difícil<small>lembrei com esforço</small></button>
+      <button class="g-good${hint==='good'?' sug':''}" data-g="good">Sabia<small>de primeira</small></button>
+    </div>`;
+  document.querySelectorAll('.q-grade button').forEach(b => b.addEventListener('click', () => gradeRecall(q, isRequeue, b.dataset.g)));
+}
+
+function gradeRecall(q, isRequeue, g){
+  if (!isRequeue) {
+    srsGrade(q.itemId, g);
+    state.answeredFirstTry++; state.recall.total++;
+    if (g !== 'again') { state.firstTryCorrect++; state.recall.ok++; }
+  }
+  if (g === 'again') { state.queue.push(q); state.requeued.add(state.queue.length - 1); }
+  state.idx++; render();
 }
 
 function sample(arr){ return arr[Math.floor(Math.random() * arr.length)]; }
@@ -235,6 +289,8 @@ function renderEnd(){
       <div class="flame">${recoverDate ? '🧊→🔥' : '🔥'}</div>
       <h1>${recoverDate ? 'Dia recuperado!' : streak + (streak === 1 ? ' dia' : ' dias') + ' de chama'}</h1>
       <div class="score">${state.firstTryCorrect}/${state.totalFirst} de primeira (${pct}%)${session.escrita.length ? ' · escrita ' + state.extras.escritaOk + '/' + session.escrita.length : ''}${session.leitura.length ? ' · leitura ok' : ''}</div>
+      ${(() => { try { const ms = progressStats(); const gain = ms.mastered - state.masteredBefore;
+          return `<div class="end-prog"><div><b>${ms.mastered}</b><span>dominadas</span></div><div><b>${gain > 0 ? '+' + gain : gain}</b><span>hoje</span></div><div><b>${state.recall.total ? Math.round(100*state.recall.ok/state.recall.total) + '%' : '—'}</b><span>lembrou de primeira</span></div></div>`; } catch(e){ return ''; } })()}
       ${m ? `
         <div class="milestone-pop">
           <div class="emoji">${m.emoji}</div>
