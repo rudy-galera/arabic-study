@@ -6,8 +6,8 @@
 // Atualizado pelo skill /arabic-class-update.
 // ─────────────────────────────────────────────────────────────────────
 const BANK = {
- "version": "2026-11-11",
- "baseadoEm": "Aulas até 94 (2026-11-11) · Apostila nível básico · Apostila 2 pp.1-28 · cards do site",
+ "version": "2026-11-16",
+ "baseadoEm": "Aulas até 95 (2026-11-13) · Apostila nível básico · Apostila 2 pp.1-29 · cards do site",
  "numeros": [
   {
    "id": "num-sefr",
@@ -3203,6 +3203,47 @@ const BANK = {
     "Eles/Elas": {
      "ar": "هُما بيقولوا",
      "arabizi": "Homa bei2ulu"
+    }
+   }
+  },
+  {
+   "id": "verbo-2dar",
+   "pt": "conseguir / poder (قدر)",
+   "ar": "أقدَر",
+   "arabizi": "a2dar",
+   "grupo": "auxiliares",
+   "conj": {
+    "Eu": {
+     "ar": "أنا بَقدَر",
+     "arabizi": "Ana ba2dar"
+    },
+    "Você (m)": {
+     "ar": "انتَ بتقدَر",
+     "arabizi": "Enta bet2dar"
+    },
+    "Você (f)": {
+     "ar": "انتي بتقدَري",
+     "arabizi": "Enty bet2dary"
+    },
+    "Ele": {
+     "ar": "هوَ بيقدَر",
+     "arabizi": "Howa bei2dar"
+    },
+    "Ela": {
+     "ar": "هيَ بتقدَر",
+     "arabizi": "Heya bete2dar"
+    },
+    "Nós": {
+     "ar": "إحنا بنقدَر",
+     "arabizi": "E7na ben2dar"
+    },
+    "Vocês": {
+     "ar": "انتوا بتقدَروا",
+     "arabizi": "Entu bete2daru"
+    },
+    "Eles/Elas": {
+     "ar": "هُما بيقدَروا",
+     "arabizi": "Homa bei2daru"
     }
    }
   }
@@ -10487,6 +10528,22 @@ const BANK = {
    "pt": "estacionar",
    "ar": "بَركِن",
    "arabizi": "barken"
+  },
+  {
+   "id": "voc-outros-we7esh-we7sha",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "ruim / mau / feio (m/f)",
+   "ar": "وِحِش / وِحشة",
+   "arabizi": "we7esh / we7sha"
+  },
+  {
+   "id": "voc-outros-fi-nafs-elwa2t",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "ao mesmo tempo",
+   "ar": "في نَفس الوَقت",
+   "arabizi": "fi nafs elwa2t"
   }
  ],
  "familia": [
@@ -15800,6 +15857,139 @@ const BANK = {
    "ar": "بنتكلم مع بعض على المدير.",
    "arabizi": "Benetkalem ma3a ba3d 3ala elmodir.",
    "src": "2026-11-11"
+  },
+  {
+   "id": "esc-500-eu-vou-para-a-praia-no-sabado-de-manha-com-os-meus",
+   "pt": "Eu vou para a praia no sábado de manhã com os meus amigos, você quer ir conosco?",
+   "ar": "أنا هَروح البَحر يوم السَبت الصُبح مَع أصحابي، عايز تروح معانا؟",
+   "arabizi": "Ana haru7 elba7r youm elsapt elsop7 ma3a as7aby, 3aeiz teru7 ma3ana?",
+   "src": "2026-11-13"
+  },
+  {
+   "id": "esc-501-talvez-eu-trabalhe-no-sabado-de-manha-eu-vou-falar",
+   "pt": "Talvez eu trabalhe no sábado de manhã, eu vou falar com o gerente amanhã para saber.",
+   "ar": "أنا مُمكن (احتِمال) اشتغل يوم السبت الصبح، أنا هَتكَلِم مَعَ المُدير بُكرة عشان أعرَف.",
+   "arabizi": "Ana momken (e7temal) ashta8al youm elsapt elsop7, ana hatkalem ma3a elmodir bokra 3ashan a3raf.",
+   "src": "2026-11-13"
+  },
+  {
+   "id": "esc-502-mas-voce-nao-deveria-trabalhar-no-sabado-sabado-e-",
+   "pt": "Mas você não deveria trabalhar no sábado, sábado é folga!",
+   "ar": "بَس انت مش المفروض تشتغل يوم السبت، السبت أجازة!",
+   "arabizi": "Bas enta mesh elmafrud teshta8al youm elsapt, elsapt agaza!",
+   "src": "2026-11-13"
+  },
+  {
+   "id": "esc-503-temos-muito-trabalho-atrasado-na-empresa-e-eles-pr",
+   "pt": "Temos muito trabalho atrasado na empresa, e eles precisam de ajuda!",
+   "ar": "عَندِنا شُغل كتير مِتأخَر في الشركة وهُم محتاجين مُساعدة.",
+   "arabizi": "3andena sho8l ketir met2a5ar fe elsherka we homa mei7tagin mossa3da.",
+   "src": "2026-11-13"
+  },
+  {
+   "id": "esc-504-esta-bem-voce-nao-pode-ir-para-a-praia-conosco-voc",
+   "pt": "Está bem, você não pode ir para a praia conosco, você pode ir para o parque conosco no domingo à noite?",
+   "ar": "ماشي انتَ مش ممكن تروح البحر معانا، ممكن تروح الجنينة معانا يوم الحَد بليل؟",
+   "arabizi": "Mashy, enta mesh momken teru7 elba7r ma3ana, momken teru7 elgenina ma3ana youm el7ad beleil?",
+   "src": "2026-11-13"
+  },
+  {
+   "id": "esc-505-sim-eu-estou-livre-no-domingo",
+   "pt": "Sim, eu estou livre no domingo.",
+   "ar": "ايوة، أنا فاضي يوم الحَد.",
+   "arabizi": "Aywa, ana fady youm el7ad.",
+   "src": "2026-11-13"
+  },
+  {
+   "id": "esc-506-eu-vou-comprar-refrigerante-hassan-vai-comprar-piz",
+   "pt": "Eu vou comprar refrigerante, Hassan vai comprar pizza e Fátima vai comprar doces, você pode comprar ou fazer alguma coisa também?",
+   "ar": "أنا هشتري بيبسي وحسن هيشتري بيتزا وفاطمة هَتِشتِري حَلويات، ممكن تشتري أو تعمل حاجة كَمان؟",
+   "arabizi": "Ana hashtery Pepsi we Hassan haieshtery pizza we Fatma hateshtery 7alaweyat, momken teshtery au te3mel 7aga kaman?",
+   "src": "2026-11-13"
+  },
+  {
+   "id": "esc-507-claro-com-certeza",
+   "pt": "Claro! Com certeza!",
+   "ar": "أكيد! طبعاً!",
+   "arabizi": "Akid! Tab3an!",
+   "src": "2026-11-13"
+  },
+  {
+   "id": "esc-508-e-impossivel-que-eu-chegue-no-horario-da-reuniao-t",
+   "pt": "É impossível que eu chegue no horário da reunião, tenho que telefonar para o gerente.",
+   "ar": "مُستَحيل أوصَل في معاد الإجتِماع، لازِم أتِصِل بِالمُدير.",
+   "arabizi": "Mosta7il aussal fe ma3ad elektema3, lazem atessel bel modir.",
+   "src": "2026-11-13"
+  },
+  {
+   "id": "esc-509-e-impossivel-que-o-karim-faca-tudo-isso",
+   "pt": "É impossível que o Karim faça tudo isso!",
+   "ar": "مستحيل كريم يِعمِل كل ده!",
+   "arabizi": "Mosta7il Karim ye3mel kol da!",
+   "src": "2026-11-13"
+  },
+  {
+   "id": "esc-510-e-impossivel-que-a-nadia-fale-comigo-de-novo-ela-e",
+   "pt": "É impossível que a Nadia fale comigo de novo, ela está muito chateada comigo.",
+   "ar": "مستحيل نادية تتكلم معايا تاني، هي متضايقة مِني أوي.",
+   "arabizi": "Mosta7il Nadia tetkalem ma3aya tany, heya metday2a meni awi.",
+   "src": "2026-11-13"
+  },
+  {
+   "id": "esc-511-e-impossivel-que-nos-voltemos-a-ver-este-filme-de-",
+   "pt": "É impossível que nós voltemos a ver este filme de novo, é muito ruim.",
+   "ar": "مُستَحيل نِرجَع نشوف الفيلم ده تاني، وحش أوي.",
+   "arabizi": "Mosta7il nerga3 neshuf elfelm da tany, we7esh awi.",
+   "src": "2026-11-13"
+  },
+  {
+   "id": "esc-512-e-importante-que-voce-aprenda-arabe-antes-de-viaja",
+   "pt": "É importante que você aprenda árabe antes de viajar para o Egito. (m)",
+   "ar": "مُهِم تِتعَلِم عربي قَبل ما تِسافِر مَصر.",
+   "arabizi": "Mohem tet3alem 3arabi 2abl ma tessafer masr.",
+   "src": "2026-11-13"
+  },
+  {
+   "id": "esc-513-e-importante-que-voce-aprenda-arabe-antes-de-viaja",
+   "pt": "É importante que você aprenda árabe antes de viajar para o Egito. (f)",
+   "ar": "مُهِم تتعلمي عربي قبل ما تسافري مصر.",
+   "arabizi": "Mohem tet3alemy 3arabi 2abl ma tessafry masr.",
+   "src": "2026-11-13"
+  },
+  {
+   "id": "esc-514-e-importante-que-nos-visitemos-os-avos-toda-semana",
+   "pt": "É importante que nós visitemos os avós toda semana.",
+   "ar": "مُهِم نزور تيتة وجدو كل أسبوع.",
+   "arabizi": "Mohem nezur teta we gedo kol osbu3.",
+   "src": "2026-11-13"
+  },
+  {
+   "id": "esc-515-e-importante-que-voces-escutem-mais-e-falem-menos",
+   "pt": "É importante que vocês escutem mais e falem menos.",
+   "ar": "مُهم تسمعوا أكتَر وتتكلموا أقل.",
+   "arabizi": "Mohem tesma3u aktar we tetkalemu a2al.",
+   "src": "2026-11-13"
+  },
+  {
+   "id": "esc-516-e-importante-que-todos-os-funcionarios-preparem-a-",
+   "pt": "É importante que todos os funcionários preparem a apresentação bem antes da reunião.",
+   "ar": "مُهِم كل الموظفين يِجَهِزوا الباور بوينت كويس قبل الاجتماع.",
+   "arabizi": "Mohem kol elmouazafin yegahezu elpowerpoint kouayes 2abl elektema3.",
+   "src": "2026-11-13"
+  },
+  {
+   "id": "esc-517-e-dificil-que-eu-termine-o-trabalho-e-o-projeto-ao",
+   "pt": "É difícil que eu termine o trabalho e o projeto ao mesmo tempo.",
+   "ar": "صعب أخلص الشُغل والمَشروع في نفس الوَقت.",
+   "arabizi": "Sa3b a5alas elsho8l we elmashru3 fe nafs elwa2t.",
+   "src": "2026-11-13"
+  },
+  {
+   "id": "esc-518-e-dificil-que-as-criancas-escrevam-e-leiam-sozinha",
+   "pt": "É difícil que as crianças escrevam e leiam sozinhas.",
+   "ar": "صَعب الأطفال يكتِبوا ويقروا لوحدُهُم.",
+   "arabizi": "Sa3b elatfal yektebu we ye2ru leua7dohom.",
+   "src": "2026-11-13"
   }
  ],
  "leitura": [
