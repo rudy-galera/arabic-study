@@ -6,8 +6,8 @@
 // Atualizado pelo skill /arabic-class-update.
 // ─────────────────────────────────────────────────────────────────────
 const BANK = {
- "version": "2026-11-16",
- "baseadoEm": "Aulas até 95 (2026-11-13) · Apostila nível básico · Apostila 2 pp.1-29 · cards do site",
+ "version": "2026-11-18",
+ "baseadoEm": "Aulas até 96 (2026-11-18) · Apostila nível básico · Apostila 2 pp.1-29 · cards do site",
  "numeros": [
   {
    "id": "num-sefr",
@@ -3244,6 +3244,47 @@ const BANK = {
     "Eles/Elas": {
      "ar": "هُما بيقدَروا",
      "arabizi": "Homa bei2daru"
+    }
+   }
+  },
+  {
+   "id": "verbo-barken",
+   "pt": "estacionar",
+   "ar": "بَركِن",
+   "arabizi": "barken",
+   "grupo": "rotina",
+   "conj": {
+    "Eu": {
+     "ar": "أنا بَركِن",
+     "arabizi": "Ana barken"
+    },
+    "Você (m)": {
+     "ar": "انتَ بتركن",
+     "arabizi": "Enta beterken"
+    },
+    "Você (f)": {
+     "ar": "انتي بتركني",
+     "arabizi": "Enty beterkeny"
+    },
+    "Ele": {
+     "ar": "هو بيركِن",
+     "arabizi": "Howa bierken"
+    },
+    "Ela": {
+     "ar": "هي بتركِن",
+     "arabizi": "Heya beterken"
+    },
+    "Nós": {
+     "ar": "احنا بِنِركِن",
+     "arabizi": "E7na benerken"
+    },
+    "Vocês": {
+     "ar": "انتوا بتركِنوا",
+     "arabizi": "Entu beterkenu"
+    },
+    "Eles/Elas": {
+     "ar": "هُما بيركِنوا",
+     "arabizi": "Homa bierkenu"
     }
    }
   }
@@ -10544,6 +10585,54 @@ const BANK = {
    "pt": "ao mesmo tempo",
    "ar": "في نَفس الوَقت",
    "arabizi": "fi nafs elwa2t"
+  },
+  {
+   "id": "voc-lugares-mante2a",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "zona / área",
+   "ar": "مَنطِقة",
+   "arabizi": "mante2a"
+  },
+  {
+   "id": "voc-lugares-elbosta",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "os correios",
+   "ar": "البوسطة",
+   "arabizi": "elbosta"
+  },
+  {
+   "id": "voc-preposicoes-5elal",
+   "cat": "preposicoes",
+   "catLabel": "Preposições",
+   "pt": "durante",
+   "ar": "خِلال",
+   "arabizi": "5elal"
+  },
+  {
+   "id": "voc-outros-za7ma",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "trânsito (cheio)",
+   "ar": "زَحمة",
+   "arabizi": "za7ma"
+  },
+  {
+   "id": "voc-outros-shagara",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "árvore",
+   "ar": "شَجَرة",
+   "arabizi": "shagara"
+  },
+  {
+   "id": "voc-outros-bada5an",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "eu fumo",
+   "ar": "بَدَخَن / بَشرَب سَجايِر",
+   "arabizi": "bada5an / bashrab sagayer"
   }
  ],
  "familia": [
@@ -15990,6 +16079,181 @@ const BANK = {
    "ar": "صَعب الأطفال يكتِبوا ويقروا لوحدُهُم.",
    "arabizi": "Sa3b elatfal yektebu we ye2ru leua7dohom.",
    "src": "2026-11-13"
+  },
+  {
+   "id": "esc-519-e-proibido-que-voce-estacione-aqui",
+   "pt": "É proibido que você estacione aqui.",
+   "ar": "ممنوع تِركِن هِنا.",
+   "arabizi": "Mamnu3 terken hena.",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-520-e-proibido-que-voce-estacione-em-frente-da-empresa",
+   "pt": "É proibido que você estacione em frente da empresa.",
+   "ar": "مَمنوع تِركِن قُدام الشِركة.",
+   "arabizi": "Mamnu3 terken 2odam elsherka.",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-521-e-proibido-que-voce-fume-dentro-do-restaurante",
+   "pt": "É proibido que você fume dentro do restaurante.",
+   "ar": "مَمنوع تِدَخَن جوة المَطعَم.",
+   "arabizi": "Mamnu3 teda5an goua elmat3am.",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-522-e-proibido-falar-em-voz-alta-dentro-da-biblioteca",
+   "pt": "É proibido falar em voz alta dentro da biblioteca.",
+   "ar": "ممنوع تتكَلِم بِصوت عالي جوة المَكتَبة.",
+   "arabizi": "Mamnu3 tetkalem besot 3aly goua elmaktaba.",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-523-e-proibido-que-voce-dirija-rapido-nesta-zona-por-c",
+   "pt": "É proibido que você dirija rápido nesta zona por causa da escola.",
+   "ar": "مَمنوع تِسوق بِسُرعة في المَنطقة دي بسبب المَدرَسة.",
+   "arabizi": "Mamnu3 tessu2 bessor3a fe elmante2a di bessabab elmadrassa.",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-524-e-permitido-que-voce-estacione-o-carro-na-garagem-",
+   "pt": "É permitido que você estacione o carro na garagem do shopping.",
+   "ar": "مَسموح تركن العربية في جراج المول.",
+   "arabizi": "Masmu7 terken el3arabeya fe garage elmall.",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-525-e-permitido-comer-e-beber-durante-a-aula-dessa-pro",
+   "pt": "É permitido comer e beber durante a aula dessa professora.",
+   "ar": "مَسموح تاكُل وتشرب خِلال حصة المُدَرِسة دي.",
+   "arabizi": "Masmu7 takol we teshrab 5elal 7esset elmodaressa di.",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-526-e-permitido-levar-as-criancas-para-a-festa-do-ano-",
+   "pt": "É permitido levar as crianças para a festa do ano novo no trabalho.",
+   "ar": "مَسموح تاخُد الأطفال حَفلة راس السنة في الشُغل.",
+   "arabizi": "Masmu7 ta5od elatfal 7aflet ras elsana fe elsho8l.",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-527-e-permitido-telefonar-para-os-pais-na-escola",
+   "pt": "É permitido telefonar para os pais na escola.",
+   "ar": "مَسموح تِتِصِل بِماما وبابا في المَدرسة.",
+   "arabizi": "Masmu7 tetessel be mama we baba fe elmadrassa.",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-528-eu-nao-consigo-fazer-nada-depois-do-trabalho",
+   "pt": "Eu não consigo fazer nada depois do trabalho.",
+   "ar": "أنا مابَقدَرش أعمِل حاجة بَعد الشُغل.",
+   "arabizi": "Ana maba2darsh a3mel 7aga ba3d elsho8l.",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-529-eu-nao-vou-conseguir-chegar-no-horario-por-causa-d",
+   "pt": "Eu não vou conseguir chegar no horário por causa do trânsito.",
+   "ar": "أنا مِش هَقدَر أوصَل في المَعاد بِسَبب الزَحمة.",
+   "arabizi": "Ana mesh ha2dar aussal fe elma3ad bessabab elza7ma.",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-530-abd-elrahman-nao-consegue-telefonar-para-o-gerente",
+   "pt": "Abd Elrahman não consegue telefonar para o gerente porque ele não tem celular.",
+   "ar": "عبدالرحمن مابيقدَرش يِتِصِل بالمُدير عشان ماعندوش موبايل.",
+   "arabizi": "Abdelra7man mabie2darsh yetessel belmodir 3ashan ma3andush mobile.",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-531-hala-nao-consegue-falar-portugues-fluentemente-por",
+   "pt": "Hala não consegue falar português fluentemente porque faz um ano só que ela está aprendendo.",
+   "ar": "هاله مابتقدَرش تتكلم برتغالي بِطلاقة عشان بَقالها سنة بَس بتتعلم.",
+   "arabizi": "Hala mabete2darsh tetkalem borto8aly betalaqa 3ashan ba2alha sana bas betet3alem.",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-532-nos-nao-vamos-conseguir-ajudar-voces-por-causa-do-",
+   "pt": "Nós não vamos conseguir ajudar vocês por causa do Ahmed.",
+   "ar": "احنا مِش هَنقدر نِساعِدكوا بِسبب أحمَد.",
+   "arabizi": "E7na mesh hane2dar nessa3edko bessabab Ahmed.",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-533-os-meus-pais-nao-conseguem-limpar-e-arrumar-a-casa",
+   "pt": "Os meus pais não conseguem limpar e arrumar a casa deles sozinhos, por isso quero telefonar para alguém.",
+   "ar": "ماما وبابا مابيقدَروش يِنَضَفوا ويِروَقوا البيت لوحدُهم عشان كدة عايِز أتِصِل بِحَد.",
+   "arabizi": "Mama we baba mabie2darush yenadafu we yeraua2u elbeit leua7dohom 3ashan keda 3aeiz atessel be 7ad.",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-534-voce-consegue-estacionar-o-carro-m-habilidade-com",
+   "pt": "Você consegue estacionar o carro? (m — habilidade, com بـ)",
+   "ar": "انتَ بتقدر تِركِن العربية؟",
+   "arabizi": "Enta bete2dar terken el3arabeya?",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-535-voce-consegue-estacionar-o-carro-f-habilidade-com",
+   "pt": "Você consegue estacionar o carro? (f — habilidade, com بـ)",
+   "ar": "انتي بتقدري تركني العربية؟",
+   "arabizi": "Enty bete2dary terkeny el3arabeya?",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-536-voce-consegue-estacionar-o-carro-embaixo-desta-arv",
+   "pt": "Você consegue estacionar o carro embaixo desta árvore? (m — agora, sem بـ)",
+   "ar": "تِقدَر تِركِن العربية تَحت الشَجرة دي؟",
+   "arabizi": "Te2dar terken el3arabeya ta7t elshagara di?",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-537-voces-conseguem-falar-arabe-habilidade-com",
+   "pt": "Vocês conseguem falar árabe? (habilidade, com بـ)",
+   "ar": "انتوا بِتقدروا تتكلموا عربي؟",
+   "arabizi": "Entu bete2daru tetkalemu 3arabi?",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-538-voces-conseguem-falar-arabe-com-aqueles-egipcios-l",
+   "pt": "Vocês conseguem falar árabe com aqueles egípcios lá? (agora, sem بـ)",
+   "ar": "تِقدَروا تتكلموا عربي مع المَصريين دول هِناك؟",
+   "arabizi": "Te2daru tetkalemu 3arabi ma3a elmasreyin dol henak?",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-539-voce-consegue-enviar-coisas-nos-correios-m-habilid",
+   "pt": "Você consegue enviar coisas nos correios? (m — habilidade, com بـ)",
+   "ar": "انتَ بِتقدَر تِبعَت حاجات في البوسطة؟",
+   "arabizi": "Enta bete2dar teb3at 7agat fe elbosta?",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-540-voce-consegue-enviar-este-presente-para-adel-nos-c",
+   "pt": "Você consegue enviar este presente para Adel nos correios? (m — agora, sem بـ)",
+   "ar": "تِقدَر تبعت الهدية دي لِـعادِل في البوسطة؟",
+   "arabizi": "Te2dar teb3at elhedeya di le Adel fe elbosta?",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-541-voce-consegue-enviar-este-presente-para-adel-nos-c",
+   "pt": "Você consegue enviar este presente para Adel nos correios? (f — agora, sem بـ)",
+   "ar": "تقدري تبعتي الهدية دي لعادل في البوسطة؟",
+   "arabizi": "Te2dary teb3aty elhedeya di le Adel fe elbosta?",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-542-voces-conseguem-correr-habilidade-com",
+   "pt": "Vocês conseguem correr? (habilidade, com بـ)",
+   "ar": "انتوا بتقدروا تِجروا؟",
+   "arabizi": "Entu bete2daru tegru?",
+   "src": "2026-11-18"
+  },
+  {
+   "id": "esc-543-voces-conseguem-correr-daqui-para-la-agora-sem",
+   "pt": "Vocês conseguem correr daqui para lá? (agora, sem بـ)",
+   "ar": "تِقدَروا تجروا مِن هِنا لِـهناك؟",
+   "arabizi": "Te2daru tegru men hena le henak?",
+   "src": "2026-11-18"
   }
  ],
  "leitura": [
