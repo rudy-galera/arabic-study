@@ -6,8 +6,8 @@
 // Atualizado pelo skill /arabic-class-update.
 // ─────────────────────────────────────────────────────────────────────
 const BANK = {
- "version": "2026-11-18",
- "baseadoEm": "Aulas até 96 (2026-11-18) · Apostila nível básico · Apostila 2 pp.1-29 · cards do site",
+ "version": "2026-11-20",
+ "baseadoEm": "Aulas até 97 (2026-11-20) · Apostila nível básico · Apostila 2 pp.1-32 · cards do site",
  "numeros": [
   {
    "id": "num-sefr",
@@ -3294,7 +3294,7 @@ const BANK = {
    "id": "voc-saudacoes-salam",
    "cat": "saudacoes",
    "catLabel": "Saudações",
-   "pt": "olá / oi",
+   "pt": "olá / oi · também tchau (Aula 97)",
    "ar": "سَلام",
    "arabizi": "salam"
   },
@@ -5070,9 +5070,9 @@ const BANK = {
    "id": "voc-sentimentos-3ayan",
    "cat": "sentimentos",
    "catLabel": "Sentimentos",
-   "pt": "doente",
-   "ar": "عَيان",
-   "arabizi": "3ayan"
+   "pt": "doente (m / f)",
+   "ar": "عَيان / عَيانة",
+   "arabizi": "3ayan / 3ayana"
   },
   {
    "id": "voc-sentimentos-3andy-soda3",
@@ -10633,6 +10633,182 @@ const BANK = {
    "pt": "eu fumo",
    "ar": "بَدَخَن / بَشرَب سَجايِر",
    "arabizi": "bada5an / bashrab sagayer"
+  },
+  {
+   "id": "voc-saudacoes-alf-salama",
+   "cat": "saudacoes",
+   "catLabel": "Saudações",
+   "pt": "melhoras!",
+   "ar": "ألف سَلامة",
+   "arabizi": "alf salama"
+  },
+  {
+   "id": "voc-saudacoes-alf-salama-3ala",
+   "cat": "saudacoes",
+   "catLabel": "Saudações",
+   "pt": "melhoras para… (+ pessoa)",
+   "ar": "ألف سَلامة عَلى",
+   "arabizi": "alf salama 3ala"
+  },
+  {
+   "id": "voc-saudacoes-alf-salama-3aleh",
+   "cat": "saudacoes",
+   "catLabel": "Saudações",
+   "pt": "melhoras para ele!",
+   "ar": "ألف سلامة عليه",
+   "arabizi": "alf salama 3aleh"
+  },
+  {
+   "id": "voc-outros-7asal-eh",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "o que aconteceu?",
+   "ar": "حَصَل ايه؟",
+   "arabizi": "7asal eh?"
+  },
+  {
+   "id": "voc-outros-ra2i",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "opinião",
+   "ar": "رأي",
+   "arabizi": "ra2i"
+  },
+  {
+   "id": "voc-outros-ana-ra2ii-bessara7a",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "na minha opinião (honestamente)",
+   "ar": "أنا رأيي بِصراحة",
+   "arabizi": "ana ra2ii bessara7a"
+  },
+  {
+   "id": "voc-outros-yenfa3",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "pode / dá para (regras, leis, costumes)",
+   "ar": "يِنفَع",
+   "arabizi": "yenfa3"
+  },
+  {
+   "id": "voc-outros-mayenfa3sh",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "não pode / não dá (regras, leis, costumes)",
+   "ar": "ماينفَعش",
+   "arabizi": "mayenfa3sh"
+  },
+  {
+   "id": "voc-outros-safareya",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "viagem (sinônimo de safar)",
+   "ar": "سَفرية",
+   "arabizi": "safareya"
+  },
+  {
+   "id": "voc-comida-5amra",
+   "cat": "comida",
+   "catLabel": "Comida",
+   "pt": "bebidas alcoólicas",
+   "ar": "خَمرة / مشروبات كحولية",
+   "arabizi": "5amra / mashrubat ko7oleya"
+  },
+  {
+   "id": "voc-lugares-shauare3",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "ruas",
+   "ar": "شَوارِع",
+   "arabizi": "shauare3"
+  },
+  {
+   "id": "voc-lugares-bab",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "porta",
+   "ar": "باب",
+   "arabizi": "bab"
+  },
+  {
+   "id": "voc-lugares-ay-makan",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "qualquer lugar",
+   "ar": "أي مَكان",
+   "arabizi": "ay makan"
+  },
+  {
+   "id": "voc-outros-3andak-ai",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "aí, onde você está (m / f / vocês)",
+   "ar": "عَندَك / عَندِك / عَندُكوا",
+   "arabizi": "3andak / 3andek / 3andku"
+  },
+  {
+   "id": "voc-outros-elauel",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "primeiro / antes (de fazer outra coisa)",
+   "ar": "الأوِل",
+   "arabizi": "elauel"
+  },
+  {
+   "id": "voc-outros-elgau-3amel-eh",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "como está o tempo (clima)?",
+   "ar": "الجَو عامِل ايه؟",
+   "arabizi": "elgau 3amel eh?"
+  },
+  {
+   "id": "voc-outros-clima-bard",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "está frio (clima)",
+   "ar": "الدُنيا بَرد / الجَو بَرد",
+   "arabizi": "el donya bard / el gau bard"
+  },
+  {
+   "id": "voc-outros-clima-7ar",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "está calor (clima)",
+   "ar": "الدُنيا حَر / الجَو حَر",
+   "arabizi": "el donya 7ar / el gau 7ar"
+  },
+  {
+   "id": "voc-outros-clima-shams",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "está ensolarado (clima)",
+   "ar": "الدُنيا شَمس / الجَو شَمس",
+   "arabizi": "el donya shams / el gau shams"
+  },
+  {
+   "id": "voc-outros-clima-dafy",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "está ameno (clima)",
+   "ar": "الدُنيا دافية / الجَو دافي",
+   "arabizi": "el donya dafya / el gau dafy"
+  },
+  {
+   "id": "voc-outros-clima-me8ayem",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "está nublado (clima)",
+   "ar": "الدُنيا مِغيمة / الجَو مِغَيم",
+   "arabizi": "el donya me8ayema / el gau me8ayem"
+  },
+  {
+   "id": "voc-outros-ma5atesh-baly",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "não percebi",
+   "ar": "ماخدتش بالِي",
+   "arabizi": "ma5atesh baly"
   }
  ],
  "familia": [
@@ -16254,6 +16430,146 @@ const BANK = {
    "ar": "تِقدَروا تجروا مِن هِنا لِـهناك؟",
    "arabizi": "Te2daru tegru men hena le henak?",
    "src": "2026-11-18"
+  },
+  {
+   "id": "esc-544-amin-ola-hossam-voce-vai-conseguir-viajar-conosco-",
+   "pt": "Amin: Olá Hossam, você vai conseguir viajar conosco na semana que vem?",
+   "ar": "أهلاً يا حُسام! انتَ هَتِقدَر تِسافِر معانا الأسبوع الجاي؟",
+   "arabizi": "Ahlan ya Hossam! Enta hate2dar tessafer ma3ana elosbu3 elgay?",
+   "src": "2026-11-20"
+  },
+  {
+   "id": "esc-545-hossam-desculpe-eu-nao-vou-conseguir-meu-filho-mai",
+   "pt": "Hossam: Desculpe, eu não vou conseguir, meu filho mais novo está doente e nós precisamos ficar com ele, ele está no hospital desde ontem.",
+   "ar": "مَعلِش، أنا مِش هقدر، ابني الصُغَيَر تَعبان واحنا مِحتاجين نُقعُد معاه، هُوَ في المُستَشفى مِن امبارِح.",
+   "arabizi": "Ma3lesh, ana mesh ha2dar, ebny elso8ayar ta3ban we e7na me7taguin no3od ma3ah, howa fe elmostashfa men embare7.",
+   "src": "2026-11-20"
+  },
+  {
+   "id": "esc-546-melhoras-para-ele-o-que-aconteceu",
+   "pt": "Melhoras para ele! O que aconteceu?",
+   "ar": "ألف سلامة عليه! حَصَل ايه؟",
+   "arabizi": "Alf salama 3aleh! 7asal eh?",
+   "src": "2026-11-20"
+  },
+  {
+   "id": "esc-547-eu-nao-vou-conseguir-te-contar-tudo-agora-eu-preci",
+   "pt": "Eu não vou conseguir te contar tudo agora, eu preciso ir ao hospital agora e estou atrasado!",
+   "ar": "أنا مِش هاقدَر أقول لَك كُل حاجة دلوقتي، أنا مِحتاج أروح المستشفى دلوقتي وأنا متأخر!",
+   "arabizi": "Ana mesh ha2dar a2ul lak kol 7aga delwa2ty, ana me7tag aru7 elmostashfa delwa2ty we ana met2a5ar!",
+   "src": "2026-11-20"
+  },
+  {
+   "id": "esc-548-sem-problemas-eu-vou-te-ligar-mais-tarde-tchau",
+   "pt": "Sem problemas, eu vou te ligar mais tarde! Tchau!",
+   "ar": "مافيش مشكلة، أنا هتصل بيك بعدين! سَلام!",
+   "arabizi": "Mafish moshkela, ana hatessel bik ba3dein! Salam!",
+   "src": "2026-11-20"
+  },
+  {
+   "id": "esc-549-nao-pode-comer-aqui",
+   "pt": "Não pode comer aqui!",
+   "ar": "ماينفَعش تاكُل هِنا!",
+   "arabizi": "Mayenfa3sh takol hena!",
+   "src": "2026-11-20"
+  },
+  {
+   "id": "esc-550-nao-pode-fumar-aqui",
+   "pt": "Não pode fumar aqui!",
+   "ar": "ماينفَعش تِدَخَن هِنا!",
+   "arabizi": "Mayenfa3sh teda5an hena!",
+   "src": "2026-11-20"
+  },
+  {
+   "id": "esc-551-nao-pode-falar-em-voz-alta-durante-a-reuniao",
+   "pt": "Não pode falar em voz alta durante a reunião!",
+   "ar": "ماينفَعش تِتكَلِم بِصوت عالي في الاجتِماع!",
+   "arabizi": "Mayenfa3sh tetkalem be sot 3aly fe elektema3!",
+   "src": "2026-11-20"
+  },
+  {
+   "id": "esc-552-nao-pode-ligar-para-ninguem-durante-a-prova",
+   "pt": "Não pode ligar para ninguém durante a prova!",
+   "ar": "ماينفَعش تتصِل بِحَد خِلال الإمتحان!",
+   "arabizi": "Mayenfa3sh tetessel be 7ad 5elal elemte7an!",
+   "src": "2026-11-20"
+  },
+  {
+   "id": "esc-553-nao-pode-sair-desta-porta",
+   "pt": "Não pode sair desta porta!",
+   "ar": "ماينفعش تُخرُج مِن الباب ده!",
+   "arabizi": "Mayenfa3sh to5rog men elbab da!",
+   "src": "2026-11-20"
+  },
+  {
+   "id": "esc-554-nao-pode-tomar-este-remedio-depois-do-jantar",
+   "pt": "Não pode tomar este remédio depois do jantar.",
+   "ar": "ماينفَعش تاخُد الدَوا ده بَعد العَشا.",
+   "arabizi": "Mayenfa3sh ta5od eldaua da ba3d el3asha.",
+   "src": "2026-11-20"
+  },
+  {
+   "id": "esc-555-nao-pode-ficar-aqui-depois-das-19h",
+   "pt": "Não pode ficar aqui depois das 19h.",
+   "ar": "ماينفَعش تُقعُد هنا بعد الساعة سبعة!",
+   "arabizi": "Mayenfa3sh to3od hena ba3d elsa3a sab3a!",
+   "src": "2026-11-20"
+  },
+  {
+   "id": "esc-556-nao-pode-dirigir-rapido-nesta-rua",
+   "pt": "Não pode dirigir rápido nesta rua!",
+   "ar": "ماينفَعش تِسوق بسُرعة في الشارِع ده!",
+   "arabizi": "Mayenfa3sh tessu2 bessor3a fe elshare3 da!",
+   "src": "2026-11-20"
+  },
+  {
+   "id": "esc-557-pode-enviar-as-fotos-da-viagem-para-mim-no-whatsap",
+   "pt": "Pode enviar as fotos da viagem para mim no WhatsApp, por favor? (m)",
+   "ar": "يِنفَع تِبعت لِي صور السَفَرية عَلى واتساب، لو سمحت؟",
+   "arabizi": "Yenfa3 teb3at ly suar elsafareya 3ala whatsapp, lau sama7t?",
+   "src": "2026-11-20"
+  },
+  {
+   "id": "esc-558-pode-enviar-as-fotos-da-viagem-para-mim-no-whatsap",
+   "pt": "Pode enviar as fotos da viagem para mim no WhatsApp, por favor? (f)",
+   "ar": "يِنفَع تِبعتي لي صور السفرية على واتساب، لو سمحتي؟",
+   "arabizi": "Yenfa3 teb3aty ly suar elsafareya 3ala whatsapp, lau sama7ty?",
+   "src": "2026-11-20"
+  },
+  {
+   "id": "esc-559-mae-posso-jogar-playstation-depois-do-almoco",
+   "pt": "Mãe, posso jogar PlayStation depois do almoço?",
+   "ar": "ماما يِنفعَ ألَعَب بلاي ستيشن بعد الغَدا؟",
+   "arabizi": "Mama yenfa3 al3ab play station ba3d el8ada?",
+   "src": "2026-11-20"
+  },
+  {
+   "id": "esc-560-nao-nao-pode-tem-que-estudar-primeiro",
+   "pt": "Não, não pode! Tem que estudar primeiro.",
+   "ar": "لا ماينفعش! لازِم تِذاكِر الأوِل.",
+   "arabizi": "La mayenfa3sh! Lazem tezaker elauel!",
+   "src": "2026-11-20"
+  },
+  {
+   "id": "esc-561-posso-beber-bebidas-alcoolicas-nas-ruas-do-egito-o",
+   "pt": "Posso beber bebidas alcoólicas nas ruas do Egito? Ou é proibido?",
+   "ar": "يِنفَع أشرَب خَمرة في شوارِع مَصر؟ وَلّا مَمنوع؟",
+   "arabizi": "Yenfa3 ashrab 5amra fe shauare3 Masr? Walla mamnu3?",
+   "src": "2026-11-20"
+  },
+  {
+   "id": "esc-562-podemos-levar-o-nosso-cachorro-para-a-festa",
+   "pt": "Podemos levar o nosso cachorro para a festa?",
+   "ar": "يِنفَع ناخُد كلبِنا الحَفلة؟",
+   "arabizi": "Yenfa3 na5od kalbena el7afla?",
+   "src": "2026-11-20"
+  },
+  {
+   "id": "esc-563-como-esta-o-tempo-ai-nos-emirados",
+   "pt": "Como está o tempo aí nos Emirados?",
+   "ar": "الجَو عامِل ايه عَندَك في الإمارات؟",
+   "arabizi": "Elgau 3amel eh 3andak fe elemarat?",
+   "src": "2026-11-20"
   }
  ],
  "leitura": [
@@ -17897,6 +18213,48 @@ const BANK = {
      "pt": "Sim, eu tenho uma colega próxima de mim que se chama Seresh; ela é do Paquistão, mas mora em Londres.",
      "ar": "ايوة، أنا عَندي واحدة زميلتي قريبة مني اسمها سيريش، هي مِن باكستان بس هي ساكنة في لَندَن.",
      "arabizi": "Aywa, ana 3andy wa7da zamilty orayeba meny esmaha Seresh, heya men Pakistan bas heya sakna fe London."
+    }
+   ]
+  },
+  {
+   "id": "lei-45-salwa-e-rania-apostila2",
+   "title": "Diálogo · Salwa e Rania — تِقدَري تقابليني؟ (Apostila 2 p.31)",
+   "src": "Apostila 2 p.31",
+   "items": [
+    {
+     "pt": "Salwa: Rania, eu preciso de ajuda. Você consegue me encontrar hoje à tarde?",
+     "ar": "سَلوى: يا رانيا، أنا مِحتاجة مُساعدة؟ تِقدَري تقابليني النَهاردة بَعد الضُهر؟",
+     "arabizi": "Salwa: Ya Rania, ana mei7taga mossa3da? Te2dary te2abliny enaharda ba3d el dohr?"
+    },
+    {
+     "pt": "Rania: Eu vou terminar o trabalho tarde hoje. Você está bem?",
+     "ar": "رانيا: أنا هَخَلص الشُغل مِتأخر النَهاردة. انتي كويسة؟",
+     "arabizi": "Rania: Ana ha5alas el sho8l met2a5ar enaharda. Enty kouayessa?"
+    },
+    {
+     "pt": "Salwa: Eu estou bem, mas preciso da sua opinião sobre uma coisa importante.",
+     "ar": "سَلوى: أنا كويسة، بَس مِحتاجة رأيك في حاجة مُهِمة.",
+     "arabizi": "Salwa: Ana kouayessa, bas mei7taga ra2yek fe 7aga mohema."
+    },
+    {
+     "pt": "Rania: Está bem, vou tentar falar com o gerente e ver se consigo te encontrar hoje. Onde você quer me encontrar?",
+     "ar": "رانيا: خَلاص هَحاول أتكَلِم مَعَ المُدير و أشوف لَو أقدَر أقابلِك النَهاردة. انتي عايزة تِقابليني فين؟",
+     "arabizi": "Rania: 5alas, ha7awel atkalem ma3a el modir we ashuf lau a2dar a2ablek enaharda. Enty 3aeiza te2abliny fen?"
+    },
+    {
+     "pt": "Salwa: Qualquer lugar, não importa.",
+     "ar": "سَلوى: أي مَكان، مِش مُهِم.",
+     "arabizi": "Salwa: Ay makan, mesh mohem."
+    },
+    {
+     "pt": "Rania: Tem uma cafeteria boa perto do escritório aqui.",
+     "ar": "رانيا: فيه كافتيريا كويسة قُريبة من المكتب هِنا.",
+     "arabizi": "Rania: Fih cafeteria kouayessa orayeba men el maktab hena."
+    },
+    {
+     "pt": "Salwa: Certo, muito bom.",
+     "ar": "سَلوى: تَمام، كويس اوي.",
+     "arabizi": "Salwa: Tmam, kouayes awi."
     }
    ]
   }
