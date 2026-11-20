@@ -9788,7 +9788,7 @@ const BANK = {
    "id": "voc-numeros-auel-aula",
    "cat": "numeros",
    "catLabel": "Números",
-   "pt": "1º (m/f)",
+   "pt": "1º · primeiro / primeira",
    "ar": "أوّل / أولى",
    "arabizi": "auel / aula",
    "imp": 1
@@ -9797,7 +9797,7 @@ const BANK = {
    "id": "voc-numeros-tany-tanya",
    "cat": "numeros",
    "catLabel": "Números",
-   "pt": "2º (m/f)",
+   "pt": "2º · segundo / segunda",
    "ar": "تاني / تانية",
    "arabizi": "tany / tanya",
    "imp": 1
@@ -9806,7 +9806,7 @@ const BANK = {
    "id": "voc-numeros-talet-talta",
    "cat": "numeros",
    "catLabel": "Números",
-   "pt": "3º (m/f)",
+   "pt": "3º · terceiro / terceira",
    "ar": "تالِت / تالتة",
    "arabizi": "talet / talta",
    "imp": 1
@@ -9815,7 +9815,7 @@ const BANK = {
    "id": "voc-numeros-rabe3-rab3a",
    "cat": "numeros",
    "catLabel": "Números",
-   "pt": "4º (m/f)",
+   "pt": "4º · quarto / quarta",
    "ar": "رابِع / رابعة",
    "arabizi": "rabe3 / rab3a",
    "imp": 1
@@ -9824,7 +9824,7 @@ const BANK = {
    "id": "voc-numeros-5ames-5amsa",
    "cat": "numeros",
    "catLabel": "Números",
-   "pt": "5º (m/f)",
+   "pt": "5º · quinto / quinta",
    "ar": "خامِس / خامسة",
    "arabizi": "5ames / 5amsa",
    "imp": 1
@@ -9833,7 +9833,7 @@ const BANK = {
    "id": "voc-numeros-sades-satsa",
    "cat": "numeros",
    "catLabel": "Números",
-   "pt": "6º (m/f)",
+   "pt": "6º · sexto / sexta",
    "ar": "سادِس / سادسة",
    "arabizi": "sades / satsa",
    "imp": 1
@@ -9842,7 +9842,7 @@ const BANK = {
    "id": "voc-numeros-sabe3-sab3a",
    "cat": "numeros",
    "catLabel": "Números",
-   "pt": "7º (m/f)",
+   "pt": "7º · sétimo / sétima",
    "ar": "سابِع / سابعة",
    "arabizi": "sabe3 / sab3a",
    "imp": 1
@@ -9851,7 +9851,7 @@ const BANK = {
    "id": "voc-numeros-tamen-tamna",
    "cat": "numeros",
    "catLabel": "Números",
-   "pt": "8º (m/f)",
+   "pt": "8º · oitavo / oitava",
    "ar": "تامِن / تامنة",
    "arabizi": "tamen / tamna",
    "imp": 1
@@ -9860,7 +9860,7 @@ const BANK = {
    "id": "voc-numeros-tase3-tas3a",
    "cat": "numeros",
    "catLabel": "Números",
-   "pt": "9º (m/f)",
+   "pt": "9º · nono / nona",
    "ar": "تاسِع / تاسعة",
    "arabizi": "tase3 / tas3a",
    "imp": 1
@@ -9869,7 +9869,7 @@ const BANK = {
    "id": "voc-numeros-3asher-3ashra",
    "cat": "numeros",
    "catLabel": "Números",
-   "pt": "10º (m/f)",
+   "pt": "10º · décimo / décima",
    "ar": "عاشِر / عاشرة",
    "arabizi": "3asher / 3ashra",
    "imp": 1
