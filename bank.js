@@ -6,8 +6,8 @@
 // Atualizado pelo skill /arabic-class-update.
 // ─────────────────────────────────────────────────────────────────────
 const BANK = {
- "version": "2026-11-20",
- "baseadoEm": "Aulas até 97 (2026-11-20) · Apostila nível básico · Apostila 2 pp.1-32 · cards do site",
+ "version": "2026-11-25",
+ "baseadoEm": "Aulas até 98 (2026-11-25) · Apostila nível básico · Apostila 2 pp.1-34 · cards do site",
  "numeros": [
   {
    "id": "num-sefr",
@@ -5102,17 +5102,17 @@ const BANK = {
    "id": "voc-sentimentos-bardan",
    "cat": "sentimentos",
    "catLabel": "Sentimentos",
-   "pt": "frio",
-   "ar": "بَردان",
-   "arabizi": "bardan"
+   "pt": "com frio (pessoa) (m / f)",
+   "ar": "بَردان / بَردانة",
+   "arabizi": "bardan / bardana"
   },
   {
    "id": "voc-sentimentos-7arran",
    "cat": "sentimentos",
    "catLabel": "Sentimentos",
-   "pt": "quente / com calor",
-   "ar": "حَرّان",
-   "arabizi": "7arran"
+   "pt": "com calor (pessoa) (m / f)",
+   "ar": "حَرّان / حَرّانة",
+   "arabizi": "7arran / 7arrana"
   },
   {
    "id": "voc-sentimentos-3asaby",
@@ -10807,8 +10807,152 @@ const BANK = {
    "cat": "outros",
    "catLabel": "Outros",
    "pt": "não percebi",
-   "ar": "ماخدتش بالِي",
-   "arabizi": "ma5atesh baly"
+   "ar": "ماخَدتش بالي",
+   "arabizi": "ma5adtesh baly / ma5atesh baly"
+  },
+  {
+   "id": "voc-lugares-maktaba",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "biblioteca / livraria / papelaria",
+   "ar": "مَكتَبة",
+   "arabizi": "maktaba"
+  },
+  {
+   "id": "voc-lugares-ganub",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "sul",
+   "ar": "جَنوب",
+   "arabizi": "ganub"
+  },
+  {
+   "id": "voc-outros-sama3at",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "fones de ouvido",
+   "ar": "سماعات",
+   "arabizi": "sama3at"
+  },
+  {
+   "id": "voc-outros-ma7adesh",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "ninguém (sujeito: ninguém gosta…)",
+   "ar": "ماحَدش",
+   "arabizi": "ma7adesh"
+  },
+  {
+   "id": "voc-outros-elhaua2-eltalq",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "ar livre",
+   "ar": "الهَواء الطَلق",
+   "arabizi": "elhaua2 eltalq"
+  },
+  {
+   "id": "voc-outros-jaket",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "jaqueta",
+   "ar": "جاكيت",
+   "arabizi": "jaket"
+  },
+  {
+   "id": "voc-outros-baguib",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "eu trago (trazer)",
+   "ar": "أنا بجيب",
+   "arabizi": "ana baguib"
+  },
+  {
+   "id": "voc-comida-kobaya",
+   "cat": "comida",
+   "catLabel": "Comida",
+   "pt": "copo",
+   "ar": "كوباية",
+   "arabizi": "kobaya"
+  },
+  {
+   "id": "voc-comida-ice-cream",
+   "cat": "comida",
+   "catLabel": "Comida",
+   "pt": "sorvete",
+   "ar": "أيس كريم",
+   "arabizi": "ice cream"
+  },
+  {
+   "id": "voc-comida-hot-chocolate",
+   "cat": "comida",
+   "catLabel": "Comida",
+   "pt": "chocolate quente",
+   "ar": "هوت تشوكليت",
+   "arabizi": "hot chocolate"
+  },
+  {
+   "id": "voc-tempo-fasl",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "estação (do ano)",
+   "ar": "فَصل",
+   "arabizi": "fasl"
+  },
+  {
+   "id": "voc-tempo-fosul",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "estações (do ano)",
+   "ar": "فُصول",
+   "arabizi": "fosul"
+  },
+  {
+   "id": "voc-tempo-fosul-elsana",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "estações do ano",
+   "ar": "فُصول السَنة",
+   "arabizi": "fosul elsana"
+  },
+  {
+   "id": "voc-tempo-rabi3",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "primavera",
+   "ar": "رَبيع",
+   "arabizi": "rabi3"
+  },
+  {
+   "id": "voc-tempo-5arif",
+   "cat": "tempo",
+   "catLabel": "Tempo",
+   "pt": "outono",
+   "ar": "خَريف",
+   "arabizi": "5arif"
+  },
+  {
+   "id": "voc-adjetivos-so5n",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "quente (objetos) (m / f)",
+   "ar": "سُخن / سُخنة",
+   "arabizi": "so5n / so5na"
+  },
+  {
+   "id": "voc-adjetivos-sa2e3",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "gelado / gelada",
+   "ar": "ساقِع / ساقعة",
+   "arabizi": "sa2e3 / sa23a"
+  },
+  {
+   "id": "voc-adjetivos-bared",
+   "cat": "adjetivos",
+   "catLabel": "Adjetivos comuns",
+   "pt": "frio / fria (objetos)",
+   "ar": "بارِد / باردة",
+   "arabizi": "bared / barda"
   }
  ],
  "familia": [
@@ -16570,6 +16714,202 @@ const BANK = {
    "ar": "الجَو عامِل ايه عَندَك في الإمارات؟",
    "arabizi": "Elgau 3amel eh 3andak fe elemarat?",
    "src": "2026-11-20"
+  },
+  {
+   "id": "esc-564-a-voce-nao-pode-falar-em-voz-alta-aqui-estamos-na-",
+   "pt": "A: Você não pode falar em voz alta aqui! Estamos na biblioteca!",
+   "ar": "انتَ ماينفَعش تِتكَلِم بِصوت عالي هِنا! احنا في المَكتبة!",
+   "arabizi": "Enta mayenfa3sh tetkalem besot 3aly hena! E7na fe elmaktaba!",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-565-b-eu-nao-estou-falando-com-ninguem-agora-eu-apenas",
+   "pt": "B: Eu não estou falando com ninguém agora, eu apenas estou lendo.",
+   "ar": "أنا مابتكلمش مع حَد دلوقتي، أنا بَقرا بَس.",
+   "arabizi": "Ana mabatkalemsh ma3a 7ad delua2ty, ana ba2ra bas.",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-566-a-voce-esta-lendo-em-voz-muito-alta-por-causa-dos-",
+   "pt": "A: Você está lendo em voz muito alta por causa dos fones de ouvido!",
+   "ar": "انتَ بِتِقرا بِصوت عالي أوي بسبب الهيد فونز (السماعات).",
+   "arabizi": "Enta bete2ra besot 3aly awi bessabab elheadphones (elsama3at).",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-567-b-desculpe-nao-percebi",
+   "pt": "B: Desculpe! Não percebi!",
+   "ar": "آسِف! ماخدتش بالي!",
+   "arabizi": "Asef! Ma5adtesh baly!",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-568-como-esta-o-tempo-hoje",
+   "pt": "Como está o tempo hoje?",
+   "ar": "الجَو عامِل ايه النهاردة؟",
+   "arabizi": "Elgau 3amel eh enaharda?",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-569-esta-muito-frio-hoje-voce-tem-que-levar-uma-jaquet",
+   "pt": "Está muito frio hoje, você tem que levar uma jaqueta antes de sair.",
+   "ar": "الجَو برد أوي النهاردة، لازِم تاخُد جاكيت قَبل ما تُخرُج.",
+   "arabizi": "Elgau bard awi enaharda, lazem ta5od jaket 2abl ma to5rog.",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-570-esta-muito-calor-hoje-nos-nao-queremos-trabalhar-q",
+   "pt": "Está muito calor hoje, nós não queremos trabalhar, queremos ir à praia e comer sorvete.",
+   "ar": "الجَو حَر أوي النهاردة، احنا مش عايزين نشتغل، نِفسِنا نروح البَحر وناكُل أيس كريم.",
+   "arabizi": "Elgau 7ar awi enaharda, e7na mesh 3aeizin neshta8al, nefsena neru7 elba7r we nakol ice cream.",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-571-o-tempo-esta-nublado-eu-nao-gosto-desse-tempo",
+   "pt": "O tempo está nublado, eu não gosto desse tempo!",
+   "ar": "الجَو مِغَيِم، مابحبش الجَو ده!",
+   "arabizi": "Elgau me8ayem, maba7ebesh elgau da!",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-572-esta-sol-eu-vou-lavar-a-roupa-rapido",
+   "pt": "Está sol, eu vou lavar a roupa rápido.",
+   "ar": "الجَو شَمس، هَغسِل الهدوم بِسُرعة.",
+   "arabizi": "Elgau shams, ha8sel elhodum bessor3a.",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-573-faz-muito-calor-no-verao-aqui",
+   "pt": "Faz muito calor no verão aqui.",
+   "ar": "الجَو حَر أوي في الصيف هنا.",
+   "arabizi": "Elgau 7ar awi fe elseif hena.",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-574-as-pessoas-gostam-de-viajar-para-a-praia-no-verao",
+   "pt": "As pessoas gostam de viajar para a praia no verão.",
+   "ar": "الناس بِتحِب تِسافِر البَحر في الصيف.",
+   "arabizi": "Elnas bet7eb tessafer elba7r fe elseif.",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-575-faz-muito-frio-no-inverno-no-sul-do-brasil",
+   "pt": "Faz muito frio no inverno no sul do Brasil.",
+   "ar": "الجَو بَرد أوي في الشِتا في جَنوب البرازيل.",
+   "arabizi": "Elgau bard awi fe elsheta fe ganub elbarazil.",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-576-as-pessoas-preferem-viajar-para-a-europa-no-invern",
+   "pt": "As pessoas preferem viajar para a Europa no inverno.",
+   "ar": "الناس بِتفَضَل تِسافر أوروبا في الشِتا.",
+   "arabizi": "Elnas betfadal tessafer Oroba fe elsheta.",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-577-eu-amo-a-primavera",
+   "pt": "Eu amo a primavera.",
+   "ar": "أنا بَحِب الرَبيع.",
+   "arabizi": "Ana ba7eb elrabi3.",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-578-as-pessoas-gostam-de-praticar-esportes-ao-ar-livre",
+   "pt": "As pessoas gostam de praticar esportes ao ar livre na primavera.",
+   "ar": "الناس بتحب تِلعَب رياضة برة (في الهواء الطَلق) في الرَبيع.",
+   "arabizi": "Elnas bet7eb tel3ab reyada barra (fe elhaua2 eltalq) fe elrabi3.",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-579-o-tempo-e-ameno-no-outono",
+   "pt": "O tempo é ameno no outono.",
+   "ar": "الجَو دافي في الخَريف.",
+   "arabizi": "Elgau dafi fe el5arif.",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-580-as-pessoas-gostam-de-tomar-cha-e-chocolate-quente-",
+   "pt": "As pessoas gostam de tomar chá e chocolate quente no outono.",
+   "ar": "الناس بِتحِب تِشرَب شاي وهوت تشوكليت في الخَريف.",
+   "arabizi": "Elnas bet7eb teshrab shay we hot chocolate fe el5arif.",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-581-estou-com-calor-vou-comprar-sorvete",
+   "pt": "Estou com calor, vou comprar sorvete.",
+   "ar": "أنا حَران، هَشتري أيس كريم.",
+   "arabizi": "Ana 7arran, hashtery ice cream.",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-582-o-tempo-esta-muito-ensolarado-e-nos-estamos-com-mu",
+   "pt": "O tempo está muito ensolarado e nós estamos com muito calor.",
+   "ar": "الجَو شَمس أوي واحنا حرانين.",
+   "arabizi": "Elgau shams awi we e7na 7arranin.",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-583-eu-estou-com-frio",
+   "pt": "Eu estou com frio.",
+   "ar": "أنا بَردان.",
+   "arabizi": "Ana bardan.",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-584-faz-muito-tempo-que-voce-esta-fora-voce-esta-com-f",
+   "pt": "Faz muito tempo que você está fora? Você está com frio! (m)",
+   "ar": "بَقالَك كتير برة؟ انت بَردان!",
+   "arabizi": "Ba2alak ketir barra? Enta bardan!",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-585-faz-muito-tempo-que-voce-esta-fora-voce-esta-com-f",
+   "pt": "Faz muito tempo que você está fora? Você está com frio! (f)",
+   "ar": "بَقالِك كتير برة؟ انتي بردانة!",
+   "arabizi": "Ba2alek ketir barra? Enty bardana!",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-586-a-sopa-esta-muito-quente",
+   "pt": "A sopa está muito quente!",
+   "ar": "الشوربة سُخنة أوي!",
+   "arabizi": "Elshorba so5na awi!",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-587-eu-gosto-de-tomar-cha-quente-no-inverno",
+   "pt": "Eu gosto de tomar chá quente no inverno.",
+   "ar": "أنا بحب أشرب شاي سُخن في الشِتا.",
+   "arabizi": "Ana ba7eb ashrab shay so5n fe elsheta.",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-588-eu-quero-um-copo-de-agua-gelada-por-favor-pode-me-",
+   "pt": "Eu quero um copo de água gelada, por favor! (pode me trazer…)",
+   "ar": "مُمكِن تجيب لي كوباية ماية ساقعة، لو سَمَحت!",
+   "arabizi": "Momken teguib ly kobayet maya sa23a, lau sama7t!",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-589-a-comida-esta-gelada",
+   "pt": "A comida está gelada!",
+   "ar": "الأكل ساقِع!",
+   "arabizi": "Elakl sa2e3!",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-590-ninguem-gosta-de-tomar-cafe-frio",
+   "pt": "Ninguém gosta de tomar café frio.",
+   "ar": "ماحَدش بيحِب يِشرَب قهوة باردة.",
+   "arabizi": "Ma7adesh bei7eb yeshrab 2ahwa barda.",
+   "src": "2026-11-25"
+  },
+  {
+   "id": "esc-591-ninguem-gosta-de-comida-fria",
+   "pt": "Ninguém gosta de comida fria.",
+   "ar": "ماحدش بيحِب الأكل البارِد.",
+   "arabizi": "Ma7adesh bei7eb elakl elbared.",
+   "src": "2026-11-25"
   }
  ],
  "leitura": [
