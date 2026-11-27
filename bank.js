@@ -6,8 +6,8 @@
 // Atualizado pelo skill /arabic-class-update.
 // ─────────────────────────────────────────────────────────────────────
 const BANK = {
- "version": "2026-11-25",
- "baseadoEm": "Aulas até 98 (2026-11-25) · Apostila nível básico · Apostila 2 pp.1-34 · cards do site",
+ "version": "2026-11-27",
+ "baseadoEm": "Aulas até 99 (2026-11-27) · Apostila nível básico · Apostila 2 pp.1-36 · cards do site",
  "numeros": [
   {
    "id": "num-sefr",
@@ -3285,6 +3285,47 @@ const BANK = {
     "Eles/Elas": {
      "ar": "هُما بيركِنوا",
      "arabizi": "Homa bierkenu"
+    }
+   }
+  },
+  {
+   "id": "verbo-yigi",
+   "pt": "vir",
+   "ar": "ييجي",
+   "arabizi": "yigui",
+   "grupo": "rotina",
+   "conj": {
+    "Eu": {
+     "ar": "أنا باجي",
+     "arabizi": "Ana bagui"
+    },
+    "Você (m)": {
+     "ar": "انت بتيجي",
+     "arabizi": "Enta betigui"
+    },
+    "Você (f)": {
+     "ar": "انتي بتيجي",
+     "arabizi": "Enty betigui"
+    },
+    "Ele": {
+     "ar": "هُوَ بييجي",
+     "arabizi": "Howa beiigui"
+    },
+    "Ela": {
+     "ar": "هي بتيجي",
+     "arabizi": "Heya betigui"
+    },
+    "Nós": {
+     "ar": "احنا بنيجي",
+     "arabizi": "E7na benigui"
+    },
+    "Vocês": {
+     "ar": "انتوا بتيجوا",
+     "arabizi": "Entu betigu"
+    },
+    "Eles/Elas": {
+     "ar": "هما بييجوا",
+     "arabizi": "Homa beiigu"
     }
    }
   }
@@ -10953,6 +10994,134 @@ const BANK = {
    "pt": "frio / fria (objetos)",
    "ar": "بارِد / باردة",
    "arabizi": "bared / barda"
+  },
+  {
+   "id": "voc-outros-matar",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "chuva",
+   "ar": "مَطَر",
+   "arabizi": "matar"
+  },
+  {
+   "id": "voc-outros-clima-betmatar",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "chove / está chovendo",
+   "ar": "الدُنيا بتمَطَر",
+   "arabizi": "el donya betmatar"
+  },
+  {
+   "id": "voc-outros-clima-hatmatar",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "vai chover",
+   "ar": "الدُنيا هَتمَطَر",
+   "arabizi": "el donya hatmatar"
+  },
+  {
+   "id": "voc-outros-clima-kanet-betmatar",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "estava chovendo",
+   "ar": "الدُنيا كانِت بتمَطَر",
+   "arabizi": "el donya kanet betmatar"
+  },
+  {
+   "id": "voc-outros-clima-mataret",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "choveu",
+   "ar": "الدُنيا مَطَرِت",
+   "arabizi": "el donya mataret"
+  },
+  {
+   "id": "voc-outros-clima-mabetmatarsh",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "não chove",
+   "ar": "الدُنيا مابتمَطَرش",
+   "arabizi": "el donya mabetmatarsh"
+  },
+  {
+   "id": "voc-outros-gamed",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "muito (chuva: chove muito)",
+   "ar": "جامِد",
+   "arabizi": "gamed"
+  },
+  {
+   "id": "voc-outros-shamseya",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "guarda-chuva / sombrinha / guarda-sol",
+   "ar": "شَمسية",
+   "arabizi": "shamseya"
+  },
+  {
+   "id": "voc-sentimentos-mabsut-awi-en",
+   "cat": "sentimentos",
+   "catLabel": "Sentimentos",
+   "pt": "eu estou muito feliz que…",
+   "ar": "أنا مَبسوط أوي إن…",
+   "arabizi": "ana mabsut awi en"
+  },
+  {
+   "id": "voc-outros-etra2eit",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "fui promovido",
+   "ar": "اترَقيت",
+   "arabizi": "etra2eit"
+  },
+  {
+   "id": "voc-lugares-modon",
+   "cat": "lugares",
+   "catLabel": "Lugares",
+   "pt": "cidades (plural de madina)",
+   "ar": "مُدن",
+   "arabizi": "modon"
+  },
+  {
+   "id": "voc-outros-el-ghroub",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "o pôr do sol",
+   "ar": "الغروب",
+   "arabizi": "el ghroub"
+  },
+  {
+   "id": "voc-outros-tagroba",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "experiência",
+   "ar": "تَجرُبة",
+   "arabizi": "tagroba"
+  },
+  {
+   "id": "voc-outros-ansa7ak",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "eu te aconselho",
+   "ar": "أنصَحَك",
+   "arabizi": "ansa7ak"
+  },
+  {
+   "id": "voc-outros-tetsawar",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "tirar foto (de si) / ser fotografado",
+   "ar": "تتصَوَر",
+   "arabizi": "tetsawar"
+  },
+  {
+   "id": "voc-outros-3aziz",
+   "cat": "outros",
+   "catLabel": "Outros",
+   "pt": "querido (em carta: صَديقي العَزيز)",
+   "ar": "العَزيز",
+   "arabizi": "el 3aziz"
   }
  ],
  "familia": [
@@ -16910,6 +17079,188 @@ const BANK = {
    "ar": "ماحدش بيحِب الأكل البارِد.",
    "arabizi": "Ma7adesh bei7eb elakl elbared.",
    "src": "2026-11-25"
+  },
+  {
+   "id": "esc-592-esta-chovendo-la-fora",
+   "pt": "Está chovendo lá fora.",
+   "ar": "الدُنيا بتمطر بَرة.",
+   "arabizi": "Eldonya betmatar barra.",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-593-e-necessario-que-voce-fique-em-casa-esta-chovendo",
+   "pt": "É necessário que você fique em casa. Está chovendo.",
+   "ar": "ضَروري تُقعُد في البيت. الدُنيا بتمطر.",
+   "arabizi": "Darury to3od fe elbeit, eldonya betmatar.",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-594-na-minha-cidade-chove-muito-em-junho-e-julho",
+   "pt": "Na minha cidade, chove muito em junho e julho.",
+   "ar": "في مدينتي، بتمطر جامِد في يونيو ويوليو.",
+   "arabizi": "Fi madenty, betmatar gamed fe yonyo we yolyo.",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-595-aqui-so-chove-no-inverno",
+   "pt": "Aqui, só chove no inverno.",
+   "ar": "هِنا، بتمطر في الشِتا بَس.",
+   "arabizi": "Hena betmatar fe elsheta bas.",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-596-vai-chover-muito-amanha",
+   "pt": "Vai chover muito amanhã.",
+   "ar": "الدُنيا هَتمَطَر جامِد بكرة.",
+   "arabizi": "Eldonya hatmatar gamed bokra.",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-597-o-clima-esta-nublado-vai-chover",
+   "pt": "O clima está nublado, vai chover.",
+   "ar": "الدُنيا مِغَيمة، هَتمَطَر.",
+   "arabizi": "Eldonya me8ayema, hatmatar.",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-598-estava-chovendo-muito-ontem-de-tarde",
+   "pt": "Estava chovendo muito ontem de tarde.",
+   "ar": "الدُنيا كانِت بِتمَطَر جامِد امبارِح بعد الضُهر.",
+   "arabizi": "Eldonya kanet betmatar gamed embare7 ba3d eldohr.",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-599-choveu-muito-hoje-de-manha",
+   "pt": "Choveu muito hoje de manhã.",
+   "ar": "الدُنيا مَطَرِت جامِد النهاردة الصُبح.",
+   "arabizi": "Eldonya mataret gamed enaharda elsob7.",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-600-marina-esta-muito-ensolarado-hoje",
+   "pt": "Marina: Está muito ensolarado hoje!",
+   "ar": "الجَو شَمس أوي النهاردة!",
+   "arabizi": "Elgau shams awi enaharda!",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-601-julia-sim-faz-muito-calor-no-verao-aqui",
+   "pt": "Julia: Sim, faz muito calor no verão aqui!",
+   "ar": "ايوة، الجو حر أوي في الصيف هِنا!",
+   "arabizi": "Aywa, elgau 7ar awi fe elseif hena!",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-602-julia-eu-vou-comprar-suco-e-agua-gelada-voce-quer-",
+   "pt": "Julia: Eu vou comprar suco e água gelada, você quer? (f)",
+   "ar": "أنا هَشتَري عَصير وماية ساقعة، عايزة؟",
+   "arabizi": "Ana hashtery 3asir we maya sa23a, 3aeiza?",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-603-marina-sim-quero-sorvete-ou-refrigerante-f",
+   "pt": "Marina: Sim, quero sorvete ou refrigerante. (f)",
+   "ar": "ايوة، عايزة أيسكريم أو بيبسي.",
+   "arabizi": "Aywa, 3aeiza ice cream au pepsi.",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-604-julia-no-quiosque-fazendo-o-pedido",
+   "pt": "Julia no quiosque fazendo o pedido.",
+   "ar": "جوليا في الكُشك بِتعمِل الأوردر / بتشتري.",
+   "arabizi": "Julia fe elkoshk bete3mel elorder / beteshtery",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-605-julia-quero-2-sorvetes-por-favor-f-falando-com-hom",
+   "pt": "Julia: Quero 2 sorvetes, por favor? (f, falando com homem)",
+   "ar": "أنا عايزة اتنين ايس كريم لوسمحت؟",
+   "arabizi": "Ana 3aeiza etnein ice cream lau sama7t?",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-606-vendedor-certo-ficam-por-15-reais",
+   "pt": "Vendedor: Certo, ficam por 15 reais.",
+   "ar": "تَمام، كدة 15 ريال.",
+   "arabizi": "Tamam, keda 15 reyal.",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-607-julia-certo-aqui-esta-para-homem",
+   "pt": "Julia: Certo, aqui está. (para homem)",
+   "ar": "تَمام، اتفَضَل.",
+   "arabizi": "Tamam, etfadal.",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-608-tudo-bem-com-voce-e-como-esta-a-sua-familia-m",
+   "pt": "Tudo bem com você? E como está a sua família? (m)",
+   "ar": "ازَيَك؟ وازاي عيلتَك؟",
+   "arabizi": "Ezayak? We ezay 3eltak?",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-609-tudo-bem-com-voce-e-como-esta-a-sua-esposa",
+   "pt": "Tudo bem com você? E como está a sua esposa?",
+   "ar": "ازَيَك؟ وازاي مِراتك؟",
+   "arabizi": "Ezayak? We ezay meratak?",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-610-tudo-bem-com-voce-e-como-esta-o-trabalho-m",
+   "pt": "Tudo bem com você? E como está o trabalho? (m)",
+   "ar": "ازيك؟ وازاي الشُغل؟",
+   "arabizi": "Ezayak? We ezay elsho8l?",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-611-tudo-bem-com-voce-e-como-estao-os-seus-filhos-m",
+   "pt": "Tudo bem com você? E como estão os seus filhos? (m)",
+   "ar": "ازيك؟ وازاي وِلادَك؟",
+   "arabizi": "Ezayak? We ezay weladak?",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-612-eu-nao-vou-vir-a-festa-porque-nao-gosto-do-ahmed",
+   "pt": "Eu não vou vir à festa porque não gosto do Ahmed.",
+   "ar": "أنا مِش هاجي الحَفلة عشان مابحبش أحمد.",
+   "arabizi": "Ana mesh hagui el7afla 3alashan maba7ebesh Ahmed.",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-613-voce-sempre-vem-atrasado-ao-trabalho-m",
+   "pt": "Você sempre vem atrasado ao trabalho. (m)",
+   "ar": "انتَ دايماً بتيجي مِتأخَر الشُغل.",
+   "arabizi": "Enta dayman betigui met2a5ar elsho8l.",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-614-voce-sempre-vem-atrasada-ao-trabalho-f",
+   "pt": "Você sempre vem atrasada ao trabalho. (f)",
+   "ar": "انتي دايماً بتيجي مِتأخرة الشُغل.",
+   "arabizi": "Enty dayman betigui met2a5ara elsho8l.",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-615-eu-estou-muito-feliz-que-voce-esta-aqui-para-mulhe",
+   "pt": "Eu estou muito feliz que você está aqui. (para mulher)",
+   "ar": "أنا مبسوط أوي إنِك هِنا.",
+   "arabizi": "Ana mabsut awi enek hena.",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-616-eu-estou-muito-feliz-que-fui-promovido",
+   "pt": "Eu estou muito feliz que fui promovido.",
+   "ar": "أنا مبسوط أوي إني اترَقيت.",
+   "arabizi": "Ana mabsut awi eni etra2eit.",
+   "src": "aula-99"
+  },
+  {
+   "id": "esc-617-eu-estou-muito-feliz-que-vamos-viajar",
+   "pt": "Eu estou muito feliz que vamos viajar.",
+   "ar": "أنا مبسوط أوي إننا هَنسافِر.",
+   "arabizi": "Ana mabsut awi enena hansafer.",
+   "src": "aula-99"
   }
  ],
  "leitura": [
@@ -18595,6 +18946,83 @@ const BANK = {
      "pt": "Salwa: Certo, muito bom.",
      "ar": "سَلوى: تَمام، كويس اوي.",
      "arabizi": "Salwa: Tmam, kouayes awi."
+    }
+   ]
+  },
+  {
+   "id": "lei-46-carta-para-john-apostila2",
+   "title": "Leitura · Carta para John — صَديقي العَزيز جون (Apostila 2 p.36)",
+   "src": "Apostila 2 p.36",
+   "items": [
+    {
+     "pt": "Meu querido amigo John,",
+     "ar": "صَديقي العَزيز جون",
+     "arabizi": "Sadiky el 3aziz John"
+    },
+    {
+     "pt": "Tudo bem com você? E como está a sua família?",
+     "ar": "إزيَك وإزاي عيلتَك؟",
+     "arabizi": "Ezayak we ezay 3eltak?"
+    },
+    {
+     "pt": "Como vocês estão?",
+     "ar": "عاملين إيه؟",
+     "arabizi": "3amlin eh?"
+    },
+    {
+     "pt": "Estou muito feliz que você vai vir ao Egito nas férias.",
+     "ar": "أنا مَبسوط اوي إنك هَتيجي مَصر في الأجازة.",
+     "arabizi": "Ana mabsut awi enak hategy Masr fe el agaza."
+    },
+    {
+     "pt": "Em outubro, o tempo no Egito é ameno e bonito, nem frio nem calor.",
+     "ar": "الجَوّ في مَصر في أكتوبر دافي وجَميل مش بَرد ولا حَر.",
+     "arabizi": "El gau fi Masr fi October dafy we gamil mesh bard wala 7ar."
+    },
+    {
+     "pt": "Você tem que visitar uma das cidades do Mar Vermelho, como Hurghada, Dahab ou Sharm el-Sheikh.",
+     "ar": "لازم تزور مدينة من مُدن البَحر الأحمر زَي الغَردقة، دَهب أو شرم الشيخ.",
+     "arabizi": "Lazem tezur madina men modon el ba7r el a7mar zay el Gharda2a, Dahab au Sharm el Sheikh."
+    },
+    {
+     "pt": "A água lá é limpa e bonita, mas à noite faz um pouco de frio.",
+     "ar": "المَية هِناك صافية و جَميلة، بَس بالليل الجَو بَرد شِوية.",
+     "arabizi": "El maya henak safya we gamila, bas beilel el gau bard shewia."
+    },
+    {
+     "pt": "Não chove no Egito em outubro.",
+     "ar": "الدُنيا مابتمَطَرش في مَصر في أكتوبر.",
+     "arabizi": "El donya mabetmatarsh fi Masr fi October."
+    },
+    {
+     "pt": "No Cairo e em Gizé é importante visitar os museus e as pirâmides, e você tem que caminhar à noite pela Corniche e ver o pôr do sol no Nilo.",
+     "ar": "في القاهِرة والجيزة مُهم تزور المَتاحِف و الأهرامات و لازم تمشي بالليل على الكورنيش و تشوف الغروب على النيل.",
+     "arabizi": "Fe el kahera we el Giza mohem tezur el mata7ef we el ahramat we lazem temshy beilel 3ala el kornech we teshuf el ghroub 3ala el Neel."
+    },
+    {
+     "pt": "A Torre do Cairo fica perto do Museu Egípcio; você pode visitar os dois no mesmo dia.",
+     "ar": "بُرج القاهِرة قُريب من المَتحف المَصري، انت مُمكن تزور الاتنين في نَفس اليوم.",
+     "arabizi": "Borg el kahera orayeb men el mat7af el masry. Enta momken tezur el etnen fi nafs el youm."
+    },
+    {
+     "pt": "Se você quiser ir a Luxor e Assuã, pode ir de trem, de avião ou de cruzeiro pelo Nilo.",
+     "ar": "لو عايز تروح الأقصر و أسوان فانت مُمكن تروح بالقَطر أو بالطَيارة أو بكروز في النيل.",
+     "arabizi": "Lau 3aeiz teru7 el Lo2sor we Aswan fa enta momken teru7 bel atr au bel tayara au bi cruz fe el Neel."
+    },
+    {
+     "pt": "O mais rápido é o avião, mas eu te aconselho a pegar o cruzeiro; você vai adorar essa experiência.",
+     "ar": "أسرَع حاجة الطَيارة بَس أنا أنصَحَك تاخُد الكروز، انت هَتحِب التَجرُبة دي اوي.",
+     "arabizi": "Asra3 7aga el tayara, bas ana ansa7ak ta5od el cruz, enta hat7eb el tagroba dy awi."
+    },
+    {
+     "pt": "Em Luxor há museus faraônicos muito bonitos.",
+     "ar": "في الأقصر في مَتاحِف فرعونية جَميلة اوي.",
+     "arabizi": "Fe el Lo2sor fih mata7ef for3oneya gamila awi."
+    },
+    {
+     "pt": "Todo mundo gosta de tirar fotos lá.",
+     "ar": "كُل الناس بتحب تتصور هِناك.",
+     "arabizi": "Kol el nas bet7eb tetsawar henak."
     }
    ]
   }
